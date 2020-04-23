@@ -34,10 +34,12 @@ DEFAULT_PAGINATION = False
 # Uncomment following line if you want document-relative URLs when developing
 #RELATIVE_URLS = True
 
+# Theme changes
 THEME = 'themes'
 THEME_COLOR = 'dark'
 THEME_COLOR_AUTO_DETECT_BROWSER_PREFERENCE = False
 THEME_COLOR_ENABLE_USER_OVERRIDE = True
 
+# Code blocks/pygment changes
 PYGMENTS_STYLE = 'emacs'
 PYGMENTS_STYLE_DARK = 'monokai'
