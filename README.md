@@ -1,6 +1,6 @@
 # [Somraj's Blog](https://jarmos.netlify.com)
 
-<img alt="Website" src="https://img.shields.io/website?down_color=Red&down_message=Down.&label=Website&logo=j&style=flat-square&up_color=Green&up_message=Online%21&url=https%3A%2F%2Fjarmos.netlify.app"> <img alt="Netlify" src="https://img.shields.io/netlify/ea7ce786-c991-4222-81a4-d1230adc9108?color=Blue&label=Netlify&logo=Netlify&style=flat-square"> <img alt="GitHub repo size" src="https://img.shields.io/github/repo-size/jarmos-san/pelican-blog?label=Repo%20Size&logo=GitHub&style=flat-square"> <img alt="Twitter Follow" src="https://img.shields.io/twitter/follow/jarmos?style=social">
+<img alt="Website" src="https://img.shields.io/website?down_color=Red&down_message=Down.&label=Website&logo=j&style=flat-square&up_color=Green&up_message=Online%21&url=https%3A%2F%2Fjarmos.netlify.app"> [![Netlify Status](https://api.netlify.com/api/v1/badges/ea7ce786-c991-4222-81a4-d1230adc9108/deploy-status)](https://app.netlify.com/sites/jarmos/deploys) <img alt="GitHub repo size" src="https://img.shields.io/github/repo-size/jarmos-san/pelican-blog?label=Repo%20Size&logo=GitHub&style=flat-square"> <img alt="Twitter Follow" src="https://img.shields.io/twitter/follow/jarmos?style=social">
 
 This repository houses the source code that my [personal blog](https://jarmos.netlify.com) is built with. I've used the [Pelican](https://blog.getpelican.com/) Static Site Generator(SSG) to build the static assets required by my website. The static content are available in `/content` so feel free to a pick at it.
 
