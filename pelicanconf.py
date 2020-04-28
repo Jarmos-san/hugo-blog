@@ -20,15 +20,16 @@ AUTHOR_FEED_ATOM = None
 AUTHOR_FEED_RSS = None
 
 # Blogroll
-LINKS = (('Pelican', 'http://getpelican.com/'),
-         ('Python.org', 'http://python.org/'),
-         ('Jinja2', 'http://jinja.pocoo.org/'),
-         ('You can modify those links in your config file', '#'),)
+LINKS = (
+    ('Blogs', f'{SITEURL}/pages'),
+    ('About Me', f'{SITEURL}/author')
+)
 
 # Social widget
 SOCIAL = (
     ('github', 'https://github.com/jarmos-san/'),
     ('twitter', 'https://twitter.com/Jarmosan'),
+    ('linkedin', 'https://www.linkedin.com/in/jarmos/')
 )
 
 DEFAULT_PAGINATION = False
@@ -39,7 +40,7 @@ DEFAULT_PAGINATION = False
 # Theme changes
 THEME = 'themes'
 THEME_COLOR = 'dark'
-THEME_COLOR_AUTO_DETECT_BROWSER_PREFERENCE = False
+THEME_COLOR_AUTO_DETECT_BROWSER_PREFERENCE = True
 THEME_COLOR_ENABLE_USER_OVERRIDE = True
 
 # Code blocks/pygment changes
