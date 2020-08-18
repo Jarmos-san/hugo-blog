@@ -1,8 +1,4 @@
----
-My Personal Blog
----
-
-# This is my blog
+# My Personal Blog
 
 Will write some content here later.
 
