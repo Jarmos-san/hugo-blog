@@ -1,3 +1,9 @@
+# Python stuffs
 .venv
 __pycache__
+
+# VSCode settings for this workdir
 .vscode/settings.json
+
+# Output directory for Pelican
+/output
