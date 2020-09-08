@@ -2,13 +2,8 @@
 .venv
 __pycache__
 
-<<<<<<< HEAD
 # VSCode settings for this workdir
 .vscode/settings.json
 
 # Output directory for Pelican
 /output
-=======
-# Settings for VSCode
-settings.json
->>>>>>> master
