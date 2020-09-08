@@ -1,67 +1,124 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="en" itemscope itemtype="http://schema.org/Person">
 <head>
-        <meta charset="utf-8" />
+                <meta charset="utf-8">
+        <!-- Site Meta Data -->
         <title>Blog | Jarmos - awesome</title>
-        <link rel="stylesheet" href="/theme/css/main.css" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="">
+        <meta name="author" content="Somraj Saha">
+
+        <link rel="shortcut icon" href="">
+
+        <!-- schema.org -->
+        <meta itemprop="name" content="Blog | Jarmos">
+        <meta itemprop="image" content="">
+        <meta itemprop="description" content="">
+
+        <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700' rel='stylesheet' type='text/css'>
+        <!-- Style Meta Data -->
+        <link rel="stylesheet" href="/theme/css/style.css" type="text/css"/>
+        <link rel="stylesheet" href="/theme/css/pygments.css" type="text/css"/>
+
+        <!-- Feed Meta Data -->
+
+        <!-- Twitter Feed -->
+        <meta name="twitter:card" content="summary">
+        <meta name="twitter:site" content="">
+        <meta name="twitter:image" content="">
+
+    <meta name="twitter:creator" content="">
+    <meta name="twitter:url" content="">
+    <meta name="twitter:title" content="Blog | Jarmos">
+    <meta name="twitter:description" content="">
+
+    <!-- Facebook Meta Data -->
+    <meta property="og:title" content="Blog | Jarmos"/>
+    <meta property="og:description" content=""/>
+    <meta property="og:image" content=""/>
+
+    <meta name="twitter:creator" content="">
+    <meta name="twitter:url" content="/tag/awesome.html">
+    <meta name="twitter:title" content="Blog | Jarmos ~ awesome">
+    <meta name="twitter:description" content="Articles de awesome">
+
+    <!-- Facebook Meta Data -->
+    <meta property="og:title" content="Blog | Jarmos ~ awesome"/>
+    <meta property="og:description" content="Articles de awesome"/>
+    <meta property="og:image" content=""/>
 </head>
 
-<body id="index" class="home">
-        <header id="banner" class="body">
-                <h1><a href="/">Blog | Jarmos </a></h1>
-                <nav><ul>
-                    <li><a href="/category/yeah.html">yeah</a></li>
-                </ul></nav>
-        </header><!-- /#banner -->
+<body>
+<!-- Sidebar -->
+<aside>
+    <!--<center><a href=""><img id="avatar" src=""></a></center>-->
+    <h1>Blog | Jarmos</h1>
+    <br>
 
-            <aside id="featured" class="body">
-                <article>
-                    <h1 class="entry-title"><a href="/my-super-post.html">My super title</a></h1>
-<footer class="post-info">
-        <abbr class="published" title="2010-10-03T10:20:00+05:30">
-                Published: Sun 03 October 2010
-        </abbr>
-		<br />
-        <abbr class="modified" title="2010-10-04T18:40:00+05:30">
-                Updated: Mon 04 October 2010
-        </abbr>
 
-        <address class="vcard author">
-                By                         <a class="url fn" href="/author/alexis-metaireau.html">Alexis Metaireau</a>
-                        <a class="url fn" href="/author/conan-doyle.html">Conan Doyle</a>
-        </address>
-<p>In <a href="/category/yeah.html">yeah</a>.</p>
-<p>tags: <a href="/tag/thats.html">thats</a> <a href="/tag/awesome.html">awesome</a> </p>
-</footer><!-- /.post-info --><p>This will be turned into <abbr title="HyperText Markup Language">HTML</abbr>.</p>
-                </article>
-            </aside><!-- /#featured -->
-        <section id="extras" class="body">
-                <div class="blogroll">
-                        <h2>links</h2>
-                        <ul>
-                            <li><a href="http://getpelican.com/">Pelican</a></li>
-                            <li><a href="http://python.org/">Python.org</a></li>
-                            <li><a href="http://jinja.pocoo.org/">Jinja2</a></li>
-                            <li><a href="#">You can modify those links in your config file</a></li>
-                        </ul>
-                </div><!-- /.blogroll -->
-                <div class="social">
-                        <h2>social</h2>
-                        <ul>
+    <nav class="nav">
+        <ul class="list-bare">
 
-                            <li><a href="#">You can add links in your config file</a></li>
-                            <li><a href="#">Another social link</a></li>
-                        </ul>
-                </div><!-- /.social -->
-        </section><!-- /#extras -->
 
-        <footer id="contentinfo" class="body">
-                <address id="about" class="vcard body">
-                Proudly powered by <a href="http://getpelican.com/">Pelican</a>, which takes great advantage of <a href="http://python.org">Python</a>.
-                </address><!-- /#about -->
 
-                <p>The theme is by <a href="http://coding.smashingmagazine.com/2009/08/04/designing-a-html-5-layout-from-scratch/">Smashing Magazine</a>, thanks!</p>
-        </footer><!-- /#contentinfo -->
+        </ul>
+    </nav>
+
+    <p class="social">
+                <a href="https://www.linkedin.com/in/jarmos" target="_blank"><img
+                        src="/theme/images/icons/linkedin.png"></a>
+                <a href="https://github.com/jarmos-san" target="_blank"><img
+                        src="/theme/images/icons/github.png"></a>
+                <a href="https://twitter.com/jarmosan" target="_blank"><img
+                        src="/theme/images/icons/twitter.png"></a>
+    </p>
+
+        <h2>Categories</h2>
+        <ul class="navbar">
+                <li><a
+                        href="/category/yeah.html">yeah</a></li>
+        </ul>
+
+        <h2 class="blog_roll_link"><br/>BLOGROLLS</h2>
+        <ul class="navbar">
+                <li><a href="http://getpelican.com/">Pelican</a></li>
+                <li><a href="http://python.org/">Python.org</a></li>
+                <li><a href="http://jinja.pocoo.org/">Jinja2</a></li>
+                <li><a href="#">You can modify those links in your config file</a></li>
+        </ul>
+
+</aside>
+
+<!-- Content -->
+<article>
+    <h1 class="title">Hi, I'm Somraj Saha</h1>
+        <ol class="posts">
+    <h2 class="latest">Tag: awesome</h2>
+                <li class="post_list"><p class="post_entry">
+                    <h2 class="post_title"><a href="/my-super-post.html" rel="bookmark"
+                                              title="Permalink to My super title">My super title</a>
+                    </h2>
+                    <a href="/author/alexis-metaireau.html">@Alexis Metaireau</a>
+                    <span> in </span>
+                    <span class="post_category"><a href="/category/yeah.html" rel="bookmark"
+                                                   title="Permalink to yeah">[ yeah ]</a></span>
+                    <span class="post_date">Sun 03 October 2010</span>
+                </li>
+        </ol>
+
+
+</article>
+
+<!-- Footer -->
+    <footer>
+        <p>
+            Blog powered by <a href="http://getpelican.com/">Pelican</a>,
+            which takes great advantage of <a href="http://python.org">Python</a>.
+            Theme <a href="https://github.com/parbhat/pelican-blue">Pelican-Blue</a> by <a
+                href="https://parbhatpuri.com/">@parbhat</a>.
+        </p>
+    </footer>
+
 
 </body>
 </html>
