@@ -1,4 +1,0 @@
-[build]
-    base = "./pelican"
-    publish = "/output"
-    command = "pelican content -s pelicanconf.py"
