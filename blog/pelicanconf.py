@@ -12,6 +12,8 @@ TIMEZONE = 'Asia/Kolkata'
 
 DEFAULT_LANG = 'en'
 
+THEME = 'pelican-themes/pelican-blue'
+
 # Feed generation is usually not desired when developing
 FEED_ALL_ATOM = None
 CATEGORY_FEED_ATOM = None
@@ -26,8 +28,11 @@ LINKS = (('Pelican', 'http://getpelican.com/'),
          ('You can modify those links in your config file', '#'),)
 
 # Social widget
-SOCIAL = (('You can add links in your config file', '#'),
-          ('Another social link', '#'),)
+SOCIAL = (
+    ('linkedin', 'https://www.linkedin.com/in/jarmos'),
+    ('github', 'https://github.com/jarmos-san'),
+    ('twitter', 'https://twitter.com/jarmosan')
+)
 
 DEFAULT_PAGINATION = 5
 
