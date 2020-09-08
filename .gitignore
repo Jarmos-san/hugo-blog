@@ -1,2 +1,5 @@
 .venv
 __pycache__
+
+# Settings for VSCode
+settings.json
