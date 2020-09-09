@@ -1,18 +1,15 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 # -*- coding: utf-8 -*- #
-from __future__ import unicode_literals
 
 AUTHOR = 'Somraj Saha'
-SITENAME = 'Blog | Jarmos'
-SITEURL = ''
+SITENAME = "Jarmos's Blog"
+SITEURL = 'http://localhost:8000'
 
 PATH = 'content'
 
 TIMEZONE = 'Asia/Kolkata'
 
 DEFAULT_LANG = 'en'
-
-THEME = 'pelican-themes/pelican-blue'
 
 # Feed generation is usually not desired when developing
 FEED_ALL_ATOM = None
@@ -21,27 +18,34 @@ TRANSLATION_FEED_ATOM = None
 AUTHOR_FEED_ATOM = None
 AUTHOR_FEED_RSS = None
 
-# Blogroll
-LINKS = (('Pelican', 'http://getpelican.com/'),
-         ('Python.org', 'http://python.org/'),
-         ('Jinja2', 'http://jinja.pocoo.org/'),
-         ('You can modify those links in your config file', '#'),)
+THEME = '../pelican-themes/pelican-blue'
 
 # Social widget
 SOCIAL = (
     ('linkedin', 'https://www.linkedin.com/in/jarmos'),
-    ('github', 'https://github.com/jarmos-san'),
-    ('twitter', 'https://twitter.com/jarmosan')
+    ('github', 'https://github.com/Jarmos-san'),
+    ('twitter', 'https://twitter.com/Jarmosan')
 )
 
-DEFAULT_PAGINATION = 5
+DEFAULT_PAGINATION = 6
 
 STATIC_PATHS = [
     'static/favicon.ico',
-    ]
+]
+
 EXTRA_PATH_METADATA = {
     'static/favicon.ico': {'path': 'favicon.ico'},
-    }
+}
 
 # Uncomment following line if you want document-relative URLs when developing
 #RELATIVE_URLS = True
+
+SIDEBAR_DIGEST = 'Machine Learning Engineer'
+
+DISPLAY_PAGES_ON_MENU = True
+
+# TWITTER_USERNAME = 'jarmosan'
+
+MENUITEMS = (
+    ('Blog', SITEURL),
+)
