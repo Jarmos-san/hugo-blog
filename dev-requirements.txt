@@ -1,2 +1,0 @@
-invoke==1.4.1
-livereload==2.6.3
