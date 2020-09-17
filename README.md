@@ -54,19 +54,19 @@ Do you've some suggestions to improve this project? Or perhaps there's an open i
 
 I appreciate all efforts towards making this project better & more accessible, so don't hesitate to contribute to the project. There's a reason why I've open-sourced my personal website! :wink:
 
-There's a comprehensive guideline in the [CONTRIBUTING.md](./..github/CONTRIBUTING.md) document. Refer to it for more details on contributing to the project.
+There's a comprehensive guideline in the [CONTRIBUTING.md](.github/CONTRIBUTING.md) document. Refer to it for more details on contributing to the project.
 
 ### Issues
 
 In case of a bug report, bugfix or a suggestion, please feel free to open an issue following the respective templates
 
-- [Ask a Question](./..github/ISSUE_TEMPLATE/ask-a-question.md)
-- [Bug Report](./..github/ISSUE_TEMPLATE/bug-report.md)
-- [Discussion](..github/ISSUE_TEMPLATE/discussion.md)
+- [Ask a Question](.github/ISSUE_TEMPLATE/ask-a-question.md)
+- [Bug Report](.github/ISSUE_TEMPLATE/bug-report.md)
+- [Discussion](.github/ISSUE_TEMPLATE/discussion.md)
 
 ### Pull Request
 
-Pull Requests are always welcome & I'll review them as quick as possible. But for easier collaboration, please follow the specification provided in the [PR template](./..github/PULL_REQUEST_TEMPLATE.md).
+Pull Requests are always welcome & I'll review them as quick as possible. But for easier collaboration, please follow the specification provided in the [PR template](.github/PULL_REQUEST_TEMPLATE.md).
 
 ## License
 
@@ -78,7 +78,7 @@ Due to the nature of the contents of this repository, its difficult to license e
 
 ## Get Help
 
-Facing difficulties to deploy your site after forking this repository? Well then feel free to reach out to me. I'm available on Twitter & LinkedIn for a quick chat. But if you need a very comprehensive explanation on something related to this project, open an Issue. Follow this [Discussion](./..github/ISSUE_TEMPLATE/discussion.md) Issue template to create a thread.
+Facing difficulties to deploy your site after forking this repository? Well then feel free to reach out to me. I'm available on Twitter & LinkedIn for a quick chat. But if you need a very comprehensive explanation on something related to this project, open an Issue. Follow this [Discussion](.github/ISSUE_TEMPLATE/discussion.md) Issue template to create a thread.
 
 Perhaps you've a question not related to this project in any way, then check out my [*Ask Me Anything*](https://github.com/jarmos-san/ama)
 
