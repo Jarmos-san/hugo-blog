@@ -164,3 +164,4 @@ dmypy.json
 *.out
 *.py[cod]
 output
+./blog/output
