@@ -163,5 +163,6 @@ dmypy.json
 *.swp
 *.out
 *.py[cod]
-output
+blog/output
 ./blog/output
+./blog/output/**
