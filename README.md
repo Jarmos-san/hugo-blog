@@ -7,10 +7,7 @@ Website | Netlify | LinkedIn | Quora | AMA | Twitter -->
 
 This repository hosts the source code for my personal website. It's statically generated using [Pelican](https://www.getpelican.com) - A Static Site Generator(SSG) built on Python & is delivered using [Netlify](https://www.netlify.com/).
 
-## Table of Contents
-
 - [Somraj's Blog](#somrajs-blog)
-  - [Table of Contents](#table-of-contents)
   - [Getting Started](#getting-started)
   - [Built With](#built-with)
   - [Contributing](#contributing)
