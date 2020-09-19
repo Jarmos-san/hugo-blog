@@ -10,3 +10,5 @@ My super title
 :summary: Short version for index and feeds
 
 This will be turned into :abbr:`HTML (HyperText Markup Language)`.
+
+Just testing GPG key signing, nothing more!
