@@ -169,3 +169,4 @@ cython_debug/
 blog/output
 ./blog/output
 ./blog/output/**
+.netlify
