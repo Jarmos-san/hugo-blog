@@ -1,4 +1,29 @@
+# Global build settings
 [build]
-    base = "./blog"
-    publish = "/output"
-    command = "pelican content -s publishconf.py"
+  base = "blog/"
+  publish = "output/"
+
+# Post Processing
+[build.processing]
+  skip_processing = false
+
+[build.processing.css]
+  bundle = true
+  minify = true
+
+[build.processing.js]
+  bundle = true
+  minify = true
+
+[build.processing.html]
+  pretty_urls = true
+
+[build.processing.images]
+  compress = true
+
+# Deploy contexts
+[context.develop]
+  command = "pelican content -s pelicanconf.py"
+
+[context.stable]
+  command = "invoke build"
