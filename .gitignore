@@ -169,4 +169,6 @@ cython_debug/
 blog/output
 ./blog/output
 ./blog/output/**
+
+# Local Netlify folder
 .netlify
