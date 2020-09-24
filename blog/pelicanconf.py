@@ -3,7 +3,7 @@
 
 AUTHOR = 'Somraj Saha'
 SITENAME = "Jarmos's Blog"
-SITEURL = 'http://localhost:8000'
+SITEURL = ''
 
 PATH = 'content'
 
