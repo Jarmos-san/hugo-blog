@@ -1,21 +1,25 @@
 # Commented out the whole workflow file to check if Netlify CLI
 # works fine or not
+on: push
+name: CI/CD Build
 
-# on: push
-# name: Publish on Netlify
+jobs:
+  checkForChanges:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@master
+    - name: Check changes in the article
+      uses: netlify/actions/diff-includes@master
+      with:
+        args: blog/output
 
-# jobs:
-#   publish:
-#     runs-on: ubuntu-latest
-
-#     steps:
-#     - uses: actions/checkout@master
-
-#     - name: Publish
-#       uses: netlify/actions/build@master
-#       env:
-#         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-#         NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
-#         NETLIFY_BASE: blog
-#         NETLIFY_CMD: invoke build
-#         NETLIFY_DIR: output
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Publish
+      uses: netlify/actions/cli@master
+      with:
+        args: deploy --build --prod
+      env:
+        NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
+        NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
