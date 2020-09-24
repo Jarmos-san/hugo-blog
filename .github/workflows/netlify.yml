@@ -1,18 +1,21 @@
-on: push
-name: Publish on Netlify
+# Commented out the whole workflow file to check if Netlify CLI
+# works fine or not
 
-jobs:
-  publish:
-    runs-on: ubuntu-latest
+# on: push
+# name: Publish on Netlify
 
-    steps:
-    - uses: actions/checkout@master
+# jobs:
+#   publish:
+#     runs-on: ubuntu-latest
 
-    - name: Publish
-      uses: netlify/actions/build@master
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
-        NETLIFY_BASE: blog
-        NETLIFY_CMD: invoke build
-        NETLIFY_DIR: output
+#     steps:
+#     - uses: actions/checkout@master
+
+#     - name: Publish
+#       uses: netlify/actions/build@master
+#       env:
+#         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+#         NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
+#         NETLIFY_BASE: blog
+#         NETLIFY_CMD: invoke build
+#         NETLIFY_DIR: output
