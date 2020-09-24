@@ -1,4 +1,3 @@
-<!-- TODO: Make the README more lively by including Emojis wherever applicable -->
 <!-- TODO: Update README with more relevant information on how to clone & deploy the website. -->
 # Somraj's Blog
 
@@ -9,16 +8,16 @@ Website | Netlify | LinkedIn | Quora | AMA | Twitter -->
 This repository hosts the source code for my personal website. It's statically generated using [Pelican](https://www.getpelican.com) - A Static Site Generator(SSG) built on Python & is delivered using [Netlify](https://www.netlify.com/).
 
 - [Somraj's Blog](#somrajs-blog)
-  - [Getting Started](#getting-started)
-  - [Built With](#built-with)
-  - [Contributing](#contributing)
-    - [Issues](#issues)
-    - [Pull Request](#pull-request)
-  - [License](#license)
-  - [Get Help](#get-help)
-  - [Acknowledgements](#acknowledgements)
+  - [:checkered_flag: Getting Started](#-getting-started)
+  - [:hammer_and_wrench: Built With](#-built-with)
+  - [:building_construction: Contributing](#-contributing)
+    - [:adhesive_bandage: Issues](#adhesive_bandage-issues)
+    - [:package: Pull Request](#-pull-request)
+  - [:memo: License](#-license)
+  - [:raised_hand: Get Help](#-get-help)
+  - [:clap: Acknowledgements](#-acknowledgements)
 
-## Getting Started
+## :checkered_flag: Getting Started
 
 You found my website, liked it & now wanted to check out how I work on maintaining it. If that's the case, this section will help you get started. First thing decide if you would like to contribute to the project, then skip ahead to the [Contributing](#contributing) section.  Perhaps you just want a similar website for yourself & not sure how to do it. If it's so then the following guidelines should get you what you need.
 
@@ -40,7 +39,7 @@ TODO: Steps to recreate creating & hosting the website
 4. Activate the virtualenv by `source .venv/bin/activate` command.
 5. Install necessary dependencies using the `pip install -r blog/requirements.txt` command.
 
-## Built With
+## :hammer_and_wrench: Built With
 
 The site is built using Pelican to generate static content which are then delivered using Netlify's CDN. These are the primary 2 tools you will specifically need to build the website.
 
@@ -49,7 +48,7 @@ For more information on how to use these tools, refer to their respective docume
 - [Netlify Docs](https://docs.netlify.com/)
 - [Pelican 4.5.0 Documentations](https://docs.getpelican.com/en/stable/)
 
-## Contributing
+## :building_construction: Contributing
 
 Do you've some suggestions to improve this project? Or perhaps there's an open issue you can help me resolve? Then all you've got to do is fork this project, clone it locally & make a PR against this repository.
 
@@ -57,7 +56,7 @@ I appreciate all efforts towards making this project better & more accessible, s
 
 There's a comprehensive guideline in the [CONTRIBUTING.md](.github/CONTRIBUTING.md) document. Refer to it for more details on contributing to the project.
 
-### Issues
+### :adhesive_bandage: Issues
 
 In case of a bug report, bugfix or a suggestion, please feel free to open an issue following the respective templates
 
@@ -65,11 +64,11 @@ In case of a bug report, bugfix or a suggestion, please feel free to open an iss
 - [Bug Report](.github/ISSUE_TEMPLATE/bug-report.md)
 - [Discussion](.github/ISSUE_TEMPLATE/discussion.md)
 
-### Pull Request
+### :package: Pull Request
 
 Pull Requests are always welcome & I'll review them as quick as possible. But for easier collaboration, please follow the specification provided in the [PR template](.github/PULL_REQUEST_TEMPLATE.md).
 
-## License
+## :memo: License
 
 Due to the nature of the contents of this repository, its difficult to license everything under a single License. Hence, I decided to include two licenses for each aspect of all the contents in the repository. The following points will briefly describe the licensing T&Cs for everything contained within this repository.
 
@@ -77,12 +76,12 @@ Due to the nature of the contents of this repository, its difficult to license e
 
 2. This repository also hosts the [Pelican](https:www.getpelican.com) Static-Site Generator for automatically building & delivering the markup content over a CDN. Therefore, all source code of the Pelican software is licensed under the T&Cs of the [original LICENSE](https://github.com/getpelican/pelican/blob/master/LICENSE) available at the Pelican repository.
 
-## Get Help
+## :raised_hand: Get Help
 
 Facing difficulties to deploy your site after forking this repository? Well then feel free to reach out to me. I'm available on Twitter & LinkedIn for a quick chat. But if you need a very comprehensive explanation on something related to this project, open an Issue. Follow this [Discussion](.github/ISSUE_TEMPLATE/discussion.md) Issue template to create a thread.
 
 Perhaps you've a question not related to this project in any way, then check out my [*Ask Me Anything*](https://github.com/jarmos-san/ama)
 
-## Acknowledgements
+## :clap: Acknowledgements
 
 - The site uses the [pelican-blue](https://github.com/Parbhat/pelican-blue) theme built by [Prabhat Puri](https://github.com/Parbhat)
