@@ -1,6 +1,6 @@
 # Global Build Settings
 [build]
-  base = "blog"
+  base = "/"
   publish = "output"
   command = "invoke build"
 
