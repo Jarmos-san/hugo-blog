@@ -7,7 +7,7 @@
 import os
 import sys
 
-from .pelicanconf import *
+from pelicanconf import *
 
 sys.path.append(os.curdir)
 
