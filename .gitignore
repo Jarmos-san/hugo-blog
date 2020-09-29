@@ -166,9 +166,10 @@ cython_debug/
 *.swp
 *.out
 *.py[cod]
-blog/output
-./blog/output
-./blog/output/**
+src/output
+./src/output
+./src/output/**
 
 # Local Netlify folder
 .netlify
+node_modules

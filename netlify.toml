@@ -1,8 +1,8 @@
 # Global Build Settings
 [build]
-  base = "/"
-  publish = "output"
-  command = "invoke build"
+  base = "/src"
+  publish = "/src/output"
+  command = "pelican content -s publishconf.py"
 
 # Post Processing Settings
 [build.processing]
