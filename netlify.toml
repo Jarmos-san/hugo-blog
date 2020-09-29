@@ -1,8 +1,8 @@
 # Global Build Settings
 [build]
   base = "src"
-  publish = "src/output"
-  command = "pelican content -s src/publishconf.py"
+  publish = "output"
+  command = "pelican content -s publishconf.py"
 
 # Post Processing Settings
 [build.processing]
