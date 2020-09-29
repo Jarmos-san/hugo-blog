@@ -1,4 +1,3 @@
-<!-- TODO: Update README with more relevant information on how to clone & deploy the website. -->
 # Somraj's Blog
 
 <!-- Position of the badges for easier accessibility
@@ -9,6 +8,7 @@ This repository hosts the source code for my personal website. It's statically g
 
 - [Somraj's Blog](#somrajs-blog)
   - [:checkered_flag: Getting Started](#-getting-started)
+    - [The Easy & Quick Way To Get It Done](#the-easy--quick-way-to-get-it-done)
   - [:hammer_and_wrench: Built With](#-built-with)
   - [:building_construction: Contributing](#-contributing)
     - [:adhesive_bandage: Issues](#adhesive_bandage-issues)
@@ -19,25 +19,19 @@ This repository hosts the source code for my personal website. It's statically g
 
 ## :checkered_flag: Getting Started
 
-You found my website, liked it & now wanted to check out how I work on maintaining it. If that's the case, this section will help you get started. First thing decide if you would like to contribute to the project, then skip ahead to the [Contributing](#contributing) section.  Perhaps you just want a similar website for yourself & not sure how to do it. If it's so then the following guidelines should get you what you need.
+You found my website, liked it & would like one for yourself too? If that's the case, the following section will help you get started.
 
-<!--
-! Take care of this shit on priority!
+### The Easy & Quick Way To Get It Done
 
-TODO: Steps to recreate creating & hosting the website
+1. Fork the repository.
+2. Create/login into an account on [Netlify](https://www.netlify.com).
+3. Link a remote repository by clicking on the "[New site from Git](https://app.netlify.com/start)" button.
+4. That should help you set-up the forked repository on GitHub.
+5. Once setup, clicking on "Deploy Site" button should trigger the build.
+6. You can then check the site being deployed at this URL: `https://app.netlify.com/teams/<INSERT_NETLIFY_USERNAME_HERE>/sites`.
+7. Once the site is deployed, Netlify assigns a domain automatically. It should look something on these lines: `https://<NETLIFY_GENERATED_ALPHANUMERIC_STRING>.netlify.app`.
 
-* Break down the steps into the following:
-
-* 1.Setting up a local dev environment.
-* 2.Pushing local content to GitHub & setting up a Netlify site using the UI.
-* 3.Optionally, include steps to recreate the site using the Netlify CLI.
--->
-
-1. Fork the repository, clone it locally using the `git@github.com:<INSERT_YOUR_USERNAME_HERE>/pelican-blog.git`.
-2. CD into the newly cloned directory.
-3. Create a virtualenv using the `python -m venv .venv` command.
-4. Activate the virtualenv by `source .venv/bin/activate` command.
-5. Install necessary dependencies using the `pip install -r blog/requirements.txt` command.
+<!-- ! Talk about the hard way to do things as well. -->
 
 ## :hammer_and_wrench: Built With
 
