@@ -166,9 +166,7 @@ cython_debug/
 *.swp
 *.out
 *.py[cod]
-src/output
-./src/output
-./src/output/**
+output
 
 # Local Netlify folder
 .netlify

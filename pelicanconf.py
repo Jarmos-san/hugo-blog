@@ -18,7 +18,7 @@ TRANSLATION_FEED_ATOM = None
 AUTHOR_FEED_ATOM = None
 AUTHOR_FEED_RSS = None
 
-THEME = "../pelican-themes/pelican-blue"
+THEME = "pelican-themes/pelican-blue"
 
 # Social widget
 SOCIAL = (
