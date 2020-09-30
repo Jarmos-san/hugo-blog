@@ -40,10 +40,8 @@ EXTRA_PATH_METADATA = {
 # Uncomment following line if you want document-relative URLs when developing
 # RELATIVE_URLS = True
 
-SIDEBAR_DIGEST = "Machine Learning Engineer"
+SIDEBAR_DIGEST = "An ML Engineer's Thoughts & Learnings"
 
-DISPLAY_PAGES_ON_MENU = True
+DISPLAY_PAGES_ON_MENU = False
 
-# TWITTER_USERNAME = 'jarmosan'
-
-MENUITEMS = (("Blog", SITEURL),)
+# MENUITEMS = (("Blog", SITEURL),)
