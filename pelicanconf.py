@@ -3,7 +3,7 @@
 
 AUTHOR = "Somraj Saha"
 SITENAME = "Jarmos's Blog"
-SITEURL = ""
+SITEURL = "https://goofy-galileo-0dde5b.netlify.app/"
 
 PATH = "content"
 
