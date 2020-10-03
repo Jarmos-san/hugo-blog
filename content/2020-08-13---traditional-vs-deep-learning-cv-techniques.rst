@@ -1,4 +1,6 @@
-:title: Deep Learning Vs Traditional Computer Vision Techniques--Which Should You Choose?
+Deep Learning Vs Traditional Computer Vision Techniques--Which Should You Choose?
+#################################################################################
+
 :date: 2020-08-13 23:46:37
 :keywords: Deep Learning, Computer Vision, Machine Learning, Artificial Intelligence, Business, Technology
 :category: Computer Vision

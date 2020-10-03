@@ -3,7 +3,7 @@
 
 AUTHOR = "Somraj Saha"
 SITENAME = "Jarmos's Blog"
-SITEURL = "https://jarmos.netlify.app/"
+SITEURL = "https://jarmos.netlify.app"
 
 PATH = "content"
 
