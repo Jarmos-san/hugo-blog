@@ -1,10 +1,8 @@
 version: 2
 updates:
   - package-ecosystem: "pip"
-    directory: "/blog"
+    directory: "/"
     schedule:
       interval: "daily"
     assignees:
       - "Jarmos-san"
-
-# Need to add configs for NPM later on

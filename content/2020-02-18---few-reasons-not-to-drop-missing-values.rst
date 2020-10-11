@@ -74,4 +74,4 @@ To summarize, NaN values doesn’t necessarily mean that quality of the data is 
 References
 ----------
 
-.. [#] H.Song and A.Szafir, `Where’s My Data? Evaluating Visualizations with Missing Data <https://cmci.colorado.edu/visualab/papers/song_VIS_2018.pdf>`_ (2018), Visual Lab at University of Colorado.
+.. [#] H.Song and A.Szafir, `Where’s My Data? Evaluating Visualizations with Missing Data <https://cmci.colorado.edu/visualab/papers/song_VIS_2018.pdf>`_ (2018), Visual Lab at the University of Colorado.

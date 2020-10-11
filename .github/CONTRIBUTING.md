@@ -1,5 +1,7 @@
 # Contributing to My Blog
 
+<!-- TODO: Add Emojis -->
+
 :+1::tada: First off, thanks for taking the time to contribute! :tada::+1:
 
 The following is a set of guidelines for contributing to my blog which is hosted in the [blog](https://github.com/jarmos-san/pelican-blog) repository on GitHub. These are mostly guidelines, not rules. Use your best judgment, and feel free to propose changes to this document in a pull request.
@@ -18,6 +20,8 @@ The following is a set of guidelines for contributing to my blog which is hosted
       - [How Do I Submit A (Good) Enhancement Suggestion](#how-do-i-submit-a-good-enhancement-suggestion)
     - [Your First Code Contribution](#your-first-code-contribution)
       - [Local development](#local-development)
+        - [**Setup a Development Environment**](#setup-a-development-environment)
+        - [**Preparing Your Site For Deployment**](#preparing-your-site-for-deployment)
     - [Pull Requests](#pull-requests)
   - [Styleguides](#styleguides)
     - [Git Commit Messages](#git-commit-messages)
@@ -41,7 +45,7 @@ This project and everyone participating in it is governed by the T&Cs mentioned 
 
 ### My Blog
 
-My blog is an  open-source project. When you initially consider contributing to my blog, you might be unsure about what changes you want to implement without messing up the functionality of the site. This section should help you with that.
+My blog is an open-source project. When you initially consider contributing to my blog, you might be unsure about what changes you want to implement without messing up the functionality of the site. This section should help you with that.
 
 Here's a list of the big ones:
 
@@ -124,7 +128,36 @@ Both issue lists are sorted by the total number of comments. While not perfect, 
 
 #### Local development
 
-<!-- ! Include steps to recreate the website locally. -->
+##### **Setup a Development Environment**
+
+1. Fork the repository.
+2. Clone your copy of the repository locally using the command `git clone git@github.com:<INSERT_YOUR_USERNAME_HERE>/blog.git`.
+3. Remove the files under the directory `content`. Note, the files are written in [reStructured Text](https://docutils.sourceforge.io/rst.html) which is basically Markdown with super powers!
+4. Create a virtual environment by running `python -m venv .venv`. Then install the dev requirements using the command `pip install dev-requirements.txt`. Optionally, if you prefer writing your articles in Markdown instead, the [Pelican docs suggests](https://docs.getpelican.com/en/stable/install.html#optional-packages) installing Markdown support using the `python -m pip install "pelican[markdown]"` command.
+5. Remove the unnecessary settings from the `pelicanconf.py` file as per your needs & requirements.
+
+##### **Preparing Your Site For Deployment**
+
+1. Write your articles under the `content` directory & then check if its generated properly by running the `invoke serve` command. The `tasks.py` has lots of efficient CLI commands for automating your development process. Some of them are listed below, do check them out!
+
+     - `.. clean` - Remove generated files from the `output` directory.
+     - `.. build` - Build a local version of the site. The generated files are stored under the `output` directory.
+     - `.. rebuild` - Build with the deleted switch.
+     - `.. regenerated` - Automatically regenerate site upon file modification.
+     - `.. serve` - Serve the generated site at localhost:8000 (_by default, you can change the host & port though_).
+     - `.. reserve` - Build the site first under `output` & the serve it.
+     - `.. preview` - Build production version of the site.
+     - `.. livereload` - Automatically reload the browser tab upon file modification.
+     - `.. publish` - Publish the file via `rsync` perhaps onto a S3 bucket.
+**Replace `..` with `invoke`.*
+
+2. Push your changes to GitHub.
+3. Create/login into an account on [Netlify](https://www.netlify.com).
+4. Link a remote repository by clicking on the "[New site from Git](https://app.netlify.com/start)" button.
+5. That should help you set-up the forked repository on GitHub.
+6. Once setup, clicking on "Deploy Site" button should trigger the build.
+7. You can then check the site being deployed at this URL: `https://app.netlify.com/teams/<INSERT_NETLIFY_USERNAME_HERE>/sites`.
+8. Once the site is deployed, Netlify assigns a domain automatically. It should look something on these lines: `https://<NETLIFY_GENERATED_ALPHANUMERIC_STRING>.netlify.app`.
 
 ### Pull Requests
 
@@ -183,6 +216,6 @@ The labels are loosely grouped by their purpose, but it's not required that ever
 Please open an [issue](https://github.com/Jarmos-san/pelican-blog/issues/new/choose), if you have suggestions for new labels, and if you notice some labels are missing, then please open an issue for that as well.
 
 #### Type of Issue and Issue State
-<!-- Create a table of Issue labels here -->
+<!-- TODO: Create a table of Issue labels here -->
 #### Pull Request Labels
-<!-- Create a table of PR tables here -->
+<!-- TODO: Create a table of PR tables here -->
