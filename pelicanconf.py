@@ -3,7 +3,8 @@
 
 AUTHOR = "Somraj Saha"
 SITENAME = "Jarmos's Blog"
-SITEURL = ""
+SITEURL = ""  # For development
+SITEURL = "https://jarmos.netlify.app"  # For production
 SITEDESCRIPTION = "Somraj's Thoughts & Learning as a Machine Learning Engineer"
 TIMEZONE = "Asia/Kolkata"
 DEFAULT_LANG = "en"

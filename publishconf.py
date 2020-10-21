@@ -1,4 +1,4 @@
-from pelicanconf import *
+from .pelicanconf import *
 
 SITEURL = "https://jarmos.netlify.app"
 
