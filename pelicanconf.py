@@ -5,12 +5,10 @@ AUTHOR = "Somraj Saha"
 SITENAME = "Jarmos's Blog"
 SITEURL = ""
 SITEDESCRIPTION = "Somraj's Thoughts & Learning as a Machine Learning Engineer"
+TIMEZONE = "Asia/Kolkata"
+DEFAULT_LANG = "en"
 
 PATH = "content"
-
-TIMEZONE = "Asia/Kolkata"
-
-DEFAULT_LANG = "en"
 
 # Feed generation is usually not desired when developing
 FEED_ALL_ATOM = None
@@ -24,7 +22,6 @@ THEME = "themes/blue-penguin"
 STATIC_PATHS = [
     "static/favicon.ico",
 ]
-
 
 # all defaults to True.
 DISPLAY_HEADER = True
@@ -44,7 +41,14 @@ ARCHIVES_SAVE_AS = "archives/index.html"
 
 # use those if you want pelican standard pages to appear in your menu
 MENU_INTERNAL_PAGES = (
-    # ("Tags", TAGS_URL, TAGS_SAVE_AS),
     ("Categories", CATEGORIES_URL, CATEGORIES_SAVE_AS),
     ("Archives", ARCHIVES_URL, ARCHIVES_SAVE_AS),
+)
+
+# Pagination
+DEFAULT_PAGINATION = True
+
+PAGINATION_PATTERNS = (
+    (1, "{url}", "{save_as}"),
+    (2, "{base_name}/page/{number}/", "{base_name}/page/{number}/index.html"),
 )
