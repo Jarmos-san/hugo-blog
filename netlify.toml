@@ -2,7 +2,7 @@
 [build]
   base = "/"
   publish = "output"
-  command = "pelican -s pelicanconf.py content"
+  command = "pelican -s -v publishconf.py content"
 
 # Post Processing Settings
 [build.processing]
