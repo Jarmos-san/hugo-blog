@@ -16,7 +16,7 @@ pathspec==0.8.0
 pelican==4.5.0
 pycodestyle==2.6.0
 pyflakes==2.2.0
-Pygments==2.7.1
+Pygments==2.7.2
 python-dateutil==2.8.1
 pytz==2020.1
 regex==2020.10.15
