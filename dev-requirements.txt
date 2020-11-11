@@ -19,7 +19,7 @@ pyflakes==2.2.0
 Pygments==2.7.2
 python-dateutil==2.8.1
 pytz==2020.4
-regex==2020.10.23
+regex==2020.10.28
 six==1.15.0
 toml==0.10.1
 tornado==6.1
