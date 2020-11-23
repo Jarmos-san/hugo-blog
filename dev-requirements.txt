@@ -13,7 +13,7 @@ MarkupSafe==1.1.1
 mccabe==0.6.1
 mypy-extensions==0.4.3
 pathspec==0.8.0
-pelican==4.5.1
+pelican==4.5.2
 pycodestyle==2.6.0
 pyflakes==2.2.0
 Pygments==2.7.2
