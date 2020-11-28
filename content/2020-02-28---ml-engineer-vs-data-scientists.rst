@@ -101,7 +101,7 @@ Check it out for yourself.
 
 (`Sreenshot 2 <https://in.indeed.com/jobs?q=data%20scientist&vjk=fb0f54d442bf42c4>`_ as on 23rd November 2020)
 
- This screenshot is a prime example where it’s not clear what the Data Scientist is expected to do. It’s a hodgepodge of all sorts of responsibilities dumped on one single individual to take care of.
+This screenshot is a prime example where it’s not clear what the Data Scientist is expected to do. It’s a hodgepodge of all sorts of responsibilities dumped on one single individual to take care of.
 
 How Should You Adhere To Specific Designations?
 -----------------------------------------------
