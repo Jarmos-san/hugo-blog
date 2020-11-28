@@ -8,7 +8,7 @@ ML Engineer vs Data Scientist: Whom Should You Hire?
 :author: Somraj Saha
 :summary: Not sure if a specific business need of your company requires a Data Scientist or an ML Engineer? Then read ahead to find out more about it.
 
-.. image:: ../content/static/images/scientist-vs-engineer.gif
+.. image:: https://github.com/Jarmos-san/blog/blob/master/content/static/images/scientist-vs-engineer.gif?raw=true
 	:width: 800
 	:alt: GIF image of a scientist & an engineer.
 
@@ -83,8 +83,8 @@ Weird, I know, but happens more often than you would realize. Don’t believe me
 
 With that said, let's take a look at some of the job descriptions for a ML project. Below is a screenshot I picked up from one such job ad posting.
 
-.. image:: ../content/static/images/ml-job-screenshot.png
-	:width: 800
+.. image:: https://github.com/Jarmos-san/blog/blob/master/content/static/images/ml-job-screenshot.png?raw=true
+	:width: 500
 	:alt: Screenshot of an ML job posting
 
 (`Screenshot 1 <https://in.indeed.com/jobs?q=Machine%20Learning%20Engineer&advn=9253950511738984&vjk=f5ecb2c0b2ec054c>`_ as on 23rd November 2020)
@@ -95,8 +95,8 @@ But on the flip side, job descriptions of Data Scientists are often vague & kind
 
 Check it out for yourself.
 
-.. image:: ./content/static/images/data-science-job-posting.png
-	:width: 800
+.. image:: https://github.com/Jarmos-san/blog/blob/master/content/static/images/data-science-job-posting.png?raw=true
+	:width: 500
 	:alt: Screenshot of a Data Science job posting
 
 (`Sreenshot 2 <https://in.indeed.com/jobs?q=data%20scientist&vjk=fb0f54d442bf42c4>`_ as on 23rd November 2020)
