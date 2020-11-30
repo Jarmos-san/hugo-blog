@@ -1,17 +1,52 @@
-on:
-  push
+name: CI/CD
 
-name: CI/CD Build
+on:
+  push:
+    branch:
+      master
 
 jobs:
-  publish:
+  build:
+
     runs-on: ubuntu-latest
+
     steps:
-    - uses: actions/checkout@master
-    - name: Publish
-      uses: netlify/actions/cli@master
+    - uses: actions/checkout@v2
+
+    - name: Set up Python 3.8
+      uses: actions/setup-python@v2
       with:
-        args: deploy --build --prod
+        python-version: 3.8
+
+    - name: Cache pip
+      uses: actions/cache@v2
+      with:
+        path: ~/.cache/pip
+        key: ${{ runner.os }}-pip-${{ hashFiles('requirements.txt') }}
+        restore-keys: |
+          ${{ runner.os }}-pip-
+          ${{ runner.os }}-
+
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install -r requirements.txt
+
+    - name: Build static content
+      run: pelican content -s pelicanconf.py
+
+    - name: Deploy to Netlify
+      uses: netlify/actions/cli@master
       env:
         NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
         NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+      with:
+        args: deploy --dir=output --prod
+        secrets: '["NETLIFY_AUTH_TOKEN", "NETLIFY_SITE_ID"]'  # Not sure why would we even need this
+
+# ! More Actions are available here:
+# * https://github.com/South-Paw/action-netlify-deploy
+# * https://github.com/netlify/actions
+
+# ! For references, check here:
+# * https://marekpukaj.medium.com/build-with-github-actions-host-on-netlify-ebf5fa505616
