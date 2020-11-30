@@ -13,8 +13,12 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v1
 
-      - name: Install dependencies
+      - name: Setup Python
         uses: actions/setup-python@v2
+        with:
+          python-version: 3.8
+
+        name: Install Python dependencies
         run: |
           python -m pip install upgrade pip
           pip install -r requirements.txt
@@ -44,8 +48,12 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v1
 
-      - name: Install dependencies
+      - name: Setup Python 3.8
         uses: actions/setup-python@v2
+        with:
+          python-version: 3.8
+
+      - name: Install dependencies
         run: |
           python -m pip install upgrade pip
           pip install -r requirements.txt
@@ -74,8 +82,12 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v1
 
-      - name: Install dependencies
+      - name: Setup Python 3.8
         uses: actions/setup-python@v2
+        with:
+          python-version: 3.8
+
+      - name: Install dependencies
         run: |
           python -m pip install upgrade pip
           pip install -r requirements.txt
