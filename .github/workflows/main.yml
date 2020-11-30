@@ -1,95 +1,22 @@
-name: CI/CD
+name: Build & Deploy
 
 on: push
 
 jobs:
-  publishMasterCommit:
-  # * deploy a production build every time there is a push only on the master branch
-  # * comment that commit with the deploy URL
-    name: Publish to Netlify
-    runs-on: ubuntu-latest
-    if: github.event_name == 'push' && github.ref == 'refs/heads/master'
-    steps:
-      - uses: actions/checkout@v2
-      - name: Set up Python
-        uses: actions/setup-python@v2
-        with:
-          python-version: '3.8'
-      - name: Install dependencies
-        run: |
-          python -m pip install --upgrade pip
-          pip install -r requirements.txt
+  build:
 
-      - name: Build the static content
-        # * Other build steps to produce a build directory goes here
-        # * e.g. `yarn build` for create-react-app
-          run: pelican -s publishconf.py content
+  runs-on: ubuntu-latest
+  strategy:
+    matrix:
+      python-version: [3.8]
 
-      - name: Deploy production to Netlify
-        uses: South-Paw/action-netlify-deploy@v1.0.4
-        with:
-          github-token: ${{ secrets.GITHUB_TOKEN }}
-          netlify-auth-token: ${{ secrets.NETLIFY_AUTH_TOKEN }}
-          netlify-site-id: ${{ secrets.NETLIFY_SITE_ID }}
-          build-dir: './build'
-          comment-on-commit: true
-
-  # deployCommitDraft:
-  # # * deploy a draft every time there is a commit that is not on master branch
-  # # * comment on that commit with the deploy URL
-  #   name: Deploy draft to Netlify
-  #   runs-on: ubuntu-latest
-  #   if: github.event_name == 'push' && github.ref != 'refs/heads/master'
-  #   steps:
-  #     - name: Checkout repository
-  #       uses: actions/checkout@v1
-
-  #       name: Install Python dependencies
-  #       run: |
-  #         python -m pip install upgrade pip
-  #         pip install -r requirements.txt
-
-  #     - name: Build the static content
-  #       # Other build steps to produce a build directory goes here
-  #       # e.g. `yarn build` for create-react-app
-  #       run: pelican -s publishconf.py content
-
-  #     - name: Deploy draft to Netlify
-  #       uses: South-Paw/action-netlify-deploy@v1.0.4
-  #       with:
-  #         github-token: ${{ secrets.GITHUB_TOKEN }}
-  #         netlify-auth-token: ${{ secrets.NETLIFY_AUTH_TOKEN }}
-  #         netlify-site-id: ${{ secrets.NETLIFY_SITE_ID }}
-  #         build-dir: './build'
-  #         draft: true
-  #         comment-on-commit: true
-
-  # deployPRDraft:
-  # # * Deploy a draft every time there is a pull request created or synchronized that is not on master branch
-  # # * comment on that pull request with the deploy URL
-  #   name: Deploy draft to Netlify
-  #   runs-on: ubuntu-latest
-  #   if: github.event_name == 'pull_request' && github.ref != 'refs/heads/master'
-  #   steps:
-  #     - name: Checkout repository
-  #       uses: actions/checkout@v1
-
-  #     - name: Install dependencies
-  #       run: |
-  #         python -m pip install upgrade pip
-  #         pip install -r requirements.txt
-
-  #     - name: Build the static content
-  #       # * Other build steps to produce a build directory goes here
-  #       # * e.g. `yarn build` for create-react-app
-  #       run: pelican -s publishconf.py content
-
-  #     - name: Deploy draft to Netlify
-  #       uses: South-Paw/action-netlify-deploy@v1.0.4
-  #       with:
-  #         github-token: ${{ secrets.GITHUB_TOKEN }}
-  #         netlify-auth-token: ${{ secrets.NETLIFY_AUTH_TOKEN }}
-  #         netlify-site-id: ${{ secrets.NETLIFY_SITE_ID }}
-  #         build-dir: './build'
-  #         draft: true
-  #         comment-on-pull-request: true
+  steps:
+    - uses: actions/checkout@v2
+    - name: Set up Python ${{ matrix.python-version }}
+    - uses: actions/setup-python@v2
+      with:
+        python-version: {{ matrix.python-version }}
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install -r requirements.txt
