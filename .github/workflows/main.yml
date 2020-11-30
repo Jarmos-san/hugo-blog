@@ -1,6 +1,9 @@
 name: CI/CD
 
-on: [push]
+on:
+  push:
+    branch:
+      master
 
 jobs:
   build:
@@ -32,15 +35,18 @@ jobs:
     - name: Build static content
       run: pelican content -s pelicanconf.py
 
-    - name: Deploy production to Netlify
-      uses: South-Paw/action-netlify-deploy@v1.0.4
+    - name: Deploy to Netlify
+      uses: netlify/actions/cli@master
+      env:
+        NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
+        NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
       with:
-        github-token: ${{ secrets.GITHUB_TOKEN }}
-        netlify-auth-token: ${{ secrets.NETLIFY_AUTH_TOKEN }}
-        netlify-site-id: ${{ secrets.NETLIFY_SITE_ID }}
-        build-dir: './build'
-        comment-on-commit: true
+        args: deploy --dir=output --prod
+        secrets: '["NETLIFY_AUTH_TOKEN", "NETLIFY_SITE_ID"]'  # Not sure why would we even need this
 
 # ! More Actions are available here:
 # * https://github.com/South-Paw/action-netlify-deploy
 # * https://github.com/netlify/actions
+
+# ! For references, check here:
+# * https://marekpukaj.medium.com/build-with-github-actions-host-on-netlify-ebf5fa505616
