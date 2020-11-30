@@ -9,10 +9,12 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
-    - name: Set up Python ${{ matrix.python-version }}
+
+    - name: Set up Python 3.8
       uses: actions/setup-python@v2
       with:
         python-version: 3.8
+
     - name: Cache pip
       uses: actions/cache@v2
       with:
@@ -21,7 +23,24 @@ jobs:
         restore-keys: |
           ${{ runner.os }}-pip-
           ${{ runner.os }}-
+
     - name: Install dependencies
       run: |
         python -m pip install --upgrade pip
         pip install -r requirements.txt
+
+    - name: Build static content
+      run: pelican content -s pelicanconf.py
+
+    - name: Deploy static content to Netlify
+      uses: South-Paw/action-netlify-deploy@1.0.4
+      with:
+        github-token: {{ secrets.GITHUB_TOKEN }}
+        netlify-auth-token: {{ secrets.NETLIFY_AUTH_TOKEN }}
+        netlify-site-id: {{ secrets.NETLIFY_SITE_ID }}
+        build-dir: './output'
+        comment-on-commit: true
+
+# ! More Actions are available here:
+# * https://github.com/South-Paw/action-netlify-deploy
+# * https://github.com/netlify/actions
