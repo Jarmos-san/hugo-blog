@@ -1,21 +1,21 @@
 # Somraj's Blog
 
-[![Website](https://img.shields.io/website?down_color=Red&down_message=Down&label=Website&style=flat-square&up_color=Green&up_message=Up&url=https%3A%2F%2Fjarmos.netlify.app%2F)](https://jarmos.netlify.app/) [![Netlify](https://img.shields.io/netlify/2b1ebff7-c584-43c9-9296-277116a5729b?color=00C7B7&label=Netlify%20Build&logo=Netlify&style=flat-square)](https://app.netlify.com/sites/goofy-galileo-0dde5b) [![LinkedIn](https://img.shields.io/static/v1?label=LinkedIn&message=Connect&color=0077B5&style=flat-square&logo=linkedin)](https://www.linkedin.com/in/jarmos/) [![Quora profile](https://img.shields.io/static/v1?label=Quora&message=QnA&color=B92B27&style=flat-square&logo=quora)](https://www.quora.com/profile/Somraj-Saha-3) [![Ask Me Anything !](https://img.shields.io/badge/Ask%20Me-Anything!-1abc9c.svg)](https://github.com/Jarmos-san/ama) [![Twitter Follow](https://img.shields.io/twitter/follow/Jarmosan?style=social)](https://twitter.com/Jarmosan)
+[![Website](https://img.shields.io/website?down_color=Red&down_message=Down&label=Website&style=flat-square&up_color=Green&up_message=Up&url=https%3A%2F%2Fjarmos.netlify.app%2F)](https://jarmos.netlify.app/) [![CI/CD](https://github.com/Jarmos-san/blog/workflows/CI/CD/badge.svg)](https://github.com/Jarmos-san/blog/actions?query=workflow%3ACI%2FCD) [![LinkedIn](https://img.shields.io/static/v1?label=LinkedIn&message=Connect&color=0077B5&style=flat-square&logo=linkedin)](https://www.linkedin.com/in/jarmos/) [![Quora profile](https://img.shields.io/static/v1?label=Quora&message=QnA&color=B92B27&style=flat-square&logo=quora)](https://www.quora.com/profile/Somraj-Saha-3) [![Ask Me Anything !](https://img.shields.io/badge/Ask%20Me-Anything!-1abc9c.svg)](https://github.com/Jarmos-san/ama) [![Twitter Follow](https://img.shields.io/twitter/follow/Jarmosan?style=social)](https://twitter.com/Jarmosan)
 
 This repository hosts the source code for my [personal website](https://jarmos.netlify.app). It's statically generated using [Pelican](https://www.getpelican.com) - A Static Site Generator(SSG) built on Python & is deployed using [Netlify](https://www.netlify.com/).
 
 - [Somraj's Blog](#somrajs-blog)
-  - [:checkered_flag: Getting Started](#-getting-started)
-    - [:running: The Easy & Quick Way To Get It Done](#-the-easy--quick-way-to-get-it-done)
-      - [:nut_and_bolt: Setup a Development Environment](#-setup-a-development-environment)
-      - [:dash: Preparing Your Site For Deployment](#-preparing-your-site-for-deployment)
-  - [:hammer_and_wrench: Built With](#-built-with)
-  - [:building_construction: Contributing](#-contributing)
-    - [:eyes: Issues](#-issues)
-    - [:package: Pull Request](#-pull-request)
-  - [:memo: License](#-license)
-  - [:raised_hand: Get Help](#-get-help)
-  - [:clap: Acknowledgements](#-acknowledgements)
+  - [:checkered_flag: Getting Started](#checkered_flag-getting-started)
+    - [:running: The Easy & Quick Way To Get It Done](#running-the-easy--quick-way-to-get-it-done)
+      - [:nut_and_bolt: Setup a Development Environment](#nut_and_bolt-setup-a-development-environment)
+      - [:dash: Preparing Your Site For Deployment](#dash-preparing-your-site-for-deployment)
+  - [:hammer_and_wrench: Built With](#hammer_and_wrench-built-with)
+  - [:building_construction: Contributing](#building_construction-contributing)
+    - [:eyes: Issues](#eyes-issues)
+    - [:package: Pull Request](#package-pull-request)
+  - [:memo: License](#memo-license)
+  - [:raised_hand: Get Help](#raised_hand-get-help)
+  - [:clap: Acknowledgements](#clap-acknowledgements)
 
 ## :checkered_flag: Getting Started
 
