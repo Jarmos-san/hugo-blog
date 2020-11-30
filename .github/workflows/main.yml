@@ -1,17 +1,78 @@
-on:
-  push
+name: CI/CD
 
-name: CI/CD Build
+on: push
 
 jobs:
-  publish:
+  deployCommitDraft:
+  # * deploy a draft every time there is a commit that is not on master branch
+  # * comment on that commit with the deploy URL
+    name: Deploy draft to Netlify
     runs-on: ubuntu-latest
+    if: github.event_name == 'push' && github.ref != 'refs/heads/master'
     steps:
-    - uses: actions/checkout@master
-    - name: Publish
-      uses: netlify/actions/cli@master
-      with:
-        args: deploy --build --prod
-      env:
-        NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
-        NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+      - name: Checkout repository
+        uses: actions/checkout@v1
+
+      - name: Build the static content
+        # Other build steps to produce a build directory goes here
+        # e.g. `yarn build` for create-react-app
+        run: invoke build
+
+      - name: Deploy draft to Netlify
+        uses: South-Paw/action-netlify-deploy@v1.0.4
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          netlify-auth-token: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+          netlify-site-id: ${{ secrets.NETLIFY_SITE_ID }}
+          build-dir: './build'
+          draft: true
+          comment-on-commit: true
+
+  publishMasterCommit:
+  # * deploy a production build every time there is a push only on the master branch
+  # * comment that commit with the deploy URL
+    name: Publish to Netlify
+    runs-on: ubuntu-latest
+    if: github.event_name == 'push' && github.ref == 'refs/heads/master'
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v1
+
+      - name: Build the static content
+        # * Other build steps to produce a build directory goes here
+        # * e.g. `yarn build` for create-react-app
+        run: invoke build
+
+      - name: Deploy production to Netlify
+        uses: South-Paw/action-netlify-deploy@v1.0.4
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          netlify-auth-token: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+          netlify-site-id: ${{ secrets.NETLIFY_SITE_ID }}
+          build-dir: './build'
+          comment-on-commit: true
+
+  deployPRDraft:
+  # * Deploy a draft every time there is a pull request created or synchronized that is not on master branch
+  # * comment on that pull request with the deploy URL
+    name: Deploy draft to Netlify
+    runs-on: ubuntu-latest
+    if: github.event_name == 'pull_request' && github.ref != 'refs/heads/master'
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v1
+
+      - name: Build the static content
+        # * Other build steps to produce a build directory goes here
+        # * e.g. `yarn build` for create-react-app
+        run: invoke build
+
+      - name: Deploy draft to Netlify
+        uses: South-Paw/action-netlify-deploy@v1.0.4
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          netlify-auth-token: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+          netlify-site-id: ${{ secrets.NETLIFY_SITE_ID }}
+          build-dir: './build'
+          draft: true
+          comment-on-pull-request: true
