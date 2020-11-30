@@ -13,10 +13,16 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v1
 
+      - name: Install dependencies
+        uses: actions/setup-python@v2
+        run: |
+          python -m pip install upgrade pip
+          pip install -r requirements.txt
+
       - name: Build the static content
         # Other build steps to produce a build directory goes here
         # e.g. `yarn build` for create-react-app
-        run: invoke build
+        run: pelican -s publishconf.py content
 
       - name: Deploy draft to Netlify
         uses: South-Paw/action-netlify-deploy@v1.0.4
@@ -38,10 +44,16 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v1
 
+      - name: Install dependencies
+        uses: actions/setup-python@v2
+        run: |
+          python -m pip install upgrade pip
+          pip install -r requirements.txt
+
       - name: Build the static content
         # * Other build steps to produce a build directory goes here
         # * e.g. `yarn build` for create-react-app
-        run: invoke build
+        run: pelican -s publishconf.py content
 
       - name: Deploy production to Netlify
         uses: South-Paw/action-netlify-deploy@v1.0.4
@@ -62,10 +74,16 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v1
 
+      - name: Install dependencies
+        uses: actions/setup-python@v2
+        run: |
+          python -m pip install upgrade pip
+          pip install -r requirements.txt
+
       - name: Build the static content
         # * Other build steps to produce a build directory goes here
         # * e.g. `yarn build` for create-react-app
-        run: invoke build
+        run: pelican -s publishconf.py content
 
       - name: Deploy draft to Netlify
         uses: South-Paw/action-netlify-deploy@v1.0.4
