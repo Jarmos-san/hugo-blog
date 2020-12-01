@@ -42,7 +42,7 @@ jobs:
         NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
       with:
         args: deploy --dir=output --prod
-        secrets: '["NETLIFY_AUTH_TOKEN", "NETLIFY_SITE_ID"]'  # Not sure why would we even need this
+        # secrets: '["NETLIFY_AUTH_TOKEN", "NETLIFY_SITE_ID"]'  # Not sure why would we even need this
 
 # ! More Actions are available here:
 # * https://github.com/South-Paw/action-netlify-deploy
