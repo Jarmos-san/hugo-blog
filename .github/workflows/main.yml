@@ -18,7 +18,7 @@ jobs:
       with:
         python-version: 3.8
 
-    - name: Cache pip
+    - name: Cache dependencies
       uses: actions/cache@v2
       with:
         path: ~/.cache/pip
@@ -33,6 +33,7 @@ jobs:
         poetry-version: 1.1
 
     - name: Install dependencies
+      run: poetry config virtualenvs.create false
       run: poetry install
 
     - name: Build static content
