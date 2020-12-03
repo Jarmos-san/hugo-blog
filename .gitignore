@@ -171,3 +171,4 @@ output
 # Local Netlify folder
 .netlify
 node_modules
+!poetry.lock

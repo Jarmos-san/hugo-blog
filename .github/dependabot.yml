@@ -7,4 +7,12 @@ updates:
     assignees:
       - "Jarmos-san"
     commit-message:
-      - prefix: ":twisted_rightwards_arrows:"
+      prefix: "🔀"
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "daily"
+    assignees:
+      - "Jarmos-san"
+    commit-message:
+      prefix: "🔀"

@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "blog"
+version = "0.1.0"
+description = "My personal website where I share content on my thoughts & experiences."
+authors = ["Jarmos-san <somraj.mle@gmail.com>"]
+license = "Creative Commons"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+pelican = "^4.5.3"
+
+[tool.poetry.dev-dependencies]
+invoke = "^1.4.1"
+livereload = "^2.6.3"
+black = "^20.8b1"
+flake8 = "^3.8.4"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
