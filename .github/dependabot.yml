@@ -4,15 +4,19 @@ updates:
     directory: "/"
     schedule:
       interval: "daily"
+      timezone: "Asia/Kolkata"
     assignees:
       - "Jarmos-san"
     commit-message:
       prefix: "🔀"
+    target-branch: "dev"
   - package-ecosystem: "github-actions"
     directory: "/"
     schedule:
       interval: "daily"
+      timezone: "Asia/Kolkata"
     assignees:
       - "Jarmos-san"
     commit-message:
       prefix: "🔀"
+    target-branch: "dev"
