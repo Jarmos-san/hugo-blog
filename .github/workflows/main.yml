@@ -49,9 +49,10 @@ jobs:
     #     path: .venv
     #     key: venv-${{ runner.os }}-${{ hashFiles('**/poetry.lock') }}
 
-    # - name: Install dependencies
-    #   run: poetry install
-    #   if: steps.cached-poetry-dependencies.outputs.cache-hit != 'true'
+    - name: Install Pelican
+      run: poetry install
+      # ! Uncomment line 55 if Poetry can be cached successfully
+      # if: steps.cached-poetry-dependencies.outputs.cache-hit != 'true'
 
     - name: Generate Static Contents
       # * Invoke Pelican to generate the static contents to build the site in the next site
