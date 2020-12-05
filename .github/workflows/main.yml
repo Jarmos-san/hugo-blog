@@ -2,9 +2,10 @@
 name: Build & Deploy
 
 on:
+  push:
+    branches: master
   pull_request:
-    branches:
-      master
+    branches: master
 
 jobs:
   buildDeploy:
@@ -23,39 +24,43 @@ jobs:
     - uses: actions/checkout@master
 
     - name: Setup Python 3.8
-    # * Install Python 3.8 specifically on the runner
+      # * Install Python 3.8 specifically on the runner
       uses: actions/setup-python@v2
       with:
         python-version: 3.8
 
     - name: Install poetry
-    # * Setup Poetry configured to install virtualenvs inside the project.
-    # ! Default behaviour isn't to create virtualenvs in-project it throws some unweildy error otherwise.
+      # * Setup Poetry configured to install virtualenvs inside the project.
+      # ! Default behaviour isn't to create virtualenvs in-project it throws some unweildy error otherwise.
       uses: snok/install-poetry@v1.0.0
       with:
-        virtualenvs-create: true
-        virtualenvs-in-project: true
+        virtualenvs-create: false
 
-    - name: Load cached venv
-    # * More information on caching Poetry dependencies are available at:
-    # ! https://stackoverflow.com/questions/62977821/how-to-cache-poetry-install-for-github-actions
-      id: cached-poetry-dependencies
-      uses: actions/cache@v2
-      with:
-        path: .venv
-        key: venv-${{ runner.os }}-${{ hashFiles('**/poetry.lock') }}
+    # Poetry doesn't play well with Pelican & Netlify CLI for some reason.
+    # My guess - the runner is deployed on a Dockerfile which is known not to work well with venvs.
+    # So dependency caching will have to wait for awhile, it's only a temporary fix & it should be back
+    # in the long-run
+    # - name: Load cached venv
+    #   # * More information on caching Poetry dependencies are available at:
+    #   # ! https://stackoverflow.com/questions/62977821/how-to-cache-poetry-install-for-github-actions
+    #   id: cached-poetry-dependencies
+    #   uses: actions/cache@v2
+    #   with:
+    #     path: .venv
+    #     key: venv-${{ runner.os }}-${{ hashFiles('**/poetry.lock') }}
 
-    - name: Install dependencies
+    - name: Install Pelican
       run: poetry install
-      if: steps.cached-poetry-dependencies.outputs.cache-hit != 'true'
+      # ! Uncomment line 55 if Poetry can be cached successfully
+      # if: steps.cached-poetry-dependencies.outputs.cache-hit != 'true'
 
     - name: Generate Static Contents
-    # * Invoke Pelican to generate the static contents to build the site in the next site
+      # * Invoke Pelican to generate the static contents to build the site in the next site
       run: pelican content -s pelicanconf.py
 
     - name: Deploy to Netlify
-    # * Invokes the Netlify CLI "deploy" command to deploy the static content generated
-    # * in the previous step to the Netlify servers.
+      # * Invokes the Netlify CLI "deploy" command to deploy the static content generated
+      # * in the previous step to the Netlify servers.
       uses: netlify/actions/cli@master
       env:
         NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
