@@ -1,3 +1,5 @@
+# More information on Mergify is available at:
+# https://docs.mergify.io/
 pull_request_rules:
   - name: automatic merge for Dependabot pull requests
     conditions:
