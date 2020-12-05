@@ -32,11 +32,7 @@ jobs:
     - name: Install poetry
       # * Setup Poetry configured to install virtualenvs inside the project.
       # ! Default behaviour isn't to create virtualenvs in-project it throws some unweildy error otherwise.
-<<<<<<< HEAD
-      uses: snok/install-poetry@v1.0.0
-=======
       uses: snok/install-poetry@v1.1.1
->>>>>>> master
       with:
         virtualenvs-create: false
 
