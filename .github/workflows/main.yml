@@ -29,7 +29,7 @@ jobs:
       with:
         python-version: 3.8
 
-    - name: Install poetry
+    - name: Install Poetry
       # * Setup Poetry configured to install virtualenvs inside the project.
       # ! Default behaviour isn't to create virtualenvs in-project it throws some unweildy error otherwise.
       uses: snok/install-poetry@v1.1.1
