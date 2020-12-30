@@ -1,26 +1,23 @@
-Unveiling Common Misconceptions of “Democratizing” Data Science/Machine Learning
-################################################################################
+---
+Title: Unveiling Common Misconceptions of “Democratizing” Data Science/Machine Learning
+Date: 2020-06-15 23:46:37
+Category: Data Science
+Slug: unveiling-common-misconceptions-of-democratizing-data-science-machine-learning
+Tags: Machine Learning, Data Science, Technology, Programming Tips
+Summary: Are you aspiring to be a Data Scientist or a Machine Learning expert? Then allow me to cut through the hype & clear some of the misconceptions you might be already strangled in.
+---
 
-:date: 2020-06-15 23:46:37
-:category: Data Science
-:slug: unveiling-common-misconceptions-of-democratizing-data-science-machine-learning
-:tags: Machine Learning, Data Science, Technology, Programming Tips
-:summary: Are you aspiring to be a Data Scientist or a Machine Learning expert? Then allow me to cut through the hype & clear some of the misconceptions you might be already strangled in.
-
-.. image:: https://miro.medium.com/max/1433/0*wS49o_cjpKyD6RbQ
-	:width: 800
-	:alt: A man facepalming himself
+![A man facepalming himself](https://miro.medium.com/max/1433/0*wS49o_cjpKyD6RbQ)
 
 Around 4 years ago, it was this specific video — MarI/O — Machine Learning for Video Games on YouTube which piqued my interest in Artificial Intelligence & Machine Learning. Being an avid gamer as well as also having an academic background in Economics, I thought to myself, “*Oh I already have half of the skills required to make Mario do stuff like this on his own*”.
 
 You see, that was the first misconception I had about Machine Learning (or Data Science in general). Little did I know what Reinforcement Learning was, where & how it was used. But did I care? Nope. All I thought about was creating my own *ML model*.
 
-The lesson here? Misconceptions arise due to half-baked knowledge & lack of curiosity to dig further into the rabbit hole. [#first]_
+The lesson here? Misconceptions arise due to half-baked knowledge & lack of curiosity to dig further into the rabbit hole. [1]
 
 Regardless, I taught myself to code & now I provide my expertise in Computer Vision & ML to my clients.
 
-What Can You Expect From This Article
--------------------------------------
+## What Can You Expect From This Article
 
 Looking at recent trends, AI is definitely on the rise. It would be unwise for anyone to lose out on the abundant employment opportunities at the moment. Luckily, it’s easier now, then ever was, to dive into the field of Machine Learning or Data Science. With the thousands of online resources available right now, it’s easier to learn ML all by yourself.
 
@@ -32,8 +29,7 @@ If you’re dumbfounded with the lack of an answer to the question, well then, g
 
 Through this article, I hope to clear up certain misconceptions you might’ve before you dive into the field of Machine Learning.
 
-Watch & Learn From the Humble Giants
-------------------------------------
+## Watch & Learn From the Humble Giants
 
 Andrew Ng & Jeremy Howard, two of the pioneers in the field of Machine Learning, have been humble enough to share their knowledge without any monetary compensation in return. Their motive behind doing so? Just to make the world a better place by helping the community thrive & enabling them to be more employable sometime in the near future.
 
@@ -50,8 +46,7 @@ So, obviously, MOOC or other self-paced online courses willn’t cut the thread 
 
 Here’s why.
 
-The Pitfalls of Democratizing Machine Learning Educational Resources
---------------------------------------------------------------------
+## The Pitfalls of Democratizing Machine Learning Educational Resources
 
 The field of Machine Learning or Data Science, in general, is dominated by academicians primarily. The trend appears to be changing gradually for the better due to certain academicians who’re willing to part with their knowledge for the community.
 
@@ -63,13 +58,13 @@ But “*Democratize Data Science & Machine Learning*” is a buzz right now anyw
 
 Well because I want the community to not be misguided.
 
-To reiterate the statement, let me give you an example of a real-life incident as described by another writer, `Rahul Agarwal <https://medium.com/u/e8cce06956c9?source=post_page-----28fcbedf2811---------------------->`_.
+To reiterate the statement, let me give you an example of a real-life incident as described by another writer, [Rahul Agarwal](https://medium.com/u/e8cce06956c9?source=post_page-----28fcbedf2811----------------------).
 
-Rahul Agarwal, in his article — `*Don’t Democratize Data Science* <https://www.google.com/search?client=firefox-b-d&q=define+reiterate>`_, stated an instance of an interview where the candidate was experienced & was perhaps self-taught too. [#second]_
+Rahul Agarwal, in his article — [Don’t Democratize Data Science](https://towardsdatascience.com/dont-democratize-data-science-bd638c4e7957), stated an instance of an interview where the candidate was experienced & was perhaps self-taught too. [2]
 
 Quoting from his article;
 
-	*…He explained the higher-level concepts well enough that I decided to dig a little deeper into his mathematical understanding of the techniques he had applied in his projects. And that was where things changed…*
+>*…He explained the higher-level concepts well enough that I decided to dig a little deeper into his mathematical understanding of the techniques he had applied in his projects. And that was where things changed…*
 
 His account of the interview is a prime example of an individual who relied solely on just skimming through tutorials, creating projects one after the other & building a sound portfolio. Suffice to say, just learning *how to code* isn’t going to take you far enough.
 
@@ -83,16 +78,15 @@ You see, *most businesses often operate on a shoestring*. Besides, production en
 
 From speeding up the data pipeline to making inferences in milliseconds can be a matter of making a huge profit or going bankrupt. To have an eagle eye for such precision is what Rahul tried to convey through his article.
 
-But You Don’t Always Have To Have an Eagle Eye
-----------------------------------------------
+## But You Don’t Always Have To Have an Eagle Eye
 
-Contrary to Rahul’s opinion, yet another expert in the field of Machine Learning & an entrepreneur is `Caleb Kaiser <https://medium.com/u/ae1782e046c3?source=post_page-----28fcbedf2811---------------------->`_. He is an advocate of making ML software available to those who need it gravely, *especially developers who’re not Data Scientists*. His article — `*Deep Learning Isn’t Hard Anymore* <https://towardsdatascience.com/deep-learning-isnt-hard-anymore-26db0d4749d7>`_ is a wonderful report in the field of production capable ML software.
+Contrary to Rahul’s opinion, yet another expert in the field of Machine Learning & an entrepreneur is [Caleb Kaiser](https://medium.com/u/ae1782e046c3?source=post_page-----28fcbedf2811----------------------). He is an advocate of making ML software available to those who need it gravely, *especially developers who’re not Data Scientists*. His article — [Deep Learning Isn’t Hard Anymore](https://towardsdatascience.com/deep-learning-isnt-hard-anymore-26db0d4749d7) is a wonderful report in the field of production capable ML software.
 
 In context to this write-up, quoting an excerpt from his article;
 
-	*…people within the community develop libraries and projects that abstract common utilities away until the tooling is capable and stable enough to be used in production.*
-
-	*At this stage, the engineers using it to build software are not concerned about sending HTTP requests or connecting to databases — all of that is abstracted away — and are solely focused on building their product.* [#third]_
+>*…people within the community develop libraries and projects that abstract common utilities away until the tooling is capable and stable enough to be used in production.*
+>
+>	*At this stage, the engineers using it to build software are not concerned about sending HTTP requests or connecting to databases — all of that is abstracted away — and are solely focused on building their product.* [3]
 
 The key phrase here — “*all of that is abstracted away*”.
 
@@ -100,14 +94,11 @@ Now as an entrepreneur, he’s obligated to answer not just to his employees but
 
 My point being, it’s fine if you lack knowledge of the underlying concepts of Machine Learning if your priorities are, say running a company. But if you’re looking for employment as an expert in Machine Learning, well you gotta do what you’re expected to do.
 
-AutoML Isn’t The Evil Genius, Ready To Take Away Your Job
----------------------------------------------------------
+## AutoML Isn’t The Evil Genius, Ready To Take Away Your Job
 
 I really don’t understand the logic behind speaking against automation. Why get your hands dirty when the job could be automated not just efficiently but saving time for you to work on something else! Regardless, I guess the history of protesting against automation goes back in time to when mankind had just started innovating technology.
 
-.. image:: https://miro.medium.com/max/320/0*iwo8773ijxOSj3dH
-	:width: 400
-	:alt: Image of the leader of the Luddites
+![Image of the leader of the Luddites](https://miro.medium.com/max/320/0*iwo8773ijxOSj3dH)
 
 Read up on the Neo Luddism movement, started by an organization named Luddite. Heck, there’s also a term we use in Economics to refer to the *fear of technological unemployment* called the **Luddite Fallacy**.
 
@@ -115,7 +106,7 @@ Speaking more about Luddism would be out-of-context of the article, so that’s 
 
 Anyway let me direct your attention to Rahul’s article once again, here’s something that he mentioned which I can’t bring myself to agree with.
 
-	*…The availability of such packages has led a lot of people to think that data science could be fully automated, eliminating the need for data scientists altogether. Or, if the processes can’t be automated, these tools will allow anyone to become a data scientist*. [#first]_
+>	*…The availability of such packages has led a lot of people to think that data science could be fully automated, eliminating the need for data scientists altogether. Or, if the processes can’t be automated, these tools will allow anyone to become a data scientist*. [1]
 
 I believe he’s concerned about the advent of AutoML software like MindsDB which is completely baseless.
 
@@ -125,7 +116,7 @@ The misconception of anyone being able to create Neural Nets using AutoML softwa
 
 And I quote him;
 
-	*Today, designing neural nets is extremely time-intensive, and requires an expertise that limits its use to a smaller community of scientists and engineers. That’s why we’ve created an approach called AutoML, showing that it’s possible for neural nets to design neural nets. We hope AutoML will take an ability that a few PhDs have today and will make it possible in three to five years for hundreds of thousands of developers to design new neural nets for their particular needs.* [#fifth]_
+>*Today, designing neural nets is extremely time-intensive, and requires an expertise that limits its use to a smaller community of scientists and engineers. That’s why we’ve created an approach called AutoML, showing that it’s possible for neural nets to design neural nets. We hope AutoML will take an ability that a few PhDs have today and will make it possible in three to five years for hundreds of thousands of developers to design new neural nets for their particular needs.* [5]
 
 Did you read where he mentions AutoML is meant for developers? Understand what that means.
 
@@ -137,8 +128,7 @@ Without a doubt, I would place my bets on the developer to deliver me a *product
 
 Personal opinion aside, abstractions in technology are unavoidable. At some point in time, repetitive tasks like data augmentations, data cleaning, etc **NEED** to be abstracted to save up on developer time.
 
-And Finally, Wrapping Up
-------------------------
+## And Finally, Wrapping Up
 
 The field of Data Science & ML is extremely broad with specific requirements even within its subfields! There’s no way an individual can become a true master of Data Science in one lifetime. But fortunately, being a jack of all trades & master of none in the field of Data Science can be good. You just need to apply the right skill to the right situation.
 
@@ -150,15 +140,14 @@ So know what you want to do in the future & figure out the right approach for yo
 
 Besides, we should always remind ourselves time-to-time, the benefits such fast-paced developments have brought to us as a community. Change is good, we just need to know how to mould ourselves according to the ever-changing technological environment out there.
 
-References
-----------
+## References
 
-.. [#first] Imarticus Nirmal, `10 Common Misconceptions About Machine Learning <https://www.datascienceassn.org/content/10-common-misconceptions-about-machine-learning>`_, Data Science Association (2018)
+[1] Imarticus Nirmal, [10 Common Misconceptions About Machine Learning](https://www.datascienceassn.org/content/10-common-misconceptions-about-machine-learning), Data Science Association (2018)
 
-.. [#second] Rahul Agarwal, `Don’t Democratize Data Science <https://towardsdatascience.com/dont-democratize-data-science-bd638c4e7957>`_, Towards Data Science (2020)
+[2] Rahul Agarwal, [Don’t Democratize Data Science](https://towardsdatascience.com/dont-democratize-data-science-bd638c4e7957), Towards Data Science (2020)
 
-.. [#third] Caleb Kaiser, `Deep Learning Isn’t Hard Anymore <https://towardsdatascience.com/deep-learning-isnt-hard-anymore-26db0d4749d7>`_, Towards Data Science (2020)
+[3] Caleb Kaiser, [Deep Learning Isn’t Hard Anymore](https://towardsdatascience.com/deep-learning-isnt-hard-anymore-26db0d4749d7), Towards Data Science (2020)
 
-.. [#fourth] `The Leader of the Luddites. Hand-coloured Etching, Luddite <https://commons.wikimedia.org/wiki/File:Luddite.jpg#/media/File:Luddite.jpg>`_ — Wikipedia (1812)
+[4] [The Leader of the Luddites. Hand-coloured Etching, Luddite](https://commons.wikimedia.org/wiki/File:Luddite.jpg#/media/File:Luddite.jpg) — Wikipedia (1812)
 
-.. [#fifth] Rachel Thomas, `Google’s AutoML: Cutting Through the Hype <https://www.fast.ai/2018/07/23/auto-ml-3/>`_, fast.ai (2018)
+[5] Rachel Thomas, [Google’s AutoML: Cutting Through the Hype](https://www.fast.ai/2018/07/23/auto-ml-3/), fast.ai (2018)
