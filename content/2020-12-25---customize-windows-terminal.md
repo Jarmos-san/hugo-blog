@@ -5,6 +5,7 @@ Modified: 2010-12-25 18:40
 Category: Programming
 Tags: Software Development, Windows, Terminal
 Authors: Somraj Saha
+Slug: customizing-windows-terminal-a-minimalist-approach
 Summary: Who needs Linux when you got a fully customized Windows Terminal!
 ---
 
