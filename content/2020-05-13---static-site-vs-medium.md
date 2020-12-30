@@ -1,15 +1,13 @@
-Medium Vs Static Site Generators--A Computer Vision Engineer’s Dilemma
-########################################################################
+---
+Title: Medium Vs Static Site Generators--A Computer Vision Engineer’s Dilemma
+Date: 2020-05-12 23:46:37
+Slug: medium-vs-static-site-generators
+Category: Software
+tags: Programming, Blogging
+Summary: The wide array of choices for blogging platforms & tools can be overwhelming. As such, I was confused too, but you don’t have to be, so read ahead.
+---
 
-:date: 2020-05-12 23:46:37
-:slug: medium-vs-static-site-generators
-:category: Software
-:tags: Programming, Blogging
-:summary: The wide array of choices for blogging platforms & tools can be overwhelming. As such, I was confused too, but you don’t have to be, so read ahead.
-
-.. image:: https://miro.medium.com/max/1458/0*mkZqMAqpwEB8sKU7
-	:width: 800
-	:alt: Crossroads sign post
+![ Crossroads sign post](https://miro.medium.com/max/1458/0*mkZqMAqpwEB8sKU7){width=800px}
 
 The day I took a plunge & went full-time freelance, a lingering thought has bothered me ever since; “How do I make my presence known to my prospective clients?”.
 
@@ -25,14 +23,13 @@ Enter Static Site Generators(SSGs) & SSG Hosts like GitHub Pages & Netlify were 
 
 So here’s my opinionated documentation of the ordeal I suffered from for the past year or so while trying to build my own identity on the Internet.
 
-Choosing the Right SSG
-----------------------
+## Choosing the Right SSG
 
-Perhaps I’m wrong about it but as far as I know, SSGs are supposed to ease our lives. Little did I know, even they come packed in with a slight learning curve. For example, `Gatsby <https://www.gatsbyjs.org/>`_, a React framework promising developers to build blazing static sites does live up to its expectation but with a catch!
+Perhaps I’m wrong about it but as far as I know, SSGs are supposed to ease our lives. Little did I know, even they come packed in with a slight learning curve. For example, [Gatsby](https://www.gatsbyjs.org/), a React framework promising developers to build blazing static sites does live up to its expectation but with a catch!
 
 *Prior knowledge about React Components is a massive added advantage.*
 
-Similarly, *Hugo* & `Pelican <https://blog.getpelican.com/>`_ are based on Golang & Python programming languages, respectively. The former is quite simple & easy to use, not to forget how the super-fast the build times are but lacks detailed documentation. This stumbling block was a major setback for me as I did not know to code on Go.
+Similarly, *Hugo* & [Pelican](https://blog.getpelican.com/) are based on Golang & Python programming languages, respectively. The former is quite simple & easy to use, not to forget how the super-fast the build times are but lacks detailed documentation. This stumbling block was a major setback for me as I did not know to code on Go.
 
 Hence, without a doubt in mind, I chose Pelican as a supposedly perfect alternative for building the site as I was already proficient with Python. Problem solved, I got back to my comfort zone, everything’s fine & dandy or that’s what I thought it would be.
 
@@ -44,10 +41,9 @@ On a side note though, Pelican does allow customizing the existing themes as muc
 
 By now you must be wondering, I should’ve just chosen GitHub Pages in the first place considering its built-in support for static pages powered by Jekyll. All that’s required of me was to upload the static pages to a repository & host it in a *“<username.github.com>”* subdomain.
 
-Well, I could do that but did you take a look at the list of supported themes? Check them out at `GitHub Pages Supported Themes <https://pages.github.com/themes/>`_. Most of them sport a minimalist look which is pretty satisfactory for “just blogging” which can be customized to my heart’s content but then again why should I bother?
+Well, I could do that but did you take a look at the list of supported themes? Check them out at [GitHub Pages Supported Themes](https://pages.github.com/themes/). Most of them sport a minimalist look which is pretty satisfactory for “just blogging” which can be customized to my heart’s content but then again why should I bother?
 
-What’s the fuss about theming & designs
----------------------------------------
+## What’s the fuss about theming & designs
 
 There’s something called “*Visual Hierarchy*” & it consists of 6 principles. Bear in mind, I’m no designer by profession so it’s a waste of effort & time, if I had to customize my themes adhering to the time-tested principles of visual hierarchy.
 
@@ -67,10 +63,9 @@ But briefly put, the principles states the following:
 
 Hence, as you can see those were quite a handful of principles to keep in mind. By doing so, makes the reader comfortable reading the content. It’s an obligation a writer has to adhere to strictly.
 
-For more information definitely this, *6 principles of Visual Hierarchy For Designers*, a blog post written by the guys at *99designs*, a read. [#first]_
+For more information definitely this, *6 principles of Visual Hierarchy For Designers*, a blog post written by the guys at *99designs*, a read. [1]
 
-Medium Appears To Be the “Perfect” Alternative
-----------------------------------------------
+## Medium Appears To Be the “Perfect” Alternative
 
 To be honest, no platform is perfect! At least none that I could find till now, in my opinion, but I’ll have to live with what’s available for now.
 
@@ -78,32 +73,30 @@ Certain aspects of Medium, I dislike are the obligations to share content behind
 
 Regardless of Medium’s setbacks, I find the platform still good enough for my purpose! With built-in SEO tools, a UI, specifically designed keeping in mind the *Principles of Visual Hierarchy* & much more. To be honest, asking for more would be too greedy of me.
 
-Besides, until I came across `Jason Weiland <https://medium.com/@jasonjamesweiland>`_’s article — “`*4 Types of Creatives Who Don’t Need a Blog or Website* <https://medium.com/better-marketing/4-types-of-creatives-who-dont-need-a-blog-or-website-4b70697d0c41>`_”, I was still stuck in the dilemma.
+Besides, until I came across [Jason Weiland](https://medium.com/@jasonjamesweiland)’s article — “[4 Types of Creatives Who Don’t Need a Blog or Website](https://medium.com/better-marketing/4-types-of-creatives-who-dont-need-a-blog-or-website-4b70697d0c41)”, I was still stuck in the dilemma.
 
 The final nail in the coffin for me was when I read the following line from his article & I quote.
 
-	*Do we need to be adding to the noise on an already crowded web?*
+>	*Do we need to be adding to the noise on an already crowded web?*
 
 Granted, Jason’s article was primarily targeted towards a very specific niche of creative writers. But advice on improving one’s writing skills, in general, is all the same, irrespective of one another’s field of expertise.
 
-Wrapping Up & The Reasons Behind Choosing Medium Over a Personal Blog Site
---------------------------------------------------------------------------
+## Wrapping Up & The Reasons Behind Choosing Medium Over a Personal Blog Site
 
-1. Setting up a personal site doesn’t mean I would find an audience right then there. Medium makes my job significantly easier with over 200M total visits from around the world to the site(**as of writing this article**).`[3]`
+1. Setting up a personal site doesn’t mean I would find an audience right then there. Medium makes my job significantly easier with over 200M total visits from around the world to the site(**as of writing this article**).[3]
 
 2. No additional hosting expenses required, neither is there any need to worry about “*building*” my site.
 
-3. The built-in SEO tools are way too good to overlook! As of writing this article, Alexa ranks the site at 87 in global Internet engagement. [#fourth]_
+3. The built-in SEO tools are way too good to overlook! As of writing this article, Alexa ranks the site at 87 in global Internet engagement. [4]
 
-So from a Computer Vision Engineer’s point-of-view Medium appears to be just the right platform to share his/her ideas and/or content. No more tinkering around with Dev Ops or Web Dev stuff. I can now put aside the idea of owning my personal site temporarily & focus on delivering content to my audience first. Anything else to worry about can be taken care of tomorrow.
+So from a Machine Learning Engineer’s point-of-view Medium appears to be just the right platform to share his/her ideas and/or content. No more tinkering around with Dev Ops or Web Dev stuff. I can now put aside the idea of owning my personal site temporarily & focus on delivering content to my audience first. Anything else to worry about can be taken care of tomorrow.
 
-References
-----------
+## References
 
-.. [#first] `Alex Bigman <https://99designs.com/blog/author/alex-bigman/>`_, `6 principles of visual hierarchy for designers <https://99designs.com/blog/tips/6-principles-of-visual-hierarchy/>`_ (2019), `99designs <https://99designs.com/>`_.
+[1] [Alex Bigman](https://99designs.com/blog/author/alex-bigman/), [6 principles of visual hierarchy for designers](https://99designs.com/blog/tips/6-principles-of-visual-hierarchy/) (2019), [99designs](https://99designs.com/).
 
-.. [#second] `Jason James <https://medium.com/@jasonjamesweiland>`_, `4 Types of Creatives Who Don’t Need a Blog or Website <https://medium.com/better-marketing/4-types-of-creatives-who-dont-need-a-blog-or-website-4b70697d0c41>`_ (2020), `Better Marketing <https://medium.com/better-marketing>`_
+[2] [Jason James](https://medium.com/@jasonjamesweiland), [4 Types of Creatives Who Don’t Need a Blog or Website](https://medium.com/better-marketing/4-types-of-creatives-who-dont-need-a-blog-or-website-4b70697d0c41) (2020), [Better Marketing](https://medium.com/better-marketing)
 
-.. [#third] medium.com Analytics, `Similar Web <https://www.similarweb.com/website/medium.com>`_ (*accessed on 5th May, 2020*)
+[3] medium.com Analytics, [Similar Web](https://www.similarweb.com/website/medium.com) (*accessed on 5th May, 2020*)
 
-.. [#fourth] medium.com Competitive Analysis, Marketing Mix & Traffic, `Alexa <https://www.alexa.com/siteinfo/medium.com>`_ (*accessed on 5th May, 2020*)
+[4] medium.com Competitive Analysis, Marketing Mix & Traffic, [Alexa](https://www.alexa.com/siteinfo/medium.com) (*accessed on 5th May, 2020*)

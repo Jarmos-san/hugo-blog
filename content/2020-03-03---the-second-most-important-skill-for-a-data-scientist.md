@@ -1,19 +1,16 @@
-Domain Knowledge — The Second Most Important Skill to Have as a Data Scientist
-################################################################################
+---
+Title: Domain Knowledge — The Second Most Important Skill to Have as a Data Scientist
+Date: 2020-03-03 23:46:37
+Keywords: Data Science, Artificial Intelligence, Machine Learning
+Category: Data Science
+Slug: the-second-most-important-skill-for-a-data-scientist
+Author: Somraj Saha
+Summary: You mightn’t realize it but if you’ve ample years of experience in a very specific domain of expertise, you might be eligible to be part of a Data Science team.
+---
 
-:date: 2020-03-03 23:46:37
-:keywords: Data Science, Artificial Intelligence, Machine Learning
-:category: Data Science
-:slug: the-second-most-important-skill-for-a-data-scientist
-:author: Somraj Saha
-:summary: You mightn’t realize it but if you’ve ample years of experience in a very specific domain of expertise, you might be eligible to be part of a Data Science team.
+![A man looking at a rack of books](https://miro.medium.com/max/1620/0*-qXHihGXHpTceAcg)
 
-.. image:: https://miro.medium.com/max/1620/0*-qXHihGXHpTceAcg
-	:width: 800
-	:alt: A man looking at a rack of books
-
-Data Science, dig right into building models, who cares about Domain Knowledge, Right?
---------------------------------------------------------------------------------------
+## Data Science, dig right into building models, who cares about Domain Knowledge, Right?
 
 *Data Science is all in the blaze at the moment!* A quick search of the keyword on Google yields not a Wikipedia page of the field but hundreds of tutorials & courses on the first page of the search results.
 
@@ -23,8 +20,7 @@ Perhaps, they are more targeted towards the misguidance of “learn Data Science
 
 Granted, basic Statistics, Mathematics & coding skills are some of the harder skills to pick up, the prospect of a minimum viable subject matter expertise is more often than not, neglected by a Data Scientist. But in contrast, Subject Matter Expertise should be considered king! Especially with extensive experience working in a specific field it could potentially be the most valuable skill in his/her bag.
 
-Domain Knowledge — How Does It Help a Business
-----------------------------------------------
+## Domain Knowledge — How Does It Help a Business
 
 Contrary to what was mentioned earlier, notice how most participants in a Kaggle competition don’t have any substantial subject matter expertise. Yet, regardless of the absence, they go ahead to win competitions one after the other with a high score in the leaderboards.
 
@@ -32,8 +28,7 @@ And that’s because, fortunately, someone, somewhere, was smart enough to think
 
 On the flip side, businesses work under major financial & time constraints while trying to sustain their place in the market. Not to forget, they are also in the market to sustainably create a profit margin for themselves. Besides in general, for most businesses, it’s just not viable enough to invest in developing an algorithm specific to their domain, in-house. Hence, they hire for the much needed Data Science role, hoping that the new hire would help resolve the problem they were facing. Also if an opportunity arises, to move forward with it or possibly, to capitalize on it.
 
-Why is Domain Knowledge essential for a Data Scientist
-------------------------------------------------------
+## Why is Domain Knowledge essential for a Data Scientist
 
 Interrelated to each other, yet clearly distinguishable, three aspects of Domain Knowledge, a Data Scientist should keep in mind, can be defined in context to the —
 
@@ -43,7 +38,7 @@ Interrelated to each other, yet clearly distinguishable, three aspects of Domain
 
 On the other hand, a rather unfortunate misconception the general public has about Data Science & ML is, how ML & AI is the mythical Noah’s Ark, set on resolving every trivial problem ever faced.
 
-Depicted humorously, the author summed it up on the XKCD comic -- `"Machine Learning" <https://imgs.xkcd.com/comics/machine_learning.png>`_ where Data Scientists are viewed as wizards from Hogwarts with a Magic Wand named “Machine Learning” capable of resolving any problem they’re facing or want to make some profits from. [#first]_
+Depicted humorously, the author summed it up on the XKCD comic -- ["Machine Learning"](https://imgs.xkcd.com/comics/machine_learning.png) where Data Scientists are viewed as wizards from Hogwarts with a Magic Wand named “Machine Learning” capable of resolving any problem they’re facing or want to make some profits from.
 
 But contradictory to popular belief, a Data Scientist needs to prioritize planning ahead with a sustainable & logical business strategy, followed by the implementation. To give an analogy, constructing a Space Shuttle to travel between New York & Tokyo sounds like a fool’s errand. Similarly, a Cats & Dogs classifier doesn’t have any sustainable & profitable business prospects. Instead, adapting to the business sector & gaining the necessary knowledge of the domain will be more beneficial to the business overall, rather than the technical know-how to build the prediction algorithm right away.
 
@@ -53,15 +48,12 @@ Besides, emphasis on the importance of Feature Engineering & how doing so can im
 
 Hence, reminds me, that I came across a rather interesting piece of work by Xavier Martinez published at — Catalonia GDP: Insights & Regression Analysis which is a very detailed & prime example of feature engineering components of a dataset to create newer columns/features for further analysis. He predicted the Catalonia GDP growth rate based on feature engineered GDP components from the dataset & it shows how being extensively versed in a domain can help make very insightful & precise observations. Xavier did exactly that, based on what we Economists call a “*Demand-Driven Growth*”.
 
-Lastly, note that while you read through this article, 1.7mb of data is being generated worldwide each second which accounts to 2.5 quintillion bytes of data per day. That’s a whole lot of data to harness & process [#second]_. Comprehending what portion, the how & when to process that chunk of data, is paramount. Not only would it reduce inefficiency in the business operations, but as mentioned earlier, time & finances are the biggest constraints for a business. Being able to trim down to just the bare minimum for the required analysis helps reduce costs & processing time as well.
+Lastly, note that while you read through this article, 1.7 mb of data is being generated worldwide each second which accounts to 2.5 quintillion bytes of data per day. That’s a whole lot of data to harness & process [1]. Comprehending what portion, the how & when to process that chunk of data, is paramount. Not only would it reduce inefficiency in the business operations, but as mentioned earlier, time & finances are the biggest constraints for a business. Being able to trim down to just the bare minimum for the required analysis helps reduce costs & processing time as well.
 
-The Community Should Be More Vocal About Domain Knowledge
----------------------------------------------------------
+## The Community Should Be More Vocal About Domain Knowledge
 
 Hence, I assume it is safe to conclude stating the importance of focusing on Domain Knowledge in a Data Science role. Besides, it’s the community that should preach about the same only then would a business find a competent employee for a Data Science role in his/her company. But bear in mind, even with all the preaching, Domain Knowledge can be picked up while on the job and isn’t much of a difficult thing either but neglecting it, would be utter irresponsibility.
 
-References
-----------
+## References
 
-.. [#first] XKCD, `Machine Learning <https://imgs.xkcd.com/comics/machine_learning.png>`_ (2017)
-.. [#second] Domo, `Data Never Sleeps 6.0 <https://www.domo.com/learn/data-never-sleeps-6>`_ (2020)
+[1] Domo, [Data Never Sleeps 6.0](https://www.domo.com/learn/data-never-sleeps-6) (2020)

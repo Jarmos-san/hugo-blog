@@ -1,41 +1,38 @@
-ML Engineer vs Data Scientist: Whom Should You Hire?
-####################################################
+---
+Title: ML Engineer vs Data Scientist&#58; Whom Should You Hire?
+Date: 2020-11-28 10:24:37
+Keywords: Software Engineering, Machine Learning, Entrepreneurship, Data Science
+Category: Software Engineering
+Slug: ml-engineer-vs-data-scientists-who-should-you-choose
+Author: Somraj Saha
+Summary: Not sure if a specific business need of your company requires a Data Scientist or an ML Engineer? Then read ahead to find out more about it.
+---
 
-:date: 2020-11-28 10:24:37
-:keywords: Software Engineering, Machine Learning, Entrepreneurship, Data Science
-:category: Software Engineering
-:slug: ml-engineer-vs-data-scientists-who-should-you-choose
-:author: Somraj Saha
-:summary: Not sure if a specific business need of your company requires a Data Scientist or an ML Engineer? Then read ahead to find out more about it.
-
-.. image:: https://github.com/Jarmos-san/blog/blob/master/content/static/images/scientist-vs-engineer.gif?raw=true
-	:width: 800
-	:alt: GIF image of a scientist & an engineer.
+![GIF Image of a scientist & an engineer](https://github.com/Jarmos-san/blog/blob/master/content/static/images/scientist-vs-engineer.gif?raw=true)
 
 Some time ago, a client approached me with a project proposal. He wanted me to use a certain Product-Market framework & write an article from a Data Scientist’s POV. His reasoning, “*my Machine Learning skills could prove useful to analyze the drawbacks and/or gaps in the framework to add to it*”. And to be clear here, I’m no Data Scientist by craft either.
 
 A couple of emails later, it didn’t take me long to realize his requirements. His target audience for the article were individuals in a non-engineering field. Perhaps, marketing (my assumption) or maybe analysts.
 
-It made me wonder, are my credentials on `LinkedIn <https://www.linkedin.com/in/jarmos/>`_, `GitHub <https://github.com/jarmos-san>`_ or heck, even `Twitter <https://twitter.com/Jarmosan>`_ not visible to anyone? The fact that the prospect reached out to me with a data science task instead a software engineering job, points out to something. The issue of ambiguity in the roles of a Data Science/Machine Learning practitioner.
+It made me wonder, are my credentials on [LinkedIn](https://www.linkedin.com/in/jarmos/), [GitHub](https://github.com/jarmos-san) or heck, even [Twitter](https://twitter.com/Jarmosan) not visible to anyone? The fact that the prospect reached out to me with a data science task instead a software engineering job, points out to something. The issue of ambiguity in the roles of a Data Science/Machine Learning practitioner.
 
 The responsibilities of a Data Scientist and an ML Engineer are often interrelated. Depending on the size of the company, it wouldn't be surprising to see a Data Scientist working as "the Engineer". In other words, startups, especially those in the early-stages, resort to hiring Data Scientists as the Swiss knife for all their analytics, data science modelling, productionizing ML models & other needs. Those were some common roles to name a few.
 
 It’s common for a Data Scientist to be expected to wear many hats in the industry & that’s the root problem.
 
-Although, as of writing this article, the trend within the industry is changing for the better. An increasing number of companies have realised the benefits of the `Division of Labour <https://en.wikipedia.org/wiki/Division_of_labour>`_. They've been hiring individuals with specific skill sets in either ML or Data Science. Not both.
+Although, as of writing this article, the trend within the industry is changing for the better. An increasing number of companies have realised the benefits of the [Division of Labour](https://en.wikipedia.org/wiki/Division_of_labour). They've been hiring individuals with specific skill sets in either ML or Data Science. Not both.
 
-Even then, some entrepreneurs are still not sure if a Data Scientist will be the right for an analytical job. The client who reached out to me was one such entrepreneur. But he wasn’t the first & willn’t be the last either. It’s because of individuals like them articles like this - `Data Analyst vs Business Analyst. Here's the Difference <https://towardsdatascience.com/data-analyst-vs-business-analyst-heres-the-difference-e702f288aaa3>`_ by Matt Przybyla exist. This article is proof of the need to define the various subfields of Data Science.
+Even then, some entrepreneurs are still not sure if a Data Scientist will be the right for an analytical job. The client who reached out to me was one such entrepreneur. But he wasn’t the first & willn’t be the last either. It’s because of individuals like them articles like this - [Data Analyst vs Business Analyst. Here's the Difference](https://towardsdatascience.com/data-analyst-vs-business-analyst-heres-the-difference-e702f288aaa3) by Matt Przybyla exist. This article is proof of the need to define the various subfields of Data Science.
 
-Hence, for the sake of the Machine Learning community & as David Robinson says in his `tweet <https://twitter.com/drob/status/928447584712253440?s=20>`_,
+Hence, for the sake of the Machine Learning community & as David Robinson says in his [tweet](https://twitter.com/drob/status/928447584712253440?s=20),
 
-	*When you've written the same code 3 times, write a function*
+>*When you've written the same code 3 times, write a function*
+>
+>*When you've given the same in-person advice 3 times, write a blog post*
 
-	*When you've given the same in-person advice 3 times, write a blog post*
-	 
-Hence, this article on the topic of Data <something> role vs Machine Learning Engineer is my contribution to the community. By the end of the article, you will have enough idea of the respective responsibilities of an ML Engineer or the Data Scientist.
+Hence, this article on the topic of Data <_something_> role vs Machine Learning Engineer is my contribution to the community. By the end of the article, you will have enough idea of the respective responsibilities of an ML Engineer or the Data Scientist.
 
-Why Does a Clear Distinction Between These Roles Even Matter?
--------------------------------------------------------------
+## Why Does a Clear Distinction Between These Roles Even Matter?
 
 The plain & simple answer to the question is Division of Labour. As Adam Smith & countless other political economists of his time, before him & after as well, stated, the improved efficiency & increase in greater skill gained from the division of labor is hard to pass on. 
 
@@ -51,12 +48,11 @@ A defined designation of roles does have many obvious added advantages then. So 
 
 The next section attempts to answer these questions.
 
-Who're ML Engineers Or Data Scientists & What Do They Do?
----------------------------------------------------------
+## Who're ML Engineers Or Data Scientists & What Do They Do?
 
 This article is one of many similar articles on the same topic “*Machine Learning Engineer vs Data Scientists*”. Those articles often describe their respective responsibilities of those roles. But the descriptions are factual & only explain job descriptions, that’s it, nothing more & nothing less. None of those contents explain the specifics that define the two job responsibilities.
 
-One such article I stumbled upon & also the one which inspired me to write this article is  `Machine Learning Engineer vs. Data Scientist <https://www.springboard.com/blog/machine-learning-engineer-vs-data-scientist/>`_ on the Springboard Blog by Andrew Zola. The article is factual as expected, but sheds enough light onto the differences. In other words, a perfect article, brief enough for anyone to quickly grasp the differences between a Data Scientist & a Machine Learning Engineer.
+One such article I stumbled upon & also the one which inspired me to write this article is  [Machine Learning Engineer vs. Data Scientist](https://www.springboard.com/blog/machine-learning-engineer-vs-data-scientist/) on the Springboard Blog by Andrew Zola. The article is factual as expected, but sheds enough light onto the differences. In other words, a perfect article, brief enough for anyone to quickly grasp the differences between a Data Scientist & a Machine Learning Engineer.
 
 Just so you don't have to go through the article, here's a brief summary of the article.
 
@@ -74,8 +70,7 @@ At a glance, the two roles have very distinct & defined roles, yet employers don
 
 To get a better understanding of the situation, let's take a look at some job descriptions. And the following section will do exactly that.
 
-What Skills Are Employers Looking For & Their Job Descriptions
---------------------------------------------------------------
+## What Skills Are Employers Looking For & Their Job Descriptions
 
 On paper, anyone can point out distinct responsibilities for specific roles. But there's no saying it'll be the same out there. Often job postings are put up by individuals who're not aware about the intricate details of the roles. Or the entrepreneur could've delegated the responsibility of hiring to a recruiter. The recruiter then unknowingly lists out all those requirements under one job posting.
 
@@ -83,11 +78,9 @@ Weird, I know, but happens more often than you would realize. Don’t believe me
 
 With that said, let's take a look at some of the job descriptions for a ML project. Below is a screenshot I picked up from one such job ad posting.
 
-.. image:: https://github.com/Jarmos-san/blog/blob/master/content/static/images/ml-job-screenshot.png?raw=true
-	:width: 500
-	:alt: Screenshot of an ML job posting
+![Screenshot of an ML job posting](https://github.com/Jarmos-san/blog/blob/master/content/static/images/ml-job-screenshot.png?raw=true)
 
-(`Screenshot 1 <https://in.indeed.com/jobs?q=Machine%20Learning%20Engineer&advn=9253950511738984&vjk=f5ecb2c0b2ec054c>`_ as on 23rd November 2020)
+([Screenshot 1](https://in.indeed.com/jobs?q=Machine%20Learning%20Engineer&advn=9253950511738984&vjk=f5ecb2c0b2ec054c) as on 23rd November 2020)
 
 At a quick glance, there's nothing of significance in the screenshot above. Pretty normal for a job description for any traditional software development roles.
 
@@ -95,16 +88,13 @@ But on the flip side, job descriptions of Data Scientists are often vague & kind
 
 Check it out for yourself.
 
-.. image:: https://github.com/Jarmos-san/blog/blob/master/content/static/images/data-science-job-posting.png?raw=true
-	:width: 500
-	:alt: Screenshot of a Data Science job posting
+![Screenshot of a Data Science job posting](https://github.com/Jarmos-san/blog/blob/master/content/static/images/data-science-job-posting.png?raw=true)
 
-(`Sreenshot 2 <https://in.indeed.com/jobs?q=data%20scientist&vjk=fb0f54d442bf42c4>`_ as on 23rd November 2020)
+([Sreenshot 2](https://in.indeed.com/jobs?q=data%20scientist&vjk=fb0f54d442bf42c4) as on 23rd November 2020)
 
 This screenshot is a prime example where it’s not clear what the Data Scientist is expected to do. It’s a hodgepodge of all sorts of responsibilities dumped on one single individual to take care of.
 
-How Should You Adhere To Specific Designations?
------------------------------------------------
+## How Should You Adhere To Specific Designations?
 
 There's some opinionated advice in this section. And by no means should you feel obligated to adhere to this advice. But I expect my readers to make an informed judgement by themselves based on their needs.
 
