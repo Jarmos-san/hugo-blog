@@ -7,7 +7,7 @@ license = "Creative Commons"
 
 [tool.poetry.dependencies]
 python = "^3.8"
-pelican = {extras = ["markdown"], version = "^4.5.3"}
+pelican = {extras = ["markdown"], version = "^4.5.4"}
 
 [tool.poetry.dev-dependencies]
 invoke = "^1.5.0"
