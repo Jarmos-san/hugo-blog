@@ -21,6 +21,8 @@ jobs:
         uses: "pascalgn/automerge-action@v0.13.0"
         env:
           GITHUB_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
-          MERGE_LABELS: "dependencies"
+          UPDATE_LABELS: "dependencies"
+          UPDATE_METHOD: "rebase"
           MERGE_METHOD: "rebase"
-          MERGE_COMMIT_MESSAGE: "pull-request-title"
+          MERGE_COMMIT_MESSAGE: "Auto merge {pullRequest.number}"
+          MERGE_FILTER_AUTHOR: "dependabot[bot]"
