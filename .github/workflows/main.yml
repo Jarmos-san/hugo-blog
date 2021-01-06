@@ -1,4 +1,5 @@
 # GitHub Actions workflow file which activates on Pull Requests to the master branch
+# TODO: Have more control on how the static contents are delivered to Netlify
 name: Build & Deploy
 
 on:
