@@ -20,9 +20,7 @@ AUTHOR_FEED_RSS = None
 
 THEME = "themes/blue-penguin"
 
-STATIC_PATHS = [
-    "static/favicon.ico",
-]
+STATIC_PATHS = ["static", "static/favicon.ico"]
 
 # all defaults to True.
 DISPLAY_HEADER = True
