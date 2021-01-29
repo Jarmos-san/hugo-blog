@@ -5,6 +5,7 @@ theme: "PaperMod"
 paginate: 3
 
 enableRobotsTXT: true
+enableEmoji: true
 buildDrafts: false
 buildFuture: false
 buildExpired: false
