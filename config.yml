@@ -2,7 +2,7 @@ baseURL: "https://examplesite.com"
 languageCode: "en-us"
 title: "Somraj Saha"
 theme: "PaperMod"
-paginate: 5
+paginate: 3
 
 enableRobotsTXT: true
 buildDrafts: false
@@ -83,15 +83,12 @@ menu:
         - identifier: about
           name: About Me
           url: /about-me/
-          weight: 10
         - identifier: blog
           name: Archives
           url: /archives/
-          weight: 20
-        - identifier: contact
-          name: Contact Me
-          url: /contact/
-          weight: 30
+        - identifier: newsletter
+          name: Newsletter
+          url: https://jarmos.ck.page/newsletter
 
 markup:
     highlight:
