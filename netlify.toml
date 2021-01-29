@@ -1,0 +1,4 @@
+[context.production.environment]
+HUGO_VERSIO = "0.80.0"
+HUGO_ENV = "production"
+RUBY_VERSION = "2.6.2"
