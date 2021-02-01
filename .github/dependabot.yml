@@ -16,7 +16,7 @@ updates:
           interval: "daily"
       commit-message:
           prefix: "🔀"
-      labels: ["submodules", "automerge"]
+      labels: ["submodule", "automerge"]
       target-branch: "dev"
 
 
