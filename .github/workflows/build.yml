@@ -1,0 +1,33 @@
+name: Netlify Deploy
+
+on: push
+
+jobs:
+    deploy:
+        runs-on: ubuntu-latest
+        steps:
+            - uses: actions/checkout@v2
+              with:
+                  submodules: true
+                  fetch-depth: 0
+            - name: Setup Hugo
+              uses: peaceiris/actions-hugo@v2
+              with:
+                  hugo-version: "0.80.0"
+            - name: Generate Static Content
+              run: hugo --minify
+            - name: Deploy to Netlify
+              uses: nwtgck/actions-netlify@v1.1
+              with:
+                  publish-dir: "./public"
+                  production-branch: dev
+                  github-token: ${{ secrets.GITHUB_TOKEN }}
+                  deploy-message: "Deployed with GitHub Actions"
+                  enable-pull-request-comment: false
+                  enable-commit-comment: false 
+                  overwrites-pull-request-comment: true
+                  netlify-config-path: ./netlify.toml
+              env:
+                  NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+                  NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
+              timeout-minutes: 1

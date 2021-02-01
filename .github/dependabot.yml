@@ -1,22 +1,23 @@
 version: 2
 updates:
-  - package-ecosystem: "pip"
+    package-ecosystem: "github-actions"
     directory: "/"
     schedule:
-      interval: "daily"
-      timezone: "Asia/Kolkata"
-    assignees:
-      - "Jarmos-san"
+        interval: "daily"
     commit-message:
-      prefix: "🔀"
+        prefix: "🔀"
+    labels:
+        - "automerge"
+        - "GitHub Actions"
     target-branch: "dev"
-  - package-ecosystem: "github-actions"
+
+    package-ecosystem: "gitsubmodules"
     directory: "/"
     schedule:
-      interval: "daily"
-      timezone: "Asia/Kolkata"
-    assignees:
-      - "Jarmos-san"
+        interval: "daily"
     commit-message:
-      prefix: "🔀"
+        prefix: "🔀"
+    labels:
+        - "automerge"
+        - "submodules"
     target-branch: "dev"
