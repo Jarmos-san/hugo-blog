@@ -1,23 +1,22 @@
 version: 2
 updates:
-    package-ecosystem: "github-actions"
-    directory: "/"
-    schedule:
-        interval: "daily"
-    commit-message:
-        prefix: "🔀"
-    labels:
-        - "automerge"
-        - "GitHub Actions"
-    target-branch: "dev"
 
-    package-ecosystem: "gitsubmodules"
-    directory: "/"
-    schedule:
-        interval: "daily"
-    commit-message:
-        prefix: "🔀"
-    labels:
-        - "automerge"
-        - "submodules"
-    target-branch: "dev"
+    - package-ecosystem: "github-actions"
+      directory: "/"
+      schedule:
+          interval: "daily"
+      commit-message:
+          prefix: "🔀"
+      labels: ["github-actions", "automerge"]
+      target-branch: "dev"
+
+    - package-ecosystem: "gitsubmodules"
+      directory: "/"
+      schedule:
+          interval: "daily"
+      commit-message:
+          prefix: "🔀"
+      labels: ["submodules", "automerge"]
+      target-branch: "dev"
+
+
