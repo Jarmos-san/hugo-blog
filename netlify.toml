@@ -11,8 +11,3 @@
   pretty_urls = true
 [build.processing.images]
   compress = true
-
-# Redirects from old site to new one
-[[redirects]]
-from = "https://jarmos.netlify.app/*"
-to = "https://jarmos.netlify.app/posts/*"
