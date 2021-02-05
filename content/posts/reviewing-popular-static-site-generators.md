@@ -1,6 +1,5 @@
 ---
 title: A Review of Some of the Most Popular Static Site Generators
-draft: true
 date: "2021-02-04"
 category: Blogging
 slug: reviewing-popular-static-site-generators
@@ -12,6 +11,7 @@ cover:
     caption: "So confusing! Which Static Site Generator should I use?"
     relative: true
 showtoc: true
+draft: true
 ---
 
 The beginning of 2020 was when I wanted to start my own personalized blog. Suffice to say, as I shopped around with available options, I figured each software (_or platform_) has something or the other to offer. While there's Wordpress, it requires a server backend & periodic security management. That's something I didn't want to get into, if I didn't have to. All I wanted was a way write content in [Markdown](https://www.markdownguide.org/) & generate the static files (_think HTML + CSS + JavaScript files_) to be hosted on a CDN.
@@ -26,11 +26,19 @@ That said, without further ado, let's review some of the most popular SSGs or at
 
 ## Specific Aspects That Makes a SSG Worth It
 
-- Easy installation process
-- Legibility of the documentations
-- Ease of use
-- Availability of good-looking & modern themes
-- Ease of customizing the available themes
+On my journey towards trying out a number of SSGs, I discovered none is better than the other. Each has something unique to offer. Perhaps, your site has a lot of individual pages then Hugo will be a good choice. Or maybe you need a modern & fast website, then Gatsby should be your choice. While having choices are a good thing, reviewing each tool against each other is hard (if not close to impossible). Hence, I thought it would be better to list out some common grounds where each SSG could be compared against each other.
+
+That said here are the common points I considered for reviewing each SSG:
+
+- **Easy installation process** - As in, installing the tool(s) required to get the SSG in question up & running shouldn't be difficult even for a non-technical individual.
+- **Legibility of the documentations** - Can't emphasis on this point enough! I'll discuss in more details on the importance of this point.
+- **Ease of use** - A subjective point-of-view since what's easy for me to use mightn't be the same for the other individual. More on it will be discussed in the rest of the article.
+- **Availability of good-looking & modern themes** - This point is almost a no-brainer. Why would someone not choose Wordpress with so many good-looking & modern themes over SSGs. Living in the 21st century, support for good-looking themes (_paid/free_) is a must-have for any SSGs.
+- **Ease of customizing the available themes** - You got hold of you preferred SSG, discovered a nice theme (_extra kudos if it was free & open-sourced_), all good & dandy. But there's just some subtle thing about the theme bothering you, maybe the font or maybe the background color. Whatever it be, the themes you use for your blog has to let you customize it in some way or the other.
+
+So, those were some of common aspects which all SSGs I review should've at the least. It's not worth using a particular SSG which lacks any of the mentioned points above.
+
+That said, lets dive into it & check out which SSG is great for you & your workflow.
 
 ## Jekyll & GitHub Pages
 
@@ -51,3 +59,5 @@ Yeah, I'm being nitpicky here but if installing a runtime which you'll probably 
 ## Hugo: The Fastest Static Site Generator Ever Created
 
 ## Final Thoughts
+
+<!-- Move all hyperlinks to this section & reference them as footers for a clean-looking file. -->
