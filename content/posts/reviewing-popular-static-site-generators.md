@@ -1,5 +1,6 @@
 ---
 title: A Review of Some of the Most Popular Static Site Generators
+draft: true
 date: "2021-02-04"
 category: Blogging
 slug: reviewing-popular-static-site-generators
