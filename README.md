@@ -108,19 +108,19 @@ For more information on how to use these tools, refer to their respective docume
 I'm no frontend mastermind, hence I often need a helping to fix something on the website. So, if you find something broken & a feature needing some improvement, don't hesitate to make a PR. All suggestions & PRs to improve this project are appreciated.
 
 or, perhaps you're just looking to get your feet wet in the open-source community. Then this site will be a perfect opportunity for you. Besides, there's a reason why I've open-sourced this personal website! :wink:
-<!-- TODO: Fix the CONTRIBUTING guidelines document link -->
+
 There's a comprehensive guideline in the [CONTRIBUTING.md](.github/CONTRIBUTING.md) document. Refer to it for more details on contributing to the project.
 
 ### :eyes: Issues
 
 In case of a bug report, bugfix or a suggestion, please feel free to open an issue following the respective templates
-<!-- TODO: Fix the ISSUE template links -->
+
 - [Ask a Question](.github/ISSUE_TEMPLATE/ask-a-question.md)
 - [Bug Report](.github/ISSUE_TEMPLATE/bug-report.md)
 - [Discussion](.github/ISSUE_TEMPLATE/discussion.md)
 
 ### :package: Pull Request
-<!-- TODO: Fix the PR template link -->
+
 Pull Requests are always welcome & I'll review them as quick as possible. But for easier collaboration, please follow the specification provided in the [PR template](.github/PULL_REQUEST_TEMPLATE.md).
 
 ## :memo: License
