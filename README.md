@@ -8,7 +8,8 @@ This repository hosts the tools, assets & themes for my [personal website][Perso
   - [:checkered_flag: Getting Started](#checkered_flag-getting-started)
     - [:running: The Easy & Quick Way To Get It Done](#running-the-easy--quick-way-to-get-it-done)
       - [:nut_and_bolt: Setup a Development Environment](#nut_and_bolt-setup-a-development-environment)
-      - [Setting Up Traffic Tracking & Analytics](#setting-up-traffic-tracking--analytics)
+      - [:chart_with_upwards_trend: Setting Up Traffic Tracking & Analytics](#chart_with_upwards_trend-setting-up-traffic-tracking--analytics)
+      - [:control_knobs: Setup Netlify CMS](#control_knobs-setup-netlify-cms)
       - [:dash: Preparing Your Site For Deployment](#dash-preparing-your-site-for-deployment)
       - [:gear: Setup GitHub Actions to Deploy](#gear-setup-github-actions-to-deploy)
   - [:hammer_and_wrench: Built With](#hammer_and_wrench-built-with)
@@ -47,7 +48,7 @@ In a hurry to get your personal website running ASAP, then check out the followi
 5. Clone the [PaperMod theme][Hugo-PaperMod] under the `./theme/` directory with the `git submodule add https://github.com/adityatelange/hugo-PaperMod.git` command.
 6. `cd` back into the root directory & run the `hugo server` command on your preferred terminal & see if everything works as expected.
 
-#### Setting Up Traffic Tracking & Analytics
+#### :chart_with_upwards_trend: Setting Up Traffic Tracking & Analytics
 
 The blog uses Cloudflare's tracker instead of Google Analytics due to privacy reasons. Besides, since Google Analytics is basically a JS script, some browsers can block it. On the hand Cloudflare's system is a backend server-based system. In doing so, it appears, there might be some inconsistency in tracking your traffice & audiences with Google Analytics ([_source_][Cloudflare vs Google Analytics]).
 
@@ -60,6 +61,12 @@ So, I strongly suggest you stick to using Cloudflare Analytics like I'm. To do s
 And you're good to go! Now you can keep track of all visits to your site on Cloudflare's dashboard.
 
 But in case, you decide to use Google Analytics instead, do follow the [official instructions][Hugo Google Analytics Docs] on the Hugo documentations.
+
+#### :control_knobs: Setup Netlify CMS
+
+Setting up the CMS is a work-in-progress project but it's already implemented (_kinda_). If you want to access it, check it out at: `https://<SITE-NAME>.netlify.app/admin`. Helping hands are always welcome to help set it up.
+
+That said, it's setup with [Netlify CMS][Netlify CMS Landing Page] & make sure to check back to stay updated with the latest implementations.
 
 #### :dash: Preparing Your Site For Deployment
 
