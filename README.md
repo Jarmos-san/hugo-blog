@@ -63,7 +63,7 @@ And you're good to go! Now you can keep track of all visits to your site on Clou
 But in case, you decide to use Google Analytics instead, do follow the [official instructions][Hugo Google Analytics Docs] on the Hugo documentations.
 
 #### :control_knobs: Setup Netlify CMS
-
+<!-- TODO: Update README with instructions to setup Netlify CMS -->
 Setting up the CMS is a work-in-progress project but it's already implemented (_kinda_). If you want to access it, check it out at: `https://<SITE-NAME>.netlify.app/admin`. Helping hands are always welcome to help set it up.
 
 That said, it's setup with [Netlify CMS][Netlify CMS Landing Page] & make sure to check back to stay updated with the latest implementations.
