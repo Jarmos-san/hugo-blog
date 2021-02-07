@@ -3,7 +3,7 @@ languageCode: "en-us"
 title: "Somraj Saha"
 theme: "hugo-PaperMod"
 paginate: 3
-
+# googleAnalytics: 173277637-1
 enableRobotsTXT: true
 enableEmoji: true
 buildDrafts: false
