@@ -21,10 +21,12 @@ jobs:
               with:
                   publish-dir: "./public"
                   production-branch: dev
+                  production-deploy: true
                   github-token: ${{ secrets.GITHUB_TOKEN }}
                   deploy-message: "Deployed with GitHub Actions"
-                  enable-pull-request-comment: false
-                  enable-commit-comment: false 
+                  enable-pull-request-comment: true
+                  enable-commit-comment: false
+                  enable-commit-status: true
                   overwrites-pull-request-comment: true
                   netlify-config-path: ./netlify.toml
               env:
