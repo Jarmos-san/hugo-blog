@@ -1,39 +1,8 @@
 # Somraj's Blog
-<!-- TODO: Clean up the links with Markdown reference links instead -->
-[![Website](https://img.shields.io/website?down_color=Red&down_message=Down&label=Website&style=flat-square&up_color=Green&up_message=Up&url=https%3A%2F%2Fjarmos.netlify.app%2F)](https://jarmos.netlify.app/) [![Netlify Deploy](https://github.com/Jarmos-san/blog/workflows/Netlify%20Deploy/badge.svg?branch=dev)](https://github.com/Jarmos-san/blog/actions?query=workflow%3A%22Netlify+Deploy%22) [![LinkedIn](https://img.shields.io/static/v1?label=LinkedIn&message=Connect&color=0077B5&style=flat-square&logo=linkedin)](https://www.linkedin.com/in/jarmos/) [![Quora profile](https://img.shields.io/static/v1?label=Quora&message=QnA&color=B92B27&style=flat-square&logo=quora)](https://www.quora.com/profile/Somraj-Saha-3) [![Ask Me Anything !](https://img.shields.io/badge/Ask%20Me-Anything!-1abc9c.svg)](https://github.com/Jarmos-san/ama) [![Twitter Follow](https://img.shields.io/twitter/follow/Jarmosan?style=social)](https://twitter.com/Jarmosan)
+
+[![Website][Website]][Personal Website] [![Netlify Deploy][Netlify Deploy Badge]][Netlify Deploy] [![LinkedIn][My LinkedIn Badge]][My LinkedIn] [![Quora profile][My Quora Badge]][My Quora] [![Ask Me Anything !][My AMA Badge]][My AMA] [![Twitter Follow][My Twitter Badge]][My Twitter]
 
 This repository hosts the tools, assets & themes for my [personal website][Personal Website]. The site is statically generated with [Hugo][Hugo Landing Page] & the [PaperMod][Hugo-PaperMod] theme. Hugo which is a Static Site Generator(SSG) built with [Golang][Go Landing Page] generates the static contents for the site to be deployed to [Netlify][Netlify Landing Page].
-<!-- TODO: Move the reference links to the bottom of the page -->
-[Personal Website]: https://jarmos.netlify.app
-[Hugo Landing Page]: https://gohugo.io
-[Hugo-PaperMod]: https://adityatelange.github.io/hugo-PaperMod/
-[Go Landing Page]: https://golang.org
-[Netlify Landing Page]: https://www.netlify.com/
-[Netlify CDN Guide]: https://community.netlify.com/t/support-guide-making-the-most-of-netlifys-cdn-cache/127
-[Netlify Docs]: https://docs.netlify.com/
-[Cloudflare Analytics]: https://www.cloudflare.com/analytics/
-[Netlify CMS Landing Page]: https://www.netlifycms.org/
-[Markdown Guide]: https://www.markdownguide.org/
-[Install Hugo]: https://gohugo.io/getting-started/installing/
-[Netlify Actions]: https://github.com/marketplace/actions/netlify-actions
-[Netlify User Settings]: https://app.netlify.com/user/applications
-[GitHub Encrypted Secrets]: https://docs.github.com/en/actions/reference/encrypted-secrets
-[Cloudflare vs Google Analytics]: https://community.cloudflare.com/t/gap-between-cloudflare-analytics-and-google-analytics-reporting/33326
-[Cloudflare Landing Page]: https://www.cloudflare.com/
-[Cloudflare Analytics Dashboard]: https://dash.cloudflare.com/?to=/:account/:zone/analytics/traffic
-[Hugo Google Analytics]: https://gohugo.io/templates/internal/#google-analytics
-[Hugo Docs]: https://gohugo.io/documentation/
-[Hugo License]: https://github.com/gohugoio/hugo/blob/master/LICENSE
-[Netlify Actions License]: https://github.com/nwtgck/actions-netlify/blob/develop/LICENSE
-[Hugo-PaperMod License]: https://github.com/adityatelange/hugo-PaperMod/blob/master/LICENSE
-[Netlify ToS]: https://www.netlify.com/tos/
-[My Twitter]: https://twitter.com/Jarmosan
-[My LinkedIn]: https://www.linkedin.com/in/jarmos/
-[Project Discussion Threads]: https://github.com/Jarmos-san/blog/discussions
-[My AMA]: https://github.com/Jarmos-san/Jarmos-san/discussions/categories/q-a
-[Hugo Devs]: https://github.com/orgs/gohugoio/people
-[Hugo-PaperMod Dev]: https://github.com/adityatelange
-[Project Contributors]: https://github.com/Jarmos-san/blog/graphs/contributors
 
 - [Somraj's Blog](#somrajs-blog)
   - [:checkered_flag: Getting Started](#checkered_flag-getting-started)
@@ -75,7 +44,7 @@ In a hurry to get your personal website running ASAP, then check out the followi
 2. Clone your copy of the repository locally using the command `git clone git@github.com:<INSERT_YOUR_USERNAME_HERE>/blog.git`.
 3. Remove the files under the directory `content`. Note, the files are written in [Markdown][Markdown Guide]. So, if you've been active on GitHub for a while, writing your `.md` content will be a breeze.
 4. Ensure you've Hugo installed & is available on PATH. If not, then follow the instructions available in [the official documentation][Install Hugo] to set it up on your local machine.
-5. Clone the [PaperMod theme][Hugo-PaperMod] under the `./theme/` directory.
+5. Clone the [PaperMod theme][Hugo-PaperMod] under the `./theme/` directory with the `git submodule add https://github.com/adityatelange/hugo-PaperMod.git` command.
 6. `cd` back into the root directory & run the `hugo server` command on your preferred terminal & see if everything works as expected.
 
 #### Setting Up Traffic Tracking & Analytics
@@ -153,7 +122,7 @@ All software used & the content I share are licensed under the T&Cs as stated be
 
 1. All the literary content available under [`./content/posts`](./content/posts) are licensed under the [CC0-1.0](./LICENSE) license.
 
-2. The repository also uses and/or contains software used to generate the static contents for the personal website. Following are the software used & their licensings T&Cs.
+2. The repository also uses and/or contains software used to generate the static contents for the personal website. Following are the software as well as other related tools used & their licensings T&Cs.
 
     | Software            | Licence T&Cs                                      |
     | ------------------- | ------------------------------------------------- |
@@ -163,6 +132,7 @@ All software used & the content I share are licensed under the T&Cs as stated be
     | Netlify             | [Netlify Terms of Service Agreement][Netlify ToS] |
 
 ## :raised_hand: Get Help
+
 Facing difficulties to deploy your site after forking this repository? Well then feel free to reach out to me. I'm available on [Twitter][My Twitter] & [LinkedIn][My LinkedIn] for a quick chat. But if you need a very comprehensive explanation on something related to this project check out the [Discussion threads][Project Discussion Threads].
 
 Or maybe your question isn't related to this project, then check out my [*Ask Me Anything*][My AMA].
@@ -171,4 +141,51 @@ Or maybe your question isn't related to this project, then check out my [*Ask Me
 
 - [Hugo Devs][Hugo Devs], thanks to whom, my website wouldn't come into fruition!
 - The site uses the [PaperMod][Hugo-PaperMod] theme built by [Aditya Telange][Hugo-PaperMod Dev].
-- All at last, thanks to [all those who contributed][Project Contributors] to fixing & correcting my site.
+- And at last, thanks to [all those who contributed][Project Contributors] to fixing & correcting my site.
+
+<!-- * Reference links -->
+<!-- ? Personal Related Links -->
+[Personal Website]: https://jarmos.netlify.app
+[My Twitter]: https://twitter.com/Jarmosan
+[My LinkedIn]: https://www.linkedin.com/in/jarmos/
+[My AMA]: https://github.com/Jarmos-san/Jarmos-san/discussions/categories/q-a
+[My Quora]: https://www.quora.com/profile/Somraj-Saha-3
+<!-- ? Hugo Related Links -->
+[Hugo Landing Page]: https://gohugo.io
+[Hugo-PaperMod]: https://adityatelange.github.io/hugo-PaperMod/
+[Install Hugo]: https://gohugo.io/getting-started/installing/
+[Hugo Google Analytics]: https://gohugo.io/templates/internal/#google-analytics
+[Hugo Docs]: https://gohugo.io/documentation/
+[Hugo License]: https://github.com/gohugoio/hugo/blob/master/LICENSE
+[Hugo Devs]: https://github.com/orgs/gohugoio/people
+[Hugo-PaperMod Dev]: https://github.com/adityatelange
+[Hugo-PaperMod License]: https://github.com/adityatelange/hugo-PaperMod/blob/master/LICENSE
+<!-- ? Netlify Related Links -->
+[Netlify Actions License]: https://github.com/nwtgck/actions-netlify/blob/develop/LICENSE
+[Netlify ToS]: https://www.netlify.com/tos/
+[Netlify Landing Page]: https://www.netlify.com/
+[Netlify CDN Guide]: https://community.netlify.com/t/support-guide-making-the-most-of-netlifys-cdn-cache/127
+[Netlify Docs]: https://docs.netlify.com/
+[Netlify CMS Landing Page]: https://www.netlifycms.org/
+[Netlify Actions]: https://github.com/marketplace/actions/netlify-actions
+[Netlify User Settings]: https://app.netlify.com/user/applications
+[Go Landing Page]: https://golang.org
+<!-- ? Cloudflare Related Links -->
+[Cloudflare Analytics]: https://www.cloudflare.com/analytics/
+[Cloudflare vs Google Analytics]: https://community.cloudflare.com/t/gap-between-cloudflare-analytics-and-google-analytics-reporting/33326
+[Cloudflare Landing Page]: https://www.cloudflare.com/
+[Cloudflare Analytics Dashboard]: https://dash.cloudflare.com/?to=/:account/:zone/analytics/traffic
+<!-- ? Project Related Links -->
+[Project Discussion Threads]: https://github.com/Jarmos-san/blog/discussions
+[Project Contributors]: https://github.com/Jarmos-san/blog/graphs/contributors
+<!-- ? Miscellaneous Related Links -->
+[Markdown Guide]: https://www.markdownguide.org/
+[GitHub Encrypted Secrets]: https://docs.github.com/en/actions/reference/encrypted-secrets
+[Netlify Deploy]: https://github.com/Jarmos-san/blog/actions?query=workflow%3A%22Netlify+Deploy%22
+<!-- ? Shield Badges -->
+[Website]: https://img.shields.io/website?down_color=Red&down_message=Down&label=Website&style=flat-square&up_color=Green&up_message=Up&url=https%3A%2F%2Fjarmos.netlify.app%2F
+[Netlify Deploy Badge]: https://github.com/Jarmos-san/blog/workflows/Netlify%20Deploy/badge.svg?branch=dev
+[My LinkedIn Badge]: https://img.shields.io/static/v1?label=LinkedIn&message=Connect&color=0077B5&style=flat-square&logo=linkedin
+[My Quora Badge]: https://img.shields.io/static/v1?label=Quora&message=QnA&color=B92B27&style=flat-square&logo=quora
+[My AMA Badge]: https://img.shields.io/badge/Ask%20Me-Anything!-1abc9c.svg
+[My Twitter Badge]: https://img.shields.io/twitter/follow/Jarmosan?style=social
