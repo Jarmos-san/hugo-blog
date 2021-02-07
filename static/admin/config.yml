@@ -8,6 +8,12 @@ backend:
 media_folder: "static/covers"
 public_folder: "/covers"
 
+media_library:
+  name: cloudinary
+  config:
+    cloud_name: jarmos
+    api_key: 426236226171183
+
 publish_mode: editorial_workflow
 
 site_url: https://jarmos.netlify.app
@@ -21,7 +27,7 @@ slug:
 
 collections:
   - name: 'posts'
-    label: 'Articles'
+    label: 'Write Articles'
     folder: 'content/posts'
     create: true
     slug: '{{slug}}'
@@ -30,5 +36,10 @@ collections:
     fields:
       - { label: 'Title', name: 'title', widget: 'string' }
       - { label: 'Publish Date', name: 'date', widget: 'datetime' }
+      - { label: 'Category', name: 'category', widget: 'string' }
+      # - { label: 'Slug', name: 'slug', }
+      - { label: 'Summary', name: 'summary', widget: 'string'}
+      # - { label: 'Cover Image' }
+      # - { label: 'showtoc', widget: 'boolean' }
       - { label: 'Description', name: 'description', widget: 'string' }
       - { label: 'Body', name: 'body', widget: 'markdown' }
