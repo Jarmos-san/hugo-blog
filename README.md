@@ -137,6 +137,7 @@ All software used & the content I share are licensed under the T&Cs as stated be
     | Netlify Actions     | [MIT][Netlify Actions License]                    |
     | Hugo-PaperMod theme | [MIT][Hugo-PaperMod License]                      |
     | Netlify             | [Netlify Terms of Service Agreement][Netlify ToS] |
+    | Netlify CMS         | [MIT][Netlify CMS License]                        |
 
 ## :raised_hand: Get Help
 
@@ -174,6 +175,7 @@ Or maybe your question isn't related to this project, then check out my [*Ask Me
 [Netlify CDN Guide]: https://community.netlify.com/t/support-guide-making-the-most-of-netlifys-cdn-cache/127
 [Netlify Docs]: https://docs.netlify.com/
 [Netlify CMS Landing Page]: https://www.netlifycms.org/
+[Netlify CMS License]: https://github.com/netlify/netlify-cms/blob/master/LICENSE
 [Netlify Actions]: https://github.com/marketplace/actions/netlify-actions
 [Netlify User Settings]: https://app.netlify.com/user/applications
 [Go Landing Page]: https://golang.org
