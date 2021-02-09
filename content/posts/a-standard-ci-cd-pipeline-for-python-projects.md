@@ -2,7 +2,6 @@
 title: A Standard	& Complete CI/CD Pipeline for Most Python Projects
 date: "2021-01-21"
 category: Programming
-authors: Somraj Saha
 slug: a-standard-ci-cd-pipeline-for-python-projects
 summary: The most complete (yet standard) CI/CD pipeline you'll ever find for most of your Python projects. Now spend more time on maintaining your project rather than fixing CI/CD issues.
 description: The most complete (yet standard) CI/CD pipeline you'll ever find for most of your Python projects. Now spend more time on maintaining your project rather than fixing CI/CD issues.
@@ -22,7 +21,7 @@ Hence, I'm sharing this GitHub Actions workflow which I use with most of my Pyth
 
 That said, here're what you get with this workflow, out-of-the-box without any changes:
 
-- Linting & code formatting with `flake8`, `Black` & `isort` on all PRs & pushes to the remote repository.
+- Linting & code formatting with `pylint`, `Black` & `isort` on all PRs & pushes to the remote repository.
 - Running integrated test suites for catching any breaking changes before merging the PR.
 - Caching dependencies for faster workflow execution times.
 - Uploading coverage reports to [CodeCov](https://about.codecov.io/) for following coverage reports.
@@ -64,11 +63,11 @@ jobs:
           path: ~/.cache/pip
           key: ${{ runner.os }}-pip
           restore-keys: ${{ runner.os }}-pip
-      - name: Install Black, Flake8 & iSort
-        run: python -m pip install black flake8 isort
+      - name: Install Black, Pylint & iSort
+        run: python -m pip install black pylint isort
       - name: Run linters
         run: |
-          flake8 . --exclude=.venv --max-line-length 85
+          pylint alokka
           black .
           isort .
 
@@ -123,7 +122,7 @@ If you're impatient like me & would like to skim through the article, here's wha
 
 - The workflow executes on PR & push events. As in when someone makes a PR, the `Test Suite` workflow will run. The same happens when you push you local commits to the remote repository.
 - The workflow consists of two jobs: `linter` & `test`. The latter of which is dependent on the former. So if `linter` fails, execution of `test` will be skipped.
-- `linter` runs on an Ubuntu VM & installs `flake8`, `Black` & `isort` for linting & formatting the code. They're also cached for decreasing the execution times.
+- `linter` runs on an Ubuntu VM & installs `pylint`, `Black` & `isort` for linting & formatting the code. They're also cached for decreasing the execution times.
 - `test` runs on a MacOS, an Ubuntu & a Windows VM with Python versions - `3.8` & `3.9` respectively. Do note, these runs happen in parallel irrespective of each other's execution state.
 - The `test` job will also cache & install the virtualenv stored under the `.venv` directory. And then run the test suites with PyTest which generates a `coverage.xml` report to be uploaded to CodeCov.
 
@@ -143,11 +142,9 @@ Now for the interesting part. The `steps:` key describes what/which workflow/com
 
 The next couple of steps involves caching dependencies for decreased workflow execution time. The [actions/cache](https://github.com/actions/cache) Action loads the dependencies if they've been cached earlier. It also identifies the correct cache with a signed key.
 
-If the dependencies aren't loaded from the cache, then `pip` installs `Black`, `Flake8` & `isort` for linting purposes.
+If the dependencies aren't loaded from the cache, then `pip` installs `Black`, `pylint` & `isort` for linting purposes.
 
-The final step for the `linter` job is to execute the aforementioned linting & formatting tools. `Black` & `isort` has sensible defaults, hence they're passed without any additional arguments. But `flake8` has to be executed with a couple of arguments which will otherwise make it very inefficient.
-
-So, `flake8` is told not to check the `.venv` directory for linting errors & allow a max line length of 85. These configurations are enabled with the `--exclude` & `--max-line-length` flags respectively. Excluding the virtual environment directory is needed because otherwise `flake8` would check the Python `site-packages` for linting errors as well (**which takes a lot of time to finish!**). And max line length is set to 85 because most people use wide monitors (instead of CRTs) these days.
+The final step for the `linter` job is to execute the aforementioned linting & formatting tools. `Pylint`, `Black` & `isort` has sensible defaults, hence they're passed without any additional arguments. While you could replace `Pylint` with `Flake8` but I feel the latter needs some configuration to make the most out of it especially for an open-source project.
 
 And finally coming to the `test` job. This job mirrors the previous `linter` job to an extent as you'll see soon enough.
 
