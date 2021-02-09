@@ -14,11 +14,11 @@ showtoc: true
 draft: true
 ---
 
-The beginning of 2020 was when I wanted to start my own personalized blog. Suffice to say, as I shopped around with available options, I figured each software (_or platform_) has something or the other to offer. While there's Wordpress, it requires a server backend & periodic security management. That's something I didn't want to get into, if I didn't have to. All I wanted was a way write content in [Markdown](https://www.markdownguide.org/) & generate the static files (_think HTML + CSS + JavaScript files_) to be hosted on a CDN.
+The beginning of 2020 was when I wanted to start my own personalized blog. Suffice to say, as I shopped around with available options, I figured each software (_or platform_) has something or the other to offer. While there's Wordpress, it requires a server backend & periodic security management. That's something I didn't want to get into, if I didn't have to. All I wanted was a way write content in [Markdown][Markdown] & generate the static files (_think HTML + CSS + JavaScript files_) to be hosted on a CDN.
 
-My initial attempt to do so was with [Jekyll](https://jekyllrb.com/) which didn't work out (_because I was still an inexperienced developer_). So, I jumped ship to [Gatsby](https://www.gatsbyjs.com/) & [GitHub Pages](https://pages.github.com/) which didn't work out either! _\*sighs\*_. But on a brighter note, I did come to terms (_for a while_) with a pretty good Static Site Generator (SSG) called [Pelican](https://blog.getpelican.com/).
+My initial attempt to do so was with [Jekyll][Jekyll] which didn't work out (_because I was still an inexperienced developer_). So, I jumped ship to [Gatsby][Gatsby] & [GitHub Pages][GitHub Pages] which didn't work out either! _\*sighs\*_. But on a brighter note, I did come to terms (_for a while_) with a pretty good Static Site Generator (SSG) called [Pelican][pelican].
 
-Alas, I couldn't stay faithful to Pelican either for long. I'm using [Hugo](https://gohugo.io/) to generate the static content of the site you're reading off of right now. And you could say I'm pretty satisfied with the outcome, for now.
+Alas, I couldn't stay faithful to Pelican either for long. I'm using [Hugo][hugo] to generate the static content of the site you're reading off of right now. And you could say I'm pretty satisfied with the outcome, for now.
 
 I might appear fickle-minded to you but rest assured, the lessons I learnt might be useful for you if you want to start your own blog.
 
@@ -42,17 +42,19 @@ That said, lets dive into it & check out which SSG is great for you & your workf
 
 ## Jekyll & GitHub Pages
 
-Jekyll is [advertised as a one-stop solution](https://docs.github.com/en/github/working-with-github-pages/setting-up-a-github-pages-site-with-jekyll) for all your blogging needs. It's expected to work out-of-the-box without much configuration & complicated setup. And it's by far one of the most easiest to use among all the other SSGs mentioned in this article.
+Jekyll is [advertised as a one-stop solution][GitHub Pages Docs] for all your blogging needs. It's expected to work out-of-the-box without much configuration & complicated setup. And by far its one of the most easiest to use among all the other SSGs mentioned in this article. Coupled with being to easy to install, the software is well documented. And the official documentation is hosted on [jekyllrb.com/docs/][Jekyll Docs].
 
-There're probably hundreds, if not thousands of themes both free & paid. You can find some of the resources to find themes listed of the [official Jekyll themes page](https://jekyllrb.com/docs/themes/). And you might find many more on GitHub, maintained by the community & made available free of costs.
+With respect to its ease of use, things get interesting here. Well, you see, installing Jekyll locally isn't a strict requirement in the first place. You could write a single-page site (by hand!), save it as `index.html`, push it to a remote repository named `https://<YOUR-USERNAME>.github.io` & GitHub will serve your site powered by Jekyll themes. Check out the official [GitHub Page][GitHub Pages] landing page for more clarification on the same.
 
-While using Jekyll might be straightforward, I doubt you could say the same for installing it. Well, it's not "difficult to install" or something but the fact that you'll need to have a local Ruby runtime on your machine kinda triggers me.
+Think to yourself, do you want to write the markup files, by hand? If that's you, heck you won't even need a SSG in the first place then! But ask me, you're better off using a SSG to generate the static files. You'll find less errors in the markup & besides, using a SSG just enables good SEO practices by default.
 
-Yeah, I'm being nitpicky here but if installing a runtime which you'll probably never use again outside of Jekyll doesn't bother you a bit, then go ahead with it.
+That said, I observed Jekyll has the largest collection of themes. While some are free & maintained by the community, there're premium ones as well. So, regardless of if you're looking to create a blog or landing page for your business, there's bound to be a theme for you out there. A great place to find some themes is the official [Jekyll themes][Jekyll Themes] page (_they're all **free**_ :wink:). Perform a customary Google search for "_Jekyll themes_" and you'll find more of them scattered across the Internet.
+
+Customizing Jekyll themes isn't as straightforward as the using Jekyll itself to generate the static content though. In addition to the [Liquid][Liquid] templating language, Jekyll provides additional utilities to help you customize your site. So, if you're not familiar with the idea of templating languages, then you'll have to be satisfied with what the themes provide out-of-the-box.
+
+But on a brighter note, JavaScript & frontend developers, you might find better luck with the next SSG (_or rather a framework_), Gatsby.
 
 ## Gatsby: A React.js Framework to Build Static Sites
-
-
 
 ## Pelican: A Static Site Generator Built With Python
 
@@ -60,4 +62,16 @@ Yeah, I'm being nitpicky here but if installing a runtime which you'll probably 
 
 ## Final Thoughts
 
-<!-- Move all hyperlinks to this section & reference them as footers for a clean-looking file. -->
+<!-- Reference Links -->
+<!-- * Landing Pages -->
+[Liquid]: https://shopify.github.io/liquid/
+[Markdown]: https://www.markdownguide.org/
+[Jekyll]: https://jekyllrb.com/
+[Gatsby]: https://www.gatsbyjs.com/
+[GitHub Pages]: https://pages.github.com/
+[Pelican]: https://blog.getpelican.com/
+[Hugo]: https://gohugo.io/
+<!-- * Documentations -->
+[GitHub Pages Docs]: https://docs.github.com/en/github/working-with-github-pages/setting-up-a-github-pages-site-with-jekyll
+[Jekyll Docs]: https://jekyllrb.com/docs/
+[Jekyll Themes]: https://jekyllrb.com/docs/themes/
