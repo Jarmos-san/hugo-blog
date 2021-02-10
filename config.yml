@@ -81,14 +81,25 @@ params:
 menu:
   main:
     - identifier: about
-      name: About Me
-      url: /about-me/
+      name: About
+      url: /about/
+      weight: 10
     - identifier: blog
-      name: Archives
-      url: /archives/
+      name: Blog
+      url: /blog/
+      weight: 20
+    - identifier: hiring
+      name: Services
+      url: /hire-me/
+      weight: 30
+    - identifier: sponsorship
+      name: Sponsorship
+      url: /sponsorship/
+      weight: 40
     - identifier: newsletter
       name: Newsletter
       url: https://jarmos.ck.page/newsletter
+      weight: 50
 
 markup:
   highlight:
