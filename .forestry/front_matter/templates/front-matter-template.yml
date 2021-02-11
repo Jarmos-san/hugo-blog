@@ -10,6 +10,11 @@ fields:
     required: true
     min: 20
     max: 120
+- name: Category
+  type: tag_list
+  default: []
+  label: category
+  description: Category of the article
 - type: datetime
   name: date
   label: date
@@ -20,34 +25,32 @@ fields:
     required: true
   default: now
 - type: text
-  name: category
-  label: category
-  description: Category of the article
-  config:
-    required: true
-    min: 5
-    max: 25
-- type: text
   name: slug
   label: slug
   description: The URL to show
   config:
     required: true
-- type: text
-  name: summary
+- name: Summary
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: false
+    schema:
+      format: markdown
   label: summary
-  description: A brief summary of what the article is about
+  description: A brief summary of the article
+- name: Description
+  type: textarea
+  default: ''
   config:
-    min: 120
-    max: 200
-    required: true
-- type: text
-  name: description
+    required: false
+    wysiwyg: false
+    schema:
+      format: markdown
   label: description
-  description: Description of the article for SEO purpose. Can be similar to the summary
-    of the article
-  config:
-    required: true
+  description: Description of the article for SEO purposes. Can be similar to the
+    summary of the article
 - type: field_group
   name: cover
   label: cover
