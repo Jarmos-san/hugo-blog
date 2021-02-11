@@ -1,11 +1,17 @@
 ---
-title: "Hire Me"
+title: Hire Me
 url: "/hire-me"
 hidemeta: true
 disableShare: true
-summary: "Hire Somraj Saha for your professional needs. This section details his services, rates, skill sets & everything else you might want to know before hiring him."
----
+summary: Hire Somraj Saha for your professional needs. This section details his services,
+  rates, skill sets & everything else you might want to know before hiring him.
+menu:
+  main:
+    identifier: hiring
+    name: Services
+    weight: 3
 
+---
 Over the past couple of years, I've been fortunate enough to be able to work with some amazing folks. Most of them were business partners who co-founded some ventures with me or were small-scale business owners. They helped me garner 4+ years of experience working on real business issues.
 
 And are you a founder or a small-scale business owner as well? Perhaps my experience coupled with my skill set might benefit you in some way or the other. If so, read ahead & decide if you would like to hire me.

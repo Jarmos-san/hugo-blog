@@ -1,28 +1,26 @@
-baseURL: "https://jarmos.netlify.app"
-languageCode: "en-us"
-title: "Somraj Saha"
-theme: "hugo-PaperMod"
+---
+baseURL: https://jarmos.netlify.app
+languageCode: en-us
+title: Somraj Saha
+theme: hugo-PaperMod
 paginate: 3
-# googleAnalytics: 173277637-1
 enableRobotsTXT: true
 enableEmoji: true
 buildDrafts: false
 buildFuture: false
 buildExpired: false
-
 minify:
   disableXML: true
   minifyOutput: true
-
 params:
   env: production
   title: Somraj Saha
-  description: "Personal website for Somraj Saha where I share content based on my experiences as an ML Engineer & self-taught programmer."
-  images: ['profile-pic.jpg']
-
+  description: Personal website for Somraj Saha where I share content based on my
+    experiences as an ML Engineer & self-taught programmer.
+  images:
+  - profile-pic.jpg
   defaultTheme: auto
   disableThemeToggle: false
-
   ShowReadingTime: true
   ShowShareButtons: true
   disableSpecial1stPost: false
@@ -30,77 +28,49 @@ params:
   hidemeta: false
   showtoc: false
   tocopen: false
-
   assets:
-    favicon: "icons/favicon.ico"
-    favicon16x16: "icons/favicon-16x16.png"
-    favicon32x32: "icons/favicon-32x32.png"
-    apple_touch_icon: "icons/apple-touch-icon.png"
-    android-chrome: "icons/android-chrome-192x192.png"
-    android-chrome: "icons/android-chrome-512x512.png"
+    favicon: icons/favicon.ico
+    favicon16x16: icons/favicon-16x16.png
+    favicon32x32: icons/favicon-32x32.png
+    apple_touch_icon: icons/apple-touch-icon.png
+    android-chrome: icons/android-chrome-512x512.png
     disableHLJS: true
-
   label:
-    text: "Somraj Saha"
-
+    text: Somraj Saha
   homeInfoParams:
     Title: "Hi there! \U0001F44B"
-    Content: >
+    Content: |
       - Welcome to my blog where I share my thoughts & experiences as a self-taught programmer.
-
       -
-
       - Besides that, you'll find content on topics like - "Machine Learning", "Python (the programming language)", "Software development practices" & so on.
-
       -
-
       - If enjoy reading the content, consider sharing them with your extended or leave me a feedback on any of my social networks.
-
   socialIcons:
-    - name: twitter
-      url: "https://twitter.com/@Jarmosan"
-    - name: github
-      url: "https://github.com/Jarmos-san"
-    - name: medium
-      url: "https://medium.com/@Jarmos"
-    - name: email
-      url: "mailto:somraj.mle@gmail.com"
-    - name: buymeacoffee
-      url: "https://www.buymeacoffee.com/Jarmos"
-    - name: instagram
-      url: "https://www.instagram.com/jarmos.san/"
-    - name: linkedin
-      url: "https://www.linkedin.com/in/jarmos/"
-
+  - name: twitter
+    url: https://twitter.com/@Jarmosan
+  - name: github
+    url: https://github.com/Jarmos-san
+  - name: medium
+    url: https://medium.com/@Jarmos
+  - name: email
+    url: mailto:somraj.mle@gmail.com
+  - name: buymeacoffee
+    url: https://www.buymeacoffee.com/Jarmos
+  - name: instagram
+    url: https://www.instagram.com/jarmos.san/
+  - name: linkedin
+    url: https://www.linkedin.com/in/jarmos/
   cover:
     hidden: true
     hiddenInList: true
     hiddenInSingle: false
     linkFullImages: true
-
 menu:
   main:
-    - identifier: about
-      name: About
-      url: /about/
-      weight: 10
-    - identifier: blog
-      name: Blog
-      url: /blog/
-      weight: 20
-    - identifier: hiring
-      name: Services
-      url: /hire-me/
-      weight: 30
-    - identifier: sponsorship
-      name: Sponsorship
-      url: /sponsorship/
-      weight: 40
-    - identifier: newsletter
-      name: Newsletter
-      url: https://jarmos.ck.page/newsletter
-      weight: 50
-
+  - url: https://jarmos.ck.page/newsletter
+    name: Newsletter
+    weight: 5
+    identifier: newsletter
 markup:
   highlight:
     anchorLineNos: true

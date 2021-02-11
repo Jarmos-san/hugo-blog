@@ -1,11 +1,17 @@
 ---
-title: "About Me"
+title: About Me
 url: "/about"
 hidemeta: true
 disableShare: true
-summary: "About Somraj Saha. This section details what he does & everything else you might want to know about him."
----
+summary: About Somraj Saha. This section details what he does & everything else you
+  might want to know about him.
+menu:
+  main:
+    identifier: about
+    name: About
+    weight: 1
 
+---
 Hi there! :wave: I'm Somraj Saha (_call me Jarmos, if my name is hard to pronounce_ :face_with_tongue:).
 
 For a living, I work as an ML Engineer providing my 4+ years of experience to my clients. My past clients & business owners were amazing folks who I enjoyed working with every moment of it! :heart:
