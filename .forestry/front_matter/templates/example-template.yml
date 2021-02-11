@@ -1,0 +1,41 @@
+---
+label: Example Template
+hide_body: false
+fields:
+- type: text
+  name: title
+  label: title
+- type: datetime
+  name: date
+  label: date
+- type: text
+  name: category
+  label: category
+- type: text
+  name: slug
+  label: slug
+- type: text
+  name: summary
+  label: summary
+- type: text
+  name: description
+  label: description
+- type: field_group
+  name: cover
+  label: cover
+  fields:
+  - type: file
+    name: image
+    label: image
+  - type: text
+    name: alt
+    label: alt
+  - type: text
+    name: caption
+    label: caption
+  - type: boolean
+    name: relative
+    label: relative
+- type: boolean
+  name: showtoc
+  label: showtoc
