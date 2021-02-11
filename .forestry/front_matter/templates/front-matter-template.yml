@@ -5,21 +5,49 @@ fields:
 - type: text
   name: title
   label: title
+  description: Title of the article
+  config:
+    required: true
+    min: 20
+    max: 120
 - type: datetime
   name: date
   label: date
+  description: Date of publication
+  config:
+    date_format: DD/MM/YYYY
+    export_format: YYYY-MM-DD
+    required: true
+  default: now
 - type: text
   name: category
   label: category
+  description: Category of the article
+  config:
+    required: true
+    min: 5
+    max: 25
 - type: text
   name: slug
   label: slug
+  description: The URL to show
+  config:
+    required: true
 - type: text
   name: summary
   label: summary
+  description: A brief summary of what the article is about
+  config:
+    min: 120
+    max: 200
+    required: true
 - type: text
   name: description
   label: description
+  description: Description of the article for SEO purpose. Can be similar to the summary
+    of the article
+  config:
+    required: true
 - type: field_group
   name: cover
   label: cover
@@ -27,15 +55,29 @@ fields:
   - type: file
     name: image
     label: image
+    description: Cover image for the article
+    config:
+      maxSize: 5
   - type: text
     name: alt
     label: alt
+    config:
+      required: true
+    description: Alternate text for the cover image.
   - type: text
     name: caption
     label: caption
+    config:
+      required: true
+    description: Caption that goes right under the cover image
   - type: boolean
     name: relative
     label: relative
 - type: boolean
   name: showtoc
   label: showtoc
+  description: If Table of Contents should be visible or not
+  default: false
+  showOnly:
+    field: showtoc
+    value: true
