@@ -138,6 +138,9 @@ All software used & the content I share are licensed under the T&Cs as stated be
     | Hugo-PaperMod theme | [MIT][Hugo-PaperMod License]                      |
     | Netlify             | [Netlify Terms of Service Agreement][Netlify ToS] |
     | Netlify CMS         | [MIT][Netlify CMS License]                        |
+    | Git Checkout Action | [MIT][Git Checkout Action License]                |
+    | Actions-Hugo        | [MIT][Hugo Action License]                        |
+    | Automerge-Action    | [MIT][Automerge Action License]                   |
 
 ## :raised_hand: Get Help
 
@@ -191,6 +194,9 @@ Or maybe your question isn't related to this project, then check out my [*Ask Me
 [Markdown Guide]: https://www.markdownguide.org/
 [GitHub Encrypted Secrets]: https://docs.github.com/en/actions/reference/encrypted-secrets
 [Netlify Deploy]: https://github.com/Jarmos-san/blog/actions?query=workflow%3A%22Netlify+Deploy%22
+[Git Checkout Action License]: https://github.com/actions/checkout/blob/main/LICENSE
+[Hugo Action License]: https://github.com/peaceiris/actions-hugo/blob/main/LICENSE
+[Automerge Action License]: https://github.com/pascalgn/automerge-action/blob/master/LICENSE
 <!-- ? Shield Badges -->
 [Website]: https://img.shields.io/website?down_color=Red&down_message=Down&label=Website&style=flat-square&up_color=Green&up_message=Up&url=https%3A%2F%2Fjarmos.netlify.app%2F
 [Netlify Deploy Badge]: https://github.com/Jarmos-san/blog/workflows/Netlify%20Deploy/badge.svg?branch=dev
