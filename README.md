@@ -1,10 +1,10 @@
-# Somraj's Blog
+# :man_technologist: Jarmos
 
 [![Website][Website]][Personal Website] [![Netlify Deploy][Netlify Deploy Badge]][Netlify Deploy] [![LinkedIn][My LinkedIn Badge]][My LinkedIn] [![Quora profile][My Quora Badge]][My Quora] [![Ask Me Anything !][My AMA Badge]][My AMA] [![Twitter Follow][My Twitter Badge]][My Twitter]
 
 This repository hosts the tools, assets & themes for my [personal website][Personal Website]. The site is statically generated with [Hugo][Hugo Landing Page] & the [PaperMod][Hugo-PaperMod] theme. Hugo which is a Static Site Generator(SSG) built with [Golang][Go Landing Page] generates the static contents for the site to be deployed to [Netlify][Netlify Landing Page].
 
-- [Somraj's Blog](#somrajs-blog)
+- [:man_technologist: Jarmos](#man_technologist-jarmos)
   - [:checkered_flag: Getting Started](#checkered_flag-getting-started)
     - [:running: The Easy & Quick Way To Get It Done](#running-the-easy--quick-way-to-get-it-done)
       - [:nut_and_bolt: Setup a Development Environment](#nut_and_bolt-setup-a-development-environment)
