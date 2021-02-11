@@ -14,8 +14,8 @@ sections:
   label: Posts
   create: all
   match: "**/*"
-upload_dir: static/uploads
-public_path: "/uploads"
+upload_dir: static/covers
+public_path: "/covers"
 front_matter_path: ''
 use_front_matter_path: false
 file_template: ":filename:"
