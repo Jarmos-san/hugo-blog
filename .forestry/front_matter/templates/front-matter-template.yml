@@ -85,3 +85,5 @@ fields:
   showOnly:
     field: showtoc
     value: true
+pages:
+- content/posts/example-post-checking-stuff-out.md
