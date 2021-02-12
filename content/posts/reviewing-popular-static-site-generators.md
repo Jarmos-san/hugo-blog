@@ -84,12 +84,59 @@ Using Gatsby was just too difficult for me to use. Since, not only did it requir
 
 ## Pelican: A Static Site Generator Built With Python
 
+Not everyone is a frontend developer & hence, Python is a quite popular among backend developers. So, in case you're wondering, wouldn't it be great to work with a SSG which is based on Python? Well then, you're lucky because I bring you [Pelican][Pelican]!
+
+Since the software is based on Python, all you got to do is have [Python][Python] installed on your local machine. Then installing Pelican is just a `pip` command away with `pip install pelican`. While it supports files written in `.rst` format, you can even write your articles in Markdown now. All you got to do is install additional dependencies with the `pip install "pelican[markdown]"` command.
+
+Unlike the previous generators, Pelican might appear bland to some people and they're right to feel so. The software is over a decade old at the time of writing this article. I assume some parts of it's API might even be very difficult to peruse through for the current developers.
+
+Besides, Pelican's age doesn't show not just on it's landing page but on it's themes & configuration system as well. It just shows somehow & might be unappealing to many.
+
+It's configuration system involves certain [global variables][Python Global Variables] inside a `pelicanconf.py` file. While some of those variables are set by Pelican & is a neccessity for Pelican to parse the `.md` and/or `.rst` files into HTML, theme authors can add their own variables too. In other words, Pelican can make use of an arbitrary range of settings! It might sound good right away but, for Pelican, it just didn't work out so well as you'll see soon.
+
+Like most well-maintained Python projects, Pelican has an active team of developers keeping watch on it at all times. They've documented the software well enough but could be made better. This is a problem with most Python projects as their authors rely on automatic documentations off of the docstrings of the source code. Hence, you might often notice a lack of "human-touch" with certain Python project docs.
+
+Regardless, the issue of documentations can still be handled to an extent, if not for a major issue the Pelican community faces. There're a ton of available themes for Pelican, great. But guess what? Most of the themes aren't maintained at all ([source][Pelican Themes Aren't Well Maintained])!
+
+Now remember wherein Pelican theme authors can add their own arbitrary number of settings on top of the available ones? Well this is where it came back to bite the Pelican ecosystem.
+
+Imagine you find a theme that you like. Install it for your blog, only for it to break with the latest Pelican installation. And there's no way for you to fix it because the theme author hadn't made a commit to the repo for 5 years now. Saddening, isn't it?
+
+On top of it, as mentioned earlier, most of the themes look aged & bland. You could customize them or create one from scratch, but you'll also require knowledge of working with [Jinja 2][Jinja] templates. And working with Jinja templates does have a slight learning curve to it. So, good luck working with it when your time could be better spent blogging instead.
+
+So, at the end of day when/why should you use Pelican? You're a Python backend developer with experience working on Jinja templates. And in addition to that, you don't care about SEO & other aesthetic values of your site. Then Pelican is the right option for you.
+
+But, what if you care of efficiency & proper time management? Then there's Hugo for you. The next section details a review about Hugo as an SSG.
+
 ## Hugo: The Fastest Static Site Generator Ever Created
 
-## Final Thoughts
+Hugo, the second-most popular site generator, ahead off of Gatsby only by a fraction of _stars_ in terms of popularity ([source][Jamstack list]). It's also one of the few non-JS software (or framework) in a domain filled by JavaScript framework. And most of it's popularity arose due to the fact how incredibly fast Hugo is at generating the static content, plus its availability of pretty, modern & SEO-friendly themes.
+
+Since, it was built using [Go][Golang], all you need to get started with using Hugo is download it's binary. Adding the binary to your `PATH` enables you to invoke the binary from anywhere in the Terminal! You can find the most detailed installation instructions I've ever seen in any documentation at the "[Getting Started][Hugo Getting Started]" section.
+
+And if it's not obvious already, I can't appreciate the Hugo dev's effort in making their docs as inclusive as possible! There's just too much details & they left not corners untouched while articulating the docs. My fellow Python devs, take some lessons from the Hugo devs on how-to write good documentations. :winking_face_with_tongue:
+
+Besides, being able to invoke a single binary file, installing Hugo themes is also a piece of cake. All you got to do clone your preferred theme(s) into the `./theme/` directory. Ensure your Hugo knows which theme to use by updating the `config.yml` files & you're set with a theme. Also, trust me on it but, you're going to spend a day or two perusing through [the available list of themes][Hugo Themes]! Not only are each of them pretty & modern, most of them are well maintained & are SEO-friendly.
+
+On that note, if you're wondering how easy is it to customise the themes? I would say, they're not difficult & besides, the official Hugo docs got your back in case you get stuck somewhere. :wink:
+
+All you've before going the road of customizing (or even building your own theme) is Hugo uses [Go's powerful templating][Go Template] language. Unlike Liquid and/or Jinja2, Go templates are extremely intuitive. You can use your existing frontend toolkit, couple it with Go templates to build websites that won't look like static sites at all.
+
+So, if you ask me? I would say Hugo would be your best bet. And this is coming from a Python developer with no experience working with Golang and/or JavaScript! With Hugo, I can reliably focus on producing more content rather than develop frontend stuffs.
+
+## Verdict
+
+Final thoughts on choosing tool for individual needs? Oh well, was it not hard for me thoroughly review each of those tools & decide which would suit which kind of users. But anyway let's end this rather lenghty piece of article with a brief infographic showing which site generator might be fit for you.
+
+{PLACEHOLDER: Insert infographic over here}
+
+With everything said & done, do let me know if you enjoy reading these content. Find me on Twitter: [@Jarmosan][My Twitter] and/or [subscribe to my newsletter][My Newsletter] to get personalized content delivered to your inbox.
 
 <!-- Reference Links -->
 <!-- * Landing Pages -->
+[Jamstack list]: https://www.jamstack.com/generators/
+[Python]: https://www.python.org/
+[Jinja]: https://jinja.palletsprojects.com/en/2.11.x/
 [Liquid]: https://shopify.github.io/liquid/
 [Markdown]: https://www.markdownguide.org/
 [Jekyll]: https://jekyllrb.com/
@@ -97,8 +144,17 @@ Using Gatsby was just too difficult for me to use. Since, not only did it requir
 [GitHub Pages]: https://pages.github.com/
 [Pelican]: https://blog.getpelican.com/
 [Hugo]: https://gohugo.io/
+[Hugo Themes]: https://themes.gohugo.io/
+[Golang]: https://golang.org/
 <!-- * Documentations -->
 [GitHub Pages Docs]: https://docs.github.com/en/github/working-with-github-pages/setting-up-a-github-pages-site-with-jekyll
 [Jekyll Docs]: https://jekyllrb.com/docs/
 [Jekyll Themes]: https://jekyllrb.com/docs/themes/
 [Gatsby Docs]: https://www.gatsbyjs.com/docs/
+[Python Global Variables]: https://docs.python.org/3/faq/programming.html#how-do-i-share-global-variables-across-modules
+[Pelican Themes Aren't Well Maintained]:https://github.com/getpelican/pelican-themes/issues/677
+[Hugo Getting Started]: https://gohugo.io/getting-started/installing
+[Go template]: https://golang.org/pkg/text/template/
+<!-- * Personal Information -->
+[My Newsletter]: https://jarmos.ck.page/newsletter
+[My Twitter]: https://twitter.com/Jarmosan
