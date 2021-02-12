@@ -146,7 +146,6 @@ All software used & the content I share are licensed under the T&Cs as stated be
     | Netlify Actions     | [MIT][Netlify Actions License]                    |
     | Hugo-PaperMod theme | [MIT][Hugo-PaperMod License]                      |
     | Netlify             | [Netlify Terms of Service Agreement][Netlify ToS] |
-    | Netlify CMS         | [MIT][Netlify CMS License]                        |
     | Git Checkout Action | [MIT][Git Checkout Action License]                |
     | Actions-Hugo        | [MIT][Hugo Action License]                        |
     | Automerge-Action    | [MIT][Automerge Action License]                   |
@@ -171,11 +170,9 @@ Or maybe your question isn't related to this project, then check out my [*Ask Me
 [My AMA]: https://github.com/Jarmos-san/Jarmos-san/discussions/categories/q-a
 [My Quora]: https://www.quora.com/profile/Somraj-Saha-3
 <!-- ? Hugo Related Links -->
-[Hugo Landing Page]: https://gohugo.io
 [Hugo-PaperMod]: https://adityatelange.github.io/hugo-PaperMod/
 [Install Hugo]: https://gohugo.io/getting-started/installing/
 [Hugo Google Analytics]: https://gohugo.io/templates/internal/#google-analytics
-[Hugo Docs]: https://gohugo.io/documentation/
 [Hugo License]: https://github.com/gohugoio/hugo/blob/master/LICENSE
 [Hugo Devs]: https://github.com/orgs/gohugoio/people
 [Hugo-PaperMod Dev]: https://github.com/adityatelange
@@ -185,33 +182,21 @@ Or maybe your question isn't related to this project, then check out my [*Ask Me
 [Netlify ToS]: https://www.netlify.com/tos/
 [Netlify Landing Page]: https://www.netlify.com/
 [Netlify CDN Guide]: https://community.netlify.com/t/support-guide-making-the-most-of-netlifys-cdn-cache/127
-[Netlify Docs]: https://docs.netlify.com/
-[Netlify CMS Landing Page]: https://www.netlifycms.org/
 [Netlify CMS License]: https://github.com/netlify/netlify-cms/blob/master/LICENSE
 [Netlify Actions]: https://github.com/marketplace/actions/netlify-actions
 [Netlify User Settings]: https://app.netlify.com/user/applications
-[Go Landing Page]: https://golang.org
 <!-- ? Cloudflare Related Links -->
-[Cloudflare Analytics]: https://www.cloudflare.com/analytics/
 [Cloudflare vs Google Analytics]: https://community.cloudflare.com/t/gap-between-cloudflare-analytics-and-google-analytics-reporting/33326
-[Cloudflare Landing Page]: https://www.cloudflare.com/
 [Cloudflare Analytics Dashboard]: https://dash.cloudflare.com/?to=/:account/:zone/analytics/traffic
 <!-- ? Project Related Links -->
 [Project Discussion Threads]: https://github.com/Jarmos-san/blog/discussions
 [Project Contributors]: https://github.com/Jarmos-san/blog/graphs/contributors
 [Issue #40]: https://github.com/Jarmos-san/blog/issues/40
 <!-- ? Miscellaneous Related Links -->
-[Markdown Guide]: https://www.markdownguide.org/
-[GitHub Encrypted Secrets]: https://docs.github.com/en/actions/reference/encrypted-secrets
 [Netlify Deploy]: https://github.com/Jarmos-san/blog/actions?query=workflow%3A%22Netlify+Deploy%22
 [Git Checkout Action License]: https://github.com/actions/checkout/blob/main/LICENSE
 [Hugo Action License]: https://github.com/peaceiris/actions-hugo/blob/main/LICENSE
 [Automerge Action License]: https://github.com/pascalgn/automerge-action/blob/master/LICENSE
-[Forestry Docs]: https://forestry.io/docs/welcome/
-[Cloudinary]: https://cloudinary.com/
-[AWS S3]: https://aws.amazon.com/s3/
-[Netlify Large Media]: https://www.netlify.com/products/large-media/
-[Forestry]: https://forestry.io/
 <!-- ? Shield Badges -->
 [Website]: https://img.shields.io/website?down_color=Red&down_message=Down&label=Website&style=flat-square&up_color=Green&up_message=Up&url=https%3A%2F%2Fjarmos.netlify.app%2F
 [Netlify Deploy Badge]: https://github.com/Jarmos-san/blog/workflows/Netlify%20Deploy/badge.svg?branch=dev
@@ -219,3 +204,19 @@ Or maybe your question isn't related to this project, then check out my [*Ask Me
 [My Quora Badge]: https://img.shields.io/static/v1?label=Quora&message=QnA&color=B92B27&style=flat-square&logo=quora
 [My AMA Badge]: https://img.shields.io/badge/Ask%20Me-Anything!-1abc9c.svg
 [My Twitter Badge]: https://img.shields.io/twitter/follow/Jarmosan?style=social
+<!-- ? Documentations -->
+[Forestry Docs]: https://forestry.io/docs/welcome/
+[GitHub Encrypted Secrets]: https://docs.github.com/en/actions/reference/encrypted-secrets
+[Netlify Docs]: https://docs.netlify.com/
+[Hugo Docs]: https://gohugo.io/documentation/
+<!-- ? Landing Pages -->
+[Go Landing Page]: https://golang.org
+[Netlify CMS Landing Page]: https://www.netlifycms.org/
+[Hugo Landing Page]: https://gohugo.io
+[Cloudflare Landing Page]: https://www.cloudflare.com/
+[Cloudflare Analytics]: https://www.cloudflare.com/analytics/
+[Cloudinary]: https://cloudinary.com/
+[AWS S3]: https://aws.amazon.com/s3/
+[Netlify Large Media]: https://www.netlify.com/products/large-media/
+[Forestry]: https://forestry.io/
+[Markdown Guide]: https://www.markdownguide.org/
