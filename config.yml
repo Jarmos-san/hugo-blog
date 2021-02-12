@@ -1,8 +1,7 @@
----
-baseURL: https://jarmos.netlify.app
-languageCode: en-us
-title: Somraj Saha
-theme: hugo-PaperMod
+baseURL: "https://jarmos.netlify.app"
+languageCode: "en-us"
+title: "Jarmos"
+theme: "hugo-PaperMod"
 paginate: 3
 enableRobotsTXT: true
 enableEmoji: true
