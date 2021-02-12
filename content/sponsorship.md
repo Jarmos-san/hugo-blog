@@ -10,9 +10,10 @@ menu:
     identifier: sponsorship
     name: Sponsorship
     weight: 4
-draft: true
+draft: false
 
 ---
+
 All my content are shared without charging a dime. In return all I ask off of my audience in return is a couple of minutes to read my articles. :grinning_face_with_big_eyes:
 
 But it's not sustainable, I got to feed myself you know. So, if you would like to support me, this page contains details on how you can do so.
