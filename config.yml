@@ -13,11 +13,10 @@ minify:
   minifyOutput: true
 params:
   env: production
-  title: Somraj Saha
-  description: Personal website for Somraj Saha where I share content based on my
-    experiences as an ML Engineer & self-taught programmer.
-  images:
-  - profile-pic.jpg
+  title: Jarmos
+  description: "Personal website for Somraj Saha where I share content based on my experiences as an ML Engineer & self-taught programmer."
+  images: ['profile-pic.jpg']
+
   defaultTheme: auto
   disableThemeToggle: false
   ShowReadingTime: true
