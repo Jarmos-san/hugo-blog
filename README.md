@@ -9,7 +9,7 @@ This repository hosts the tools, assets & themes for my [personal website][Perso
     - [:running: The Easy & Quick Way To Get It Done](#running-the-easy--quick-way-to-get-it-done)
       - [:nut_and_bolt: Setup a Development Environment](#nut_and_bolt-setup-a-development-environment)
       - [:chart_with_upwards_trend: Setting Up Traffic Tracking & Analytics](#chart_with_upwards_trend-setting-up-traffic-tracking--analytics)
-      - [:control_knobs: Setup Netlify CMS](#control_knobs-setup-netlify-cms)
+      - [:control_knobs: Setup a CMS](#control_knobs-setup-a-cms)
       - [:dash: Preparing Your Site For Deployment](#dash-preparing-your-site-for-deployment)
       - [:gear: Setup GitHub Actions to Deploy](#gear-setup-github-actions-to-deploy)
   - [:hammer_and_wrench: Built With](#hammer_and_wrench-built-with)
@@ -31,7 +31,7 @@ A bird's eye overview of what the blog is capable of:
 - Transparency is a major aspect in everything I do in life. The same applies to my personal website as well. That said, I try to keep stuff related to it as open-source as possible on the repository. So, in other words, my website will forever be open-sourced.
 - Privacy-first. My site uses [Cloudflare Analytics][Cloudflare Analytics] as an alternative to Google Analytics to respect my audience's privacy concerns. All I care about is how much traffic am I getting & that's all. So, Cloudflare Analytics satisfies my needs.
 - Knowledge-sharing over aesthetics. Visit my site & you'll find it's pretty simple & minimalist. That's intentional as I want my audiences to read my content & take home some valuable lessons. Intrusive popups & marketing gimmicks aren't my thing, so I try to keep that away from my personal site.
-- Make it a Wordpress alternative. Hence, it even supports an admin panel powered by [Netlify CMS][Netlify CMS Landing Page] (_Work-In-Progress_)!
+- Make it a Wordpress alternative. Hence, it even supports an admin panel powered by [Forestry][Forestry.io]!
 
 So, if the aforementioned points matters to you, then fo ahead & check out how to get your own blog which looks similar to mine.
 
@@ -62,11 +62,20 @@ And you're good to go! Now you can keep track of all visits to your site on Clou
 
 But in case, you decide to use Google Analytics instead, do follow the [official instructions][Hugo Google Analytics Docs] on the Hugo documentations.
 
-#### :control_knobs: Setup Netlify CMS
-<!-- TODO: Update README with instructions to setup Netlify CMS -->
-Setting up the CMS is a work-in-progress project but it's already implemented (_kinda_). If you want to access it, check it out at: `https://<SITE-NAME>.netlify.app/admin`. Helping hands are always welcome to help set it up.
+#### :control_knobs: Setup a CMS
 
-That said, it's setup with [Netlify CMS][Netlify CMS Landing Page] & make sure to check back to stay updated with the latest implementations.
+**Note**: I'm in favour of using [Forestry.io][Forestry]'s service right now over [Netlify CMS][Netlify CMS Landing Page]. It's much more easier & intuitive (_and less buggier too_) to setup. The decision was made after coming across a blocker as documented in [#40][Issue #40]. Since, the devs of Netlify haven't shown any interest to fix the issue, Forestry is a better choice.
+
+For a detailed installation process, refer to the official Forestry.io [documentations][Forestry Docs]. The devs did an amazing job articultating the exact procedure to set it up.
+
+That said, following are the advantages of get setting up a CMS admin panel on the site:
+
+- You no longer need a Markdown Editor (or even the development environment) installed locally. Just access it at: `https://<YOUR-SITE>/admin` & start writing.
+- You can give editorial access to 2 more writers all for free. More than that you would've to purchase a subsciption.
+- Forestry leverages the Git-backend to update any config files it needs for the CMS, on your behalf. All you got to do is tweak the settings on it's web-based GUI.
+- And finally, the main reason for switching from Netlify CMS to Forestry, availability of remote media storage. As of the now the site is configured to load up the image assets off of [Cloudinary][Cloudinary] but other options include [S3][AWS S3] & [Netlify Large Media][Netlify Large Media]. These options should help me in case I need to scale up my image storage capabilities.
+
+There's more information available on the official docs, so do check it out. They did a convincing job to make me switch.
 
 #### :dash: Preparing Your Site For Deployment
 
@@ -190,6 +199,7 @@ Or maybe your question isn't related to this project, then check out my [*Ask Me
 <!-- ? Project Related Links -->
 [Project Discussion Threads]: https://github.com/Jarmos-san/blog/discussions
 [Project Contributors]: https://github.com/Jarmos-san/blog/graphs/contributors
+[Issue #40]: https://github.com/Jarmos-san/blog/issues/40
 <!-- ? Miscellaneous Related Links -->
 [Markdown Guide]: https://www.markdownguide.org/
 [GitHub Encrypted Secrets]: https://docs.github.com/en/actions/reference/encrypted-secrets
@@ -197,6 +207,11 @@ Or maybe your question isn't related to this project, then check out my [*Ask Me
 [Git Checkout Action License]: https://github.com/actions/checkout/blob/main/LICENSE
 [Hugo Action License]: https://github.com/peaceiris/actions-hugo/blob/main/LICENSE
 [Automerge Action License]: https://github.com/pascalgn/automerge-action/blob/master/LICENSE
+[Forestry Docs]: https://forestry.io/docs/welcome/
+[Cloudinary]: https://cloudinary.com/
+[AWS S3]: https://aws.amazon.com/s3/
+[Netlify Large Media]: https://www.netlify.com/products/large-media/
+[Forestry]: https://forestry.io/
 <!-- ? Shield Badges -->
 [Website]: https://img.shields.io/website?down_color=Red&down_message=Down&label=Website&style=flat-square&up_color=Green&up_message=Up&url=https%3A%2F%2Fjarmos.netlify.app%2F
 [Netlify Deploy Badge]: https://github.com/Jarmos-san/blog/workflows/Netlify%20Deploy/badge.svg?branch=dev
