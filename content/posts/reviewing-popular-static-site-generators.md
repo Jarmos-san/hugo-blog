@@ -14,31 +14,39 @@ showtoc: true
 draft: true
 ---
 
-The beginning of 2020 was when I wanted to start my own personalized blog. Suffice to say, as I shopped around with available options, I figured each software (_or platform_) has something or the other to offer. While there's Wordpress, it requires a server backend & periodic security management. That's something I didn't want to get into, if I didn't have to. All I wanted was a way write content in [Markdown][Markdown] & generate the static files (_think HTML + CSS + JavaScript files_) to be hosted on a CDN.
+When I started out, choosing the right [Static Site Generators][SSG] (SSGs) to create my blog was a difficult task. I looked around. tried a couple of available options. And I figured something out. Each site generator were unique in some way or the other & will have something advantage over the other.
 
-My initial attempt to do so was with [Jekyll][Jekyll] which didn't work out (_because I was still an inexperienced developer_). So, I jumped ship to [Gatsby][Gatsby] & [GitHub Pages][GitHub Pages] which didn't work out either! _\*sighs\*_. But on a brighter note, I did come to terms (_for a while_) with a pretty good Static Site Generator (SSG) called [Pelican][pelican].
+Keeping that in mind, I had to jolt down my specific requirements. And following were my blogging needs:
 
-Alas, I couldn't stay faithful to Pelican either for long. I'm using [Hugo][hugo] to generate the static content of the site you're reading off of right now. And you could say I'm pretty satisfied with the outcome, for now.
+1. Write content in [Markdown][Markdown].
+2. Prioritise delivering quality content over aesthetics & uneccessary hacking skills on setting up the development environment.
+3. Automate certains aspects of my workload as much as possible.
 
-I might appear fickle-minded to you but rest assured, the lessons I learnt might be useful for you if you want to start your own blog.
+My initial attempt to do so was with [Jekyll][Jekyll] didn't work out very well (_I was an inexperienced developer_). So, I jumped ship to [Gatsby][Gatsby] & [GitHub Pages][GitHub Pages] which didn't work out either! _\*sighs\*_. So made a quick switch to [Pelican][Pelican] & used it to generate some of my initial articles.
 
-That said, without further ado, let's review some of the most popular SSGs or at least the ones I've used.
+Alas, I couldn't stay faithful to Pelican either for long. More on why I made the switch from Pelican to Hugo is explained further ahead into the article. [Hugo][hugo] hasn't failed to disappoint me until now, so let's see how long do I stick to it.
 
-## Important Aspects Making a Static Site Generator Worth a Try
+If read till here, you might wonder to yourself, how fickle-minded I'm. Perhaps I'm, but if there's one thing I gained from using those software it would be an in-depth first-hand experience of using them. Hence, I wanted to share what I learned & leave a detailed review of the software with my audience.
 
-On my journey towards trying out a number of SSGs, I discovered none is better than the other. Each has something unique to offer. Perhaps, your site has a lot of individual pages then Hugo will be a good choice. Or maybe you need a modern & fast website, then Gatsby should be your choice. While having choices are a good thing, reviewing each tool against each other is hard (if not close to impossible). Hence, I thought it would be better to list out some common grounds where each SSG could be compared against each other.
+So, without further ado, let's review some of the most popular Static Site Generators, or at least the ones I used extensively.
 
-That said here are the common points I considered for reviewing each SSG:
+## Common Aspects All SSGs Should've (By Default)
 
-- **Easy installation process** - As in, installing the tool(s) required to get the SSG in question up & running shouldn't be difficult even for a non-technical individual.
-- **Legibility of the documentations** - Can't emphasis on this point enough! I'll discuss in more details on the importance of this point.
-- **Ease of use** - A subjective point-of-view since what's easy for me to use mightn't be the same for the other individual. More on it will be discussed in the rest of the article.
-- **Availability of good-looking & modern themes** - This point is almost a no-brainer. Why would someone not choose Wordpress with so many good-looking & modern themes over SSGs. Living in the 21st century, support for good-looking themes (_paid/free_) is a must-have for any SSGs.
-- **Ease of customizing the available themes** - You got hold of you preferred SSG, discovered a nice theme (_extra kudos if it was free & open-sourced_), all good & dandy. But there's just some subtle thing about the theme bothering you, maybe the font or maybe the background color. Whatever it be, the themes you use for your blog has to let you customize it in some way or the other.
+Comparing one SSG with another is no easy task, they all serve one single purpose i.e to generate static contents to be served over the Internet through a CDN. Hence, there's no one site generator better than the other(s).
 
-So, those were some of common aspects which all SSGs I review should've at the least. It's not worth using a particular SSG which lacks any of the mentioned points above.
+But, for the sake of brevity & a precise review, I felt the need to review the site generators keeping in mind certain common aspects. Hence, even though they deliver the end results in different ways reviewing the site generators will be much easier (_and relevant to individual needs_).
 
-That said, lets dive into it & check out which SSG is great for you & your workflow.
+That said, following are the common aspects to review each site generators:
+
+- **Easy installation process** - As in, installing the tool(s) required to get the site generator in question up & running. It should be easy enough even for a non-technical individual to setup with the least amount of roadblocks.
+- **Legibility of the documentations** - Can't emphasis on this point enough! In context to the first point, while a seasoned developer might be able to hack around with insufficient documentations, it might be a total nightmare for a non-technical person. So, the easier the docs are to follow, more additional kudos for that site generator.
+- **Ease of use** - While having a proper documentation in place can alleviate the problem of the tool being difficult to use, it's not always the case with certain tools. An example would be Pelican & it's use of Jinja templates. Or Jekyll & Liquid templates for customizing the site's aesthetics. These additional tools can often increase the learning curve of using a tool. Hence, the SSG with little to no additional set of tooling should be preferred at all costs if your intention is to produce content rather than being a hacker.
+- **Availability of good-looking & modern themes** - If you choose to use a site generator over [Wordpress][Wordpress] or [Wix][Wix], having this aspect is a necessity. We live in the 21st century, I don't see why a site generator should provide a wide range of themes to choose from. Availability of themes is a must, doesn't if they're paid or free.
+- **Ease of customizing the available themes** - What's the point of having a ready list of themes if you can't customize them to your needs. Considering how important branding & personalization is for success on anything online, not providing this option is a no-brainer. We'll see how easy is it to customize the themes of your choice. And extra kudos if the themes are open-sourced! :heart:
+
+So, those were some of common aspects which all site generators should absolutely adhere to no matter how they generate the actual static content. I'll review each SSG based on the specific points mentioned above. And any other SSG lacking said aforementioned aspects at the least are worth giving a try in my opinion.
+
+That said, lets dive into it & review the site generators, shall we?
 
 ## Jekyll: The Static Site Generator That Powers GitHub Pages
 
@@ -128,11 +136,13 @@ So, if you ask me? I would say Hugo would be your best bet. And this is coming f
 
 Final thoughts on choosing tool for individual needs? Oh well, was it not hard for me thoroughly review each of those tools & decide which would suit which kind of users. But anyway let's end this rather lenghty piece of article with a brief infographic showing which site generator might be fit for you.
 
-{PLACEHOLDER: Insert infographic over here}
+![Choosing the Right Static Site Generator Infographic][Infographic]
 
 With everything said & done, do let me know if you enjoy reading these content. Find me on Twitter: [@Jarmosan][My Twitter] and/or [subscribe to my newsletter][My Newsletter] to get personalized content delivered to your inbox.
 
 <!-- Reference Links -->
+<!-- * Assets -->
+<!-- [Infographic]: https://res.cloudinary.com/jarmos/image/upload/v1613158461/static-site-generator-review-infographic_qwrw0z.jpg -->
 <!-- * Landing Pages -->
 [Jamstack list]: https://www.jamstack.com/generators/
 [Python]: https://www.python.org/
@@ -146,6 +156,8 @@ With everything said & done, do let me know if you enjoy reading these content. 
 [Hugo]: https://gohugo.io/
 [Hugo Themes]: https://themes.gohugo.io/
 [Golang]: https://golang.org/
+[Wordpress]: https://wordpress.com/
+[Wix]: https://www.wix.com/
 <!-- * Documentations -->
 [GitHub Pages Docs]: https://docs.github.com/en/github/working-with-github-pages/setting-up-a-github-pages-site-with-jekyll
 [Jekyll Docs]: https://jekyllrb.com/docs/
@@ -155,6 +167,7 @@ With everything said & done, do let me know if you enjoy reading these content. 
 [Pelican Themes Aren't Well Maintained]:https://github.com/getpelican/pelican-themes/issues/677
 [Hugo Getting Started]: https://gohugo.io/getting-started/installing
 [Go template]: https://golang.org/pkg/text/template/
+[SSG]: https://www.cloudflare.com/learning/performance/static-site-generator/
 <!-- * Personal Information -->
 [My Newsletter]: https://jarmos.ck.page/newsletter
 [My Twitter]: https://twitter.com/Jarmosan
