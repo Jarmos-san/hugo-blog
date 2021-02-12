@@ -5,12 +5,6 @@ hidemeta: true
 disableShare: true
 summary: About Somraj Saha. This section details what he does & everything else you
   might want to know about him.
-menu:
-  main:
-    identifier: about
-    name: About
-    weight: 1
-
 ---
 Hi there! :wave: I'm Somraj Saha (_call me Jarmos, if my name is hard to pronounce_ :face_with_tongue:).
 

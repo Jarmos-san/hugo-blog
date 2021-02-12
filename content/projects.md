@@ -7,8 +7,8 @@ summary: "A list of personal projects & open-source software authored by Somraj 
 description: "A list of personal projects & open-source software authored by Somraj Saha. It also includes detailed descriptions of all those projects."
 menu:
   main:
-    identifier: sponsorship
-    name: Sponsorship
+    identifier: projects
+    name: Projects
     weight: 4
 draft: true
 ---

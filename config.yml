@@ -65,10 +65,23 @@ params:
     linkFullImages: true
 menu:
   main:
-  - url: https://jarmos.ck.page/newsletter
-    name: Newsletter
-    weight: 5
+  - name: About
+    identifier: about
+    url: about/
+    weight: 1
+  - name: Services
+    identifier: hiring
+    name: Services
+    url: services/
+    weight: 3
+  - name: Sponsorship
+    identifier: sponsorship
+    url: sponsorship/
+    weight: 4
+  - name: Newsletter
     identifier: newsletter
+    url: https://jarmos.ck.page/newsletter
+    weight: 5
 markup:
   highlight:
     anchorLineNos: true
