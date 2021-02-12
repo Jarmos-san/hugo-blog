@@ -3,8 +3,8 @@ title: Sponsor Me
 url: "/sponsorship"
 hidemeta: true
 disableShare: true
-summary: Hire Somraj Saha for your professional needs. This section details his services,
-  rates, skill sets & everything else you might want to know before hiring him.
+summary: Hire Somraj Saha for your professional needs. This section details his services, rates, skill sets & everything else you might want to know before hiring him.
+description: Hire Somraj Saha for your professional needs. This section details his services, rates, skill sets & everything else you might want to know before hiring him.
 menu:
   main:
     identifier: sponsorship
