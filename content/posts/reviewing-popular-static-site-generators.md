@@ -16,7 +16,9 @@ showtoc: false
 draft: false
 ---
 
-When I started out, choosing the right [Static Site Generators][SSG] (SSGs) to create my blog was a difficult task. I looked around. Tried a couple of available options. And I figured something out. Each site generator was unique in some way or the other & will have some advantage over the other.
+When I started blogging, I was looking for a platform to host my content on. I shared my dilemma earlier, you can check out the article here: [Medium Vs Static Site Generators--A Computer Vision Engineer’s Dilemma](./static-site-vs-medium.md). Suffice to say, a year later I use both, [Medium][My Medium] & a SSG to create [my blog][My Blog].
+
+But choosing the right [Static Site Generators][SSG] (SSGs) was never a easy task. I looked around. Tried a couple of available options. And I figured something out. Each site generator was unique in some way or the other & will have some advantage over the other.
 
 Keeping that in mind, I had to jot down my specific requirements. And the following were my blogging needs:
 
@@ -191,3 +193,5 @@ With everything said & done, do let me know if you enjoy reading these contents.
 <!-- * Personal Information -->
 [My Newsletter]: https://jarmos.ck.page/newsletter
 [My Twitter]: https://twitter.com/Jarmosan
+[My Blog]: https://jarmos.netlify.app/
+[My Medium]: https://jarmos.medium.com/
