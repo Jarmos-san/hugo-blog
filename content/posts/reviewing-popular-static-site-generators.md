@@ -16,7 +16,7 @@ showtoc: false
 draft: false
 ---
 
-When I started blogging, I was looking for a platform to host my content on. I shared my dilemma earlier, you can check out the article here: [Medium Vs Static Site Generators--A Computer Vision Engineer’s Dilemma](./static-site-vs-medium.md). Suffice to say, a year later I use both, [Medium][My Medium] & a SSG to create [my blog][My Blog].
+When I started blogging, I was looking for a platform to host my content on. I shared my dilemma in a previous article. Check it out at: [Medium Vs Static Site Generators--A Computer Vision Engineer’s Dilemma](./static-site-vs-medium.md). Suffice to say, a year later I use both, [Medium][My Medium] & a SSG to create [my blog][My Blog].
 
 But choosing the right [Static Site Generators][SSG] (SSGs) was never an easy task. I looked around. Tried a couple of available options. And I figured something out. Each site generator was unique in some way or the other & will have some advantage over the other.
 
@@ -28,9 +28,9 @@ Keeping that in mind, I had to jot down my specific requirements. And the follow
 
 My lack of experience didn't help either & my initial attempt to do so with [Jekyll][Jekyll] failed. So, I jumped ship to [Gatsby][Gatsby] & [GitHub Pages][GitHub Pages] which didn't work out either! *sighs*. So, I made another quick switch to [Pelican][Pelican] & used it to work with some of my first few articles.
 
-Alas, I couldn't stay faithful to Pelican either for long. My justification for switching back & forth is explained in more details further ahead in the article. But, [Hugo][hugo] hasn't disappointed me til now, so let's see how long can I stick with it.
+Alas, I couldn't stay faithful to Pelican either for long. I justified my reasoning to switch often from one tool to the other further in the article. But, [Hugo][hugo] hasn't disappointed me til now, so let's see how long can I stick with it.
 
-Besides, if you read till here, you might wonder to yourself, how fickle-minded I'm. Perhaps I'm fickle-minded. But if there's anything I learned from the experience, it would be my unbiased opinion on how the various SSGs achieve the same goal albeit in their own way. Hence, I wanted to share my learnings & leave a detailed review of the software with my audience.
+Besides, if you read till here, you might wonder to yourself, how fickle-minded I'm. Perhaps I'm fickle-minded. But if there's anything I learned from the experience. It would be my unbiased opinion on how the various SSGs achieve the same goal albeit in their own way. Hence, I wanted to share my learnings & leave a detailed review of the software with my audience.
 
 So, without further ado, let's review some of the most popular Static Site Generators, or at least the ones I used.
 
@@ -122,7 +122,7 @@ Like most well-maintained Python projects, Pelican is also maintained by an acti
 
 Regardless, most documentation issues can be handled. But I fear the same can't be said for the Pelican community. While there's a ton of available themes for Pelican, but guess what? Most of the themes aren't maintained ([source][Pelican Themes Aren't Well Maintained])!
 
-So if you're using Pelican with a theme, good luck if you come across an issue with it. Remember that Pelican theme authors can add their own arbitrary settings on top of the preset ones? Well this is where it came back to bite the Pelican ecosystem.
+So if you're using Pelican with a theme, good luck if you come across an issue with it. Remember how Pelican theme authors could add their own arbitrary settings on top of the preset ones? Well this is where it came back to bite the Pelican ecosystem.
 
 Imagine you find a theme that you like. Install it for your blog, only for it to break with the latest Pelican installation. And there's no way for you to fix it because the theme author hadn't made a commit to the repo for 5 years now. Saddening, isn't it?
 
