@@ -2,7 +2,6 @@
 title: "Why/How Should You Treat Your Open-Source Project As a Business"
 date: "2020-10-11"
 category: Open-Source
-authors: Somraj Saha
 summary: Your open-source project is no different from a startup. Consider it as one & ensure its success. Here's a trivial framework to build upon.
 description: Your open-source project is no different from a startup. Consider it as one & ensure its success. Here's a trivial framework to build upon.
 cover:

@@ -2,7 +2,6 @@
 title: "Customizing the New Windows Terminal: A Minimalist Approach"
 date: 2020-12-25 23:46
 category: Programming
-authors: Somraj Saha
 slug: customizing-windows-terminal-a-minimalist-approach
 summary: Who needs Linux when you got a fully customized Windows Terminal!
 description: Who needs Linux when you got a fully customized Windows Terminal!

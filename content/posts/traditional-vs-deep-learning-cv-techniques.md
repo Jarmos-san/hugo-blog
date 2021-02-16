@@ -3,7 +3,6 @@ title: "Deep Learning Vs Traditional Computer Vision Techniques--Which Should Yo
 date: 2020-08-13 23:46:37
 category: Computer Vision
 slug: deep-learning-vs-traditional-techniques-a-comparison
-author: Somraj Saha
 summary: Deep Learning(DL) techniques are beating the human baseline accuracy rates. Media is going haywire about AI being the next big thing. Everyone is writing a tutorial or two about building a startup or a product using DL. So should you board the hype train too?
 description: Deep Learning(DL) techniques are beating the human baseline accuracy rates. Media is going haywire about AI being the next big thing. Everyone is writing a tutorial or two about building a startup or a product using DL. So should you board the hype train too?
 cover:

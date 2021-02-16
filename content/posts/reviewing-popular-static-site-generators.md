@@ -3,10 +3,8 @@ title: A Review of Some of the Most Popular Static Site Generators
 date: 2021-02-04
 category: Blogging
 slug: reviewing-popular-static-site-generators
-summary: A brief review of the popular static site generators. Which one should you
-  use, why & much more.
-description: A brief review of the popular static site generators. Which one should
-  you use, why & much more.
+summary: A brief review of the popular static site generators. Which one should you use, why & much more.
+description: A brief review of the popular static site generators. Which one should you use, why & much more.
 cover:
     image: "covers/static-site-generators-review.png"
     alt: "A visual of a woman confused while choosing between many available SSGs."

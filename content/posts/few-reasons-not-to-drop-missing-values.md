@@ -3,7 +3,6 @@ title: "Dropping Missing Values? You Probably Shouldn’t."
 date: "2020-02-17"
 category: Data Science
 slug: few-reasons-to-not-drop-missing-values
-authors: Somraj Saha
 summary: Unbeknownst to us, quite often Missing Values contain as much information as just the rest of the data which is why dropping them isn't always a wise thing to do. This article briefly talks about Missing Values & why you probably should analyze the reasons behind why certain values are missing.
 description: Unbeknownst to us, quite often Missing Values contain as much information as just the rest of the data which is why dropping them isn't always a wise thing to do. This article briefly talks about Missing Values & why you probably should analyze the reasons behind why certain values are missing.
 cover:

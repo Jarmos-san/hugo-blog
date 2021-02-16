@@ -3,7 +3,6 @@ title: "ML Engineer vs Data Scientist; Whom Should You Hire?"
 date: "2020-11-28"
 category: Software Engineering
 slug: ml-engineer-vs-data-scientists-who-should-you-choose
-author: Somraj Saha
 summary: Not sure if a specific business need of your company requires a Data Scientist or an ML Engineer? Then read ahead to find out more about it.
 description: Not sure if a specific business need of your company requires a Data Scientist or an ML Engineer? Then read ahead to find out more about it.
 cover:

@@ -3,7 +3,6 @@ title: "Domain Knowledge — The Second Most Important Skill to Have as a Data S
 date: "2020-03-03"
 category: Data Science
 slug: the-second-most-important-skill-for-a-data-scientist
-author: Somraj Saha
 summary: You mightn’t realize it but if you’ve ample years of experience in a very specific domain of expertise, you might be eligible to be part of a Data Science team.
 description: You mightn’t realize it but if you’ve ample years of experience in a very specific domain of expertise, you might be eligible to be part of a Data Science team.
 cover:
