@@ -158,7 +158,7 @@ Well was it not hard for me to review each of those tools & decide which would s
 
 ![Choosing the Right Static Site Generator Infographic][Infographic]
 
-With everything said & done, do let me know if you enjoy reading these contents. Find me on Twitter: [@Jarmosan][My Twitter] and/or [subscribe to my newsletter][My Newsletter] to get personalized content delivered to your inbox.
+With everything said & done, do let me know if you enjoy reading these contents. Do let me know through my [contact details](../../about/#contact-me).
 
 <!-- Reference Links -->
 <!-- * Assets -->

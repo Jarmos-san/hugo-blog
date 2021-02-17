@@ -118,4 +118,5 @@ You can download the preview version to test experimental features. They’re av
 
 Once downloaded edit the config file by following the steps mentioned above. And you’re good to go! Do let me know how you’ve customized your Terminal. Drop me a tweet & don’t forget to share the config file for others to take inspiration from.
 
-And now, if you found this article helpful, do note there’s a work-in-progress blog post on customizing PowerShell prompt. I’ll share details on how I set it up along with Neovim on Windows. If you want to read that as well, then [subscribe to my newsletter](https://jarmos.ck.page/newsletter) or follow me on [Twitter](https://twitter.com/Jarmosan) whichever feels more convenient.
+Found this article helpful? Do let me know so I can personalize the next work-in-progress article on customizing PowerShell the prompt. I’ll also share more details on how I set it up along with Neovim on my Windows machine.
+So, if you want to read that as well, then subscribe to my newsletter or follow me on [Twitter](https://twitter.com/Jarmosan) whichever feels more convenient.

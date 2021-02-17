@@ -182,7 +182,7 @@ And many more. The possibilities are endless & only limited by the project & ind
 
 But all said & done, the code shared here should suffice for most open-sourced Python projects on GitHub.
 
-And if you feel I missed something out then reach out to me on [Twitter][My Twitter], [Email][My Email] and/or [Ask Me Anything][AMA].
+Feel I missed out something? Then [reach out](../../about/#contact-me) to me.
 
 <!-- Reference Links -->
 <!-- * Landing Pages -->
@@ -201,7 +201,3 @@ And if you feel I missed something out then reach out to me on [Twitter][My Twit
 [GitHub Actions - Checkout]: https://github.com/actions/checkout
 [GitHub Actions - Cache]: https://github.com/actions/cache
 [GitHub Actions - CodeCov]: https://github.com/codecov/codecov-action
-<!-- * Personal -->
-[My Twitter]: https://twitter.com/Jarmosan
-[My Email]: mailto:somraj.mle@gmail.com
-[AMA]: https://github.com/Jarmos-san/Jarmos-san/discussions/categories/q-a
