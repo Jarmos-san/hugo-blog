@@ -1,6 +1,6 @@
 baseURL: "https://jarmos.netlify.app"
 languageCode: "en-us"
-title: "Jarmos"
+title: "Somraj Saha"
 theme: "hugo-PaperMod"
 paginate: 3
 enableRobotsTXT: true
@@ -21,6 +21,7 @@ params:
   disableThemeToggle: false
   ShowReadingTime: true
   ShowShareButtons: true
+  ShowPostNavLinks: true
   disableSpecial1stPost: false
   comments: false
   hidemeta: false
