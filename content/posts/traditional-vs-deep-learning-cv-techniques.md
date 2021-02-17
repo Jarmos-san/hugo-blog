@@ -1,5 +1,5 @@
 ---
-title: "Deep Learning Vs Traditional Computer Vision Techniques--Which Should You Choose?"
+title: "Deep Learning Vs Traditional Computer Vision Techniques — Which Should You Choose?"
 date: 2020-08-13 23:46:37
 category: Computer Vision
 slug: deep-learning-vs-traditional-techniques-a-comparison

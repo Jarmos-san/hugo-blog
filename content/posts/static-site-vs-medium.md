@@ -1,5 +1,5 @@
 ---
-title: "Medium Vs Static Site Generators--A Computer Vision Engineer’s Dilemma"
+title: "Medium Vs Static Site Generators — A Computer Vision Engineer’s Dilemma"
 date: "2020-05-12"
 slug: medium-vs-static-site-generators
 category: Software

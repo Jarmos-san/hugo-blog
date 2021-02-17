@@ -1,5 +1,5 @@
 ---
-title: "ML Engineer vs Data Scientist; Whom Should You Hire?"
+title: "ML Engineer vs Data Scientist: Whom Should You Hire?"
 date: "2020-11-28"
 category: Software Engineering
 slug: ml-engineer-vs-data-scientists-who-should-you-choose

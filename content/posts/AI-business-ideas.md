@@ -3,7 +3,6 @@ title: "Have a Startup Idea? These 5 Tips Should Help You a Long Way Through You
 date: "2020-04-01"
 category: Business
 slug: these-5-tips-should-help-you-with-your-startup-journey
-author: Somraj Saha
 summary: Consider this list opinionated tips before you set foot onto your AI startup. I assure you a thorough read will give you a better perspective to follow.
 description: Consider this list opinionated tips before you set foot onto your AI startup. I assure you a thorough read will give you a better perspective to follow.
 cover:
