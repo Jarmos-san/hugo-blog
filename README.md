@@ -9,6 +9,8 @@ This repository hosts the tools, assets & themes for my [personal website][Perso
     - [:running: The Easy & Quick Way To Get It Done](#running-the-easy--quick-way-to-get-it-done)
       - [:nut_and_bolt: Setup a Development Environment](#nut_and_bolt-setup-a-development-environment)
       - [:chart_with_upwards_trend: Setting Up Traffic Tracking & Analytics](#chart_with_upwards_trend-setting-up-traffic-tracking--analytics)
+        - [Cloudflare](#cloudflare)
+        - [Google Analytics](#google-analytics)
       - [:control_knobs: Setup a CMS](#control_knobs-setup-a-cms)
       - [:dash: Preparing Your Site For Deployment](#dash-preparing-your-site-for-deployment)
       - [:gear: Setup GitHub Actions to Deploy](#gear-setup-github-actions-to-deploy)
@@ -22,16 +24,19 @@ This repository hosts the tools, assets & themes for my [personal website][Perso
 
 ## :checkered_flag: Getting Started
 
-So, you found my website somehow either on GitHub or elsewhere & you want one for yourself too. Or perhaps, you just ❤️ open-source software & would like to make a contribution to my site, then read this [README](/README.md) throughly.
+Did you find my website somehow either on GitHub or elsewhere on the Internet? Do you want a site similar to mine for yourself too? Or perhaps, you just ❤️ open-source software & would like to make a contribution to my site, then read this [README](/README.md) should be your first step.
 
 A bird's eye overview of what the blog is capable of:
 
-- It's FREE, as in no server costs are involved.
+- It's FREE, as in no server costs are involved (_for now_).
 - In context to the point above, there's no server in the first place to serve the website on the Internet. All the generated static content are delivered over [Netlify's CDN][Netlify CDN Guide].
-- Transparency is a major aspect in everything I do in life. The same applies to my personal website as well. That said, I try to keep stuff related to it as open-source as possible on the repository. So, in other words, my website will forever be open-sourced.
-- Privacy-first. My site uses [Cloudflare Analytics][Cloudflare Analytics] as an alternative to Google Analytics to respect my audience's privacy concerns. All I care about is how much traffic am I getting & that's all. So, Cloudflare Analytics satisfies my needs.
+- Transparency is a major aspect in everything I do in life. The same applies to my personal website as well. That said, I try to keep stuff related to it as open-source as possible on this repository. In other words, my website will forever be open-sourced.
+- My site uses [Cloudflare Analytics][Cloudflare Analytics] along with Google Analytics (GA) for the following reasons:
+  - Cloudflare is more privacy driven & hence is suitable for some of my more privacy-concerned audiences.
+  - I would love to use [Matomo][Matamo] over GA but it requires me to rent out a VPS. I just don't have the financial overhead to increase my expenses at the moment. So, as much as I want to protect my user's privacy, it's just not a possibility right now. Although, I appreciate every bit of a [donation][Buy Me a Coffee] that will help me setup & maintain a Matomo Analytics server to protect your privacy.
+  - Cloudflare Analytics is still in beta & doesn't offer as many metrics as GA provides. Much of the metrics I need, is important for me to keep improving the services I provide on my site & to my sponsors.
 - Knowledge-sharing over aesthetics. Visit my site & you'll find it's pretty simple & minimalist. That's intentional as I want my audiences to read my content & take home some valuable lessons. Intrusive popups & marketing gimmicks aren't my thing, so I try to keep that away from my personal site.
-- Make it a Wordpress alternative. Hence, it even supports an admin panel powered by [Forestry][Forestry.io]!
+- Make it a Wordpress alternative. Hence, it even supports an admin panel powered by Forestry.io!
 
 So, if the aforementioned points matters to you, then fo ahead & check out how to get your own blog which looks similar to mine.
 
@@ -50,17 +55,43 @@ In a hurry to get your personal website running ASAP, then check out the followi
 
 #### :chart_with_upwards_trend: Setting Up Traffic Tracking & Analytics
 
-The blog uses Cloudflare's tracker instead of Google Analytics due to privacy reasons. Besides, since Google Analytics is basically a JS script, some browsers can block it. On the hand Cloudflare's system is a backend server-based system. In doing so, it appears, there might be some inconsistency in tracking your traffice & audiences with Google Analytics ([_source_][Cloudflare vs Google Analytics]).
+The blog uses Cloudflare's tracker along with Google Analytics (GA). Thus, privacy-concerned users can either use [uBlock Origin][uBlock Origin] to block tracking JS code or block trackers & cookies from the browser. Using both of them in tandem also helps keep a check on certain inconsistencies ([_source_][Cloudflare vs Google Analytics]).
 
-So, I strongly suggest you stick to using Cloudflare Analytics like I'm. To do so follow these instructions:
+That said, following are the instructions to setup Cloudflare (and/or GA):
+
+##### Cloudflare
 
 - Create a [Cloudflare][Cloudflare Landing Page] account (_if you don't have one already_).
 - Create the tracking JS snippet on the [Analytics dashboard][Cloudflare Analytics Dashboard].
 - Copy & replace the existing snippet in [`layouts/partials/extend_head.html`](./layouts/partials/extend_head.html) with the snippet you just created on the Cloudflare Analytics dashboard.
 
-And you're good to go! Now you can keep track of all visits to your site on Cloudflare's dashboard.
+##### Google Analytics
 
-But in case, you decide to use Google Analytics instead, do follow the [official instructions][Hugo Google Analytics Docs] on the Hugo documentations.
+- Create a [Google Analytics][Google Analytics] if you don't own one already!
+- Create the [Google Analytics 4 property][Tracking Code Setup Instructions] for the website.
+- Add the tracking code (which looks something like `G-XXXXXXXXX`) in the `config.yml` to the `GoogleAnalyticsID` key.
+- Add the `gtag.js` snippet to `extend_head.html` partial under `layouts/partials`.
+
+  ```javascript
+  <!-- Global site tag (gtag.js)-->
+  <script async src="https://www.googletagmanager.com/gtag/js?id={{ .Site.Params.GoogleAnalyticsID}}"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', '{{ .Site.Params.GoogleAnalyticsID}}');
+  </script>
+  <!-- End of Global site tag (gtag.js)-->
+  ```
+
+- Check your GA dashboard with tracking cookies & JS enabled on your browser.
+
+And you're good to go!
+
+But in case, you've privacy concerns on using GA, refer to the [Privacy Policy][Privacy Policy] document for a detailed description of how we use the data gathered through the trackers.
+
+**NOTE**: As of Hugo 0.80, the new Google Analytics 4 [doesn't work][GA 4 Doesn't Work] out-of-the-box with Hugo's internal templates.
 
 #### :control_knobs: Setup a CMS
 
@@ -111,6 +142,7 @@ For more information on how to use these tools, refer to their respective docume
 
 - [Netlify][Netlify Docs]
 - [Hugo][Hugo Docs]
+- [hugo-PaperMod][Hugo-PaperMod] theme
 
 ## :building_construction: Contributing
 
@@ -169,6 +201,7 @@ Or maybe your question isn't related to this project, then check out my [*Ask Me
 [My LinkedIn]: https://www.linkedin.com/in/jarmos/
 [My AMA]: https://github.com/Jarmos-san/Jarmos-san/discussions/categories/q-a
 [My Quora]: https://www.quora.com/profile/Somraj-Saha-3
+[Buy Me a Coffee]: https://www.buymeacoffee.com/jarmos
 <!-- ? Hugo Related Links -->
 [Hugo-PaperMod]: https://adityatelange.github.io/hugo-PaperMod/
 [Install Hugo]: https://gohugo.io/getting-started/installing/
@@ -197,6 +230,7 @@ Or maybe your question isn't related to this project, then check out my [*Ask Me
 [Git Checkout Action License]: https://github.com/actions/checkout/blob/main/LICENSE
 [Hugo Action License]: https://github.com/peaceiris/actions-hugo/blob/main/LICENSE
 [Automerge Action License]: https://github.com/pascalgn/automerge-action/blob/master/LICENSE
+[GA 4 Doesn't Work]: https://github.com/gohugoio/hugo/issues/7954
 <!-- ? Shield Badges -->
 [Website]: https://img.shields.io/website?down_color=Red&down_message=Down&label=Website&style=flat-square&up_color=Green&up_message=Up&url=https%3A%2F%2Fjarmos.netlify.app%2F
 [Netlify Deploy Badge]: https://github.com/Jarmos-san/blog/workflows/Netlify%20Deploy/badge.svg?branch=dev
@@ -220,3 +254,8 @@ Or maybe your question isn't related to this project, then check out my [*Ask Me
 [Netlify Large Media]: https://www.netlify.com/products/large-media/
 [Forestry]: https://forestry.io/
 [Markdown Guide]: https://www.markdownguide.org/
+[Matomo]: https://matomo.org/
+[uBlock Origin]: https://github.com/gorhill/uBlock
+[Google Analytics]: https://analytics.google.com/
+[Tracking Code Setup Instructions]: https://support.google.com/analytics/answer/9304153?hl=en&ref_topic=9303319
+[Privacy Policy]: https://www.privacypolicygenerator.info/live.php?token=fsG90WvN3xCCNeV6wrBEI9ZowuN2KUEI
