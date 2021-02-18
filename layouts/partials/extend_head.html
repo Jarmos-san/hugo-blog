@@ -4,3 +4,13 @@
 <!-- Google Search Console Tools -->
 <meta name="google-site-verification" content="ksFwXaurAJ-U31-m5d3m-e4vgS96Hc1JfSx4Wq-gSF4" />
 <!-- End of Google Search Console Tools -->
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id={{ .Site.Params.GoogleAnalyticsID}}"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag() { dataLayer.push(arguments); }
+  gtag('js', new Date());
+
+  gtag('config', '{{ .Site.Params.GoogleAnalyticsID}}');
+</script>
+<!-- End of Global site tag (gtag.js) - Google Analytics -->

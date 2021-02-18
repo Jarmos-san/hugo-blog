@@ -22,6 +22,7 @@ params:
   ShowReadingTime: true
   ShowShareButtons: true
   ShowPostNavLinks: true
+  GoogleAnalyticsID: G-V0ZH6RS2BM
   disableSpecial1stPost: false
   comments: false
   hidemeta: false
