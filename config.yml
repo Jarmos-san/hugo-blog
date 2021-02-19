@@ -40,11 +40,11 @@ params:
   homeInfoParams:
     Title: "Hi there! \U0001F44B"
     Content: |
-      - Welcome to my blog where I share my thoughts & experiences as a self-taught programmer.
+      - Welcome to my website!. This is the right place to discover more about me if you're interested. I share my thoughts, opinions, projects showcases & experiences as a self-taught developer.
       -
       - Besides that, you'll find content on topics like - "Machine Learning", "Python (the programming language)", "Software development practices" & so on.
       -
-      - If enjoy reading the content, consider sharing them with your extended or leave me a feedback on any of my social networks.
+      - And if you enjoy reading the content, consider sharing them with your friends, family & acquiantances. Or if you believe I could improve something, leave a feedback though any of my contact details.
   socialIcons:
   - name: twitter
     url: https://twitter.com/@Jarmosan
