@@ -5,11 +5,6 @@ hidemeta: true
 disableShare: true
 summary: "A list of personal projects & open-source software authored by Somraj Saha. It also includes detailed descriptions of all those projects."
 description: "A list of personal projects & open-source software authored by Somraj Saha. It also includes detailed descriptions of all those projects."
-menu:
-  main:
-    identifier: projects
-    name: Projects
-    weight: 4
 draft: true
 ---
 
