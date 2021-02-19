@@ -80,7 +80,7 @@ menu:
     identifier: sponsorship
     url: sponsorship/
     weight: 4
-  - name: Newsletter
+  - name: Subscribe
     identifier: newsletter
     url: https://jarmos.ck.page/newsletter
     weight: 5
