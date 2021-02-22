@@ -75,10 +75,10 @@ menu:
     identifier: blog
     url: blog/
     weight: 2
-  - identifier: projects
-    name: Projects
-    url: projects/
-    weight: 3
+  # - identifier: projects
+  #   name: Projects
+  #   url: projects/
+  #   weight: 3
   - name: Services
     identifier: hiring
     name: Services
