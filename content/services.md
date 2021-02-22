@@ -26,7 +26,6 @@ Following are the list of technologies I'm most familiar with:
 
 **Note**: The aforementioned tech stack is what I'm most confident with. So, in case you need help with something else, feel free to reach out to me. We can come up with a solution to the problem you're facing. :wink:
 
-
 ## Services, Rates, Payment Terms
 
 I charge a flat rate of $75/hr but subsidize the prices on long-term projects (ones that could take 2+ months). Payments are accepted over Direct Wire (preferred) and/or Transferwise. But if for some reason the payment process can't be done on those platform then PayPal works as well.
