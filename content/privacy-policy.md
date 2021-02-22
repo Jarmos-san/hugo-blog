@@ -7,6 +7,8 @@ summary: "Privacy Policy for Somraj Saha's blog."
 draft: true
 ---
 
+Last Revision Made On: **22-02-2021**
+
 ## Information We Collect
 
 - **Contact information**: We might collect your name, email, mobile number, phone number, street, city, state, pincode,  country and ip address.
@@ -66,7 +68,7 @@ If you have any questions about this Policy or other privacy concerns, you can r
 
 ## Updates to This Policy
 
-This Privacy Policy was _**last updated on 22.02.2021**_. From time to time we may change our privacy practices. We will notify you of any material changes to this policy as required by law. We will also post an updated copy on our website. Please check our site periodically for updates.
+From time to time we may change our privacy practices. We will notify you of any material changes to this policy as required by law. We will also post an updated copy on our website. Please check our site periodically for updates.
 
 ## Jurisdiction
 
