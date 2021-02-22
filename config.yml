@@ -2,7 +2,7 @@ baseURL: "https://jarmos.netlify.app"
 languageCode: "en-us"
 title: "Somraj Saha"
 theme: "PaperMod"
-paginate: 3
+paginate: 5
 enableRobotsTXT: true
 enableEmoji: true
 buildDrafts: false
