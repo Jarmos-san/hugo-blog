@@ -54,11 +54,13 @@ If you click on one of the links to third party websites, you may be taken to we
 
 In accordance with [Information Technology Act, 2000][IT Act] and rules made there under, the name and contact details of the individual to share your grievance complaints are provided below:
 
+```shell
 Mr. Somraj Saha
 Calcutta Textiles, Santipara Masjid Road
 Agartala, Tripura - 799001
 Phone: (+91) 7731 824 653
 Email: somraj.mle@gmail.com
+```
 
 If you have any questions about this Policy or other privacy concerns, you can reach out to us over electronic mail, traditional mail, telephone or whichever means is convenient for you. Please do so without any hesitation.
 
