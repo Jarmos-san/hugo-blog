@@ -12,9 +12,11 @@ For a living, I work as an ML Engineer providing my 4+ years of experience to my
 
 Besides work, I'm an amateur author writing books & other literary content. Most of them are technical and/or are related to software development in some sense. You can find some of my written work on my [blog](../blog/) where I share my thoughts & experiences as a programmer.
 
-Other than that, there's also an occassional book I'm almost always working on the side. So, if you want some sneak peek into those works, follow me on Twitter ([@Jarmosan][Twitter]) and/or subscribe to the [newsletter][Newsletter] I maintain.
+Other than that, there's also an occassional book I'm almost always working on the side. So, if you want some sneak peek into those works, follow me on Twitter ([@Jarmosan][Twitter]) and/or subscribe to the [Private Email List][Newsletter] I maintain. And you'll receive personalized content delivered straight to your inbox.
 
-The rest of the time while I'm not working or writing, I contribute to open-source projects. You can check out my contributions on GitHub ([Jarmos-san][Github]).
+The rest of the time while I'm not working or writing, I contribute to open-source projects And here's a heads up; This website you'r reading is [open-sourced][Blog Source Code] too! :heart:
+
+You can check out my other contributions on GitHub ([Jarmos-san][Github]).
 
 ### Contact Me
 
@@ -34,3 +36,4 @@ These are the platforms you can have a chat with me:
 [Linkedin]: https://www.linkedin.com/in/jarmos
 [Email]: mailto:somraj.mle@gmail.com
 [Github]: https://github.com/Jarmos-san
+[Blog Source Code]: https://github.com/Jarmos-san/blog
