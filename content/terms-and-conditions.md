@@ -17,7 +17,7 @@ This Terms of Service Agreement (the "**Agreement**") governs your use of this w
 
 Terms of Offer. This Website offers for sale certain products (the "**Products**"). By placing an order for Products through this Website, you agree to the terms and conditions set forth in this Agreement.
 
-**Customer Solicitation**: Unless you notify Somraj Saha, while they are communicating with you, of your desire to opt out from further direct company communications and solicitations, you are agreeing to continue to receive further emails and solicitations from Somraj Saha.
+**Reader Solicitation**: Unless you notify Somraj Saha, while they are communicating with you, of your desire to opt out from further direct company communications and solicitations, you are agreeing to continue to receive further emails and solicitations from Somraj Saha.
 
 **Opt Out Procedure**: We provide 3 easy ways to opt out of from future solicitations.
 

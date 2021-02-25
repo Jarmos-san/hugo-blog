@@ -27,8 +27,8 @@ Last Revision Made On: **22-02-2021**
 - **We use information to contact you**: We might use the information you provide to contact you for confirmation of a subscription on our website or for other promotional purposes.
 - **We use information to respond to your requests or questions**: We might use your information to confirm your registration for an event, a subscription, giveaways & other similar activities.
 - **We use information to improve our products and services**: We might use your information to customize your experience with us. This could include displaying content based upon your preferences.
-- **We use information to look at site trends and customer interests**: We may use your information to make our website and products better. We may combine information we get from you with information about you we get from third parties.
-- **We use information for security purposes**: We may use information to protect our company, our customers, or our websites.
+- **We use information to look at site trends and reader interests**: We may use your information to make our website and products better. We may combine information we get from you with information about you we get from third parties.
+- **We use information for security purposes**: We may use information to protect our company, our readers, or our websites.
 - **We use information for marketing purposes**: We might send you information about special promotions or offers. We might also tell you about new features or products. These might be our own offers or products, or third-party offers or products we think you might find interesting. Or, for example, posts containing affiliate links & other sponsored posts. Do note, you will be notified of the nature of the posts when we send you one.
 - **We use information to send you transactional communications**: We might send you emails about the terms & conditions of services between Somraj Saha & you or a subscription.
 
@@ -39,7 +39,7 @@ We use information as otherwise permitted by law.
 - **We will share information with third parties who perform services on our behalf**: We share information with vendors who help us manage our email list subscription process. Some vendors may be located outside of India.
 - **We will share information with our business partners**: This includes a third party who provide or sponsor an article, or who operates an affiliate programme. Our partners use the information we give them as described in their privacy policies.
 - **We may share information if we think we have to in order to comply with the law or to protect ourselves**: We will share information to respond to a court order or subpoena. We may also share it if a government agency or investigatory body requests. Or, we might also share information when we are investigating potential fraud.
-- **We may share information with any successor to all or part of our business**: For example, if part of our business is sold we may give our customer list as part of that transaction.
+- **We may share information with any successor to all or part of our business**: For example, if part of our business is sold we may give our reader list as part of that transaction.
 - **We may share your information for reasons not described in this policy**: We will tell you before we do this along with a detailed explanation for us to do so.
 
 ## Email Opt-Out
