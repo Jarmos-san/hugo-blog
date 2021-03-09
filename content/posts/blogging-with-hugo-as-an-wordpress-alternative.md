@@ -4,3 +4,12 @@ date: 2021-02-21T22:57:04+05:30
 draft: true
 ---
 
+## Introduction
+
+## Prerequisite Tools
+
+## Using Hugo (With All It's Glory)
+
+## Deploying the Blog
+
+## Final Words
