@@ -1,5 +1,5 @@
 ---
-title: "How to Create a Blog With Hugo (As a Wordpress Alternative)"
+title: "How to Create an Overpowered Blog With Hugo (As a Wordpress Alternative)"
 date: 2021-02-21T22:57:04+05:30
 draft: true
 category: Blogging
@@ -295,7 +295,7 @@ Thanks to all the automation features, you no longer have to even open the repos
 
 ## Final Words
 
-Phew, that was quite a long read for a tutorial! And if you read it till the end, then thanks for being thorough with it, I appreciate it. So, I hope it was enough to get you started 
+Phew, that was quite a long read for a tutorial! And if you read it till the end, then thanks for being thorough with it, I appreciate it. So, I hope it was enough to get you started
 
 <!-- Reference Links -->
 [GitHub Actions Workflow]: https://docs.github.com/en/actions/reference/workflow-syntax-for-github-actions
