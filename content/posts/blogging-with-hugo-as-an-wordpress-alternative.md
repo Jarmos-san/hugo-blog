@@ -295,9 +295,18 @@ Thanks to all the automation features, you no longer have to even open the repos
 
 ## Final Words
 
-Phew, that was quite a long read for a tutorial! And if you read it till the end, then thanks for being thorough with it, I appreciate it. So, I hope it was enough to get you started
+Phew, that was quite a long read for a tutorial! And if you read it till the end, then thanks for being thorough with it, much appreciated.
+
+You might've also noticed, the article isn't as comprehensive. Yet it touches upon all the optimal techniques & tools used to maintain a programming blog. So, I hope the information I shared through this article was enough to get you started with your blog as well! If you do so, reach out to me & say "_Hi! Here's my blog._" over social media and/or email. And I might give away a shoutout for you.
+
+Besides, my blog is [open-sourced][My Blog]! :red_heart: So, if you stumble across a roadblock, check out how I maintain this blog. Or, feel free to open an [Issue][Issue Thread]/[Discussion][Discussion Thread] thread.
+
+That said, I look forward to how you use Hugo to share you amazing content to the rest of the world!
 
 <!-- Reference Links -->
+[Issue Thread]: https://github.com/Jarmos-san/blog/issues/new/choose
+[Discussion Thread]: https://github.com/Jarmos-san/blog/discussions
+[My Blog]: https://github.com/Jarmos-san/blog
 [GitHub Actions Workflow]: https://docs.github.com/en/actions/reference/workflow-syntax-for-github-actions
 [netlify.toml Docs]: https://docs.netlify.com/configure-builds/file-based-configuration
 [Contentful]: https://www.contentful.com/
