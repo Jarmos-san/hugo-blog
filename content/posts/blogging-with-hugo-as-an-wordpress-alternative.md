@@ -16,44 +16,44 @@ showtoc: true
 
 ## Introduction
 
-A developer without a blog is like fishermen without their fishing rod. While it is possible to fish with just a thread & a hook, the rod makes life much easier for the fishermen. In context to the analogy, I believe Dan Bader summed it up well in one of his article -- [_3 Reasons Why You Need a Programming Blog_][3 Reasons Why You Need a Programming Blog].
+A developer without a blog is like a fisherman without his fishing rod. While it is possible to fish with just a thread & a hook, the rod makes life much easier for the fishermen. In context to the analogy, I believe Dan Bader summed it up well in one of his articles -- [_3 Reasons Why You Need a Programming Blog_][3 Reasons Why You Need a Programming Blog].
 
 But, if you've read some of my previous articles, you would know choosing the right tools to blog is no easy task. I've written about such a dilemma I was in, in this article -- [_Medium vs Static Site Generators -- A Computer Vision Engineer's Dilemma_](../medium-vs-static-site-generators). But, over the past one year or so after publishing that article I had time to experiment with existing blogging tools. And I reviewed each of those tools in another article -- [_A Review of Some of the Most Popular Static Site Generators_](../reviewing-popular-static-site-generators).
 
-Hence, as you can see, blogging is the easiest part, choosing the right tool for personal use case isn't. While you could use a hosted Wordpress site as an option but I don't see why a developer should spend time setting up and/or maintain security updates, server costs & so on.
+Hence, as you can see, blogging is the easiest part, choosing the right tool for personal use case isn't. While you could use a hosted Wordpress site as an option but I don't see why a developer should spend time setting up and/or maintaining security updates, server costs & so on.
 
 Static Sites are a much better alternative to Wordpress. You no longer have to worry about server maintenance, security updates for Wordpress & the financial costs in doing so. With static sites, all of those dependencies are gone. All you've to worry about right now is publish quality content & delegate the hosting needs to an external service.
 
-So, without further adieu, let's dive into how we can setup a blog as a Wordpress alternative. Do note, having some prior programming knowledge can a bonus point is not a prerequisite. You can follow along with the instructions suggested in this article & you'll be fine.
+So, without further adieu, let's dive into how we can set up a blog as a Wordpress alternative. Do note, having some prior programming knowledge can be a bonus point is not a prerequisite. You can follow along with the instructions suggested in this article & you'll be fine.
 
 ## Prerequisite Tools
 
-While there're a couple of tools out there to generate the static files for your blog, we'll be using [Hugo][Hugo Homepage]. This is so, because Hugo is undeniably one of the [_easiest to use_](../reviewing-popular-static-site-generators/#hugo-the-fastest-static-site-generator-ever-created) Static Site Generator available.
+While there are a couple of tools out there to generate the static files for your blog, we'll be using [Hugo][Hugo Homepage]. This is so, because Hugo is undeniably one of the [_easiest to use_](../reviewing-popular-static-site-generators/#hugo-the-fastest-static-site-generator-ever-created) Static Site Generator available.
 
-Beside Hugo, we'll also need a GitHub account to not just host the articles but for other tools as well. One of those tools include [GitHub Actions][GitHub Actions Docs]. There're a plenty of community maintained GitHub Actions in the GitHub Marketplace & we'll be using a couple of them.
+Beside Hugo, we'll also need a GitHub account to not just host the articles but for other tools as well. One of those tools include [GitHub Actions][GitHub Actions Docs]. There're plenty of community maintained GitHub Actions in the GitHub Marketplace & we'll be using a couple of them.
 
 But no blog could be considered a Wordpress alternative without Content Management System (CMS). So, to deliver onto our CMS needs, we'll use the services from [Forestry][Forestry].
 
-And at last, we'll use [Netlify][Netlify Homepage] to deliver the generated static content over a Content Delivery Network(CDN) to our audiences.
+And at last, we'll use [Netlify][Netlify Homepage] to deliver the generated static content over a Content Delivery Network (CDN) to our audiences.
 
-Optionally, we could use [Google Analytics (GA)][Google Analytics] for tracking needs. But if you're privacy concerned citizen, you could use [Cloudflare Analytics][Cloudflare Analytics] as a good alternative.
+Optionally, we could use [Google Analytics (GA)][Google Analytics] for tracking needs. But if you're a privacy concerned citizen, you could use [Cloudflare Analytics][Cloudflare Analytics] as a good alternative.
 
 So, to sum up all the necessary tools we'll be using:
 
 - A Github repository to host the articles, themes & other files required by the tools we'll be using.
 - A couple of GitHub Actions.
-  - [peaceiris/actions-hugo][Hugo Actions] to setup Hugo & generated the static content on the GitHub Actions server.
+  - [peaceiris/actions-hugo][Hugo Actions] to set up Hugo & generate the static content on the GitHub Actions server.
   - [nwtgck/actions-netlify][Netlify Actions] to deploy the generated static content.
   - And the optional [pascalgn/automerge-action][Auto Merge Action] to automatically merge Dependabot PRs without any manual interventions.
 - An account on [Forestry][Forestry] for the CMS.
 - A Netlify account to deliver the static content to our audiences.
 - And the optional Google/Cloudflare Analytics for tracking needs.
 
-So, that said, ensure you're setup with all the tools mentioned above & then we can get started.
+So, that said, ensure you're set up with all the tools mentioned above & then we can get started.
 
-## Using Hugo (With All It's Glory)
+## Using Hugo (With All Its Glory)
 
-As mentioned earlier, Hugo is without a doubt one of the easiest Static Site Generator available to use. This fact that Hugo has [50K+ stargazers][Hugo Stargazers] shows how useful it is!
+As mentioned earlier, Hugo is without a doubt one of the easiest Static Site Generators available to use. This fact that Hugo has [50K+ stargazers][Hugo Stargazers] shows how useful it is!
 
 So, without wasting any more of your precious time let's dive into using Hugo.
 
@@ -63,15 +63,15 @@ First things first, is to install Hugo on your local machine. And unlike other S
 
 The "_installation_" procedure is also pretty simple. You just need to add the binary to system `PATH` & invoke the `hugo` command from anywhere in the Terminal. Editing each Operating System's `PATH` is quite different. Hence I suggest you take a thorough look at the [official installation documentations][Hugo Installation Procedure].
 
-But before you proceed ahead do ensure Hugo was installed correctly. You can check it by running the `hugo version` command on your CLI. If everything works fine, you should a similar output.
+But before you proceed ahead do ensure Hugo was installed correctly. You can check it by running the `hugo version` command on your CLI. If everything works fine, you should see a similar output.
 
 ```bash
 Hugo Static Site Generator v0.80.0-792EF0F4 windows/amd64 BuildDate: 2020-12-31T13:37:57Z
 ```
 
-### Creating You Site
+### Creating Your Site
 
-I must say, installing Hugo while easy, it isn't the most fun part of the whole procedure. So, let's get started with the fun parts.
+I must say, installing Hugo while easy, it isn't the most fun part of the whole process. So, let's get started with the fun parts.
 
 You can generate a skeleton site (_which we'll build upon soon_) with the `hugo new site .` command. Notice the `.` (_dot_) at the end of the command? It tells Hugo to generate the skeleton site in the current directory.
 
@@ -89,7 +89,7 @@ The aforementioned command generates a simple set of files & folders. Each of th
   └───config.yml    # Config file to configure Hugo. Supports YAML, TOML & JSON formats.
   ```
 
-There's obviously more to what Hugo generates as skeleton site than what I can discuss in one blog. So, I suggest taking a brief look at the documentation on Hugo's [project directory structure][Hugo Project Directory].
+There's obviously more to what Hugo generates as a skeleton site than what I can discuss in one blog. So, I suggest taking a brief look at the documentation on Hugo's [project directory structure][Hugo Project Directory].
 
 Without delving into comprehensive details of what each directory is for, let's keep things minimal. That way, there'll be room for further customization. And more important, you can get started delivering content at the earliest.
 
@@ -132,7 +132,7 @@ menu:
 
 Do note, configuring the `config.yml` isn't limited to what I mentioned here. Based on the theme you're using, you might/mightn't have to extend on it.
 
-And at last, the `content` directory where you store the Markdown files for your articles. You can organize your Markdown content into subdirectories for easier maintanance & organization. For example, here's what mine looks like.
+And at last, the `content` directory where you store the Markdown files for your articles. You can organize your Markdown content into subdirectories for easier maintenance & organization. For example, here's what mine looks like.
 
 ```bash
 ./content
@@ -156,17 +156,17 @@ That said, before you get started with Netlify, ensure you've created a [new rep
 
 Then push your fresh new site to the GitHub repository you just created. And it should trigger a [Netlify build operation][Netlify Build Operation]. You can now view your website at an URL provided by Netlify (_you can change it though_ :wink:).
 
-Now each time you write a new article or push some aesthetic changes to your site, Netlify will trigger a build. While it works & is fine for most users but there're certain downsides. One major disadvantage of using Netlify's platform to build the content, is it's time consuming (_often taking over 2mins to complete the build_). Considering Netlify provides only 300 minutes of build per month, it won't be long before you run out of it. Besides, you just can't utilize Hugo's full potential there which is why we'll use GitHub Actions.
+Now each time you write a new article or push some aesthetic changes to your site, Netlify will trigger a build. While it works & is fine for most users but there are certain downsides. One major disadvantage of using Netlify's platform to build the content, is it's time consuming (_often taking over 2mins to complete the build_). Considering Netlify provides only 300 minutes of build per month, it won't be long before you run out of it. Besides, you just can't utilize Hugo's full potential there which is why we'll use GitHub Actions.
 
 With GitHub's wide range of services, we can not only deploy the site but can automate some of the monotonous tasks as well!
 
-The next sections delves deeper into why & how we can achieve such feat.
+The next section delves deeper into why & how we can achieve such a feat.
 
 ## Setting Up Automation & a CMS Backend
 
-Creating & deploying the site was easy & fun but it doesn't last long (_saying from personal experience_). More so, when you add the theme as a submodule, you can expect its author to update frequently. Fortunate for us, we can use [GitHub's Dependabot][Dependabot] to keep our theme(s) updated.
+Creating & deploying the site was easy & fun but it doesn't last long (_saying from personal experience_). More so, when you add the theme as a submodule, you can expect its author to update frequently. Fortunately for us, we can use [GitHub's Dependabot][Dependabot] to keep our theme(s) updated.
 
-There's also the need for a Content Management System (CMS). What good is a _Wordpress Alternative_ without CMS, right? And as mentioned in the previous section, delegating the build process to GitHub Actions instead of Netlify's build infrastructure.
+There's also the need for a Content Management System (CMS). What good is a _Wordpress Alternative_ without CMS, right? And as mentioned in the previous section, delegating the build process to GitHub Actions instead of Netlify's build infrastructure is the way to go.
 
 So, let's list out the remaining features we need to work on & start working on them one-by-one.
 
@@ -209,11 +209,11 @@ That said, now you no longer have to worry about update & manual maintenance tas
 
 ### Setting Up Forestry as a CMS Backend
 
-No static blog can be considered a true _Wordpress alternative_ without a CMS. That is what makes Wordpress attractive to most users without a technical prowess. And as such, some users mightn't be comfortable writing their content in Markdown. For them a web-based [Rich Text Format][Rich Text Format] environment is what works.
+No static blog can be considered a true _Wordpress alternative_ without a CMS. That is what makes Wordpress attractive to most users without any technical prowess. And as such, some users mightn't be comfortable writing their content in Markdown. For them a web-based [Rich Text Format][Rich Text Format] environment is what works.
 
-Hence, we'll be using Forestry's backend CMS services. Although, there're alternatives like [Contentful][Contentful] (_one of the most popular one_) & [Netlify CMS][Netlify CMS], from my experience, Forestry is the most easy to use & configurable.
+Hence, we'll be using Forestry's backend CMS services. Although, there are alternatives like [Contentful][Contentful] (_one of the most popular one_) & [Netlify CMS][Netlify CMS], from my experience, Forestry is the most easy to use & configurable.
 
-The things you can do with Hugo & Forestry is beyong the scope of this article. I could write another full-blown article just on this topic. So, keeping this article rather short & act as a guide for interested readers, here's a gist of how to setup Forestry.
+The things you can do with Hugo & Forestry is beyond the scope of this article. I could write another full-blown article just on this topic. So, keeping this article rather short & act as a guide for interested readers, here's a gist of how to set up Forestry.
 
 1. Ensure you've Forestry account & your site is "_added_" to their services.
 2. Configure the settings of the CMS from the Admin panel.
@@ -221,7 +221,7 @@ The things you can do with Hugo & Forestry is beyong the scope of this article. 
 
 ### Automation & Delegating Build Task to GitHub
 
-While there's nothing wrong in using Netlify for building your site, there're certain limitations with the platform though. A major one being it's slow & unoptimized build times (_it took over 2mins for my site to build_). And with Netlify's limited 300 build mins per month, it won't take long before the free quota is used up.
+While there's nothing wrong in using Netlify for building your site, there are certain limitations with the platform though. A major one being it's slow & unoptimized build times (_it took over 2mins for my site to build_). And with Netlify's limited 300 build mins per month, it won't take long before the free quota is used up.
 
 So, to make the most out of Hugo's potential, you should use GitHub Actions. With it, you can build your site in <1mins (_usually takes 20-40secs on average_). Besides, compared to Netlify, GitHub provides 2000 build mins per month! So, coupled with less build times & a huge build mins quota, you won't have to worry about builds not triggering 😊.
 
@@ -287,9 +287,9 @@ And not to forget having all tools under one roof makes maintenance much easier 
                   timeout-minutes: 1
     ```
 
-    The `build.yml` instructs GitHub Actions to use the [`peaceiris/actions-hugo`][Hugo Actions] & [`nwtgck/actions-netlify`][Netlify Actions] to deploy the generated site. Further it's triggered on every push & PR events.
+    The `build.yml` instructs GitHub Actions to use the [`peaceiris/actions-hugo`][Hugo Actions] & [`nwtgck/actions-netlify`][Netlify Actions] to deploy the generated site. Further it's triggered on every push & PR event.
 
-3. And finally, the piece of automation fun. Automating merging PRs opened by Dependabot. Remember the `automerge` labels in the Dependabot config file? This is where they come handy. We'll use [`pascalgn/automerge-action`][Auto Merge Action] to automatically merge any Pull Requests with the label `automerge`. And guess what? Dependabot has been configured to updated every PR it opens with that label! 😆
+3. And finally, the piece of automation fun. Automating merging PRs opened by Dependabot. Remember the `automerge` labels in the Dependabot config file? This is where they come handy. We'll use [`pascalgn/automerge-action`][Auto Merge Action] to automatically merge any Pull Requests with the label `automerge`. And guess what? Dependabot has been configured to update every PR it opens with that label! 😆
 
 Thanks to all the automation features, you no longer have to even open the repository ever again! Automation FTW indeed! 🤣
 
@@ -301,7 +301,7 @@ You might've also noticed, the article isn't as comprehensive. Yet it touches up
 
 Besides, my blog is [open-sourced][My Blog]! :red_heart: So, if you stumble across a roadblock, check out how I maintain this blog. Or, feel free to open an [Issue][Issue Thread]/[Discussion][Discussion Thread] thread.
 
-That said, I look forward to how you use Hugo to share you amazing content to the rest of the world!
+That said, I look forward to how you use Hugo to share your amazing content to the rest of the world!
 
 <!-- Reference Links -->
 <!-- * Documentations -->
