@@ -304,38 +304,44 @@ Besides, my blog is [open-sourced][My Blog]! :red_heart: So, if you stumble acro
 That said, I look forward to how you use Hugo to share you amazing content to the rest of the world!
 
 <!-- Reference Links -->
-[Issue Thread]: https://github.com/Jarmos-san/blog/issues/new/choose
-[Discussion Thread]: https://github.com/Jarmos-san/blog/discussions
-[My Blog]: https://github.com/Jarmos-san/blog
+<!-- * Documentations -->
 [GitHub Actions Workflow]: https://docs.github.com/en/actions/reference/workflow-syntax-for-github-actions
 [netlify.toml Docs]: https://docs.netlify.com/configure-builds/file-based-configuration
-[Contentful]: https://www.contentful.com/
-[Netlify CMS]: https://www.netlifycms.org/
-[Rich Text Format]: https://en.wikipedia.org/wiki/Rich_Text_Format
 [Dependabot Docs]: https://docs.github.com/en/github/administering-a-repository/configuration-options-for-dependency-updates
-[Dependabot]: https://github.com/dependabot
-[GitHub's Dependabot]: https://github.blog/2020-06-01-keep-all-your-packages-up-to-date-with-dependabot/
 [Netlify Build Operation]: https://docs.netlify.com/configure-builds/get-started/
-[3 Reasons Why You Need a Programming Blog]: https://dbader.org/blog/3-reasons-why-you-need-a-programming-blog
-[Hugo Homepage]: https://gohugo.io/
 [GitHub Actions Docs]: https://docs.github.com/en/actions
-[Netlify Homepage]: https://www.netlify.com/
-[Google Analytics]: https://analytics.google.com/analytics/web/
-[Cloudflare Analytics]: https://www.cloudflare.com/analytics/
-[Forestry]: https://forestry.io/
-[Hugo Actions]: https://github.com/peaceiris/actions-hugo
-[Netlify Actions]: https://github.com/nwtgck/actions-netlify
-[Auto Merge Action]: https://github.com/pascalgn/automerge-action
-[Hugo Stargazers]: https://github.com/gohugoio/hugo/stargazers
-[Hugo Binaries]: https://github.com/gohugoio/hugo/releases
-[Markdown Homepage]: http://markdownguide.org/
-[Hugo Themes]: https://themes.gohugo.io/
-[New GitHub Repo]: https://repo.new
 [Git Push]: https://docs.github.com/en/github/using-git/pushing-commits-to-a-remote-repository
-[Pelican Homepage]: https://getpelican.com/
-[Gatsby Homepage]: https://www.gatsbyjs.com/
-[Jekyll Homepage]: https://jekyllrb.com/
 [Hugo Installation Procedure]: https://gohugo.io/getting-started/installing/
 [Hugo Project Directory]: https://gohugo.io/getting-started/directory-structure/
 [Hugo Content Organization]: https://gohugo.io/content-management/organization/
 [Netlify Git Deploy]: https://docs.netlify.com/site-deploys/create-deploys/#deploy-with-git
+<!-- * Personal -->
+[My Blog]: https://github.com/Jarmos-san/blog
+<!-- * Landing pages -->
+[Contentful]: https://www.contentful.com/
+[Netlify CMS]: https://www.netlifycms.org/
+[Dependabot]: https://github.com/dependabot
+[Hugo Homepage]: https://gohugo.io/
+[Netlify Homepage]: https://www.netlify.com/
+[Google Analytics]: https://analytics.google.com/analytics/web/
+[Cloudflare Analytics]: https://www.cloudflare.com/analytics/
+[Forestry]: https://forestry.io/
+[Markdown Homepage]: http://markdownguide.org/
+[Hugo Themes]: https://themes.gohugo.io/
+[Pelican Homepage]: https://getpelican.com/
+[Gatsby Homepage]: https://www.gatsbyjs.com/
+[Jekyll Homepage]: https://jekyllrb.com/
+<!-- * GitHub Actions -->
+[Hugo Actions]: https://github.com/peaceiris/actions-hugo
+[Netlify Actions]: https://github.com/nwtgck/actions-netlify
+[Auto Merge Action]: https://github.com/pascalgn/automerge-action
+<!-- * Backlinked articles -->
+[Rich Text Format]: https://en.wikipedia.org/wiki/Rich_Text_Format
+[GitHub's Dependabot]: https://github.blog/2020-06-01-keep-all-your-packages-up-to-date-with-dependabot/
+[3 Reasons Why You Need a Programming Blog]: https://dbader.org/blog/3-reasons-why-you-need-a-programming-blog
+<!-- * Miscellaneous -->
+[Issue Thread]: https://github.com/Jarmos-san/blog/issues/new/choose
+[Discussion Thread]: https://github.com/Jarmos-san/blog/discussions
+[Hugo Stargazers]: https://github.com/gohugoio/hugo/stargazers
+[Hugo Binaries]: https://github.com/gohugoio/hugo/releases
+[New GitHub Repo]: https://repo.new
