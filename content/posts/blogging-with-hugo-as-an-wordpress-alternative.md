@@ -1,7 +1,7 @@
 ---
 title: "How to Create an Overpowered Blog With Hugo (As a Wordpress Alternative)"
 date: 2021-02-21T22:57:04+05:30
-draft: true
+draft: false
 category: Blogging
 slug: blogging-with-hugo-as-an-wordpress-alternative
 summary: Create a blog with Hugo Static Site Generator as a Wordpress alternative & with added automation plus other superpowers
