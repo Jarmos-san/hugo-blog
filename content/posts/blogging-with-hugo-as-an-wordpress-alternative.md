@@ -4,12 +4,12 @@ date: 2021-02-21T22:57:04+05:30
 draft: true
 category: Blogging
 slug: blogging-with-hugo-as-an-wordpress-alternative
-summary:
-description:
+summary: Create a blog with Hugo Static Site Generator as a Wordpress alternative & with added automation plus other superpowers
+description: Create a blog with Hugo Static Site Generator as a Wordpress alternative & with added automation plus other superpowers
 cover:
-  image:
-  alt:
-  caption:
+  image: https://res.cloudinary.com/jarmos/image/upload/v1615628184/Overpowered-Hugo-Blog_li3tx3.jpg
+  alt: Hugo, the static site generator with biceps working out with dumbbells
+  caption: Hugo Static Site Generator on Steroids by Somraj Saha
   relative: false
 showtoc: true
 ---
