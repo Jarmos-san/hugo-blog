@@ -5,4 +5,7 @@ contact_links:
     about: Please ask and answer questions here.
   - name: Report Issues and/or Bugs
     url: https://github.com/Jarmos-san/blog/issues
-    about: Please report security vulnerabilities here.
+    about: Please report bugs & other issues here.
+  - name: Security Policy
+    url: https://github.com/Jarmos-san/blog/security/policy
+    about: Refer to the Security Policy to report security vulnerabilities or if you would like to know about how your personal information is used.
