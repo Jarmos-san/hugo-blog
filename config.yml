@@ -52,14 +52,16 @@ params:
     url: https://github.com/Jarmos-san
   - name: medium
     url: https://medium.com/@Jarmos
-  - name: email
-    url: mailto:somraj.mle@gmail.com
-  - name: buymeacoffee
-    url: https://www.buymeacoffee.com/Jarmos
   - name: instagram
     url: https://www.instagram.com/jarmos.san/
   - name: linkedin
     url: https://www.linkedin.com/in/jarmos/
+  - name: facebook
+    url: https://www.facebook.com/jarmos.san/
+  - name: email
+    url: mailto:somraj.mle@gmail.com
+  - name: buymeacoffee
+    url: https://www.buymeacoffee.com/Jarmos
   cover:
     hidden: true
     hiddenInList: true
