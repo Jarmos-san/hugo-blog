@@ -1,10 +1,9 @@
 ---
-name: Bug report
-about: Create a report to help us improve
+name: Bug Report
+about: Create a report to help us improve the blog
 title: "[BUG]"
 labels: bug
 assignees: Jarmos-san
-
 ---
 
 **Describe the bug**
