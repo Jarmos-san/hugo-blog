@@ -1,24 +1,25 @@
 name: AutoMerge
 
 on:
-    pull_request:
-        types: [labeled, opened, edited, reopened, synchronized]
-    pull_request_review:
-        types: [submitted, edited]
-    check_suite:
-        types: [completed]
-    status: {}
+  pull_request:
+    types: [labeled, opened, edited, reopened, synchronized]
+    branches:
+      - dev
+  pull_request_review:
+    types: [submitted, edited]
+  check_suite:
+    types: [completed]
 
 jobs:
-    AutoMerge:
-        runs-on: ubuntu-latest
-        steps:
-            - name: Auto Merge
-              uses: "pascalgn/automerge-action@v0.13.1"
-              env:
-                  GITHUB_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
-                  MERGE_REMOVE_LABELS: "automerge"
-                  MERGE_METHOD: "rebase"
-                  MERGE_COMMIT_MESSAGE: "Automerged {pullRequest.number}"
-                  MERGE_RETRIES: "50"
-                  MERGE_RETRY_SLEEP: "30000"
+  AutoMerge:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Auto Merge
+        uses: "pascalgn/automerge-action@v0.13.1"
+        env:
+          GITHUB_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
+          MERGE_REMOVE_LABELS: "automerge"
+          MERGE_METHOD: "rebase"
+          MERGE_COMMIT_MESSAGE: "Automerged {pullRequest.number}"
+          MERGE_RETRIES: "50"
+          MERGE_RETRY_SLEEP: "30000"
