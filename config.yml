@@ -86,9 +86,9 @@ menu:
     name: Services
     url: services/
     weight: 4
-  - name: Sponsorship
-    identifier: sponsorship
-    url: sponsorship/
+  - name: Collaborate 
+    identifier: collaborate 
+    url: collaborations/
     weight: 5
   - name: Subscribe
     identifier: newsletter
