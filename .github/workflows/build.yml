@@ -29,6 +29,8 @@ jobs:
           deploy-message: "Deployed with GitHub Actions"
           netlify-config-path: ./netlify.toml
           github-deployment-environment: "Netlify Deploy"
+          enable-pull-request-comment: false
+          enable-commit-comment: false
         env:
           NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
           NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
