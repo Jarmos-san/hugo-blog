@@ -90,7 +90,7 @@ menu:
     identifier: collaborate 
     url: collaborations/
     weight: 5
-  - name: Subscribe
+  - name: Newsletter 
     identifier: newsletter
     url: https://jarmos.ck.page/newsletter
     weight: 6
