@@ -1,6 +1,6 @@
 ---
-title: Sponsorship/Collaboration Opportunities
-url: "/sponsorship"
+title: Collaborate With Me On Projects 
+url: "/collaborations"
 hidemeta: true
 disableShare: true
 summary: Hire Somraj Saha for your professional needs. This section details his services, rates, skill sets & everything else you might want to know before hiring him.
