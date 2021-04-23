@@ -52,15 +52,27 @@ While each of these services might look pretty much the same on face value, they
 
 ### Cloud Run
 
-Google defines Cloud Run as "a fully managed service for deploying containerized applications". To be more specific, More information available at: https://cloud.google.com/run
+Google defines Cloud Run as "a fully managed service for deploying containerized applications". To be more specific, Cloud Run provides an API through Knative. The developer then can utilize the API to interact with the containerized instances. And under the hood Knative is just an open-source wrapper around Kubernetes which enables developers to host serverless infrastructure for themselves.
 
-### Cloud Functions
-
-Functions-as-a-Service (FaaS) service which scales dynamically as & when needed but with no server maintenance requirements. More information at: https://cloud.google.com/functions
+Do note, since Cloud Run utilizes Containers, you can basically use any programming language of your choice or a binary! The only thing stopping you would be if the image to build a specific container isn't available for download on the Internet. You can find more information on Cloud Run at: [cloud.google.com/run](https://cloud.google.com/run)
 
 ### App Engine
 
-A more comprehensive service for deploying web applications. More information available at: https://cloud.google.com/appengine
+App Engine on the other hand is pretty much like renting out a server for yourself. The caveat being, the server is managed by someone else & it comes with every set of tools you would ever need. In other words, you have the freedom of choosing either one of the most popular programming languages or you could use something else of your choice.
+
+So, you could build the backend of your application in Python & let App Engine take care of scaling it and/or integrating it with other services as well. And if you don't like Python for some reason, you could also use either Node.js, Golang, Ruby, C#, PHP or something else of your choice!
+
+You can deliver you code using Docker containers & App Engine will do the rest. Besides that, App Engine also provides additional services like versioning your application & so on. Other similar integrated services involves traffic spliting, monitoring, etc.
+
+So, as you can see App Engine is perfect for production applications which require a lot of resources. And certain situations wherein you would prefer to not manage backend servers & what not. You'll find more use cases of App Engine later on in the article.
+
+For now you can find comprehensive details at: [cloud.google.com/appengine](https://cloud.google.com/appengine)
+
+### Cloud Functions
+
+Unlike it's cousins, Google provides Cloud Functions on a Functions-as-a-Service (FaaS) basis.  To elaborate on it further, Cloud Function are supposed to be used as glue-code. Using Cloud Functions, the developers can connect and/or extend existing GCP or third-party services. As is the case with most serverless infrastructure, you needn't manage the backend resources yourself. GCP will scale up resource requirements up or down as required by the application(s).
+
+You can find more information at: https://cloud.google.com/functions & the next section touches on specific use cases of Cloud Functions.
 
 ## Which Serverless Service to Use & When
 
