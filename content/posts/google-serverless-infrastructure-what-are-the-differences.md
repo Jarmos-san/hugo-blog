@@ -70,10 +70,18 @@ For now you can find comprehensive details at: [cloud.google.com/appengine](http
 
 ### Cloud Functions
 
-Unlike it's cousins, Google provides Cloud Functions on a Functions-as-a-Service (FaaS) basis.  To elaborate on it further, Cloud Function are supposed to be used as glue-code. Using Cloud Functions, the developers can connect and/or extend existing GCP or third-party services. As is the case with most serverless infrastructure, you needn't manage the backend resources yourself. GCP will scale up resource requirements up or down as required by the application(s).
+GCP provides Cloud Functions on a "_Functions-as-a-Service_", as in modular pieces of code which are executed in response to certain events. So, if you're building an application based on a microservice architecture, this is the best option your money could buy.
 
-You can find more information at: https://cloud.google.com/functions & the next section touches on specific use cases of Cloud Functions.
+And as is the case with most serverless infrastucture, Cloud Fundtions provides certain similara benefits as well. For example, increased development velocty, built-in scalability, hence the developer needn't worry about server maintenance.
 
-## Which Serverless Service to Use & When
+Besides, Cloud Functions can be a less burden on your wallet as well. Since, Cloud Functions are priced based on how long the functions run, the number of times they're invoked & the extra resources provisioned for the functions.
+
+The only drawback of using Cloud Functions though, is testing them. Since, you're obligated to "upload" you functions to GCP, it's hard to ensure quality of your functions. Thus, without a robust CI/CD pipeline to test & ensure quality of the functions, if your code breaks, things will go south faster than a Bugatti Veron.
+
+That said, you can find more information on Cloud Functions on it's official page at: [cloud.google.com/functions](https://cloud.google.com/functions).
+
+## Which Service Should You Use
+
+And now for the question
 
 ## Final Words
