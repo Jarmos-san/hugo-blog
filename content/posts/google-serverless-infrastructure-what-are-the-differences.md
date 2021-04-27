@@ -82,6 +82,19 @@ That said, you can find more information on Cloud Functions on it's official pag
 
 ## Which Service Should You Use
 
-And now for the question
+And now, for the question you've been waiting for, "_Which Google serverless service should you use?_".
+
+The short answer to this question is simple, _it depends!_ :grinning_face_with_sweat: But, let's dive deeper into what contexts does it depend on.
+
+- Choose Cloud Run if your application is containerized & you need the power of Kubernetes. The major benefit of choosing this context is reproducibility. Since, the application is containerised, the runtime environment can easily be reproduced elsewhere.
+- Choose App Engine if the application isn't containerised & yet you need a full-managed platform to deploy the application. With App Engine, all reponsibility of maintaining the backend server, dependencies & so on are taken care of by GCP.
+- And finally, Cloud Functions. Choose it if you want a zero-management way to glue together other modular pieces of code. And if the application is based on microservice architecutre, Cloud Functions can glue together the modular pieces of code.
 
 ## Final Words
+
+So, I hope now you've a better understanding of Google's serverless computing offering. I, for sure learned a lot while using & researching each of these services. But if you feel I missed out on something or perhaps you would like to add a thing or two to the article feel free to reach out to me. :hugging_face:
+
+That said, now that you understand serverless computing, go ahead & try to deploy something of your own. You might want to read these articles for further inspiration:
+
+- [How to Create an Overpowered Blog With Hugo (As a Wordpress Alternative)](./blogging-with-hugo-as-an-wordpress-alternative.md)
+- [A Standard & Complete CI/CD Pipeline for Most Python Projects](./a-standard-ci-cd-pipeline-for-python-projects.md)
