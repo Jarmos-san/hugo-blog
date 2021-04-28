@@ -3,13 +3,13 @@ title: "Google Serverless Infrastructure: A Primer on GCP & Serverless Computing
 date: 2021-04-19T10:50:28+05:30
 slug: details-of-google-serverless-computing
 category: "Cloud Computing"
-summary: Learn about GCP & it's serverless computing infrastructure. Learn when to use App Engine, Cloud Functions or Cloud Run on Google Cloud Platform.
-description: Learn about GCP & it's serverless computing infrastructure. Learn when to use App Engine, Cloud Functions or Cloud Run on Google Cloud Platform.
+summary: "Learn about GCP & it's serverless computing infrastructure. Learn when to use App Engine, Cloud Functions or Cloud Run on Google Cloud Platform."
+description: "Learn about GCP & it's serverless computing infrastructure. Learn when to use App Engine, Cloud Functions or Cloud Run on Google Cloud Platform."
 covers:
   image: "https://res.cloudinary.com/jarmos/image/upload/v1619527745/google-serverless-ftw_rn1gi4.jpg"
   alt: "Should you choose Digital Ocean over Google Cloud Platform?"
   caption: "Who needs Digital Ocean when you got Google Serverless services?"
-  relative: true
+  relative: false
 showtoc: true
 draft: true
 ---
