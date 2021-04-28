@@ -11,7 +11,7 @@ cover:
   caption: "Who needs Digital Ocean when you got Google Serverless services?"
   relative: false
 showtoc: true
-draft: true
+draft: false
 ---
 
 Have you ever built a Machine Learning application? And did you wonder to yourself how to showcase it on the Internet, then you're not alone. Fortunately, there's a pretty good solution to this dilemma. And the solution is "_Serverless Computing_"! And guess what? Google Cloud Platform (GCP) & Serverless Computing are a match made in heaven.
