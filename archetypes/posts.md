@@ -5,7 +5,7 @@ slug:
 category:
 summary:
 description: Same as the summary
-covers:
+cover:
   image:
   alt:
   caption:
