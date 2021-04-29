@@ -69,8 +69,8 @@ Do note, editing each Operating System's PATH is quite different. Hence, do take
 
 Now ensure you installed Hugo by running the `hugo version` command on your CLI. If everything works fine, you should see a similar output.
 
-```bash
-Hugo Static Site Generator v0.80.0-792EF0F4 windows/amd64 BuildDate: 2020-12-31T13:37:57Z
+```sh
+ Hugo Static Site Generator v0.80.0-792EF0F4 windows/amd64 BuildDate: 2020-12-31T13:37:57Z`
 ```
 
 ### Creating Your Site
@@ -81,7 +81,7 @@ You can generate a skeleton site (_which we'll build upon soon_) with the `hugo 
 
 The command generates a simple set of files & folders. Each of them serves a specific purpose for Hugo. Here's what the directory structure looks like after generating them.
 
-  ```bash
+```sh
   .                 # Current (or Root) directory
   ├───archetypes    # Stores preconfigured frontmatter metadata.
   ├───content       # Stores your Markdown articles.
@@ -91,7 +91,7 @@ The command generates a simple set of files & folders. Each of them serves a spe
   ├───static        # Holds static content like CSS/JS files, images, favicons, etc.
   ├───themes        # This is where you download & store a Hugo theme.
   └───config.yml    # Config file to configure Hugo. Supports YAML, TOML & JSON formats.
-  ```
+```
 
 There's more to what Hugo generates as a skeleton site than what I can discuss in one blog. For more info, do take a brief look at the documentation on Hugo's [project directory structure][Hugo Project Directory].
 
@@ -116,24 +116,24 @@ For SEO needs, you might also need site metadata. And Hugo takes care of it out-
 And to get a general feel of what a config.yml file looks like, here's an example;
 
 ```yaml
-baseURL: "Your Site URL"
-languageCode: "en-us"
-title: "Your Website Name"
-theme: "Theme Name"
-paginate: 5
-enableRobotsTXT: true
-params:
-  env: production
-  title: Your Website Name
-  description: "Description of your website."
-  images: ['profile-pic.jpg']
-  defaultTheme: auto
-  GoogleAnalyticsID: G-V0ZH6RS2BM
-  assets:
-    favicon: icons/favicon.ico
-menu:
-  main:
-  # Menu items like Contact, About Me pages & so on
+  baseURL: "Your Site URL"
+  languageCode: "en-us"
+  title: "Your Website Name"
+  theme: "Theme Name"
+  paginate: 5
+  enableRobotsTXT: true
+  params:
+    env: production
+    title: Your Website Name
+    description: "Description of your website."
+    images: ['profile-pic.jpg']
+    defaultTheme: auto
+    GoogleAnalyticsID: G-V0ZH6RS2BM
+    assets:
+      favicon: icons/favicon.ico
+  menu:
+    main:
+    # Menu items like Contact, About Me pages & so on
 ```
 
 Do note, configuring the `config.yml` isn't limited to what I mentioned here. Based on the theme you're using, you might/mightn't have to extend on it.

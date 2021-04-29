@@ -44,7 +44,7 @@ That said, you can copy the code snippets shared below in an aptly named `<NAME-
 
 That said, here's the code snippet for the CI/CD pipeline. Feel free to copy+paste it. 😉
 
-```json
+```yml
 name: Test Suite
 
 on: [pull_request, push]
