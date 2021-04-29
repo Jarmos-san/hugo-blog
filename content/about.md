@@ -13,7 +13,7 @@ I've listed my tech stack on the [Technology Stack](../services/#technology-stac
 
 Besides programming, I'm also an amateur Technical Writer. My [blog](../blog/) is one source where you can find most of my up-to-date written content. But, often there's a book or two I keep working on. If you would like to stay updated on their progress, you might want to follow me on Twitter.
 
-But when I'm on the [Terminal][Terminal Emulator], you can find me on Steam probably playing a game or two. If you would like to join me in a game, feel free to drop a message. You can DM me on Discord(**Jarmos#8937**) and/or on my [Steam inbox][Steam Profile].
+But when I'm on the [Terminal][Terminal Emulator], you can find me on Steam probably playing a game or two. If you would like to join me in a game, feel free to drop a message. You can DM me on Discord(**Jarmos#8937**) and/or on my [Steam][Steam Profile](**Jarmos-san**).
 
 ### Contact Me
 
