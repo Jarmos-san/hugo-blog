@@ -86,19 +86,26 @@ menu:
     name: Services
     url: services/
     weight: 4
-  - name: Collaborate 
-    identifier: collaborate 
+  - name: Collaborate
+    identifier: collaborate
     url: collaborations/
     weight: 5
-  - name: Newsletter 
+  - name: Newsletter
     identifier: newsletter
     url: https://jarmos.ck.page/newsletter
     weight: 6
 markup:
   highlight:
-    anchorLineNos: true
+    # anchorLineNos: true
+    # codeFences: true
+    # guessSyntax: true
+    # lineNos: true
+    # noClasses: false
+    # style: "borland"
+    anchorLineNos: false
     codeFences: true
-    guessSyntax: true
+    guessSyntax: false
     lineNos: true
-    noClasses: false
-    style: algol
+    lineNumbersInTable: true
+    noClasses: true
+    style: native
