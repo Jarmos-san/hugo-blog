@@ -3,26 +3,23 @@ title: About Me
 url: "/about"
 hidemeta: true
 disableShare: true
-summary: About Somraj Saha. This section details what he does & everything else you
-  might want to know about him.
+summary: About Somraj Saha. This section details what he does & everything else you might want to know about him.
 ---
-Hi there! :wave: I'm Somraj Saha (_call me Jarmos, if my name is hard to pronounce_ :face_with_tongue:).
+Hi there! :wave: I'm Somraj Saha (_you can call me Jarmos_).
 
-For a living, I work as an ML Engineer providing my 4+ years of experience to my clients. My past clients & business owners were amazing folks who I enjoyed working with every moment of it! :heart:
+I work as an independent Software Engineer for a living. Over the years I picked up knowledge in Python & Machine Learning (_mostly due to my academic background in Economics_). And only recently did I start dabbling around with frontend technologies for the Web.
 
-Besides work, I'm an amateur author writing books & other literary content. Most of them are technical and/or are related to software development in some sense. You can find some of my written work on my [blog](../blog/) where I share my thoughts & experiences as a programmer.
+I've listed my tech stack on the [Technology Stack](../services/#technology-stack) section of my Services page. So, in case you would like to hire me, that information might prove useful for you! :heart:
 
-Other than that, there's also an occassional book I'm almost always working on the side. So, if you want some sneak peek into those works, follow me on Twitter ([@Jarmosan][Twitter]) and/or subscribe to the [Private Email List][Newsletter] I maintain. And you'll receive personalized content delivered straight to your inbox.
+Besides programming, I'm also an amateur Technical Writer. My [blog](../blog/) is one source where you can find most of my up-to-date written content. But, often there's a book or two I keep working on. If you would like to stay updated on their progress, you might want to follow me on Twitter.
 
-The rest of the time while I'm not working or writing, I contribute to open-source projects And here's a heads up; This website you'r reading is [open-sourced][Blog Source Code] too! :heart:
-
-You can check out my other contributions on GitHub ([Jarmos-san][Github]).
+But when I'm on the [Terminal][Terminal Emulator], you can find me on Steam probably playing a game or two. If you would like to join me in a game, feel free to drop a message. You can DM me on Discord(**Jarmos#8937**) and/or on my [Steam inbox][Steam Profile].
 
 ### Contact Me
 
-Want to have a chat with me? Feel free to drop a DM! :smile:
+Want to have a professional chat with me? Feel free to drop a DM! :smile:
 
-These are the platforms you can have a chat with me:
+These are the platforms you can find me on:
 
 - Email: somraj.mle@gmail.com
 - Linkedin: [www.linkedin.com/in/jarmos][Linkedin]
@@ -37,3 +34,5 @@ These are the platforms you can have a chat with me:
 [Email]: mailto:somraj.mle@gmail.com
 [Github]: https://github.com/Jarmos-san
 [Blog Source Code]: https://github.com/Jarmos-san/blog
+[Steam Profile]: https://steamcommunity.com/id/jarmos-san/
+[Terminal Emulator]: https://en.wikipedia.org/wiki/Terminal_emulator
