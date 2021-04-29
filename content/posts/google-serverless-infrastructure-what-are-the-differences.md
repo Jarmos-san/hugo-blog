@@ -22,9 +22,7 @@ With GCP, you don't just get one serverless service but three great services. An
 
 There's a lot of buzz about "_Serverless architecture_", "_Serverless this-and-that_". Filtering out the buzz & understanding the core concepts of Serverless Computing is important. It'll help you maintain & manage your project(s) better.
 
-So, let's understand what Serverless Computing is all about.
-
-Here's a brief description of the concept from Wikipedia;
+So, let's understand what Serverless Computing is all about. Here's a brief description of the concept from Wikipedia;
 
 {{< blockquote link="https://en.wikipedia.org/wiki/Serverless_computing" author="Source:">}}
   Serverless computing is a cloud computing execution model in which the cloud provider allocates machine resources on demand, taking care of the servers on behalf of their customers. [...] When an app is not in use, there are no computing resources allocated to the app. Pricing is based on the actual amount of resources consumed by an application. [...] "Serverless" is a misnomer in the sense that servers are still used by cloud service providers to execute code for developers. However developers of serverless applications are not concerned with capacity planning, configuration, management, maintenance, operating or scaling of containers, VMs, or physical servers.
@@ -52,7 +50,7 @@ So, let’s check out how, when & why you might want to use any of these service
 
 ### Cloud Run
 
-Google defines Cloud Run as “a fully managed service for deploying containerized applications”. To be more specific, Cloud Run provides an API through Knative. The developer then can use the API to interact with the containerized instances.
+Google defines Cloud Run as “a fully managed service for deploying containerized applications”. To be more specific, Cloud Run provides an API through [Knative](https://knative.dev/). The developer then can use the API to interact with the containerized instances.
 
 Under the hood, Knative is just an open-source wrapper around Kubernetes. It enables developers to host serverless infrastructure for themselves.
 
@@ -76,13 +74,13 @@ That said, you can find comprehensive details on App Engine at: [cloud.google.co
 
 ### Cloud Functions
 
-GCP provides Cloud Functions on a “Functions-as-a-Service”. They are modular pieces of code which executes in response to certain events. So, microservice-based application, Cloud Functions are the best option money could buy.
+GCP provides Cloud Functions on a “Functions-as-a-Service”. They are modular pieces of code which executes in response to certain events. So,for microservice-based applications, Cloud Functions are the best option money could buy.
 
 As is with most serverless infrastucture, Cloud Fundtions offer similar benefits as well. For example, increased development velocty & built-in scalability among other stuff. Hence, the developer needn’t worry about server maintenance.
 
 Pricing on Cloud Functions are also very light on the pocket. They are priced based on how long the functions run, the number of times they’re invoked & the extra resources provisioned for the functions.
 
-The only drawback of using Cloud Functions though, is testing them. Since, you’re required to “upload” your functions to GCP, it’s hard to ensure quality of your functions. And, without a robust CI/CD pipeline keep watch on the quality standards, things can break. And when they do break, the mess will go south faster than a Bugatti Veron.
+The only drawback of using Cloud Functions though, is testing them. Since, you’re required to “upload” your functions to GCP, it’s hard to ensure quality of your functions. And, without a robust CI/CD pipeline keeping a watch on the quality standards, things can break. And when they do break, the mess goes south faster than a Bugatti Veron.
 
 That said, peruse through the official documentations for info on Cloud Functions at: [cloud.google.com/functions](https://cloud.google.com/functions).
 
@@ -96,13 +94,13 @@ The short answer to this question is simple, _it depends!_ :grinning_face_with_s
 
 - Choose App Engine if the application isn’t containerised. But, you need a fully-managed platform to deploy the application. With App Engine you let Google take care of managing the backend systems. Scaling it up or down? Let Google do it. Managing dependencies? Let Google handle it as well.
 
-- And finally, Cloud Functions. Choose it if you want a zero-management way to glue together other modular pieces of code. Especially true if the application is built on top of microservice architecutre. Cloud Functions can act as glue-code for the application. You can design your app to invoke a certain Function only on specific set of events & so on.
+- And finally, Cloud Functions. Choose it if you want a zero-management way to glue together other modular pieces of code. Especially true if the application is built on top of microservice architecutre. Cloud Functions can act as glue-code for the application. You can design your app to invoke a certain Function only on specific set of events. And Google will take care of scaling it up/down as & when required.
 
 ## Final Words
 
-I hope now you’ve a better understanding of Google’s serverless computing offering. I, for sure learned a lot while using & researching each of these services. But I might've missed out on something. Or perhaps you would like to add a thing or two to the article. If so, then feel free to reach out to me. 🤗
+Hopefully you’ve a better understanding of Google’s serverless computing offering right now. I, for sure learned a lot while using & researching each of these services. But I might've missed out on something. Or perhaps you would like to add a thing or two to the article. If so, then feel free to reach out to me. 🤗
 
-That said, now you should've a better understanding of serverless computing. So, go ahead & deploy something of your own. And if did, you might want to read these articles for further inspiration:
+That said, since you understand serverless computing now, go ahead & deploy something of your own. And if did, you might want to read these articles for further inspiration:
 
 - [How to Create an Overpowered Blog With Hugo (As a Wordpress Alternative)](./blogging-with-hugo-as-an-wordpress-alternative.md)
 - [A Standard & Complete CI/CD Pipeline for Most Python Projects](./a-standard-ci-cd-pipeline-for-python-projects.md)
