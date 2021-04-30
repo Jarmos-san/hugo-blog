@@ -1,0 +1,20 @@
+# Handle line endings automatically for files detected as text & leave all files detected as binary untouched.
+*               text=auto
+
+# These files are text & should be normalized (i.e convert from CRLF to LF)
+.gitignore      text
+*.md            text diff=markdown  whitespace
+*.html          text diff=html      whitespace
+*.css           text diff=css       whitespace
+*.yml           text diff=yaml      whitespace
+*.toml          text diff=toml      whitespace
+
+# Exclude files from exporting
+.gitattributes  export-ignore
+.gitignore      export-ignore
+
+# Mark the following files as binary.
+*.ico   binary
+*.jpg   binary
+*.png   binary
+*.gif   binary
