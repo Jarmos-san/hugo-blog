@@ -1,10 +1,10 @@
 ---
-title: "Deploying Fastapi Project to Heroku With Github Actions"
+title: "Using GitHub Actions to Deploy a FastAPI Project to Heroku"
 date: 2021-05-05T16:25:28+05:30
-slug:
-category:
+slug: "using-github-actionst-to-deploy-a-fastapi-project-to-heroku"
+category: DevOps
 summary:
-description: Same as the summary
+description:
 cover:
   image:
   alt:
