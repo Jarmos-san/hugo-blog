@@ -14,19 +14,15 @@ showtoc: true
 draft: true
 ---
 
-**Introduction**:
+I often build Python projects & host the source code on GitHub repositories. And thanks to [GitHub Actions](https://github.com/features/actions), most of my CI/CD needs are taken care off of as well. And, [Heroku](https://www.heroku.com) takes care of my deployment needs.
 
-If you read my previous article on [Google Serverless Infrastructure](../details-of-google-serverless-computing/) you would realise how serverless computing is a boon for developers. You no longer have to worry about securing or maintain the remote servers & focus on developing the project instead.
+But, Heroku doesn't provide a straightforward way to deploy the project using GitHub Actions. You'll need to download the Heroku CLI for that instead. And it means, additional bloatware on you local machine & more dependencies to take care of. Not a situation I would like to be in & I assume some of you wouldn't either.
 
-Quite similar in technology to GCP's serverless offering, there're a few other alternatives too. Each offering a unique to deploy your projects to the Internet. The only, common thing between them is, you as the developer needn't worry about the servers. And one such alternative is Heroku.
+Also, do note, similar to how you "_push_" your code to GitHub using [Git](https://git-scm.com/), Heroku CLI uses the same technology under the hood. Thus, you would miss out on having a robust CI/CD pipeline keep a quality check on your source code.
 
-Heroku offers their service on a PaaS basis which basically means, they take care of maintain the servers for you. And besides, they also offer quite a generous free tier! So, for all your hobby developers out there, Heroku is the way to go.
+Hence, in this article I share how I circumvent around this tricky situation. We'll be using GitHub Actions & FastAPI to deploy a hypotethetical REST API to the Internet. So, without further adieu, let's dive in & learn how to do it.
 
-But a caveat is, Heroku needs you to download their CLI tool to deploy your projects on their infrastructure. Downloading additional tools means more dependencies to download on your local machine. And if you're anything like who wants to keep their local development machine as clean as possible, you wouldn't want to download their tool anyway.
-
-But then, how would you deploy your project? We'll delegate the deployment process to GitHub Actions instead. And how exactly to do that, this article will discuss it in as much detail as possible.
-
-__Introduce prerequisites__:
+## Things to Know Before Deployment
 
 Before we proceed ahead with the rest of the article, let's check out what resources do we need first:
 
