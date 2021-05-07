@@ -179,8 +179,21 @@ You can then check out your FastAPI project deployed on the `<PROJECT-NAME>.hero
 
 And you did all that without installing Heroku CLI on your local machine. On top of it, now you can even have one or more robust test suites & code quality checks before deploying the project to production. And all of it will be taken care of by GitHub Actions! :grinning_squinting_face:
 
-**Say final words**:
+## Some Potential Road Blocks
+
+<!--
+TODO: Conclude based on the following points:
+* https://devcenter.heroku.com/articles/build-and-release-using-the-api
+* https://blog.heroku.com/programmatically_release_code_to_heroku_using_the_platform_api
+* And talk about how the existing Action isn't the best & has certain loopholes
+
+TODO: Include link to this article in the open issue:
+* https://github.com/tiangolo/fastapi/issues/802
+ -->
 
 So, I hope now you know how to deploy your FastAPI project to Heroku with GitHub Actions. You no longer have to download Heroku's CLI tool on your local machine. And you also don't have to worry about server management stuff! All you got to do is work on maintaining & developing your project with FastAPI.
 
 Hence, I'll be looking forward to what you build. And if you think your project is interesting enough & this article helped you make the project to what it is today, then feel free to reach out to me!
+
+<!-- ! Reference Links -->
+<!-- TODO: Add reference links here. -->
