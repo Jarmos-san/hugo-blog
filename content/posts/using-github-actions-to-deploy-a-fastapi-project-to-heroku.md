@@ -42,53 +42,13 @@ If some of the aforementioned stuff sounds complicated & alien to you, then fret
 
 ## Putting Everything Together
 
-These are the bare minimum number of prerequisites you'll definitely need to deploy your project to Heroku.
+### Our Simple FastAPI Project
 
-GitHub Actions are triggered based on certain events which in turn perform certain tasks based on a set of of instructions. These instructions are laid out in a YAML file which is placed under `.github/workflows/<WORKFLOW-FILENAME.yml>` of the source code repository. In a later section of the article, we'll look into what to include in this article.
+Let's start briefing the star of our article first. The simple FastAPI project detailed in a `main.py` file. It's a simple REST API that returns JSON reponses to the client. And it has two routes: a `/` (or root) & a `/healthcheck` route.
 
-Moving on, the repository also holds the source code of your FastAPI project. And for a simple description's sake, we'll keep the source code of the said project small enough. We'll name it `main.py` & we'll share the contents of the article soon enough.
+If you invoke a curl command to the root URL, it simply returns a `{"message": "Hello, World!"`} JSON response. The "_healtcheck_" URL acts as a last-line-of-defense for our project. As long as the project is working as expected, the `/healtcheck` route should return `200` status code along with a JSON response. The `heroku-deploy` Action rolls back to a previous working version if the healthcheck route doesn't return a `200` status code. The JSON response is just an additional feature of the project for human interactions.
 
-We'll also require a Heroku account, obviously! And to authenticate to the account on a remote machine, we'll also require an API key, the email address you used to login to the Heroku & the name of the project (_optional as you'll see soon_).
-
-Besides the aforementioned prerequisites, Heroku also needs some more files to build & deploy your project on their infrastructure. They are as follows:
-
-- A plain-text `Procfile` without a file extension. Heroku reads this file to setup the webserver for your project on their infrastructure.
-- A `requirements.txt` detailing all the dependencies for your project.
-- A `runtime.txt` file stating the Python version to use for your project. State the version of Python your project depends on in the `Python-3.minor.patch` format. You can check what version of Python does your project depend on by typing `python --version` in your terminal.
-
-**Share the GitHub Actions workflow**:
-
-And now, time for the main course of the article; the GitHub Actions workflow file which allows you to deploy your FastAPI project to Heroku.
-
-```yml
-# Name of the workflow
-name: Deploy
-
-# Events that trigger a workflow:
-# https://docs.github.com/en/actions/reference/events-that-trigger-workflows
-on: push
-
-jobs:
-  # Include additional builds for testing/linting your code
-  # It ensures quality control before deploying the project to Heroku
-  build:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout repository
-        uses: actions/checkout@v2
-      - name: Deploying to Heroku
-        # More details available at:
-        # https://github.com/akhileshns/heroku-deploy
-        uses: akhileshns/heroku-deploy@v3.12.12
-        with:
-          heroku_api_key:  ${{ secrets.HEROKU_API_KEY }}
-          heroku_app_name: "<PROJECT-NAME>"
-          heroku_email: "<EMAIL-ADDRESS>"
-          healthcheck: "https://<PROJECT-NAME>.herokuapp.com/healthcheck"
-          rollbackonhealthcheckfailed: true
-```
-
-And the Python file for our FastAPI project:
+So, putting it all together into code, this is what it's supposed to look like:
 
 ```python
 from fastapi import FastAPI, status
@@ -130,6 +90,83 @@ def perform_healthcheck():
     '''
     return {'healthcheck': 'Everything OK!'}
 ```
+
+As you can see, the FastAPI app is nothing fancy & it's kept as such with an intention. So, let's check out our co-star, the GitHub Actions workflow which helps us deploy our project to Heroku.
+
+### Configuring the GitHub Actions Workflow
+
+If you're not aware of GitHub Actions workflows, you write down specific instructions in a [YAML](https://yaml.org/) file. GitHub reads the instructions to invoke one or more Actions (_like `heroku-deploy`_) on their remote machines. This YAML file is stored under the `.github/workflows` directory & is also pushed to version control.
+
+That said, here's what our workflow file looks like like:
+
+```yml
+# This is the .github/workflows/main.yml
+
+name: Deploy    # Name of the workflow
+
+# Events that trigger a workflow:
+# https://docs.github.com/en/actions/reference/events-that-trigger-workflows
+on: push
+
+jobs:
+  test:
+  # Include your test suite here.
+  lint:
+  # Lint & format your coder over here.
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+      - name: Deploying to Heroku
+        # More details available at:
+        # https://github.com/akhileshns/heroku-deploy
+        uses: akhileshns/heroku-deploy@v3.12.12
+        with:
+          heroku_api_key:  ${{ secrets.HEROKU_API_KEY }}
+          heroku_app_name: "<PROJECT-NAME>"
+          heroku_email: "<EMAIL-ADDRESS>"
+          healthcheck: "https://<PROJECT-NAME>.herokuapp.com/healthcheck"
+          rollbackonhealthcheckfailed: true
+```
+
+Customize your workflow file based on your needs & requirements. For more information on how to do it, take a look at the official docs at: [docs.github.com/en/actions](https://docs.github.com/en/actions).
+
+That said, let's peruse through the workflow file & see how it works.
+
+At the top of our `main.yml` file is the `name: Deploy` key-value pair which signifies the name of the workflow. Followed by it the `on: push` key-value pair defines how & when the workflow is triggered. You can find a list of events that triggers Actions workflow at: [Events That Trigger Workflows](https://docs.github.com/en/actions/reference/events-that-trigger-workflows).
+
+The `jobs` section defines what set of Actions will be run signified with the `steps` keyword. And the `runs-on` keyword defines the Operating System to run the set of `jobs` on.
+
+Our simple workflow file has only two Actions for our purpose. The [`checkout`](https://github.com/actions/checkout) Action loads the contents of your repository on GitHub's remote machines. And finally, the `heroku-deploy` is what deploys our project to Heroku.
+
+More specifically, the `heroku-deploy` Action accepts certain required & optional values. The `heroku_api_key`, `heroku_app_name` & the `heroku_email` are compulsory. But, the `healthcheck` & the `rollbackonhealthcheckfailed` value are optional but can benefit our project greatly.
+
+The `healthcheck` value accepts an URL to receive a `200` Status Code. Failing which will make the workflow to exit without completion. On top of it, the `rollbackonhealthcheck` value rolls back to a previous working state in case the previous health check fails.
+
+So, why do we need such complexity in the first place?
+
+You see, in production environments its common to have robust CI/CD pipeline(s) in place. These systems tests your `git` pushes & PR for any potential breakages code quality as well. The healtcheck & roll back features of the deployment process is just there as a last-line-of-defence for the project.
+
+So, in case a bug passes the CI/CD pipeline potentially breaking the app, the healthchecks will just roll back to a previous working state.
+
+### About the `Procfile`, `requirements.txt` & `runtime.txt` Files
+
+
+
+- A plain-text `Procfile` without a file extension. Heroku reads this file to setup the webserver for your project on their infrastructure.
+- A `requirements.txt` detailing all the dependencies for your project.
+- A `runtime.txt` file stating the Python version to use for your project. State the version of Python your project depends on in the `Python-3.minor.patch` format. You can check what version of Python does your project depend on by typing `python --version` in your terminal.
+
+**Share the GitHub Actions workflow**:
+
+And now, time for the main course of the article; the GitHub Actions workflow file which allows you to deploy your FastAPI project to Heroku.
+
+
+
+And the Python file for our FastAPI project:
+
+
 
 So, as you can see, our simple FastAPI project is nothing fancy. It's just a plain old "_Hello, World!_" program but with an additional feature. We included a "_healthcheck_" route as the last-line-of-defence in case something goes south & our project breaks.
 
