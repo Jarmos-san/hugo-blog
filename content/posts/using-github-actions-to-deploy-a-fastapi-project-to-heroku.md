@@ -24,11 +24,23 @@ Hence, in this article I share how I circumvent around this tricky situation. We
 
 ## Things to Know Before Deployment
 
-Before we proceed ahead with the rest of the article, let's check out what resources do we need first:
+Heroku was fundamentally designed wherein the users are expected to push their source code on Heroku version-control system. Hence, it doesn't work well with continuous integration systems like GitHub Actions.
 
-- A GitHub Action named [heroku-deploy](https://github.com/akhileshns/heroku-deploy) by [AkhileshNS](https://github.com/AkhileshNS).
-- A repository containing your FastAPI project's source code among other files needed for deployment.
-- A Heroku account (_which we'll need for the API key among other things_).
+To answer this drawback, Heroku does provide integrated builds on their platform which are triggered on every push to GitHub. And you could even set it up so the build starts only after test suite passes. But, I find it cumbersome & the extra set of work should be avoided in the first place, if possible.
+
+Hence, we'll be using the [`heroku-deploy`](https://github.com/akhileshns/heroku-deploy) Action by [AkhileshNS](https://github.com/AkhileshNS). It's a Node.js application which makes `git` command invocations just as you would while using the Heroku CLI.
+
+Further, to keep things simple & to-the-point, our FastAPI app is a single file with no more than 8 lines of code!
+
+Along with the source code & the Actions's workflow file, Heroku needs some additional files for the build process. A `requirements.txt` & a `runtime.txt` file, the former lists the project dependencies while later pins the exact Python version for the project.
+
+In addition to the above prerequisites, do ensure you've an API key to authenticate the CI/CD pipeline. The `heroku-deploy` Action will use your API key, email address & an optional project name to authenticate & push your code upstream.
+
+And at last, a plain text `Procfile` with these content: `web: uvicorn main:app --host=0.0.0.0 --port=${PORT:-5000} --workers 4`. Heroku's build process parses this file to set up the web server on the remote machine for your project.
+
+If some of the aforementioned stuff sounds complicated & alien to you, then fret not, the rest of the article describes everything in complete detail.
+
+## Putting Everything Together
 
 These are the bare minimum number of prerequisites you'll definitely need to deploy your project to Heroku.
 
