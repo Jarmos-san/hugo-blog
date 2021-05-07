@@ -152,25 +152,32 @@ So, in case a bug passes the CI/CD pipeline potentially breaking the app, the he
 
 ### About the `Procfile`, `requirements.txt` & `runtime.txt` Files
 
+Heroku requires any Python projects to have certain files for it's build process. They're plain text files & Heroku's build process parses those files to deploy the project. The text files required by Heroku & the specific purpose they serve are detailed below:
 
+- `Procfile` (_without a file extension_). Heroku reads this file to setup the webserver on the remote machine. So, if you're using [uvicorn](https://www.uvicorn.org/), you should've this web: `uvicorn main:app --host=0.0.0.0 --port=${PORT:-5000} --workers 4` in the file.
+- The `requirements.txt` lists out the Python dependencies for your project and Heroku parses this file to install the project's dependencies.
+- The `runtime.txt` file states the specific Python version to use for your project. Do note the format for the contents of the file. It looks something like: `Python-3.minor.patch`. So, if you're using `Python 3.8.10`, you should include it as `Python-3.8.10` in the file.
 
-- A plain-text `Procfile` without a file extension. Heroku reads this file to setup the webserver for your project on their infrastructure.
-- A `requirements.txt` detailing all the dependencies for your project.
-- A `runtime.txt` file stating the Python version to use for your project. State the version of Python your project depends on in the `Python-3.minor.patch` format. You can check what version of Python does your project depend on by typing `python --version` in your terminal.
+So, if you've followed everything word-to-word till now. You should've a similar directory structure:
 
-**Share the GitHub Actions workflow**:
+```shell
+example_project/
+├─ .github/
+│  ├─ workflows/
+│  │  ├─ main.yml
+├─ main.py
+├─ Procfile
+├─ requirements.txt
+├─ runtime.txt
+```
 
-And now, time for the main course of the article; the GitHub Actions workflow file which allows you to deploy your FastAPI project to Heroku.
+Now when you push your code to a GitHub repository, it should immediately trigger a workflow. And if everything works as expected & you see a similar build process as the screenshot below? Then you're good to go.
 
+{{ **SHARE SCREENSHOT HERE** }}
 
+You can then check out your FastAPI project deployed on the `<PROJECT-NAME>.herokuapp.com` URL. Perform a `curl` request to it & you should receive a `{"message: "Hello, World!}` JSON response back!
 
-And the Python file for our FastAPI project:
-
-
-
-So, as you can see, our simple FastAPI project is nothing fancy. It's just a plain old "_Hello, World!_" program but with an additional feature. We included a "_healthcheck_" route as the last-line-of-defence in case something goes south & our project breaks.
-
-While you should always have an automated & robust CI/CD pipeline in place for your projects, things can & often break, there's no manoeuvring around it. Hence, the healtcheck route acts as the gatekeeper for your project. The workflow we mentioned above will send a GET request to the healthcheck route on every workflow invocation. And, if for some reason, it doesn't return a `200` response code, the workflow will just rollback to the previous working state of the project.
+And you did all that without installing Heroku CLI on your local machine. On top of it, now you can even have one or more robust test suites & code quality checks before deploying the project to production. And all of it will be taken care of by GitHub Actions! :grinning_squinting_face:
 
 **Say final words**:
 
