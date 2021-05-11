@@ -112,7 +112,7 @@ jobs:
   test:
   # Include your test suite here.
   lint:
-  # Lint & format your coder over here.
+  # Lint & format your code over here.
   build:
     runs-on: ubuntu-latest
     steps:
@@ -189,7 +189,7 @@ TODO: Conclude based on the following points:
 
 TODO: Include link to this article in the open issue:
 * https://github.com/tiangolo/fastapi/issues/802
- -->
+-->
 
 So, I hope now you know how to deploy your FastAPI project to Heroku with GitHub Actions. You no longer have to download Heroku's CLI tool on your local machine. And you also don't have to worry about server management stuff! All you got to do is work on maintaining & developing your project with FastAPI.
 
