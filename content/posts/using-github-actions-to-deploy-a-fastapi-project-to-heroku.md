@@ -14,11 +14,11 @@ showtoc: true
 draft: true
 ---
 
-I often build Python projects & host the source code on GitHub repositories. And thanks to [GitHub Actions](https://github.com/features/actions), most of my CI/CD needs are taken care off of as well. And, [Heroku](https://www.heroku.com) takes care of my deployment needs.
+I often build Python projects & host the source code on GitHub repositories. And thanks to [GitHub Actions][GitHub Actions], most of my CI/CD needs are taken care off of as well. And, [Heroku][Heroku] takes care of my deployment needs.
 
 But, Heroku doesn't provide a straightforward way to deploy the project using GitHub Actions. You'll need to download the Heroku CLI for that instead. And it means, additional bloatware on you local machine & more dependencies to take care of. Not a situation I would like to be in & I assume some of you wouldn't either.
 
-Also, do note, similar to how you "_push_" your code to GitHub using [Git](https://git-scm.com/), Heroku CLI uses the same technology under the hood. Thus, you would miss out on having a robust CI/CD pipeline keep a quality check on your source code.
+Also, do note, similar to how you "_push_" your code to GitHub using [Git][Git], Heroku CLI uses the same technology under the hood. Thus, you would miss out on having a robust CI/CD pipeline keep a quality check on your source code.
 
 Hence, in this article I share how I circumvent around this tricky situation. We'll be using GitHub Actions & FastAPI to deploy a hypotethetical REST API to the Internet. So, without further adieu, let's dive in & learn how to do it.
 
@@ -28,7 +28,7 @@ Heroku was fundamentally designed wherein the users are expected to push their s
 
 To answer this drawback, Heroku does provide integrated builds on their platform which are triggered on every push to GitHub. And you could even set it up so the build starts only after test suite passes. But, I find it cumbersome & the extra set of work should be avoided in the first place, if possible.
 
-Hence, we'll be using the [`heroku-deploy`](https://github.com/akhileshns/heroku-deploy) Action by [AkhileshNS](https://github.com/AkhileshNS). It's a Node.js application which makes `git` command invocations just as you would while using the Heroku CLI.
+Hence, we'll be using the [`heroku-deploy`][Akhileshns/heroku-deploy] Action by [AkhileshNS][AkhileshNS GitHub Profile]. It's a Node.js application which makes `git` command invocations just as you would while using the Heroku CLI.
 
 Further, to keep things simple & to-the-point, our FastAPI app is a single file with no more than 8 lines of code!
 
@@ -95,7 +95,7 @@ As you can see, the FastAPI app is nothing fancy & it's kept as such with an int
 
 ### Configuring the GitHub Actions Workflow
 
-If you're not aware of GitHub Actions workflows, you write down specific instructions in a [YAML](https://yaml.org/) file. GitHub reads the instructions to invoke one or more Actions (_like `heroku-deploy`_) on their remote machines. This YAML file is stored under the `.github/workflows` directory & is also pushed to version control.
+If you're not aware of GitHub Actions workflows, you write down specific instructions in a [YAML][YAML] file. GitHub reads the instructions to invoke one or more Actions (_like `heroku-deploy`_) on their remote machines. This YAML file is stored under the `.github/workflows` directory & is also pushed to version control.
 
 That said, here's what our workflow file looks like like:
 
@@ -130,15 +130,15 @@ jobs:
           rollbackonhealthcheckfailed: true
 ```
 
-Customize your workflow file based on your needs & requirements. For more information on how to do it, take a look at the official docs at: [docs.github.com/en/actions](https://docs.github.com/en/actions).
+Customize your workflow file based on your needs & requirements. For more information on how to do it, take a look at the official docs at: [docs.github.com/en/actions][GitHub Actions Docs].
 
 That said, let's peruse through the workflow file & see how it works.
 
-At the top of our `main.yml` file is the `name: Deploy` key-value pair which signifies the name of the workflow. Followed by it the `on: push` key-value pair defines how & when the workflow is triggered. You can find a list of events that triggers Actions workflow at: [Events That Trigger Workflows](https://docs.github.com/en/actions/reference/events-that-trigger-workflows).
+At the top of our `main.yml` file is the `name: Deploy` key-value pair which signifies the name of the workflow. Followed by it the `on: push` key-value pair defines how & when the workflow is triggered. You can find a list of events that triggers Actions workflow at: [Events That Trigger Workflows][GitHub Actions Triggers].
 
 The `jobs` section defines what set of Actions will be run signified with the `steps` keyword. And the `runs-on` keyword defines the Operating System to run the set of `jobs` on.
 
-Our simple workflow file has only two Actions for our purpose. The [`checkout`](https://github.com/actions/checkout) Action loads the contents of your repository on GitHub's remote machines. And finally, the `heroku-deploy` is what deploys our project to Heroku.
+Our simple workflow file has only two Actions for our purpose. The [`checkout`][actions/checkout] Action loads the contents of your repository on GitHub's remote machines. And finally, the `heroku-deploy` is what deploys our project to Heroku.
 
 More specifically, the `heroku-deploy` Action accepts certain required & optional values. The `heroku_api_key`, `heroku_app_name` & the `heroku_email` are compulsory. But, the `healthcheck` & the `rollbackonhealthcheckfailed` value are optional but can benefit our project greatly.
 
@@ -154,7 +154,7 @@ So, in case a bug passes the CI/CD pipeline potentially breaking the app, the he
 
 Heroku requires any Python projects to have certain files for it's build process. They're plain text files & Heroku's build process parses those files to deploy the project. The text files required by Heroku & the specific purpose they serve are detailed below:
 
-- `Procfile` (_without a file extension_). Heroku reads this file to setup the webserver on the remote machine. So, if you're using [uvicorn](https://www.uvicorn.org/), you should've this web: `uvicorn main:app --host=0.0.0.0 --port=${PORT:-5000} --workers 4` in the file.
+- `Procfile` (_without a file extension_). Heroku reads this file to setup the webserver on the remote machine. So, if you're using [uvicorn][Uvicorn], you should've this web: `uvicorn main:app --host=0.0.0.0 --port=${PORT:-5000} --workers 4` in the file.
 - The `requirements.txt` lists out the Python dependencies for your project and Heroku parses this file to install the project's dependencies.
 - The `runtime.txt` file states the specific Python version to use for your project. Do note the format for the contents of the file. It looks something like: `Python-3.minor.patch`. So, if you're using `Python 3.8.10`, you should include it as `Python-3.8.10` in the file.
 
@@ -181,25 +181,27 @@ And you did all that without installing Heroku CLI on your local machine. On top
 
 ## Some Potential Road Blocks
 
-<!--
-TODO: Conclude based on the following points:
-* https://devcenter.heroku.com/articles/build-and-release-using-the-api
-* https://blog.heroku.com/programmatically_release_code_to_heroku_using_the_platform_api
-* And talk about how the existing Action isn't the best & has certain loopholes
-
-TODO: Include link to this article in the open issue:
-* https://github.com/tiangolo/fastapi/issues/802
--->
-
-While the techniques & code detailed out in this article work, it's not robust enough. There're a couple of fragile areas in the "_heroku-deploy_" Action source code & prone to breaking. This is so because the author of the said Action is [invoking actual `git` commands using NodeJS](https://github.com/AkhileshNS/heroku-deploy/blob/79ef2ae4ff9b897010907016b268fd0f88561820/index.js#L19).
+While the techniques & code detailed out in this article work, it's not robust enough. There're a couple of fragile areas in the "_heroku-deploy_" Action source code & prone to breaking. This is so because the author of the said Action is [invoking actual `git` commands using NodeJS][Heroku Deploy Action: Source Code #L19].
 
 But, NodeJS wasn't meant to invoke shell commands. No wonder things can & will break while using it. So, in other words, the Action used with here is more of a workaround than anything else!
 
-A better solution to this problem would be to wrap an API provided by Heroku to create a GitHub Action. And fortunate for us, there's some light at the other end of this tunnel. Heroku does provide an official API to interact with their services & infrastructure. And, they named it [Heroku Platform API](https://devcenter.heroku.com/articles/platform-api-reference).
+A better solution to this problem would be to wrap an API provided by Heroku to create a GitHub Action. And fortunate for us, there's some light at the other end of this tunnel. Heroku does provide an official API to interact with their services & infrastructure. And, they named it [Heroku Platform API][Heroku Platform API].
 
-Heroku even went all out & shared an article to [programmatically release code to Heroku](https://blog.heroku.com/programmatically_release_code_to_heroku_using_the_platform_api) using Platform API. So, JavaScript developers, if your reading this & you've experience developing GitHub Actions, the community needs your help.
+Heroku even went all out & shared an article to [programmatically release code to Heroku][Using Platform API to Release Code to Heroku] using Platform API. So, JavaScript developers, if your reading this & you've experience developing GitHub Actions, the community needs your help.
 
 And, until someone provides a more robust solution to this problem, this article should be a good guideline for anyone wanting to deploy their FastAPI app to Heroku. Or you could try other similar altenatives like Google Serverless Infrastructure. You can find out more on the same in this article: [Google Serverless Infrastructure: A Primer on GCP & Serverless Computing](../details-of-google-serverless-computing/)
 
 <!-- ! Reference Links -->
-<!-- TODO: Add reference links here. -->
+[Uvicorn]: https://www.uvicorn.org/
+[GitHub Actions]: https://github.com/features/actions
+[Using Platform API to Release Code to Heroku]: https://blog.heroku.com/programmatically_release_code_to_heroku_using_the_platform_api
+[Heroku Platform API]: https://devcenter.heroku.com/articles/platform-api-reference
+[Heroku Deploy Action: Source Code #L19]: https://github.com/AkhileshNS/heroku-deploy/blob/79ef2ae4ff9b897010907016b268fd0f88561820/index.js#L19
+[actions/checkout]: https://github.com/actions/checkout
+[GitHub Actions Triggers]: https://docs.github.com/en/actions/reference/events-that-trigger-workflows
+[GitHub Actions Docs]: https://docs.github.com/en/actions
+[YAML]: https://yaml.org/
+[Akhileshns/heroku-deploy]: https://github.com/akhileshns/heroku-deploy
+[AkhileshNS GitHub Profile]: https://github.com/AkhileshNS
+[Git]: https://git-scm.com/
+[Heroku]: https://www.heroku.com
