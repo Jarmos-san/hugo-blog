@@ -191,9 +191,15 @@ TODO: Include link to this article in the open issue:
 * https://github.com/tiangolo/fastapi/issues/802
 -->
 
-So, I hope now you know how to deploy your FastAPI project to Heroku with GitHub Actions. You no longer have to download Heroku's CLI tool on your local machine. And you also don't have to worry about server management stuff! All you got to do is work on maintaining & developing your project with FastAPI.
+While the techniques & code detailed out in this article work, it's not robust enough. There're a couple of fragile areas in the "_heroku-deploy_" Action source code & prone to breaking. This is so because the author of the said Action is [invoking actual `git` commands using NodeJS](https://github.com/AkhileshNS/heroku-deploy/blob/79ef2ae4ff9b897010907016b268fd0f88561820/index.js#L19).
 
-Hence, I'll be looking forward to what you build. And if you think your project is interesting enough & this article helped you make the project to what it is today, then feel free to reach out to me!
+But, NodeJS wasn't meant to invoke shell commands. No wonder things can & will break while using it. So, in other words, the Action used with here is more of a workaround than anything else!
+
+A better solution to this problem would be to wrap an API provided by Heroku to create a GitHub Action. And fortunate for us, there's some light at the other end of this tunnel. Heroku does provide an official API to interact with their services & infrastructure. And, they named it [Heroku Platform API](https://devcenter.heroku.com/articles/platform-api-reference).
+
+Heroku even went all out & shared an article to [programmatically release code to Heroku](https://blog.heroku.com/programmatically_release_code_to_heroku_using_the_platform_api) using Platform API. So, JavaScript developers, if your reading this & you've experience developing GitHub Actions, the community needs your help.
+
+And, until someone provides a more robust solution to this problem, this article should be a good guideline for anyone wanting to deploy their FastAPI app to Heroku. Or you could try other similar altenatives like Google Serverless Infrastructure. You can find out more on the same in this article: [Google Serverless Infrastructure: A Primer on GCP & Serverless Computing](../details-of-google-serverless-computing/)
 
 <!-- ! Reference Links -->
 <!-- TODO: Add reference links here. -->
