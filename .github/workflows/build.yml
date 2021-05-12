@@ -21,7 +21,7 @@ jobs:
       - name: Generate Static Content
         run: hugo --minify
       - name: Deploy to Netlify
-        uses: nwtgck/actions-netlify@v1.2
+        uses: nwtgck/actions-netlify@v1.2.2
         with:
           publish-dir: "./public"
           production-branch: dev
