@@ -137,7 +137,8 @@ jobs:
   # Include your test suite here.
   lint:
   # Lint & format your code over here.
-  build:
+  deploy:
+    needs: [test, lint]
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
