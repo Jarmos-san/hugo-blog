@@ -3,8 +3,8 @@ title: "Using GitHub Actions to Deploy a FastAPI Project to Heroku"
 date: 2021-05-05T16:25:28+05:30
 slug: "using-github-actions-to-deploy-a-fastapi-project-to-heroku"
 category: DevOps
-summary: Heroku makes deployment a piece of cake, but compromising on quality control & best standards. So, this article shows how GitHub Actions can be used in tandem with Heroku for all deployment needs.
-description: Heroku makes deployment a piece of cake, but compromising on quality control & best standards. So, this article shows how GitHub Actions can be used in tandem with Heroku for all deployment needs.
+summary: Heroku makes deployment a piece of cake, but compromising on quality control & best practices. So, this article shows how to use GitHub Actions in tandem with Heroku while maintaining best practices.
+description: Heroku makes deployment a piece of cake, but compromising on quality control & best practices. So, this article shows how to use GitHub Actions in tandem with Heroku while maintaining best practices.
 cover:
   image: https://res.cloudinary.com/jarmos/image/upload/v1620895005/GitHub_Actions_Loves_Heroku_dq2ake.jpg
   alt: Heroku combined with GitHub & GitHub Actions is a match made in heaven.
@@ -18,17 +18,17 @@ I build Python projects & host the source code on GitHub repositories quite ofte
 
 But, there's a problem. Heroku doesn't provide a straightforward way to deploy the project using GitHub Actions. I need to download [Heroku CLI][Heroku CLI] to do it instead.
 
-And if you've been reading my articles, you would know I'm a minimalist. I don't like adding more bloatware & extra dependencies to my development machine than what’s needed. Hence, I had to look out for an alternative.
+And if you've been reading my articles, you would know I'm quite a minimalist. I don't like adding more bloatware & extra dependencies to my development machine than what’s needed. Hence, I had to look out for an alternative.
 
 My current development process is to commit changes on my local machine & then push it to remote. The remote here is usually a GitHub repo with GitHub Actions configured to trigger a suite of tests. And if everything passes, deploy the project to production. Pretty standard practice & nothing fancy over here.
 
 But the caveat is Heroku CLI uses `git` commands to push code to Heroku's remote. So, it's pretty much like pushing code to a GitHub repository. But, with no robust CI/CD pipelines. I could configure Heroku to deploy when the tests pass On GitHub. But it's best to stick to standard practice & configure everything under one roof.
 
-Also, invoking `git` commands on a remote machine doesn't sound like a good idea. So, I felt sharing the techniques I use to circumvent this tricky situation is the right thing to do.
+Also, invoking `git` commands on a remote machine doesn't sound like a good idea. So, I felt sharing the techniques I use to circumvent this tricky situation was the right thing to do.
 
-We'll be using GitHub Actions to configure a CI/CD pipeline. And, [FastAPI][FastAPI] to build our hypothetical REST API.
+So, we'll be using GitHub Actions to configure a CI/CD pipeline. And, [FastAPI][FastAPI] to build our hypothetical REST API.
 
-So, without further adieu, let's dive in & learn how to do it.
+And, without further adieu, let's dive in & learn how to do it.
 
 ## Things to Know Before Deployment
 
@@ -38,12 +38,13 @@ In other words, deploying a project to Heroku is as simple as pushing your code 
 
 You would develop your project & then push your code to the Heroku remote. It triggers a build process which sets up a web server on their remote servers. In other words, deploying projects couldn't get any easier than this.
 
-But there's a drawback to this process, Heroku doesn't provide a CI/CD pipeline. There's no way to keep a check on any breaking changes or bugs. This is where GitHub Actions come in handy.
+But there's a drawback to this process, Heroku doesn't provide a robust enough CI/CD pipeline. There's no way to keep a check on any breaking changes or bugs. This is where GitHub Actions come in handy.
 
-So, we'll be using the [`heroku-deploy`][Heroku Deploy Action] Action by [AkhileshNS](https://github.com/AkhileshNS) to deploy the project. The said Action is a NodeJS wrapper around basic `git` command invocations. And these invocations are exactly like what you would use with Heroku CLI instead.
+So, we'll be using the [`heroku-deploy`][Heroku Deploy Action] Action by [AkhileshNS](https://github.com/AkhileshNS) to deploy the project. And the said Action is a NodeJS wrapper around basic `git` command invocations. These invocations are exactly like what you would use with Heroku CLI instead.
 
 Further, to keep things simple & to-the-point, our FastAPI app is a single file with no more than 8 lines of code!
-Besides, Heroku also requires some extra files for the build process to work. And these files are also pushed to the Heroku remote as well. They’re plain-text files with information for Heroku to parse during the build phase. You’ll find more details about them later in the article.
+
+Besides that, Heroku also requires some extra files for the build process to work. And these files are also pushed to the Heroku remote as well. They’re plain-text files with information for Heroku to parse during the build phase. You’ll find more details about them later in the article.
 
 Additionally, the `heroku-deploy` Action also requires an API key for authentication. So, ensure you've it along with the project's name.
 
@@ -59,7 +60,7 @@ To start with, the FastAPI project is pretty simple with only 8 lines of code! I
 
 The root route returns a JSON response like this; `{"message": "Hello, World!"}` when queried. And the `/healtchcheck` route acts as the last-line-of-defense for the REST API. But it also returns a JSON response for better user interpretation. So, if you invoke a `cURL` command to this route, you should get back `{“message”: “Everything, OK!”}` response back.
 
-We'll configure our CI/CD pipeline to query the health-check route to check if it's still up & running. Failing to do so which means returning a `400` (_or similar_) response code will invoke a roll-back. Thus, our REST API in production will always be up & running regardless of any breaking changes or bugs creeping in.
+We'll configure our CI/CD pipeline to query the health-check route to check if it's still up & running. Failing to do so which means returning a `400` (_or similar_) response code will invoke a roll-back. Hence, our REST API in production will always be up & running regardless of any breaking changes or bugs creeping in.
 
 That said, here's what the source code for our REST API will look like:
 
@@ -128,11 +129,16 @@ name: Deploy    # Name of the workflow
 on: push
 
 jobs:
+  # Check out the following article for more inspiration on setting up a
+  # standard CI/CD pipeline for most Python projects:
+  # https://jarmos.netlify.app/posts/a-standard-ci-cd-pipeline-for-python-projects/
   test:
   # Include your test suite here.
   lint:
   # Lint & format your code over here.
   deploy:
+    # If the test & lint jobs don't pass,
+    # the deploy job willn't even execute
     needs: [test, lint]
     runs-on: ubuntu-latest
     steps:
@@ -162,7 +168,7 @@ Continuing on, the `jobs` section of the workflow is pretty much the heart of th
 
 The jobs are configured to run on the latest version of Ubuntu. And additionally, the `deploy` job is dependent on the other previous jobs. So, while the `test` & `linter` jobs run in parallel, the `deploy` job will wait till they pass. And, if they don't, the `deploy` job willn’t even execute.
 
-This structure of the pipeline ensures bugs are never introduced to production. And hence, ensuring quality standards of the source code.
+This structure of the pipeline ensures bugs are never introduced to production. And hence, ensuring quality standards of the source code. And if you want to know how to set up a code quality check for Python projects, I've an article for you. Check out [A Standard & Complete CI/CD Pipeline for Most Python Projects](../a-standard-ci-cd-pipeline-for-python-projects) to know how to set it up.
 
 Diving deeper into the `deploy` job, let's figure out it's exact purpose.
 
