@@ -11,7 +11,7 @@ cover:
   caption: GitHub Actions (and GitHub) plus Heroku is a match made in heaven
   relative: false
 showtoc: true
-draft: true
+draft: false
 ---
 
 I build Python projects & host the source code on GitHub repositories quite often. And thanks to [GitHub Actions][GitHub Actions], I needn't worry about Continuous Integration needs either. While [Heroku][Heroku] takes care of my Continuous Deployment needs.
