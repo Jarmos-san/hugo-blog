@@ -1,23 +1,18 @@
 ---
 title: "Using GitHub Actions to Deploy a FastAPI Project to Heroku"
 date: 2021-05-05T16:25:28+05:30
-slug: "using-github-actionst-to-deploy-a-fastapi-project-to-heroku"
+slug: "using-github-actions-to-deploy-a-fastapi-project-to-heroku"
 category: DevOps
 summary: Heroku makes deployment a piece of cake, but compromising on quality control & best standards. So, this article shows how GitHub Actions can be used in tandem with Heroku for all deployment needs.
 description: Heroku makes deployment a piece of cake, but compromising on quality control & best standards. So, this article shows how GitHub Actions can be used in tandem with Heroku for all deployment needs.
 cover:
-  image:
-  alt:
-  caption:
+  image: https://res.cloudinary.com/jarmos/image/upload/v1620895005/GitHub_Actions_Loves_Heroku_dq2ake.jpg
+  alt: Heroku combined with GitHub & GitHub Actions is a match made in heaven.
+  caption: GitHub Actions (and GitHub) plus Heroku is a match made in heaven
   relative: false
 showtoc: true
 draft: true
 ---
-<!--
-TODO:
-  * -> Add cover image for the metadata
-  * -> Publish article & then share it on relevant places for traffic. Here's one example: https://github.com/tiangolo/fastapi/issues/802
--->
 
 I build Python projects & host the source code on GitHub repositories quite often. And thanks to [GitHub Actions][GitHub Actions], I needn't worry about Continuous Integration needs either. While [Heroku][Heroku] takes care of my Continuous Deployment needs.
 
