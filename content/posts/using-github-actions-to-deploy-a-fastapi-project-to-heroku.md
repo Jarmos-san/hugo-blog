@@ -196,7 +196,7 @@ As mentioned earlier, Heroku requires certain plain-text files during the build 
 
 - The `Procfile` (_without a file extension_) which Heroku parses to set up a web-server on the remote machine. So, while using uvicorn, the contents of the file would be: `uvicorn main:app --host=0.0.0.0 --port=${PORT:-5000} --workers 4`.
 - The `requirements.txt` lists project dependencies. And, Heroku will parse it to install the project's dependencies.
-- The `runtime.txt` file states the specific Python version to use for our REST API. So, if it depends on Python v3.8.10, the contents of the file would be `Python-3.8.10`. **Do note the format** & it has to be exactly similar else it won't work.
+- The `runtime.txt` file states the specific Python version to use for our REST API. So, if it depends on Python v3.8.10, the contents of the file would be `python-3.8.10`. **Do note the format** & it has to be exactly similar else it won't work.
 
 With these files, your build environment on Heroku should be up & running in no time. But let's double check the directory structure before committing things to version-control. Here's what your directory structure should look like:
 
