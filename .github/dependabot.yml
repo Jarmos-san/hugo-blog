@@ -9,7 +9,7 @@ updates:
           timezone: "Asia/Kolkata"
       commit-message:
           prefix: "🔀"
-      labels: ["github-actions", "automerge"]
+      labels: ["github-actions"]
       target-branch: "dev"
 
     - package-ecosystem: "gitsubmodule"
@@ -20,5 +20,5 @@ updates:
           timezone: "Asia/Kolkata"
       commit-message:
           prefix: "🔀"
-      labels: ["submodule", "automerge"]
+      labels: ["submodule"]
       target-branch: "dev"
