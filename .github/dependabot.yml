@@ -22,3 +22,5 @@ updates:
           prefix: "🔀"
       labels: ["submodule"]
       target-branch: "dev"
+      ignore:
+        - dependency-name: "docs/blog.wiki"
