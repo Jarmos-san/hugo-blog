@@ -30,6 +30,18 @@ And over the years it's source code has increased in size as well as complexity.
 
 Because of such constraints (among many others) a couple of Vim contributors forked it's source code recreated it from scratch. They named it Neovim & wrote it in [Lua][Lua] enabling the user to configure and/or extend the editor's capabilities much more easily.
 
+## Configuring Neovim With `init.lua`
+
+
+## How Embedding Lua Has Changed "Vim" & it's Future
+
+
+## Should You Embrace Lua & Abandon VimScript
+
+
+## Final Words & Resources for Your Journey into Neovim-land
+
+
 <!-- References --->
 [Lua]: lua.org
 [Bram Moolenaar]: https://en.wikipedia.org.wiki/Bram_Moolenaar
