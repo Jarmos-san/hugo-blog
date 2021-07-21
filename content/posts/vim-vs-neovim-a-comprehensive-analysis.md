@@ -30,8 +30,23 @@ And over the years it's source code has increased in size as well as complexity.
 
 Because of such constraints (among many others) a couple of Vim contributors forked it's source code recreated it from scratch. They named it Neovim & wrote it in [Lua][Lua] enabling the user to configure and/or extend the editor's capabilities much more easily.
 
+So, if you're confused between choosing either Vim or Neovim as your preferred Text Editor, know this; __Neovim is a fork of Vim__. Neovim was rebuilt from scratch keeping in mind extensibility & ease of configuration. So, if you're looking for a Text Editor to replace VSCode (or anything else) there's only a very handful & specific reasons not to choose Neovim.
+
+Also, in addition to all Vim features that Neovim comes prepackaged with, it's embedded Lua scripting environment is by the far it's most captivating feature. And how would you get started with this feature? The next section of the article will briefly go through on how you can do it as well.
+
 ## Configuring Neovim With `init.lua`
 
+With Neovim v0.5's release, it also came packaged with one of it's most captivating feature; the embedded Lua environment! What does it mean for a regular Vim user? It means you're no longer constrained within the weird limits of VimScript. If you're anything like me, you would know coding in VimScript isn't the most fun thing to do. And the introduction of the Lua environment is a godsend for all peeps like us out there!
+
+So, without further adieu, let's check out how you can get started configuring Neovim using Lua as well. But first of a couple of prerequisite knowledge:
+
+1. You can embed Lua code within your existing `init.vim` file. So, rather than migrating your configurations from VimScript to Lua right away, itmight be better to take things slow instead.
+
+2. Neovim now includes a "_stdlib_" (or rather the Neovim API) along with the Lua standard library. The Neovim API exposes various functions among other stuff like this: `vim.api.nvim_set_keymap()` & so on.
+
+3. Lua "modules" stored within a directory named `lua` under the Neovim configuration directory are imported automatically. So, if there's a `keymaps.lua` under `./nvim/lua/`, you can simply import with it into your `init.lua` (or `init.vim` if you prefer) using the `require("keymaps")` statement. It's as simple as that!
+
+4. And the best part of it all? Whatever `runtime` directories you might've had earlier will still be sourced. So, directories like `ftplugin`, `colors` & so on will still work as they used to.
 
 ## How Embedding Lua Has Changed "Vim" & it's Future
 
