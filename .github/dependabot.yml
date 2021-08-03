@@ -11,6 +11,8 @@ updates:
           prefix: "🔀"
       labels: ["github-actions"]
       target-branch: "dev"
+      reviewers:
+        - "Jarmos-san"
 
     - package-ecosystem: "gitsubmodule"
       directory: "/"
@@ -24,3 +26,5 @@ updates:
       target-branch: "dev"
       ignore:
         - dependency-name: "docs/blog.wiki"
+      reviewers:
+        - "Jarmos-san"
