@@ -14,74 +14,104 @@ showtoc: true
 draft: true
 ---
 
-Ever since I started my development journey, I've hoped from one text editor to another. From Atom to Sublime Text, then to VSCode (which served my needs the longest). I even gave Vim a short try (and more on it later) & now finally to Neovim. A major reason why I've hopped from one distro to another is the need for customizability. While all the aforementioned Editors are customizable, they compromize on resource requirements & speed. Hence, Neo(vim) came to the rescue when I needed them the most.
+If you ever heard of [Vim][Vim] before, you would know all about it's forks that have popped up in recent years! There’s [Neovim][Neovim] (the most popular fork), [LunarVim][LunarVim] (one of the most promising fork) & countless others. And as is obvious, choosing the one right one for yourself can be a difficult task (been there & done that).
 
-Also if you've been following me around for a while now, you would know I develop code in a "Windows shop". And that itself brings in additional concerns like lack of proper terminal software support on Windows (but that's changing rapidly as of when this article was written). For example, unlike Unix distros, Windows doesn't come prepackaged with a terminal emulator. Nor does it have native Vim support like it's Unix counterparts.
+So to help you decide, this article will shed light on some of the differences between Vim & Neovim. To be more specific, we’ll look into every day use cases while comparing the two. Analysing everyday use cases is more relevant while comparing consumer products anyway.
 
-You need to download the Vim binaries separately & either use it from a Terminal emulator like [Windows Terminal](https://github.com/microsoft/terminal) or the GUI "GVim" version. The later of which is available only on Windows machines (the irony :disappointed_face:). Also, not to forget how buggy Vim is on Windows.
+But before we dive into the real deal of the article, as usual a little bit of a history lesson first.
 
-But thanfully, Neovim v0.5.0 just dropped by a few days before this article was published. And I wanted to share what an wonderful experience it is to use Neovim instead of anything else on Windows. With that said, let's dive in & check out how different Neovim is from Vim.
+Vim itself started out as an improved clone of the now antiquated [Vi][Vi] by [Bram Moolenaar][Bram Moolenaar] way back in the early 90s. Moolenaar himself overlooked the development & course of actions for Vim.
 
-## What the Heck is Neo(Vim) & the Hype Around it
+Over the decades, the Vim source code is starting to become archaic & hard to maintain. It's bloated, some of the code is unoptimized & it's current set of features hasn't aged well.
 
-As of writing this article Vim will be 29 years old! So, around three decades ago, [Bram Moolenaar](https://en.wikipedia.org/wiki/Bram_Moolenaar) created Vim (which stands for ViImproved) as a clone of the OG "Vi". It also comes prepackaged with a wide variety of Unix distros & is supposed to be used within a terminal environment.
+But, Neovim was rebuilt from scratch! Redundant & decades old code  was weeded out . And all the while the maintainers tried  to provide the same power to the users as Vim did. Although, it did come pre-packaged with “_optional steroids_” to consume. More on it in the rest of the article!
 
-And over the years it's source code has increased in size as well as complexity. Also, since it's written in C (and Vimscript), it's hard to configure, maintain & expand on with additional features. It's also **VERY** buggy on Windows.
+With that said, let’s dive deeper & check out some of the differences between the two editors. Although take due note, this article isn’t intended as a jibe at Vim or it’s loyal users. Rather we’ll try to analyse the differing features of the two editors & see how useful they are on a day-to-day basis.
 
-Because of such constraints (among many others) a couple of Vim contributors forked it's source code recreated it from scratch. They named it Neovim & wrote it in [Lua][Lua] enabling the user to configure and/or extend the editor's capabilities much more easily.
+## Why is Neovim More Popular Than Vim
 
-So, if you're confused between choosing either Vim or Neovim as your preferred Text Editor, know this; __Neovim is a fork of Vim__. Neovim was rebuilt from scratch keeping in mind extensibility & ease of configuration. So, if you're looking for a Text Editor to replace VSCode (or anything else) there's only a very handful & specific reasons not to choose Neovim.
+As mentioned earlier Vim is pretty old, as such it’s code base is archaic & difficult to maintain. And this was a primary reason for the current dev team for Neovim to fork Vim & set off on a journey of their own.
 
-Also, in addition to all Vim features that Neovim comes prepackaged with, it's embedded Lua scripting environment is by the far it's most captivating feature. And how would you get started with this feature? The next section of the article will briefly go through on how you can do it as well.
+Unlike some of the rumours floating around Neovim wasn’t forked because “Bram is a dictator” & what not. Neither was Neovim created to give more power to the community. But the latter is definitely an unintentional outcome of the fork in a good way.
 
-## Configuring Neovim With `init.lua`
+Since, Neovim was rebuilt from the ground-up, it opened up doors to;
 
-With Neovim v0.5's release, it also came packaged with one of it's most captivating feature; the embedded Lua environment! What does it mean for a regular Vim user? It means you're no longer constrained within the weird limits of Vimscript. If you're anything like me, you would know coding in Vimscript isn't the most fun thing to do. And the introduction of the Lua environment is a godsend for all peeps like us out there!
+1. Adding useful features like [Language-Server Protocol][LSP] (LSP), an embedded [Lua 5.1][Lua] (and LuaJIT) runtime & so on, more easily.
+2. Cleaner & optimized source code for easier maintainability & reduced load times.
+3. Straight-up better plugin development environment.
+4. Extending core Neovim capabilities through improved plugins if necessary.
 
-So, without further adieu, let's check out how you can get started configuring Neovim using Lua as well. But first of a couple of prerequisite knowledge:
+And those were only a few good outcomes of forking the Vim source code. But in reality, the list is never-ending & chances are, as Neovim matures over time, there’ll be another reason to extend the list.
 
-1. You can embed Lua code within your existing `init.vim` file. So, rather than migrating your configurations from Vimscript to Lua right away, itmight be better to take things slow instead.
+Some other equally prominent features include:
 
-2. Neovim now includes a "_stdlib_" (or rather the Neovim API) along with the Lua standard library. The Neovim API exposes various functions among other stuff like this: `vim.api.nvim_set_keymap()` & so on.
+1. The underlying Neovim API for plugin devs to use for building pretty much anything.
+2. The optional embedded Lua 5.1 environment is also a reason why Neovim is so loved by the community. If a user wishes to do, Neovim can be configured with Lua rather than VimScript.
+3. An inbuilt standard library which includes functions like `CheckHealth` and/or the global `vim` Object. These are used to check if a plugin has been set up correctly.  Or to configure Vim settings.
+4. Comes pre-packaged with sensible default settings making the Vim experience more pleasant.
 
-3. Lua "modules" stored within a directory named `lua` under the Neovim configuration directory are imported automatically. So, if there's a `keymaps.lua` under `./nvim/lua/`, you can simply import with it into your `init.lua` (or `init.vim` if you prefer) using the `require("keymaps")` statement. It's as simple as that!
+And if it’s not obvious already, Neovim is already miles ahead when it comes to useful features. For example, choosing to configure Neovim with either VimScript or Lua. Or heck if you desire, you can even use both side-by-side, the choice is all yours!
 
-4. And the best part of it all? Whatever `runtime` directories you might've had earlier will still be sourced. So, directories like `ftplugin`, `colors` & so on will still work as they used to.
+With Vim, you would be stuck with the dreaded VimScript! While LSP capabilities are supported through plugins, the experience isn't as smooth & out-of-the-box like it's cousin.
 
-## How Embedding Lua Has Changed "Vim" & it's Future
+With that said, let’s take a more detailed approach to some of the most used features mentioned above. And along the way, we’ll also see Vim’s take on those features and/or if there are any plans to add them in the future.
 
-Those of you who've been involved with Vim for time immemorial would know how antiquated everything related to Vim is. Right from some of the default configuration settings to Vimscript itself reeks of old age & dev practices of the 90s. And the most significant of these old practices ought to be Vimscript itself. More on it later & you'll soon see how it was one of the major reason to embed Lua within Neovim.
+## Neovim is Noticeably FASTER Than Vim
 
-To start with Vimscript is very cryptic. It's syntax sometimes doesn't make sense at all. And not to forget the huge learning curve for master Vimscript. On top of that Vimscript is noticeably slow, how slow you might wonder?
+As mentioned earlier, one of the major reasons to fork Vim was it’s archaic source code. Since Vim has been in existence for close to three decades it's source code is pretty bloated by now. Since it was hard to maintain & it was much easier to simply rebuild from scratch, the devs did what was necessary.
 
-To give you some idea of how Vimscript is; before migrating my `init.vim` file to `init.lua`, Neovim took ~534ms during initial load times. It was reduced to ~200ms after the migration! Yeah that's how slow Vimscript can be if with a very minimalist setup.
+Owing to that decision, the source code was cleaned & optimized. This is obvious if you notice how faster Neovim is than its predecessor.
 
-I could squeeze out a bit more performance juice out of it using Lua code but I'm not sure if the added effort is worth it.
+Rebuilding Neovim also opened up many doors the devs could take. One & the most killer feature of the editor is the embedded Lua 5.1 (and LuaJIT) environment.
 
-Besides, the straight-up performance improvements, Lua also bring with it a pleasant development environment. And with the Neovim developer's efforts the editor is now even more easier to extend & configure.
+The devs also took other performance optimization paths. One of them included making Neovim run in an [Event Loop][Event Loop]. So, you can finally bid goodbye to plugins that would hang earlier!
 
-Do you need to map some keys? Well, simply use the [Neovim API][Neovim API] something like this: `vim.api.nvim_set_keymap()` function. And the best part of it all? The Neovim API is injected into the script during runtime which means you don't have to specifically import the library. Hence, keeping the `init.lua` file or any other runtime files clean & easier to maintain.
+Besides that, the devs have also ensured backwards compatibility with VimScript. So, if you’re a long-term Vim user who wants to try out Neovim, don’t fret, you'll be fine. You can configure Neovim to read your older `.vimrc` just fine albeit with some trivial hacks here & there.
 
-That said, how did forking Vim to create Neovim affect the former?
+But what if you’re committed to using Neovim & are ready to take the dive? I would suggest migrating your current VimScript configurations to Lua code instead. You’ll notice an increased performance boost.
 
-For one, it definitely made Bram Moolenaar (the OG developer of Vim) obligated to be more open to modern changes. For example, it took Bram over 2 decades to speed up Vimscript. So, if you're still loyal to OG Vim, you'll have to wait till Vim 9.x hits the shelf for improved load times. And if you're impatient like me, there's no reason to migrate to Neovim instead.
+To give an idea of what sorts of performance boost I’m talking about here, I'll share my experience. My Neovim load times decreased from 500+ ms to 237 ms. That’s a roughly ~50% improvement by simply migrating from VimScript to Lua!
 
-But now the question is, should you abandon Vimscript to configure Neovim? The next section will give a brief overview of what to expect.
+One can only imagine how much faster it can perform if the configuration loading were optimized properly.
 
-## Should You Embrace Lua & Abandon Vimscript
+On the flip side though, configuring through Lua is an optional feature. More on it in the next section of the article.
 
-Before I answer that question, let me reiterate on what the Neovim devs themselves have to say about it. They've "_no plans to deprecate Vimscript_", like ever. You can take a look at the non-goals section of their [charter][Neovim Charter].
+## Option to Ditch VimScript & Embrace Lua
 
-So, no you don't have to worry about migrating your Vimscript runtime files to Lua code anytime soon. While you can embed Lua code right within Vimscript files, the traditional runtime directories & files will still work. So, you can
+[One of the goals][About Neovim] of the Neovim team is to “_develop first-class Lua/LuaJIT scripting alternative to VimL_”. Staying true to their words, the devs haven’t enforced ditching VimScript in favour of Lua. And I doubt any of us would live to see that happen in our lifetime!
 
-## Final Words & Resources for Your Journey into Neovim-land
+So, if you want to continue using your previous Vim configs, you needn’t fret at all. But what if you definitely need Lua code, for example say configuring the builtin LSP?
+
+If you’re in a similar situation, Vim `heredoc` will come to your rescue. You can embed Lua code within VimScript with a syntax which looks something like this;
+
+```vimscript
+Lua << EOF
+# Some Lua code here
+EOF
+```
+
+And you’re good to go out on your day without worrying it would break something from your previous Vim configs. Vim would still know how to parse those code & make sense of it.
+
+Although, a bit of a personal opinion here, try not to use VimScript if you can. Coding in Lua is a much pleasant experience. And even if you had to learn it, the language has many real-life applications outside of a Vim environment. So, it’s not like you would be wasting your time learning a redundant programming language. If you do decide to start configuring Neovim with Lua, do give this “[Guide to Using Neovim with Lua][Neovim Lua Guide]” a thorough read.
+
+That said, Neovim’s embedded Lua environment’s usefulness takes proper shape through it’s inbuilt standard library & API. If you’re either a plugin developer or a regular Vim user, the standard library can be useful in many ways. It packages many useful functions & commands to use for your day-to-day development needs.
+
+So, in the next section, we'll take a more detailed look into it.
+
+## The Inbuilt Standard Library & the API is 💖
+
 
 
 <!-- References --->
-[Neovim Charter]: http://neovim.io/charter/
+[Neovim Lua Guide]: https://github.com/nanotee/nvim-lua-guide
+[About Neovim]: http://neovim.io/charter/
+[Event Loop]: https://en.wikipedia.org/wiki/Event_loop
+[LSP]: https://microsoft.github.io/language-server-protocol/
 [Neovim API]: https://neovim.io/doc/user/api.html
 [Lua]: lua.org
-[Bram Moolenaar]: https://en.wikipedia.org.wiki/Bram_Moolenaar
+[Bram Moolenaar]: https://moolenaar.net/
 [Windows Terminal]: https://github.com/microsoft/terminal
 [Vim]: https://www.vim.org
 [Neovim]: https://neovim.io
+[LunarVim]: https://github.com/ChristianChiarulli/LunarVim
+[Vi]: https://en.wikipedia.org/wiki/Vi
