@@ -1,14 +1,14 @@
 ---
 title: "Vim or Neovim? Here's Why You Should Use the Latter"
 date: 2021-07-15T13:10:41+05:30
-slug: "vim-vs-neovim-a-comprehensive-analysis"
+slug: "vim-vs-neovim"
 category: "Development Environments"
-summary: My experience & learnings after using Neovim (that too on Windows!) for a while for all my development needs, summed up in one single blog post.
-description: My experience & learnings after using Neovim (that too on Windows!) for a while for all my development needs, summed up in one single blog post.
+summary: Confused between Vim and/or Neovim? Here are my justifications to convince you to use Neovim instead today!
+description: Confused between Vim and/or Neovim? Here are my justifications to convince you to use Neovim instead today!
 cover:
-  image:
-  alt:
-  caption:
+  image: https://res.cloudinary.com/jarmos/image/upload/v1628424750/vim-vs-neovim_n4ejn5.gif
+  alt: Vim vs Neovim; Which one to use?
+  caption: Vim vs Neovim; Which one to use?
   relative: false
 showtoc: true
 draft: true
