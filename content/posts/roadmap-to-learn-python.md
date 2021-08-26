@@ -16,3 +16,9 @@ draft: true
 - Advanced Concepts like Decorators & Asynchronous Programming
 - Optional Python libraries
 - Preparing yourself for interviews & a job
+
+## Resources
+
+- [r/learnpython](https://www.reddit.com/r/learnpython/)
+- [Best way to learn Python -
+  r/Python](https://www.reddit.com/r/Python/comments/c627y2/best_way_to_learn_python_stepbystep_guide/)
