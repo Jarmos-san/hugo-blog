@@ -77,23 +77,23 @@ menu:
     identifier: blog
     url: blog/
     weight: 2
-  # - identifier: projects
-  #   name: Projects
-  #   url: projects/
-  #   weight: 3
+  - identifier: projects
+    name: Projects
+    url: projects/
+    weight: 3
   - name: Services
     identifier: hiring
     name: Services
     url: services/
     weight: 4
-  - name: Collaborate
-    identifier: collaborate
-    url: collaborations/
-    weight: 5
-  - name: Newsletter
-    identifier: newsletter
-    url: https://jarmos.ck.page/newsletter
-    weight: 6
+  # - name: Collaborate
+  #   identifier: collaborate
+  #   url: collaborations/
+  #   weight: 5
+  # - name: Newsletter
+  #   identifier: newsletter
+  #   url: https://jarmos.ck.page/newsletter
+  #   weight: 6
 markup:
   highlight:
     # anchorLineNos: true
