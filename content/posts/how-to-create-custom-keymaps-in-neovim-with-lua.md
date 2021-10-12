@@ -18,6 +18,10 @@ Neo(Vim)'s usefulness becomes more apparent with how easy it is define any sort 
 
 ## Introduce the Optional Lua Runtime
 
+At the time of writing of this article the Neovim devs released `Neovim v0.5` only a few months ago. And with it came a much anticipated feature, the optional Lua runtime. Now you no longer had to rely on the cryptic VimScript & migrate partially or completely to Lua code.
+
+In this article, we won't dive deeper into the differences between configuring Neovim with Lua and/or with VimScript. But if you want to refresher on that topic, do check out a previous article - [Vim or Neovim? Here's Why You Should Use the Latter](../vim-vs-neovim). Additionally, do refer to the excellent [Neovim-Lua Guide](https://github.com/nanotee/nvim-lua-guide) on GitHub.
+
 ## How to Write Lua Function for the Neovim Key Bindings
 
 ## Using the Lua Functions Across the Neovim Runtime Files
