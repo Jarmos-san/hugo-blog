@@ -2,7 +2,7 @@
 
 :+1::tada: First off, thanks for taking the time to contribute! :tada::+1:
 
-The following is a set of guidelines for contributing to my blog which is hosted in this [Github repository][Blog Repo]. The following instructions in this document are mostly guidelines, not rules. Use your best judgment to contribute your suggestions to the project & feel free to propose changes to this document as well in a pull request.
+The following is a set of guidelines for contributing to my blog which is hosted in this [Github repository][blog repo]. The following instructions in this document are mostly guidelines, not rules. Use your best judgment to contribute your suggestions to the project & feel free to propose changes to this document as well in a pull request.
 
 - [Contributing to My Blog](#contributing-to-my-blog)
   - [Code of Conduct](#code-of-conduct)
@@ -26,14 +26,14 @@ The following is a set of guidelines for contributing to my blog which is hosted
 
 ## Code of Conduct
 
-This project and everyone participating in it is governed by the T&Cs mentioned in the [CODE OF CONDUCT][Code of Conduct] file. By participating, you are expected to uphold this code. Please report unacceptable behaviour to [somraj.mle@gmail.com][Personal Email].
+This project and everyone participating in it is governed by the T&Cs mentioned in the [CODE OF CONDUCT][code of conduct] file. By participating, you are expected to uphold this code. Please report unacceptable behaviour to [somraj.mle@gmail.com][personal email].
 
 ## I don't want to read this whole thing I just have a question
 
-> **Note:** [Please don't file an issue to ask a question.][Don't Ask Questions in a Issue Thread] You'll get faster results by using the resources below.
+> **Note:** [Please don't file an issue to ask a question.][don't ask questions in a issue thread] You'll get faster results by using the resources below.
 
-- [Tweet to me][My Twitter], if you want a prompt response for a brief question.
-- Want to discuss something? [Open an Issue][Open an Issue Thread].
+- [Tweet to me][my twitter], if you want a prompt response for a brief question.
+- Want to discuss something? [Open an Issue][open an issue thread].
 
 ## What should I know before I get started
 
@@ -68,16 +68,16 @@ Before creating bug reports, please check [this list](#before-submitting-a-bug-r
 
 #### How Do I Submit A (Good) Bug Report
 
-Bugs are tracked as [GitHub issues][Github Issue Guide]. After you've discovered the bug, create an issue on that repository & provide the following information by filling in [the template](./ISSUE_TEMPLATE/bug-report.md).
+Bugs are tracked as [GitHub issues][github issue guide]. After you've discovered the bug, create an issue on that repository & provide the following information by filling in [the template](./ISSUE_TEMPLATE/bug-report.md).
 
 Explain the problem and include additional details to help maintainers reproduce the problem:
 
 - **Use a clear and descriptive title** for the issue to identify the problem.
 - **Describe the exact steps which reproduce the problem** in as many details as possible.
-- **Provide specific examples to demonstrate the steps**. Include links to files or GitHub projects, or copy/pasteable snippets, which you use in those examples. If you're providing snippets in the issue, use [Markdown code blocks][Markdown Code Blocks Guide].
+- **Provide specific examples to demonstrate the steps**. Include links to files or GitHub projects, or copy/pasteable snippets, which you use in those examples. If you're providing snippets in the issue, use [Markdown code blocks][markdown code blocks guide].
 - **Describe the behaviour you observed after following the steps** and point out what exactly is the problem with that behaviour.
 - **Explain which behaviour you expected to see instead and why.**
-- **Include screenshots and animated GIFs** which show you following the described steps and clearly demonstrate the problem. If you use the keyboard while following the steps, **record the GIF with this tool**: [**Licecap**][Licecap Landing Page] to record GIFs on macOS and Windows, and [Silent Cast][Silent Cast] or [Byzanz][Byzanz] on Linux.
+- **Include screenshots and animated GIFs** which show you following the described steps and clearly demonstrate the problem. If you use the keyboard while following the steps, **record the GIF with this tool**: [**Licecap**][licecap landing page] to record GIFs on macOS and Windows, and [Silent Cast][silent cast] or [Byzanz][byzanz] on Linux.
 - **If the problem wasn't triggered by a specific action**, describe what you were doing before the problem happened and share more information using the guidelines below.
 
 Provide more context by answering these questions:
@@ -94,22 +94,22 @@ Before creating enhancement suggestions, please check [this list](#before-submit
 
 #### Before Submitting An Enhancement Suggestion
 
-- **Discuss about it** by openning a [Discussion thread][Discussion Threads].
-- **Check if there's already [an open issue][Open Issue Threads] which provides that enhancement.**
-- **Perform a [cursory search][Enhancement Issue Threads]** to see if the enhancement has already been suggested. If it has, add a comment to the existing issue instead of opening a new one.
+- **Discuss about it** by openning a [Discussion thread][discussion threads].
+- **Check if there's already [an open issue][open issue threads] which provides that enhancement.**
+- **Perform a [cursory search][enhancement issue threads]** to see if the enhancement has already been suggested. If it has, add a comment to the existing issue instead of opening a new one.
 
 ### Your First Code Contribution
 
 Unsure where to begin contributing to my blog? You can start by looking through these `beginner` and `help-wanted` issues:
 
-- [Beginner issues][Beginner Issues] - issues which should only require a few lines of code, and a test or two.
-- [Help wanted issues][Help Wanted Issues] - issues which should be a bit more involved than `beginner` issues.
+- [Beginner issues][beginner issues] - issues which should only require a few lines of code, and a test or two.
+- [Help wanted issues][help wanted issues] - issues which should be a bit more involved than `beginner` issues.
 
 Both issue lists are sorted by the total number of comments. While not perfect, the number of comments is a reasonable proxy for an impact a given change will have.
 
 #### Local development
 
-Check out the the [Getting Started][Getting Started Section] on the README to setup a local development environment.
+Check out the the [Getting Started][getting started section] on the README to setup a local development environment.
 
 ### Pull Requests
 
@@ -124,7 +124,7 @@ Please follow these steps to have your contribution reviewed:
 
 1. Follow all instructions in [the template](PULL_REQUEST_TEMPLATE.md)
 2. Follow the [styleguides](#styleguides)
-3. After you submit your pull request, verify that all [status checks][GitHub Status Checks Docs] are passing <details><summary>What if the status checks are failing?</summary>If a status check is failing, and you believe that the failure is unrelated to your change, please leave a comment on the pull request explaining why you believe the failure is unrelated. I'll re-run the status check for you. If I can conclude that the failure was a false positive, then I'll open an issue to track that problem with our status check suite.</details>
+3. After you submit your pull request, verify that all [status checks][github status checks docs] are passing <details><summary>What if the status checks are failing?</summary>If a status check is failing, and you believe that the failure is unrelated to your change, please leave a comment on the pull request explaining why you believe the failure is unrelated. I'll re-run the status check for you. If I can conclude that the failure was a false positive, then I'll open an issue to track that problem with our status check suite.</details>
 
 While the prerequisites above must be satisfied prior to having your pull request reviewed, the reviewer(s) may ask you to complete additional design work, tests, or other changes before your pull request can be ultimately accepted.
 
@@ -153,7 +153,7 @@ While the prerequisites above must be satisfied prior to having your pull reques
   - :arrow_down: `:arrow_down:` when downgrading dependencies
   - :shirt: `:shirt:` when removing linter warnings
 
-You can find more applicable emojis at: [GitMoji][Gitmoji]
+You can find more applicable emojis at: [GitMoji][gitmoji]
 
 ## Additional Notes
 
@@ -161,15 +161,15 @@ You can find more applicable emojis at: [GitMoji][Gitmoji]
 
 This section lists the labels I use to help me track, manage issues & pull requests.
 
-[GitHub search][GitHub Search Docs] makes it easy to use labels for finding groups of issues or pull requests you're interested in. To help you find issues and pull requests, each label is listed with search links for finding open items with that label in the repository. I encourage you to read about [other search filters][GitHub Issues Search Docs] which will help you write more focused queries.
+[GitHub search][github search docs] makes it easy to use labels for finding groups of issues or pull requests you're interested in. To help you find issues and pull requests, each label is listed with search links for finding open items with that label in the repository. I encourage you to read about [other search filters][github issues search docs] which will help you write more focused queries.
 
 The labels are loosely grouped by their purpose, but it's not required that every issue have a label from every group or that an issue can't have more than one label from the same group.
 
-Please open an [issue][Open an Issue Thread], if you have suggestions for new labels, and if you notice some labels are missing, then please open an issue for that as well.
+Please open an [issue][open an issue thread], if you have suggestions for new labels, and if you notice some labels are missing, then please open an issue for that as well.
 
 #### Types Labels for Issue Threads & PRs
 
-You can find all the Issue labels & their descriptions at: [Labels][Labels]. They're available both for Issues & PRs.
+You can find all the Issue labels & their descriptions at: [Labels][labels]. They're available both for Issues & PRs.
 
 | Issue Labels       | Desciption                                                                   |
 | ------------------ | ---------------------------------------------------------------------------- |
@@ -189,28 +189,37 @@ You can find all the Issue labels & their descriptions at: [Labels][Labels]. The
 
 <!-- * Reference Links -->
 <!-- ? Links to Personal Stuff -->
-[Blog Repo]: https://github.com/Jarmos-san/blog
-[Email]: mailto:somraj.mle@gmail.com
-[My Twitter]: https://twitter.com/jarmosan
+
+[blog repo]: https://github.com/Jarmos-san/blog
+[email]: mailto:somraj.mle@gmail.com
+[my twitter]: https://twitter.com/jarmosan
+
 <!-- ? Links to Documentations -->
-[Labels]: https://github.com/Jarmos-san/blog/labels
-[Code of Conduct]: https://github.com/Jarmos-san/.github/blob/master/CODE_OF_CONDUCT.md
-[GitHub Issue Guide]: https://guides.github.com/features/issues/
-[Markdown Code Blocks Guide]: https://www.markdownguide.org/basic-syntax/#code
-[Getting Started Section]: https://github.com/Jarmos-san/blog#checkered_flag-getting-started
-[GitHub Status Checks Docs]: https://help.github.com/articles/about-status-checks/
-[GitHub Issues Search Docs]: https://help.github.com/articles/searching-issues/
+
+[labels]: https://github.com/Jarmos-san/blog/labels
+[code of conduct]: https://github.com/Jarmos-san/.github/blob/master/CODE_OF_CONDUCT.md
+[github issue guide]: https://guides.github.com/features/issues/
+[markdown code blocks guide]: https://www.markdownguide.org/basic-syntax/#code
+[getting started section]: https://github.com/Jarmos-san/blog#checkered_flag-getting-started
+[github status checks docs]: https://help.github.com/articles/about-status-checks/
+[github issues search docs]: https://help.github.com/articles/searching-issues/
+
 <!-- ? Links for Community -->
-[Open an Issue Thread]: https://github.com/Jarmos-san/blog/issues/new/choose
-[Discussion Threads]: https://github.com/Jarmos-san/blog/discussions
-[Open Issue Threads]: https://github.com/Jarmos-san/blog/issues?q=is%3Aopen+is%3Aissue
-[Enhancement Issue Threads]: https://github.com/Jarmos-san/blog/labels/enhancement
-[Beginner Issues]: https://github.com/Jarmos-san/blog/issues?q=is%3Aissue+is%3Aopen+blog+label%3A%22good+first+issue%22
-[Help Wanted Issues]: https://github.com/Jarmos-san/blog/issues?q=is%3Aissue+is%3Aopen+blog+label%3A%22good+first+issue%22+label%3A%22help+wanted%22
+
+[open an issue thread]: https://github.com/Jarmos-san/blog/issues/new/choose
+[discussion threads]: https://github.com/Jarmos-san/blog/discussions
+[open issue threads]: https://github.com/Jarmos-san/blog/issues?q=is%3Aopen+is%3Aissue
+[enhancement issue threads]: https://github.com/Jarmos-san/blog/labels/enhancement
+[beginner issues]: https://github.com/Jarmos-san/blog/issues?q=is%3Aissue+is%3Aopen+blog+label%3A%22good+first+issue%22
+[help wanted issues]: https://github.com/Jarmos-san/blog/issues?q=is%3Aissue+is%3Aopen+blog+label%3A%22good+first+issue%22+label%3A%22help+wanted%22
+
 <!-- ? Links to Tools to Use for the Community -->
-[Licecap Landing Page]: https://www.cockos.com/licecap/
-[Silent Cast]: https://github.com/colinkeenan/silentcast
-[Byzanz]: https://github.com/GNOME/byzanz
+
+[licecap landing page]: https://www.cockos.com/licecap/
+[silent cast]: https://github.com/colinkeenan/silentcast
+[byzanz]: https://github.com/GNOME/byzanz
+
 <!-- ? Miscelleanous -->
-[Don't Ask Questions in a Issue Thread]: https://blog.atom.io/2016/04/19/managing-the-deluge-of-atom-issues.html
-[Gitmoji]: https://gitmoji.dev/
+
+[don't ask questions in a issue thread]: https://blog.atom.io/2016/04/19/managing-the-deluge-of-atom-issues.html
+[gitmoji]: https://gitmoji.dev/

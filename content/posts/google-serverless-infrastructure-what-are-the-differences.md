@@ -25,7 +25,7 @@ There's a lot of buzz about "_Serverless architecture_", "_Serverless this-and-t
 So, let's understand what Serverless Computing is all about. Here's a brief description of the concept from Wikipedia;
 
 {{< blockquote link="https://en.wikipedia.org/wiki/Serverless_computing" author="Source:">}}
-  Serverless computing is a cloud computing execution model in which the cloud provider allocates machine resources on demand, taking care of the servers on behalf of their customers. [...] When an app is not in use, there are no computing resources allocated to the app. Pricing is based on the actual amount of resources consumed by an application. [...] "Serverless" is a misnomer in the sense that servers are still used by cloud service providers to execute code for developers. However developers of serverless applications are not concerned with capacity planning, configuration, management, maintenance, operating or scaling of containers, VMs, or physical servers.
+Serverless computing is a cloud computing execution model in which the cloud provider allocates machine resources on demand, taking care of the servers on behalf of their customers. [...] When an app is not in use, there are no computing resources allocated to the app. Pricing is based on the actual amount of resources consumed by an application. [...] "Serverless" is a misnomer in the sense that servers are still used by cloud service providers to execute code for developers. However developers of serverless applications are not concerned with capacity planning, configuration, management, maintenance, operating or scaling of containers, VMs, or physical servers.
 {{< /blockquote >}}
 
 Reiterating on the quote from Wikipedia, let me sum up the information for you:

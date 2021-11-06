@@ -1,9 +1,8 @@
 ---
 title: "Configure Neovim Using Lua"
-url: 
+url:
 hidemeta: true
 disableshare: true
-summary: 
+summary:
 draft: true
 ---
-

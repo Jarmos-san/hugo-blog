@@ -30,136 +30,137 @@ Besides, there’s also the problem of cognitive overload I’ve trouble dealing
 Anyway, enough of my justifications & let’s cut the chase. This is the configuration I use, feel free to copy & use them.
 
 {{< highlight json >}}
-  {
-      "$schema": "https://aka.ms/terminal-profiles-schema",
-      "actions": [
-          {
-              "command": {
-                  "action": "copy",
-                  "singleLine": false
-              },
-              "keys": "ctrl+c"
-          },
-          {
-              "command": "paste",
-              "keys": "ctrl+v"
-          },
-          {
-              "command": "find",
-              "keys": "ctrl+shift+f"
-          },
-          {
-              "command": {
-                  "action": "splitPane",
-                  "split": "auto",
-                  "splitMode": "duplicate"
-              },
-              "keys": "alt+shift+d"
-          },
-          {
-              "command": {
-                  "action": "splitPane",
-                  "profile": "Neovim v0.4.4",
-                  "split": "auto"
-              },
-              "keys": "shift+alt+2"
-          },
-          {
-              "command": "closeTab",
-              "keys": "ctrl+w"
-          },
-          {
-              "command": "closeOtherTabs",
-              "keys": "ctrl+t"
-          },
-          {
-              "command": "closePane",
-              "keys": "ctrl+shift+w"
-          }
-      ],
-      "copyFormatting": "none",
-      "copyOnSelect": false,
-      "defaultProfile": "{574e775e-4f2a-5b96-ac1e-a2962a402336}",
-      "disabledProfileSources": [
-          "Windows.Terminal.Azure",
-          "Windows.Terminal.Wsl"
-      ],
-      "launchMode": "maximized",
-      "profiles": {
-          "defaults": {
-              "acrylicOpacity": 0.2,
-              "colorScheme": "Nord",
-              "cursorColor": "#969696",
-              "cursorShape": "filledBox",
-              "fontFace": "MesloLGL Nerd Font",
-              "fontSize": 11,
-              "padding": "20, 8, 8, 3",
-              "startingDirectory": "E:\\Projects",
-              "useAcrylic": true,
-              "backgroundImage": "%USERPROFILE%\\Pictures\\Saved Pictures\\312629.jpg"
-          },
-          "list": [
-              {
-                  "commandline": "powershell.exe",
-                  "guid": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
-                  "hidden": false,
-                  "name": "Windows PowerShell v5.1"
-              },
-              {
-                  "commandline": "cmd.exe",
-                  "guid": "{0caa0dad-35be-5f56-a8ff-afceeeaa6101}",
-                  "hidden": true,
-                  "name": "Command Prompt"
-              },
-              {
-                  "guid": "{574e775e-4f2a-5b96-ac1e-a2962a402336}",
-                  "hidden": false,
-                  "name": "PowerShell v7.2",
-                  "source": "Windows.Terminal.PowershellCore"
-              },
-              {
-                  "guid": "{905ee199-8709-449b-b0f1-5ac7ea8638b9}",
-                  "commandline": "py.exe",
-                  "icon": "%PROGRAMFILES(x86)%\\Python38-32\\python.png",
-                  "name": "Python v3.8.5"
-              },
-              {
-                  "commandline": "nvim",
-                  "guid": "{cec59ed5-e63e-4199-9e5f-d292b4ce5346}",
-                  "icon": "C:\\Tools\\Neovim\\neovim.png",
-                  "name": "Neovim v0.4.4"
-              }
-          ]
-      },
-      "schemes": [
-          {
-              "background": "#2E3440",
-              "black": "#3B4252",
-              "blue": "#81A1C1",
-              "brightBlack": "#4C566A",
-              "brightBlue": "#81A1C1",
-              "brightCyan": "#88C0D0",
-              "brightGreen": "#A3BE8C",
-              "brightPurple": "#B48EAD",
-              "brightRed": "#BF616A",
-              "brightWhite": "#E5E9F0",
-              "brightYellow": "#EBCB8B",
-              "cursorColor": "#FFFFFF",
-              "cyan": "#88C0D0",
-              "foreground": "#D8DEE9",
-              "green": "#A3BE8C",
-              "name": "Nord",
-              "purple": "#B48EAD",
-              "red": "#BF616A",
-              "selectionBackground": "#FFFFFF",
-              "white": "#E5E9F0",
-              "yellow": "#EBCB8B"
-          }
-      ],
-      "tabWidthMode": "equal",
-      "theme": "dark"
-  }
+{
+"$schema": "https://aka.ms/terminal-profiles-schema",
+"actions": [
+{
+"command": {
+"action": "copy",
+"singleLine": false
+},
+"keys": "ctrl+c"
+},
+{
+"command": "paste",
+"keys": "ctrl+v"
+},
+{
+"command": "find",
+"keys": "ctrl+shift+f"
+},
+{
+"command": {
+"action": "splitPane",
+"split": "auto",
+"splitMode": "duplicate"
+},
+"keys": "alt+shift+d"
+},
+{
+"command": {
+"action": "splitPane",
+"profile": "Neovim v0.4.4",
+"split": "auto"
+},
+"keys": "shift+alt+2"
+},
+{
+"command": "closeTab",
+"keys": "ctrl+w"
+},
+{
+"command": "closeOtherTabs",
+"keys": "ctrl+t"
+},
+{
+"command": "closePane",
+"keys": "ctrl+shift+w"
+}
+],
+"copyFormatting": "none",
+"copyOnSelect": false,
+"defaultProfile": "{574e775e-4f2a-5b96-ac1e-a2962a402336}",
+"disabledProfileSources": [
+"Windows.Terminal.Azure",
+"Windows.Terminal.Wsl"
+],
+"launchMode": "maximized",
+"profiles": {
+"defaults": {
+"acrylicOpacity": 0.2,
+"colorScheme": "Nord",
+"cursorColor": "#969696",
+"cursorShape": "filledBox",
+"fontFace": "MesloLGL Nerd Font",
+"fontSize": 11,
+"padding": "20, 8, 8, 3",
+"startingDirectory": "E:\\Projects",
+"useAcrylic": true,
+"backgroundImage": "%USERPROFILE%\\Pictures\\Saved Pictures\\312629.jpg"
+},
+"list": [
+{
+"commandline": "powershell.exe",
+"guid": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
+"hidden": false,
+"name": "Windows PowerShell v5.1"
+},
+{
+"commandline": "cmd.exe",
+"guid": "{0caa0dad-35be-5f56-a8ff-afceeeaa6101}",
+"hidden": true,
+"name": "Command Prompt"
+},
+{
+"guid": "{574e775e-4f2a-5b96-ac1e-a2962a402336}",
+"hidden": false,
+"name": "PowerShell v7.2",
+"source": "Windows.Terminal.PowershellCore"
+},
+{
+"guid": "{905ee199-8709-449b-b0f1-5ac7ea8638b9}",
+"commandline": "py.exe",
+"icon": "%PROGRAMFILES(x86)%\\Python38-32\\python.png",
+"name": "Python v3.8.5"
+},
+{
+"commandline": "nvim",
+"guid": "{cec59ed5-e63e-4199-9e5f-d292b4ce5346}",
+"icon": "C:\\Tools\\Neovim\\neovim.png",
+"name": "Neovim v0.4.4"
+}
+]
+},
+"schemes": [
+{
+"background": "#2E3440",
+"black": "#3B4252",
+"blue": "#81A1C1",
+"brightBlack": "#4C566A",
+"brightBlue": "#81A1C1",
+"brightCyan": "#88C0D0",
+"brightGreen": "#A3BE8C",
+"brightPurple": "#B48EAD",
+"brightRed": "#BF616A",
+"brightWhite": "#E5E9F0",
+"brightYellow": "#EBCB8B",
+"cursorColor": "#FFFFFF",
+"cyan": "#88C0D0",
+"foreground": "#D8DEE9",
+"green": "#A3BE8C",
+"name": "Nord",
+"purple": "#B48EAD",
+"red": "#BF616A",
+"selectionBackground": "#FFFFFF",
+"white": "#E5E9F0",
+"yellow": "#EBCB8B"
+}
+],
+"tabWidthMode": "equal",
+"theme": "dark"
+}
 {{< / highlight >}}
+
 <script src="https://gist.github.com/Jarmos-san/6464fc65ac3c81f94f855fc76190c911.js"></script>
 
 Anyway, enough of my justifications & let’s cut the chase. This is the configuration I use, feel free to copy & use them.
@@ -170,19 +171,19 @@ The Windows Terminal configurations are divided into 4 distinct sections each cu
 
 **Global (or Default) Settings**:
 
-The config file begins with the Global (or “*default*”) settings. Followed by the Profile, Colour Schemes & lastly, the key Bindings (or “*Actions*”).
+The config file begins with the Global (or “_default_”) settings. Followed by the Profile, Colour Schemes & lastly, the key Bindings (or “_Actions_”).
 
 Right at the start of the file, the Global settings apply customization to the whole software, as in how Windows Terminal behaves. In context to that, my configuration starts Windows Terminal with PowerShell as the default profile (more on profiles a bit later), indicated with the `defaultProfile` settings.
 
 Right below it & till line 12, I’ve set Windows Terminal to not copy a body of text when selected & not even the formatting. Azure Shell & WSL profiles are also disabled since I’ve yet to find any relevant use for them. And at last, to ensure my eyes don’t burn & are protected, a dark theme, tab width & startup window maximized is enabled.
 
-Those were the Global settings which apply to the whole of Windows Terminal as a software. They don’t do much but  help with the startup time, my eyes & productivity.
+Those were the Global settings which apply to the whole of Windows Terminal as a software. They don’t do much but help with the startup time, my eyes & productivity.
 
 But here’s where things get visually interesting, customizing individual Profiles.
 
 **Profiles**:
 
-Profiles are  Windows Terminal’s way of creating & manipulating shells & other terminal emulators. In other words, you can have a PowerShell session running side-by-side on a tab with Bash (running on an Ubuntu-WSL).
+Profiles are Windows Terminal’s way of creating & manipulating shells & other terminal emulators. In other words, you can have a PowerShell session running side-by-side on a tab with Bash (running on an Ubuntu-WSL).
 If it isn’t obvious from the GIF on the featured image already, I’ve set up four profiles – PowerShell, Python Repl, Git Bash & Neovim. But the configuration lists 6, how & what’s going on?
 
 Be patient, soon enough you’ll figure that out as well.
@@ -219,14 +220,14 @@ As for customized key bindings, I’ve kept them to the minimal, since the defau
 
 With that said, here’s the list of key bindings that I use:
 
-* `ctrl+c` for copying a selected piece of text.
-* `ctrl+v` for pasting a piece of text from the clipboard.
-* `ctrl+shift+f` to find texts/words on the Terminal.
-* `alt+shift+d` to split the pane automatically with the most available space & duplicating the  active shell.
-* `shift+alt+2` to activate the Neovim pane & size it automatically.
-* `ctrl+w` to close a tab.
-* `ctrl+t` to close all the other tabs except the current one.
-* `ctrl+shift+w` closes the  active pane.
+- `ctrl+c` for copying a selected piece of text.
+- `ctrl+v` for pasting a piece of text from the clipboard.
+- `ctrl+shift+f` to find texts/words on the Terminal.
+- `alt+shift+d` to split the pane automatically with the most available space & duplicating the active shell.
+- `shift+alt+2` to activate the Neovim pane & size it automatically.
+- `ctrl+w` to close a tab.
+- `ctrl+t` to close all the other tabs except the current one.
+- `ctrl+shift+w` closes the active pane.
 
 And that marks the end of my Windows Terminal customization configuration. That was a lot to read for a supposed minimalist configuration.
 
@@ -242,7 +243,7 @@ Regardless, customizing the PowerShell prompt & setting up Neovim is a project o
 
 ## What’re You Waiting For, Start Customizing Yours Too?
 
-That said, I can’t  recommend using Windows Terminal enough. Heck, I would even go as far as asking you to switch to using Windows as your everyday development platform. The team behind the development of Windows Terminal at Microsoft are very proactive. And their contributions are only improving the product each day. So if you’re on Window, & haven’t used Windows Terminal yet, then do it ASAP!
+That said, I can’t recommend using Windows Terminal enough. Heck, I would even go as far as asking you to switch to using Windows as your everyday development platform. The team behind the development of Windows Terminal at Microsoft are very proactive. And their contributions are only improving the product each day. So if you’re on Window, & haven’t used Windows Terminal yet, then do it ASAP!
 
 You can download the preview version to test experimental features. They’re available both from the [Microsoft Store](https://www.microsoft.com/en-in/p/windows-terminal-preview/9n8g5rfz9xk3?activetab=pivot:overviewtab) or from their [GitHub Releases](https://github.com/microsoft/terminal/releases) page. Or the non-preview version which serves your purpose.
 

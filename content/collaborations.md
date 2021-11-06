@@ -25,11 +25,12 @@ Do reach out to me for collaboration opportunities & we can come up with a deal.
 
 What if you just want to send a token of appreciation? Well for you I got these;
 
-- [Buy me a coffee][Buy me a coffee]
-- A ["Say Thank You"][Say Thank You] mesasge.
+- [Buy me a coffee][buy me a coffee]
+- A ["Say Thank You"][say thank you] mesasge.
 
 Every kind message & appreciation I receive motivates me to keep contributing for a good cause. :beaming_face_with_smiling_eyes:
 
 <!-- Reference Links -->
-[Buy me a coffee]: https://www.buymeacoffee.com/jarmos
-[Say Thank You]: https://saythanks.io/to/somraj.mle%40gmail.com
+
+[buy me a coffee]: https://www.buymeacoffee.com/jarmos
+[say thank you]: https://saythanks.io/to/somraj.mle%40gmail.com

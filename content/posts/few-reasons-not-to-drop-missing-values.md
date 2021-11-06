@@ -17,7 +17,7 @@ A series of Missing Values can often stand out like a blotch on a series of stru
 
 Look at the picture above. The first thing that you might’ve subconsciously observed is that there’s a stroller missing. Indeed, let me break it to you, that’s exactly how the human brain works.
 
->*Anything out-of-the-ordinary, needs to be examined.* — The Human Brain.
+> _Anything out-of-the-ordinary, needs to be examined._ — The Human Brain.
 
 Guess what? While working with Real-World Data, you will seldom come across a dataset devoid of Missing Values!
 
@@ -53,8 +53,9 @@ Well, the dataset in context to that MissingNo Matrix image above is a compilati
 
 Quoting a statement from a recent research publication on visual perception of inconsistent series data, should further strengthen my claim about the reason behind having an open-mindedness towards handling Missing Values.
 
->	We found that visualizations that highlight missing values have higher perceived data quality while those that break visual continuity decrease these perceptions and can bias interpretation.
->— Hayeong Song & Danielle Albers Szafir
+>     We found that visualizations that highlight missing values have higher perceived data quality while those that break visual continuity decrease these perceptions and can bias interpretation.
+>
+> — Hayeong Song & Danielle Albers Szafir
 
 Their proposition is that people, in general, are MORE PERCEPTIVE towards inconsistency especially through a visual format that depicts some information to them.
 

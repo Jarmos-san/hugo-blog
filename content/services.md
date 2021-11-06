@@ -16,13 +16,13 @@ Following are the list of technologies I'm most familiar with:
 
 | Services              |                     Technology                     |
 | :-------------------- | :------------------------------------------------: |
-| Programming Languages |                  [Python][Python]                  |
-| Backend               |                 [FastAPI][FastAPI]                 |
-| Hosting               |  [Heroku][Heroku] - [Google Cloud Platform][GCP]   |
-| Machine Learning      | [Scikit-Learn][Sklearn] - [TensorFlow][TensorFlow] |
-| Shell Scripting       |      [PowerShell][PowerShell] - [Bash][Bash]       |
-| Development Platforms |      [Windows 10][Windows] - [Ubuntu][Ubuntu]      |
-| Miscellaneous         |        [GitHub][GitHub] - [Kaggle][Kaggle]         |
+| Programming Languages |                  [Python][python]                  |
+| Backend               |                 [FastAPI][fastapi]                 |
+| Hosting               |  [Heroku][heroku] - [Google Cloud Platform][gcp]   |
+| Machine Learning      | [Scikit-Learn][sklearn] - [TensorFlow][tensorflow] |
+| Shell Scripting       |      [PowerShell][powershell] - [Bash][bash]       |
+| Development Platforms |      [Windows 10][windows] - [Ubuntu][ubuntu]      |
+| Miscellaneous         |        [GitHub][github] - [Kaggle][kaggle]         |
 
 **Note**: This tech stack is what I'm most confident with. In case you need help with something else, feel free to reach out to me. I might be able to help you out with something. :wink:
 
@@ -36,24 +36,39 @@ For any business queries, contact me through the provided [contact details](../a
 
 <!-- Reference Links -->
 <!-- * Programming Language -->
-[Python]: https://www.python.org/
+
+[python]: https://www.python.org/
+
 <!-- * Backend Services Tech -->
-[FastAPI]: http://fastapi.tiangolo.com/
+
+[fastapi]: http://fastapi.tiangolo.com/
+
 <!-- * Machine Learning Libraries -->
-[TensorFlow]: https://www.tensorflow.org/
-[Sklearn]: https://scikit-learn.org
+
+[tensorflow]: https://www.tensorflow.org/
+[sklearn]: https://scikit-learn.org
+
 <!-- * Cloud Platforms -->
-[Heroku]: https://www.heroku.com/
-[AWS]: https://aws.amazon.com/
-[GCP]: https://cloud.google.com/
+
+[heroku]: https://www.heroku.com/
+[aws]: https://aws.amazon.com/
+[gcp]: https://cloud.google.com/
+
 <!-- * Dev Platforms -->
-[Windows]: https://www.microsoft.com/en-in/windows/get-windows-10
-[Ubuntu]: https://ubuntu.com/
+
+[windows]: https://www.microsoft.com/en-in/windows/get-windows-10
+[ubuntu]: https://ubuntu.com/
+
 <!-- * Shell Scripting -->
-[PowerShell]: https://docs.microsoft.com/en-us/powershell/
-[Bash]: https://www.gnu.org/software/bash/
+
+[powershell]: https://docs.microsoft.com/en-us/powershell/
+[bash]: https://www.gnu.org/software/bash/
+
 <!-- * Miscellaneous -->
-[GitHub]: https://github.com/Jarmos-san
-[Kaggle]: https://www.kaggle.com/jarmos
+
+[github]: https://github.com/Jarmos-san
+[kaggle]: https://www.kaggle.com/jarmos
+
 <!-- * Personal -->
-[Email]: mailto:somraj.mle@gmail.com
+
+[email]: mailto:somraj.mle@gmail.com

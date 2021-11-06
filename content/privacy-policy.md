@@ -11,7 +11,7 @@ Last Revision Made On: **22-02-2021**
 
 ## Information We Collect
 
-- **Contact information**: We might collect your name, email, mobile number, phone number, street, city, state, pincode,  country and IP address.
+- **Contact information**: We might collect your name, email, mobile number, phone number, street, city, state, pincode, country and IP address.
 - **Information you share**: We collect information & other details like email you share with us through HTML forms & other means of gathering user feedback like onlines questionnaires such as those from Google Forms and/or TypeForm.
 - **Demographic information**: We may collect demographic information about you. These information might include your age, your residence, country, gender, specific preferences for content & so on. They are collected through use of third-party trackers like Google Analytics, Cloudflare Analytics & Twitter Analytics. We might collect this as a part of a survey also.
 - **Other information**: If you use our website, we may collect information about your IP address and the browser you're using. We might look at what site you came from, duration of time spent on our website, pages accessed or what site you visit when you leave us. We might also collect the type of mobile device you are using, or the version of the operating system your computer or device is running.
@@ -54,7 +54,7 @@ If you click on one of the links to third party websites, you may be taken to we
 
 ## Grievance Complaints
 
-In accordance with [Information Technology Act, 2000][IT Act] and rules made there under, the name and contact details of the individual to share your grievance complaints are provided below:
+In accordance with [Information Technology Act, 2000][it act] and rules made there under, the name and contact details of the individual to share your grievance complaints are provided below:
 
 ```shell
 Mr. Somraj Saha
@@ -75,4 +75,5 @@ From time to time we may change our privacy practices. We will notify you of any
 If you choose to visit the website, your visit and any dispute over privacy is subject to this Policy and the website's terms of use. In addition to the foregoing, any disputes arising under this Policy shall be governed by the laws of India.
 
 <!-- Reference Links -->
-[IT Act]: https://www.indiacode.nic.in/bitstream/123456789/1999/3/A2000-21.pdf
+
+[it act]: https://www.indiacode.nic.in/bitstream/123456789/1999/3/A2000-21.pdf

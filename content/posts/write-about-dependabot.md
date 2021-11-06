@@ -1,9 +1,8 @@
 ---
 title: "Write About Dependabot"
-url: 
+url:
 hidemeta: true
 disableshare: true
-summary: 
+summary:
 draft: true
 ---
-

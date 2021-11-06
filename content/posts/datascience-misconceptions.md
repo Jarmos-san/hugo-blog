@@ -13,9 +13,9 @@ cover:
 showtoc: true
 ---
 
-Around 4 years ago, it was this specific video — MarI/O — Machine Learning for Video Games on YouTube which piqued my interest in Artificial Intelligence & Machine Learning. Being an avid gamer as well as also having an academic background in Economics, I thought to myself, “*Oh I already have half of the skills required to make Mario do stuff like this on his own*”.
+Around 4 years ago, it was this specific video — MarI/O — Machine Learning for Video Games on YouTube which piqued my interest in Artificial Intelligence & Machine Learning. Being an avid gamer as well as also having an academic background in Economics, I thought to myself, “_Oh I already have half of the skills required to make Mario do stuff like this on his own_”.
 
-You see, that was the first misconception I had about Machine Learning (or Data Science in general). Little did I know what Reinforcement Learning was, where & how it was used. But did I care? Nope. All I thought about was creating my own *ML model*.
+You see, that was the first misconception I had about Machine Learning (or Data Science in general). Little did I know what Reinforcement Learning was, where & how it was used. But did I care? Nope. All I thought about was creating my own _ML model_.
 
 The lesson here? Misconceptions arise due to half-baked knowledge & lack of curiosity to dig further into the rabbit hole. [1]
 
@@ -37,14 +37,14 @@ Through this article, I hope to clear up certain misconceptions you might’ve b
 
 Andrew Ng & Jeremy Howard, two of the pioneers in the field of Machine Learning, have been humble enough to share their knowledge without any monetary compensation in return. Their motive behind doing so? Just to make the world a better place by helping the community thrive & enabling them to be more employable sometime in the near future.
 
-Years ago when I wrote my first print(“*Hello World*”) statement on Python, their resources were invaluable for me to build the basic foundation of the aspirations I’ve right now. But was it enough to be actually employable in the industry?
+Years ago when I wrote my first print(“_Hello World_”) statement on Python, their resources were invaluable for me to build the basic foundation of the aspirations I’ve right now. But was it enough to be actually employable in the industry?
 
 Not at all.
 
-The nature of online learning resources out there like boot-camps, MOOC, video tutorials, etc is, they’re marketed to “*Teach Yourself To Code*”. True to their words, that’s exactly what you invest your time & money in. You learn to code, not understand the why-to-code in a very specific manner or style.
+The nature of online learning resources out there like boot-camps, MOOC, video tutorials, etc is, they’re marketed to “_Teach Yourself To Code_”. True to their words, that’s exactly what you invest your time & money in. You learn to code, not understand the why-to-code in a very specific manner or style.
 
 This creates a problem of its own;
-The students following the courses mentioned above take it hoping it would be *enough* to land a job in real life. But if that was the case, the 3M+ of students who take an Udemy course alone would be more than enough to fill up the vacant ML jobs in the industry.
+The students following the courses mentioned above take it hoping it would be _enough_ to land a job in real life. But if that was the case, the 3M+ of students who take an Udemy course alone would be more than enough to fill up the vacant ML jobs in the industry.
 
 So, obviously, MOOC or other self-paced online courses willn’t cut the thread for you.
 
@@ -58,7 +58,7 @@ This philanthropic approach of the individuals enabled hundreds of thousands of 
 
 Put simply, democratizing is good for the community as a whole.
 
-But “*Democratize Data Science & Machine Learning*” is a buzz right now anyway. Everyone wants to create a tutorial or two for the community. So why did I point it out specifically, you might wonder to yourself?
+But “_Democratize Data Science & Machine Learning_” is a buzz right now anyway. Everyone wants to create a tutorial or two for the community. So why did I point it out specifically, you might wonder to yourself?
 
 Well because I want the community to not be misguided.
 
@@ -68,9 +68,9 @@ Rahul Agarwal, in his article — [Don’t Democratize Data Science](https://tow
 
 Quoting from his article;
 
->*…He explained the higher-level concepts well enough that I decided to dig a little deeper into his mathematical understanding of the techniques he had applied in his projects. And that was where things changed…*
+> _…He explained the higher-level concepts well enough that I decided to dig a little deeper into his mathematical understanding of the techniques he had applied in his projects. And that was where things changed…_
 
-His account of the interview is a prime example of an individual who relied solely on just skimming through tutorials, creating projects one after the other & building a sound portfolio. Suffice to say, just learning *how to code* isn’t going to take you far enough.
+His account of the interview is a prime example of an individual who relied solely on just skimming through tutorials, creating projects one after the other & building a sound portfolio. Suffice to say, just learning _how to code_ isn’t going to take you far enough.
 
 What can we learn from this context?
 
@@ -78,21 +78,21 @@ You might be an all-star programmer but if you fail to understand basic underlyi
 
 Why is it so?
 
-You see, *most businesses often operate on a shoestring*. Besides, production environments are volatile, susceptible to not just the market competition but the whims of the consumers as well. This makes businesses to be in an unfavourable position & forced to pay attention to the tiniest bit of details in the product.
+You see, _most businesses often operate on a shoestring_. Besides, production environments are volatile, susceptible to not just the market competition but the whims of the consumers as well. This makes businesses to be in an unfavourable position & forced to pay attention to the tiniest bit of details in the product.
 
 From speeding up the data pipeline to making inferences in milliseconds can be a matter of making a huge profit or going bankrupt. To have an eagle eye for such precision is what Rahul tried to convey through his article.
 
 ## But You Don’t Always Have To Have an Eagle Eye
 
-Contrary to Rahul’s opinion, yet another expert in the field of Machine Learning & an entrepreneur is [Caleb Kaiser](https://medium.com/u/ae1782e046c3?source=post_page-----28fcbedf2811----------------------). He is an advocate of making ML software available to those who need it gravely, *especially developers who’re not Data Scientists*. His article — [Deep Learning Isn’t Hard Anymore](https://towardsdatascience.com/deep-learning-isnt-hard-anymore-26db0d4749d7) is a wonderful report in the field of production capable ML software.
+Contrary to Rahul’s opinion, yet another expert in the field of Machine Learning & an entrepreneur is [Caleb Kaiser](https://medium.com/u/ae1782e046c3?source=post_page-----28fcbedf2811----------------------). He is an advocate of making ML software available to those who need it gravely, _especially developers who’re not Data Scientists_. His article — [Deep Learning Isn’t Hard Anymore](https://towardsdatascience.com/deep-learning-isnt-hard-anymore-26db0d4749d7) is a wonderful report in the field of production capable ML software.
 
 In context to this write-up, quoting an excerpt from his article;
 
->*…people within the community develop libraries and projects that abstract common utilities away until the tooling is capable and stable enough to be used in production.*
+> _…people within the community develop libraries and projects that abstract common utilities away until the tooling is capable and stable enough to be used in production._
 >
->	*At this stage, the engineers using it to build software are not concerned about sending HTTP requests or connecting to databases — all of that is abstracted away — and are solely focused on building their product.* [3]
+>     *At this stage, the engineers using it to build software are not concerned about sending HTTP requests or connecting to databases — all of that is abstracted away — and are solely focused on building their product.* [3]
 
-The key phrase here — “*all of that is abstracted away*”.
+The key phrase here — “_all of that is abstracted away_”.
 
 Now as an entrepreneur, he’s obligated to answer not just to his employees but his financial backers about the product. Him, trying to figure out the underlying concepts of the inner working of a product could be a waste of time. Besides, considering his position in the company, him spending time learning something new unrelated to his business is money lost for the company. Instead, he could just hire someone else, an expert in the craft, to do it instead.
 
@@ -104,13 +104,13 @@ I really don’t understand the logic behind speaking against automation. Why ge
 
 ![Image of the leader of the Luddites](https://miro.medium.com/max/320/0*iwo8773ijxOSj3dH)
 
-Read up on the Neo Luddism movement, started by an organization named Luddite. Heck, there’s also a term we use in Economics to refer to the *fear of technological unemployment* called the **Luddite Fallacy**.
+Read up on the Neo Luddism movement, started by an organization named Luddite. Heck, there’s also a term we use in Economics to refer to the _fear of technological unemployment_ called the **Luddite Fallacy**.
 
 Speaking more about Luddism would be out-of-context of the article, so that’s a topic for another day.
 
 Anyway let me direct your attention to Rahul’s article once again, here’s something that he mentioned which I can’t bring myself to agree with.
 
->	*…The availability of such packages has led a lot of people to think that data science could be fully automated, eliminating the need for data scientists altogether. Or, if the processes can’t be automated, these tools will allow anyone to become a data scientist*. [1]
+>     *…The availability of such packages has led a lot of people to think that data science could be fully automated, eliminating the need for data scientists altogether. Or, if the processes can’t be automated, these tools will allow anyone to become a data scientist*. [1]
 
 I believe he’s concerned about the advent of AutoML software like MindsDB which is completely baseless.
 
@@ -120,7 +120,7 @@ The misconception of anyone being able to create Neural Nets using AutoML softwa
 
 And I quote him;
 
->*Today, designing neural nets is extremely time-intensive, and requires an expertise that limits its use to a smaller community of scientists and engineers. That’s why we’ve created an approach called AutoML, showing that it’s possible for neural nets to design neural nets. We hope AutoML will take an ability that a few PhDs have today and will make it possible in three to five years for hundreds of thousands of developers to design new neural nets for their particular needs.* [5]
+> _Today, designing neural nets is extremely time-intensive, and requires an expertise that limits its use to a smaller community of scientists and engineers. That’s why we’ve created an approach called AutoML, showing that it’s possible for neural nets to design neural nets. We hope AutoML will take an ability that a few PhDs have today and will make it possible in three to five years for hundreds of thousands of developers to design new neural nets for their particular needs._ [5]
 
 Did you read where he mentions AutoML is meant for developers? Understand what that means.
 
@@ -128,7 +128,7 @@ To give an analogy consider I own a company & our app can make your picture look
 
 If I want my company to sustain profitably, should I hire a guy with a Ph.D. or a developer?
 
-Without a doubt, I would place my bets on the developer to deliver me a *production-capable product* on time, considering the constraints I’m under.
+Without a doubt, I would place my bets on the developer to deliver me a _production-capable product_ on time, considering the constraints I’m under.
 
 Personal opinion aside, abstractions in technology are unavoidable. At some point in time, repetitive tasks like data augmentations, data cleaning, etc **NEED** to be abstracted to save up on developer time.
 

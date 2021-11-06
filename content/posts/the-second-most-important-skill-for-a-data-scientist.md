@@ -15,7 +15,7 @@ showtoc: true
 
 ## Data Science, dig right into building models, who cares about Domain Knowledge, Right?
 
-*Data Science is all in the blaze at the moment!* A quick search of the keyword on Google yields not a Wikipedia page of the field but hundreds of tutorials & courses on the first page of the search results.
+_Data Science is all in the blaze at the moment!_ A quick search of the keyword on Google yields not a Wikipedia page of the field but hundreds of tutorials & courses on the first page of the search results.
 
 Although not a bad thing per se, the easily accessible online learning resources helped a lot of self-learners, myself included, to wet our feet into the ocean. Without which, it’s difficult to comprehend trying to learn all by ourselves. Surprisingly though, I noticed how rare it is, to come across any mention of “Domain Knowledge” in those resources, albeit even briefly.
 
@@ -49,7 +49,7 @@ Secondly, and perhaps the most discussed topic in the Data Science community is 
 
 Besides, emphasis on the importance of Feature Engineering & how doing so can improve the overall accuracy of the model are common & is a topic of discussions across every corner of the community. But performing proper & insightful feature engineering is a skill, only a few experienced ones among the whole bunch is capable of doing properly.
 
-Hence, reminds me, that I came across a rather interesting piece of work by Xavier Martinez published at — Catalonia GDP: Insights & Regression Analysis which is a very detailed & prime example of feature engineering components of a dataset to create newer columns/features for further analysis. He predicted the Catalonia GDP growth rate based on feature engineered GDP components from the dataset & it shows how being extensively versed in a domain can help make very insightful & precise observations. Xavier did exactly that, based on what we Economists call a “*Demand-Driven Growth*”.
+Hence, reminds me, that I came across a rather interesting piece of work by Xavier Martinez published at — Catalonia GDP: Insights & Regression Analysis which is a very detailed & prime example of feature engineering components of a dataset to create newer columns/features for further analysis. He predicted the Catalonia GDP growth rate based on feature engineered GDP components from the dataset & it shows how being extensively versed in a domain can help make very insightful & precise observations. Xavier did exactly that, based on what we Economists call a “_Demand-Driven Growth_”.
 
 Lastly, note that while you read through this article, 1.7 mb of data is being generated worldwide each second which accounts to 2.5 quintillion bytes of data per day. That’s a whole lot of data to harness & process [1]. Comprehending what portion, the how & when to process that chunk of data, is paramount. Not only would it reduce inefficiency in the business operations, but as mentioned earlier, time & finances are the biggest constraints for a business. Being able to trim down to just the bare minimum for the required analysis helps reduce costs & processing time as well.
 

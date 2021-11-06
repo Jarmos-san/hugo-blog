@@ -17,7 +17,7 @@ showtoc: true
 
 ## A Little Bit Of History First
 
-The field of Computer Vision started gaining traction dating as far back as the late 1950s till the late 1960s when researchers wanted to teach computers “*to be…human*”. It was around this time when researchers tried to mimic the human visual system in order to achieve a new stepping stone to endow machines with human intelligence. Thanks to the extensive research being done back then, Traditional CV techniques like [Edge Detection](https://en.wikipedia.org/wiki/Edge_detection), [Motion Estimation](https://en.wikipedia.org/wiki/Motion_estimation), [Optical Flow](https://en.wikipedia.org/wiki/Optical_flow) were developed.
+The field of Computer Vision started gaining traction dating as far back as the late 1950s till the late 1960s when researchers wanted to teach computers “_to be…human_”. It was around this time when researchers tried to mimic the human visual system in order to achieve a new stepping stone to endow machines with human intelligence. Thanks to the extensive research being done back then, Traditional CV techniques like [Edge Detection](https://en.wikipedia.org/wiki/Edge_detection), [Motion Estimation](https://en.wikipedia.org/wiki/Motion_estimation), [Optical Flow](https://en.wikipedia.org/wiki/Optical_flow) were developed.
 
 It wasn’t until the 1980s when [Convolutional Neural Networks](https://en.wikipedia.org/wiki/Convolutional_neural_network) (CNNs) were developed. Aptly named, the [Neocognitron](https://en.wikipedia.org/wiki/Neocognitron) which was the first CNN with the usual multilayered & shared weights [Neural Nets](https://en.wikipedia.org/wiki/Multilayer_perceptron) we see today. But the popularity of DL skyrocketed only after [LeNet](https://en.wikipedia.org/wiki/LeNet) was developed jointly by Yann LeCun & his colleagues in the 1990s. It was a pioneering moment since no other previous algorithms could ever achieve such an incredibly high accuracy as CNNs.
 
@@ -35,7 +35,7 @@ The following infographic feature some of the differences between the two approa
 
 ![Deep Learning vs Traditional Techniques: An Infographic Comparison](https://miro.medium.com/max/700/0*veZFlekYYfy6Jt8F)
 
-The infographic makes it so much more clear about why Deep Learning is getting all the attention. A quick glance & you’ll notice with *so many tick marks* obviously DL has to be the best approach among the two, right? But, is it really the case?
+The infographic makes it so much more clear about why Deep Learning is getting all the attention. A quick glance & you’ll notice with _so many tick marks_ obviously DL has to be the best approach among the two, right? But, is it really the case?
 
 Let’s dig deeper & analyze the differences mentioned in the infographic.
 
@@ -63,7 +63,7 @@ And in the following section, I describe a few of those challenges faced by the 
 
 3. With the advent of Cloud Computing services like GCP & other Cloud Machine Learning platforms like Google AI platform, high-performance resources are readily available at a click of a button. But the ease of access comes with a caveat, significant price build-ups. At first glance, a $3/hr high-performant GPU instance doesn’t sound too costly. But the expenditures build up over time as the business grows & DL techniques take a lot of time to train as well.
 
-4. There are still certain fields of CV where DL techniques are yet to make any significant developments. Some of those fields include — 3D Vision, 360 Cameras, SLAM, among many others. Until & unless DL techniques make progress towards resolving problems in those sub-fields traditional techniques are here to stay for a long time. [2]_
+4. There are still certain fields of CV where DL techniques are yet to make any significant developments. Some of those fields include — 3D Vision, 360 Cameras, SLAM, among many others. Until & unless DL techniques make progress towards resolving problems in those sub-fields traditional techniques are here to stay for a long time. [2]\_
 
 5. Quite surprisingly certain individuals of the community appear to advocate a data-driven approach towards resolving most CV problems. “Just increase the dataset size” is common knowledge in the community as of writing this article. But quite contrary to the opinion, the fundamental problem at the root is quality data to train the models on. There’s a popular saying in the community right now, “Garbage In, Garbage Out”. So until & unless a proper alternative to the data-driven approach is discovered, current DNNs will not perform better than what they’re already capable of.
 
@@ -97,4 +97,4 @@ When in doubt stick to Traditional techniques, Deep Learning has a long way to g
 
 [2] Nial O’ Mahony, et al, [Deep Learning Vs. Traditional Computer Vision](https://arxiv.org/ftp/arxiv/papers/1910/1910.13796.pdf), Institute of Technology Tralee (2019)
 
-[3]  Shlomo Engelson Argamon, [People Cause Replication Problems, Not Machine Learning](https://www.americanscientist.org/blog/macroscope/people-cause-replication-problems-not-machine-learning) (2019), American Scientist (*accessed on 14th August 2020*)
+[3] Shlomo Engelson Argamon, [People Cause Replication Problems, Not Machine Learning](https://www.americanscientist.org/blog/macroscope/people-cause-replication-problems-not-machine-learning) (2019), American Scientist (_accessed on 14th August 2020_)

@@ -13,7 +13,7 @@ cover:
 showtoc: true
 ---
 
-Some time ago, a client approached me with a project proposal. He wanted me to use a certain Product-Market framework & write an article from a Data Scientist’s POV. His reasoning, “*my Machine Learning skills could prove useful to analyze the drawbacks and/or gaps in the framework to add to it*”. And to be clear here, I’m no Data Scientist by craft either.
+Some time ago, a client approached me with a project proposal. He wanted me to use a certain Product-Market framework & write an article from a Data Scientist’s POV. His reasoning, “_my Machine Learning skills could prove useful to analyze the drawbacks and/or gaps in the framework to add to it_”. And to be clear here, I’m no Data Scientist by craft either.
 
 A couple of emails later, it didn’t take me long to realize his requirements. His target audience for the article were individuals in a non-engineering field. Perhaps, marketing (my assumption) or maybe analysts.
 
@@ -29,15 +29,15 @@ Even then, some entrepreneurs are still not sure if a Data Scientist will be the
 
 Hence, for the sake of the Machine Learning community & as David Robinson says in his [tweet](https://twitter.com/drob/status/928447584712253440?s=20),
 
->*When you've written the same code 3 times, write a function*
+> _When you've written the same code 3 times, write a function_
 >
->*When you've given the same in-person advice 3 times, write a blog post*
+> _When you've given the same in-person advice 3 times, write a blog post_
 
 Hence, this article on the topic of Data <_something_> role vs Machine Learning Engineer is my contribution to the community. By the end of the article, you will have enough idea of the respective responsibilities of an ML Engineer or the Data Scientist.
 
 ## Why Does a Clear Distinction Between These Roles Even Matter?
 
-The plain & simple answer to the question is Division of Labour. As Adam Smith & countless other political economists of his time, before him & after as well, stated, the improved efficiency & increase in greater skill gained from the division of labor is hard to pass on. 
+The plain & simple answer to the question is Division of Labour. As Adam Smith & countless other political economists of his time, before him & after as well, stated, the improved efficiency & increase in greater skill gained from the division of labor is hard to pass on.
 
 And from an entrepreneur's perspective, this almost sounds like a free lunch to me.
 
@@ -53,7 +53,7 @@ The next section attempts to answer these questions.
 
 ## Who're ML Engineers Or Data Scientists & What Do They Do?
 
-This article is one of many similar articles on the same topic “*Machine Learning Engineer vs Data Scientists*”. Those articles often describe their respective responsibilities of those roles. But the descriptions are factual & only explain job descriptions, that’s it, nothing more & nothing less. None of those contents explain the specifics that define the two job responsibilities.
+This article is one of many similar articles on the same topic “_Machine Learning Engineer vs Data Scientists_”. Those articles often describe their respective responsibilities of those roles. But the descriptions are factual & only explain job descriptions, that’s it, nothing more & nothing less. None of those contents explain the specifics that define the two job responsibilities.
 
 One such article I stumbled upon & also the one which inspired me to write this article is  [Machine Learning Engineer vs. Data Scientist](https://www.springboard.com/blog/machine-learning-engineer-vs-data-scientist/) on the Springboard Blog by Andrew Zola. The article is factual as expected, but sheds enough light onto the differences. In other words, a perfect article, brief enough for anyone to quickly grasp the differences between a Data Scientist & a Machine Learning Engineer.
 
@@ -63,9 +63,9 @@ The author mentions ML Engineers as individuals who leverage big data frameworks
 
 Fair enough. That's very atypical of any engineer from any background regardless of their domain.
 
-To reiterate on his definition, the ML Engineer is like any other traditional software developer. But the only extra skills  are those which are necessary to work within an ML environment. While Data Scientists are individuals who look into all aspects of the business, to develop programs (not necessarily software) as per the requirements.
+To reiterate on his definition, the ML Engineer is like any other traditional software developer. But the only extra skills are those which are necessary to work within an ML environment. While Data Scientists are individuals who look into all aspects of the business, to develop programs (not necessarily software) as per the requirements.
 
-In other words, a Data Scientist handles tasks more akin to what a typical analyst has been doing for ages. “*Data Scientists*” is just a fancy term (or designation) given to them only after the recent AI hype.
+In other words, a Data Scientist handles tasks more akin to what a typical analyst has been doing for ages. “_Data Scientists_” is just a fancy term (or designation) given to them only after the recent AI hype.
 
 It’s not uncommon to find Data Scientists with only limited programming knowledge. After all, querying a SQL Database , making some visualizations using Python/R are often all the tasks they are ever expected to do. At most, they’re responsible for designing the data science model for implementation into a production-ready app.
 

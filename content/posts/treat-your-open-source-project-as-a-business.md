@@ -18,7 +18,7 @@ The rest of the article will attempt at answering that exact question.
 
 ## The Initial User Base Will Probably Be Developers, But You Should Diversify
 
-Most developers share their knowledge openly on one platform or the other. So it’s not surprising for developers to share their creations for anyone to access, use, develop further or whatever else they want with it. But this article isn’t just about creating & sharing your code for the community. More specifically, this article  attempts at shining light on businesses revolving around an open-source product. In other words, the source code of the product is readily available for anyone to look into, copy, recreate it, etc.
+Most developers share their knowledge openly on one platform or the other. So it’s not surprising for developers to share their creations for anyone to access, use, develop further or whatever else they want with it. But this article isn’t just about creating & sharing your code for the community. More specifically, this article attempts at shining light on businesses revolving around an open-source product. In other words, the source code of the product is readily available for anyone to look into, copy, recreate it, etc.
 
 With that in mind, how do you run a thriving business around it, is a question not many developers are aware of. Why? Because, as I mentioned just a while ago, developers tend to share their knowledge without expecting anything in return.
 
@@ -56,7 +56,7 @@ This rather worrisome situation became more obvious after a recent patronizing d
 
 Heck, even Python’s creator Guido van Rossum wasn’t safe from this toxic behaviour which is spreading within the community in recent times. Guido eventually resigned from his position as BDFL after years of handling constant nitpicking targeted at him. [2] In an email where he responds shows his clear sense of disappointment.
 
->*Now that PEP 572 is done, I don't ever want to have to fight so hard for a PEP and find that so many people despise my decisions.*
+> _Now that PEP 572 is done, I don't ever want to have to fight so hard for a PEP and find that so many people despise my decisions._
 
 Guido is just of the many disappointed souls whose words have been heard, there are many whose voice of sadness has landed on deaf ears. It’s unfortunate to see how the community is only becoming more & more toxic as open-source projects are becoming popular. This sudden toxic outpouring, in my opinion, can be attributed to superiority complex most maintainers feel in my opinion. The software industry is divided; at one end some developers go through [Impostor Syndronme](https://en.wikipedia.org/wiki/Impostor_syndrome) while the rest has a [Superiority Complex](https://en.wikipedia.org/wiki/Superiority_complex).
 

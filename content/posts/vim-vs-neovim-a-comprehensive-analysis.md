@@ -14,15 +14,15 @@ showtoc: true
 draft: false
 ---
 
-If you ever heard of [Vim][Vim] before, you would know all about it's forks that have popped up in recent years! There’s [Neovim][Neovim] (the most popular fork), [LunarVim][LunarVim] (one of the most promising fork) & countless others. And as is obvious, choosing the one right one for yourself can be a difficult task (been there & done that).
+If you ever heard of [Vim][vim] before, you would know all about it's forks that have popped up in recent years! There’s [Neovim][neovim] (the most popular fork), [LunarVim][lunarvim] (one of the most promising fork) & countless others. And as is obvious, choosing the one right one for yourself can be a difficult task (been there & done that).
 
 So to help you decide, this article will shed light on some of the reasons to choose Neovim over Vim. To be more specific, we’ll look into every day use cases while comparing the two. Analysing everyday use cases is more relevant while comparing consumer products anyway.
 
 But before we dive into the real deal of the article, as usual a little bit of a history lesson first.
 
-Vim itself started out as an improved clone of the now antiquated [Vi][Vi] by [Bram Moolenaar][Bram Moolenaar] way back in the early 90s. Moolenaar himself overlooked the development & course of actions for Vim. Over the decades, the Vim source code is starting to become archaic & hard to maintain. It's bloated, some of the code is unoptimized & it's current set of features hasn't aged well either.
+Vim itself started out as an improved clone of the now antiquated [Vi][vi] by [Bram Moolenaar][bram moolenaar] way back in the early 90s. Moolenaar himself overlooked the development & course of actions for Vim. Over the decades, the Vim source code is starting to become archaic & hard to maintain. It's bloated, some of the code is unoptimized & it's current set of features hasn't aged well either.
 
-But, Neovim was rebuilt from scratch! Redundant & decades old code  was weeded out. And all the while the maintainers tried  to provide the same power to the users as Vim did. Although, it did come pre-packaged with “_optional steroids_” to consume. More on it in the rest of the article!
+But, Neovim was rebuilt from scratch! Redundant & decades old code was weeded out. And all the while the maintainers tried to provide the same power to the users as Vim did. Although, it did come pre-packaged with “_optional steroids_” to consume. More on it in the rest of the article!
 
 With that said, let’s dive deeper & check out why you should use Neovim over Vim today. Take due note though, this article isn’t intended as a jibe at Vim or it’s loyal users. Rather we’ll try to analyse the differing features of the two editors & see how useful they are on a day-to-day basis.
 
@@ -34,7 +34,7 @@ Unlike some of the rumours floating around Neovim wasn’t forked because “_Br
 
 Since, Neovim was rebuilt from the ground-up, it opened up doors to;
 
-1. Adding useful features like [Language-Server Protocol][LSP] (LSP), an embedded [Lua 5.1][Lua] (and LuaJIT) runtime & so on, more easily.
+1. Adding useful features like [Language-Server Protocol][lsp] (LSP), an embedded [Lua 5.1][lua] (and LuaJIT) runtime & so on, more easily.
 2. Cleaner & optimized source code for easier maintainability & reduced load times.
 3. Straight-up better plugin development environment.
 4. Extending core Neovim capabilities through improved plugins if necessary.
@@ -62,7 +62,7 @@ Owing to that decision, the source code was cleaned & optimized. This is obvious
 
 Rebuilding Neovim also opened up many doors towards developing handy features. One & the most killer feature of the editor is the embedded Lua 5.1 (_and LuaJIT_) environment.
 
-The devs also took other performance optimization course of action as well. One of them included making Neovim run in an [Event Loop][Event Loop]. So, you can finally bid goodbye to plugins that would hang earlier!
+The devs also took other performance optimization course of action as well. One of them included making Neovim run in an [Event Loop][event loop]. So, you can finally bid goodbye to plugins that would hang earlier!
 
 Besides that, the devs have also ensured backwards compatibility with VimScript. So, if you’re a long-term Vim user who wants to try out Neovim, don’t fret, you'll be fine. You can configure Neovim to read your older `.vimrc` just fine albeit with some trivial hacks here & there.
 
@@ -76,7 +76,7 @@ On the flip side though, configuring through Lua is an optional feature. So, you
 
 ## Option to Ditch VimScript & Embrace Lua
 
-[One of the goals][About Neovim] of the Neovim team is to “_develop first-class Lua/LuaJIT scripting alternative to VimL_”. Staying true to their words, the devs haven’t enforced ditching VimScript in favour of Lua. And I doubt any of us would live to see that happen in our lifetime!
+[One of the goals][about neovim] of the Neovim team is to “_develop first-class Lua/LuaJIT scripting alternative to VimL_”. Staying true to their words, the devs haven’t enforced ditching VimScript in favour of Lua. And I doubt any of us would live to see that happen in our lifetime!
 
 So, if you want to continue using your previous Vim configs, you needn’t fret at all. But what if you definitely need Lua code, for example say configuring the builtin LSP?
 
@@ -105,7 +105,7 @@ EOF
 
 And you’re good to go out on your day without worrying it would break something from your previous Vim configs. Vim would still know how to parse those code & make sense of it.
 
-Although, a bit of a personal opinion here, try not to use VimScript if you can. Coding in Lua is a much pleasant experience. And even if you had to learn it, the language has many real-life applications outside of a Vim environment. So, it’s not like you would be wasting your time learning a redundant programming language. If you do decide to start configuring Neovim with Lua, do give this “[Guide to Using Neovim with Lua][Neovim Lua Guide]” a thorough read.
+Although, a bit of a personal opinion here, try not to use VimScript if you can. Coding in Lua is a much pleasant experience. And even if you had to learn it, the language has many real-life applications outside of a Vim environment. So, it’s not like you would be wasting your time learning a redundant programming language. If you do decide to start configuring Neovim with Lua, do give this “[Guide to Using Neovim with Lua][neovim lua guide]” a thorough read.
 
 That said, Neovim’s embedded Lua environment’s usefulness takes proper shape through it’s inbuilt standard library & API. If you’re either a plugin developer or a regular Vim user, the standard library can be useful in many ways. It packages many useful functions & commands to use for your day-to-day development needs.
 
@@ -121,7 +121,7 @@ As such, let's say we want to configure Neovim to display the number column. The
 
 Granted, a first glance on the global `vim` namespace might look confusing but stay with me & I’ll help you make sense of it.
 
-The `vim` namespace exposes a couple functions for everyday use. Most notable ones include the `vim.api`, `vim.lsp` & `vim.inspect` functions. There are a couple more of them & explaining all them is out-of-scope for this article. But, you can find a comprehensive list of these functions detailed in the "_`vim` namespace section_" of the [Lua for Neovim guide][Nanotree Lua Guide for Neovim].
+The `vim` namespace exposes a couple functions for everyday use. Most notable ones include the `vim.api`, `vim.lsp` & `vim.inspect` functions. There are a couple more of them & explaining all them is out-of-scope for this article. But, you can find a comprehensive list of these functions detailed in the "_`vim` namespace section_" of the [Lua for Neovim guide][nanotree lua guide for neovim].
 
 To stay relevant to the context of this article, following are some of the most useful functions exposed by the `vim.api` namespace:
 
@@ -156,7 +156,7 @@ And now, before I answer the question, “_Vim or Neovim: Which one to use?_”.
 3. Allowing Neovim to be rewritten opened up opportunities to include many useful features like LSP, asynchronous execution, etc.
 
 4. Inclusion of a “_standard library_” which augments the optional embedded Lua environment for configurability.
-Sensible default configurations to ease a first-time Vim user’s experience.
+   Sensible default configurations to ease a first-time Vim user’s experience.
 
 ...and many more! The list is never-ending & what I listed up there is just the cherry on top of the cake. These features are also what makes Neovim stand out when compared to Vim. But, it shouldn’t come as a surprise if Vim supports most if not all of Neovim’s features one day as well.
 
@@ -172,18 +172,18 @@ That said, you should use Neovim for reasons mentioned below:
 
 Do you believe those were some valid reasons to try out Neovim, let me know what you think!
 
-
 <!-- References --->
-[Nanotree Lua Guide for Neovim]: https://github.com/nanotee/nvim-lua-guide
-[Neovim Lua Guide]: https://github.com/nanotee/nvim-lua-guide
-[About Neovim]: http://neovim.io/charter/
-[Event Loop]: https://en.wikipedia.org/wiki/Event_loop
-[LSP]: https://microsoft.github.io/language-server-protocol/
-[Neovim API]: https://neovim.io/doc/user/api.html
-[Lua]: lua.org
-[Bram Moolenaar]: https://moolenaar.net/
-[Windows Terminal]: https://github.com/microsoft/terminal
-[Vim]: https://www.vim.org
-[Neovim]: https://neovim.io
-[LunarVim]: https://github.com/ChristianChiarulli/LunarVim
-[Vi]: https://en.wikipedia.org/wiki/Vi
+
+[nanotree lua guide for neovim]: https://github.com/nanotee/nvim-lua-guide
+[neovim lua guide]: https://github.com/nanotee/nvim-lua-guide
+[about neovim]: http://neovim.io/charter/
+[event loop]: https://en.wikipedia.org/wiki/Event_loop
+[lsp]: https://microsoft.github.io/language-server-protocol/
+[neovim api]: https://neovim.io/doc/user/api.html
+[lua]: lua.org
+[bram moolenaar]: https://moolenaar.net/
+[windows terminal]: https://github.com/microsoft/terminal
+[vim]: https://www.vim.org
+[neovim]: https://neovim.io
+[lunarvim]: https://github.com/ChristianChiarulli/LunarVim
+[vi]: https://en.wikipedia.org/wiki/Vi
