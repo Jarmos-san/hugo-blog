@@ -20,5 +20,4 @@ draft: true
 ## Resources
 
 - [r/learnpython](https://www.reddit.com/r/learnpython/)
-- [Best way to learn Python -
-  r/Python](https://www.reddit.com/r/Python/comments/c627y2/best_way_to_learn_python_stepbystep_guide/)
+- [Best way to learn Python - r/Python](https://www.reddit.com/r/Python/comments/c627y2/best_way_to_learn_python_stepbystep_guide/)

@@ -8,4 +8,6 @@ contact_links:
     about: Please report bugs & other issues here.
   - name: Security Policy
     url: https://github.com/Jarmos-san/blog/security/policy
-    about: Refer to the Security Policy to report security vulnerabilities or if you would like to know about how your personal information is used.
+    about:
+      Refer to the Security Policy to report security vulnerabilities or if you
+      would like to know about how your personal information is used.

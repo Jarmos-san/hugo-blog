@@ -50,8 +50,8 @@ fields:
         format: markdown
     label: Description
     description:
-      Description of the article for SEO purposes. Can be similar to the
-      summary of the article
+      Description of the article for SEO purposes. Can be similar to the summary
+      of the article
   - type: field_group
     name: cover
     label: Cover
