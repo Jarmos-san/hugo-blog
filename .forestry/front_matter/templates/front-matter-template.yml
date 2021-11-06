@@ -1,0 +1,88 @@
+---
+label: Front Matter Template
+hide_body: false
+fields:
+  - type: text
+    name: title
+    label: Title
+    description: Title of the article
+    config:
+      required: true
+      min: 20
+      max: 120
+  - name: category
+    type: tag_list
+    default: []
+    label: Category
+    description: Category of the article
+  - type: datetime
+    name: date
+    label: Date
+    description: Date of publication
+    config:
+      date_format: DD/MM/YYYY
+      export_format: YYYY-MM-DD
+      required: true
+    default: now
+  - type: text
+    name: slug
+    label: Slug
+    description: The URL to show
+    config:
+      required: true
+  - name: summary
+    type: textarea
+    default: ""
+    config:
+      required: true
+      wysiwyg: false
+      schema:
+        format: markdown
+    label: Summary
+    description: A brief summary of the article
+  - name: description
+    type: textarea
+    default: ""
+    config:
+      required: true
+      wysiwyg: false
+      schema:
+        format: markdown
+    label: Description
+    description:
+      Description of the article for SEO purposes. Can be similar to the
+      summary of the article
+  - type: field_group
+    name: cover
+    label: Cover
+    fields:
+      - type: file
+        name: image
+        label: Image
+        description: Cover image for the article
+        config:
+          maxSize: 5
+      - type: text
+        name: alt
+        label: Alternate Text
+        config:
+          required: true
+        description: Alternate text for the cover image.
+      - type: text
+        name: caption
+        label: Caption
+        config:
+          required: true
+        description: Caption that goes right under the cover image
+      - type: boolean
+        name: relative
+        label: Relative
+    description: Featured cover image for an article
+  - type: boolean
+    name: showtoc
+    label: Show ToC
+    description: If Table of Contents should be visible or not
+    default: false
+    showOnly:
+      field: showtoc
+      value: true

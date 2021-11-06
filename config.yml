@@ -1,0 +1,111 @@
+baseURL: "https://jarmos.netlify.app"
+languageCode: "en-us"
+title: "Somraj Saha"
+theme: "PaperMod"
+paginate: 5
+enableRobotsTXT: true
+enableEmoji: true
+buildDrafts: false
+buildFuture: false
+buildExpired: false
+minify:
+  disableXML: true
+  minifyOutput: true
+params:
+  env: production
+  title: Jarmos
+  description: "Personal website for Somraj Saha where I share content based on my experiences as an ML Engineer & self-taught programmer."
+  images: ['profile-pic.jpg']
+
+  defaultTheme: auto
+  disableThemeToggle: false
+  ShowReadingTime: true
+  ShowShareButtons: true
+  ShowPostNavLinks: true
+  GoogleAnalyticsID: G-V0ZH6RS2BM
+  disableSpecial1stPost: false
+  comments: false
+  hidemeta: false
+  showtoc: false
+  tocopen: false
+  assets:
+    favicon: icons/favicon.ico
+    favicon16x16: icons/favicon-16x16.png
+    favicon32x32: icons/favicon-32x32.png
+    apple_touch_icon: icons/apple-touch-icon.png
+    android-chrome: icons/android-chrome-512x512.png
+    disableHLJS: true
+  label:
+    text: Somraj Saha
+  homeInfoParams:
+    Title: "Hi there! \U0001F44B"
+    Content: |
+      - Welcome to my website!. This is the right place to discover more about me if you're interested. I share my thoughts, opinions, projects showcases & experiences as a self-taught developer.
+      -
+      - Besides that, you'll find content on topics like - "Machine Learning", "Python (the programming language)", "Software development practices" & so on.
+      -
+      - And if you enjoy reading the content, consider sharing them with your friends, family & acquiantances. Or if you believe I could improve something, leave a feedback though any of my contact details.
+  socialIcons:
+  - name: twitter
+    url: https://twitter.com/@Jarmosan
+  - name: github
+    url: https://github.com/Jarmos-san
+  - name: medium
+    url: https://medium.com/@Jarmos
+  - name: instagram
+    url: https://www.instagram.com/jarmos.san/
+  - name: linkedin
+    url: https://www.linkedin.com/in/jarmos/
+  - name: facebook
+    url: https://www.facebook.com/jarmos.san/
+  - name: email
+    url: mailto:somraj.mle@gmail.com
+  - name: buymeacoffee
+    url: https://www.buymeacoffee.com/Jarmos
+  cover:
+    hidden: true
+    hiddenInList: true
+    hiddenInSingle: false
+    linkFullImages: true
+menu:
+  main:
+  - name: About
+    identifier: about
+    url: about/
+    weight: 1
+  - name: Blog
+    identifier: blog
+    url: blog/
+    weight: 2
+  - identifier: projects
+    name: Projects
+    url: projects/
+    weight: 3
+  - name: Services
+    identifier: hiring
+    name: Services
+    url: services/
+    weight: 4
+  # - name: Collaborate
+  #   identifier: collaborate
+  #   url: collaborations/
+  #   weight: 5
+  # - name: Newsletter
+  #   identifier: newsletter
+  #   url: https://jarmos.ck.page/newsletter
+  #   weight: 6
+markup:
+  highlight:
+    # anchorLineNos: true
+    # codeFences: true
+    # guessSyntax: true
+    # lineNos: true
+    # noClasses: false
+    # style: "borland"
+    anchorLineNos: false
+    codeFences: true
+    guessSyntax: false
+    lineNos: true
+    lineNumbersInTable: true
+    noClasses: true
+    style: native
