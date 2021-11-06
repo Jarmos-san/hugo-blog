@@ -18,27 +18,39 @@ showtoc: true
 draft: true
 ---
 
-Neo(Vim)'s usefulness becomes more apparent with how easy it is define any sort
-of custom key bindings. Seasoned Vim users are pretty aware of that fact & knows
-the fact how one can achieve quite a lot with just custom keybindings alone. And
-with Neovim v0.5+ the community was introduced to the optional Lua runtime as
-well. Which brought about even more power to the user than ever. With an actual
-programming language at the user's disposal, what's possible to do using Neovim
-key bindings is now limited only by the user's imagination & capabilities.
+Neovim (or even Vim) is an excellent piece of software for increased
+productivity. If you're a veteran Vim user, I'm sure you're pretty aware of Vim
+keybindings. The software itself is known for it's openness towards customizing
+user-defined key-bindings. As such, pretty much the sky is the real limit to
+what you could possibly do with custom Vim key bindings.
 
-## Introduce the Optional Lua Runtime
+But for a user to effectively custom their Vim keybindings, they would to
+require an adequate knowledge of VimScript (or VimL) which is a language used
+for customizing the Vim-experience. And to be honest here, VimL is not my most
+favoured programming language. And I'm sure quite a lot of you out there will
+agree with me on this fact as well.
 
-At the time of writing of this article the Neovim devs released `Neovim v0.5`
-only a few months ago. And with it came a much anticipated feature, the optional
-Lua runtime. Now you no longer had to rely on the cryptic VimScript & migrate
-partially or completely to Lua code.
+VimL is cryptic, archaic & has pretty much no use-case outside of Vim.
+Fortunately for people like you & me, `Neovim v0.5+` gave us a signficant update
+to play around with. And that's the optional Lua runtime making it backwards
+compatible with VimL as well!
 
-In this article, we won't dive deeper into the differences between configuring
-Neovim with Lua and/or with VimScript. But if you want to refresher on that
-topic, do check out a previous article -
-[Vim or Neovim? Here's Why You Should Use the Latter](../vim-vs-neovim).
-Additionally, do refer to the excellent
-[Neovim-Lua Guide](https://github.com/nanotee/nvim-lua-guide) on GitHub.
+So, in other words, you're free to gradually ditch VimL in favour of Lua to
+create custom keybindings! Sounds optimistic, right? 😆 Hence, here I'm sharing
+how I create custom Neovim keybindings using Lua (_and goodbye VimL, you served
+me well_).
+
+## Introducing the Optional Lua Runtime
+
+Before I introduce how Neovim keybindings are configured using Lua, I feel you
+should know a bit about the optional Lua runtime first. So, for some of you out
+there who're yet to make a full transition to Lua, making sense of why Lua is an
+optional runtime will help you make the gradual migrations over time.
+
+So, `Neovim v0.5` was a much anticipated update & one which brought about quite
+a few major featureful additions to the software. One of those features is the
+Lua runtime & it's backwards compatiblity with VimL. Besides that, the Neovim
+devs has also been packaging it with a handy "_standard library_" as well.
 
 ## How to Write Lua Function for the Neovim Key Bindings
 
