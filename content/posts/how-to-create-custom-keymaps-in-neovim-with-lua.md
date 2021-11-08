@@ -10,9 +10,9 @@ description:
   "Learn how to create custom key bindings in Neovim using the optional inbuilt
   Lua runtime"
 cover:
-  image:
-  alt:
-  caption:
+  image: "https://res.cloudinary.com/jarmos/image/upload/v1636405448/covers/ditching_vimscript_for_lua_hgqdfz.png"
+  alt: "Ditching Vimscript in favour of Lua for easier Neovim configurations"
+  caption: "I migrated my Neovim configurations & couldn't be more happier!"
   relative: false
 showtoc: true
 draft: true
