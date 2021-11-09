@@ -19,24 +19,26 @@ draft: false
 ---
 
 Neovim (or even Vim) is an excellent piece of software for any developers out
-there. If you're an experienced Vim user, you should be aware of custom Vim
-keybindings. For the uninitiated, Vim's openness towards creating custom
-keybindings has pretty much no competition out there. As such, only your
-imagination is the limit to what you could possibly create using custom
-keybindings.
+there. The ability to create custom keybindings & do pretty much anything is
+testament to Vim's popularity. And if you've used Vim before, you should be
+aware of what's possible through custom Vim keybindings as well.
+
+For the uninitiated, Vim's openness towards creating custom keybindings has
+pretty much no competition out there. As such, only your imagination is the
+limit to what you could possibly create using custom keybindings.
 
 Vim users are also required to have working knowledge of Vimscript (_which is a
 scripting language built for Vim configuration_). It's not the most elegant
-language & neither has it any use outside of Vim. Also for many of you, the time
-investment & efforts required to pickup a redundant programming language
-mightn't be productive. Fortunately, `Neovim v0.5+` gave the community a
-signficant update to play around with, the inbuilt Lua runtime.
+language out there & neither has it any use outside of Vim. Also for many of
+you, the time investment & efforts required to pickup a redundant programming
+language mightn't be productive either. Fortunately, `Neovim v0.5+` gave the
+community a signficant update to play around with & that's the inbuilt Lua
+runtime.
 
-The optional Lua runtime introduced with `Neovim v0.5` was a breath of fresh
-air. It was also backwards compatible meaning you could still try out the
-optional runtime right from within Vimscript. We'll not discuss how to write Lua
-code within Vimscript since it's beyond the scope of this article. But feel free
-to refer to this amazing
+The optional Lua runtime also backwards compatible meaning you could still try
+out the optional runtime right from within Vimscript. We'll not discuss how to
+write Lua code within Vimscript since it's beyond the scope of this article. But
+feel free to refer to this amazing
 [Neovim-Lua Guide](https://github.com/nanotee/nvim-lua-guide) on GitHub for a
 quick reference.
 
@@ -53,15 +55,17 @@ Before we proceed further into the article, let's briefly introduce the Lua
 runtime in Neovim. Having some idea of it will help better understand the how's
 & what's possible to create.
 
-One particular feature that makes Neovim stand out is it's
-[builtin API](https://neovim.io/doc/user/api.html). In addition to that, the Lua
-runtime has it's own _standard lib_! So, if you desire, you can let your
-imaginations go wild & hack Neovim to your heart's content.
+That said, Neovim was released with a set of some useful features. One such
+feature that makes Neovim stand out is it's
+[builtin API](https://neovim.io/doc/user/api.html). The programmatic access to
+the API & the Lua runtime means you can let your imaginations go wild if you so
+desire.
 
-Like any other config files used to hack Neovim/Vim, the Lua code also needs to
-be placed in the `runtimepath` (see `:h rtp` for more info). These config files
-(with a `.lua` extensions) are placed inside a directory aptly named `lua`. And
-Neovim will source everything inside that directory when invoked.
+And just so you know, like any other config files used to hack Neovim/Vim, the
+Lua code also needs to be placed in the `runtimepath` (see `:h rtp` for more
+info). These config files (with a `.lua` extensions) are placed inside a
+directory aptly named `lua`. And Neovim will source everything inside that
+directory when invoked.
 
 Do note, the location to the Neovim runtimepath varies depending on the choice
 of your OS. So, for Linux users out there, check if your OS follows the
@@ -74,12 +78,11 @@ For more info on where to place the config files, check out the
 ["_Where to put Lua files_"](https://github.com/nanotee/nvim-lua-guide#where-to-put-lua-files)
 section of the Neovim-Lua Guide on GitHub.
 
-With that said & our little introduction to the optional Lua runtime done &
-dusted, lets check out the how's, the what's of configuring Neovim keybindings
-with Lua. In the next few sections we'll taking a look at, writing an example
-Lua function followed by an actual functional wrapper in Lua. This functional
-wrapper will be used to create our custom keybindings where & whenever
-necessary.
+With our little introduction to the optional Lua runtime taken care of, lets
+check out the how to configure Neovim keybindings with Lua. In the next few
+sections we'll taking a look at, writing an example Lua function followed by an
+actual functional wrapper in Lua. This functional wrapper will be used to create
+our custom keybindings where & whenever necessary.
 
 ## How to Write Lua Function for the Neovim Key Bindings
 
@@ -91,7 +94,7 @@ all over one's `.vimrc` file. Here's one such
 picked up from the Internet. The file is huge (~1200 lines of code!), is
 unweidly & a totaly nightmare to maintain.
 
-A little code snippet I picked up from the `.vimrc` file above.
+And here's a little code snippet I picked up from the `.vimrc` file above.
 
 ```vimscript
 " Example .vimrc file with hundreds of lines of code
@@ -118,20 +121,6 @@ looks clean & organized as well.
 
 So what does a typical Neovim configuration look like when used with Lua?
 Following are some such examples:
-
-**Vim**:
-
-```vimscript
-" Code borrowed from the example .vimrc above
-...
-nnoremap <silent> ,<Space> :nohlsearch<CR>
-nnoremap <silent> <leader> :<c-u>WhichKey ','<CR>
-nnoremap <leader>? :WhichKey ','<CR>
-nnoremap <leader>a :cclose<CR>
-...
-```
-
-**Neovim**:
 
 ```lua
 -- Functional wrapper for mapping custom keybindings
@@ -185,8 +174,27 @@ the ["_Modules_"](https://github.com/nanotee/nvim-lua-guide#modules) section of
 the Neovim-Lua Guide on GitHub.
 
 That said, create a `utils.lua` under the `lua` directory in your runtimepath.
-This file will be our Lua Module for the `map()` function. Following is example
-code snippet on how to do it:
+Lua Modules are identified if they contain the following lines of code:
+
+```lua
+-- Assign an empty table to the local variable named M (it's standard to name the variable as "M")
+local M = {}
+
+-- Define your function & add it the M table
+function M.do_something()
+    -- Your functional logic
+end
+
+-- Since the M table is scoped, it has to be returned for usage elsewhere
+return M
+```
+
+Explaining Lua Modules are beyond the scope of this article as well, so perhaps
+refer to the Lua 5.1 documentations linked above for reference.
+
+For our use case, the Lua Module we defined will contain the functional wrapper
+for the custom keybinds. As such this is what the contents of our `utils.lua`
+module will look like:
 
 ```lua
 -- Our lua/utils.lua file
@@ -204,8 +212,9 @@ end
 return M
 ```
 
-Neovim sources & loads any Lua files located under the `lua` directory in the
-runtimepath. Hence, now it's possible to simply import the wrapper into your
+Since Neovim sources & loads any Lua files located under the `lua` directory in
+the runtimepath our `map()` function will be available to be imported anywhere
+else as well. Hence, now it's possible to simply import the wrapper into your
 `init.lua` file & use it for creating your remaps. Thereby you can now keep the
 file clean, maintainable & fast to load.
 
@@ -224,28 +233,28 @@ map("n", "<Leader>?", ":WhichKey ','<CR>")
 map("n", "<Leader>a", ":cclose<CR>")
 ```
 
-Now that the code is properly modularised, you can maintain it more easily &
-without breaking something in the process. Further, if you wish extending our
-rudimentary `map()` function is as simple making your necessary changes to the
-`utils` module!
+Now that the code is properly modularised, maintenance shouldn't be a chore &
+chances of something breaking will be much lower. Further, if you wish extending
+our rudimentary `map()` function is as simple making your necessary changes to
+the `utils` module!
 
-That said, chances are if you've been using Neovim for a while now, you're yet
+That said, chances are, if you've been using Neovim for a while now, you're yet
 to migrate your configs to Lua code. And you'll be glad to hear that the Neovim
-devs went through great lengths to maintain backwards compatibility. If you're
-uncomfortable to make the necessary changes to existing configs, it's possible
-to use Lua code right within Vimscript as well. Refer to `:h heredocs` for more
-info on the topic.
+devs went through great lengths to maintain backwards compatibility. If making
+migration changes from Vimscrip to Lua code for your existing configs makes you
+uneasy, then don't fret. You can even use Lua code right within Vimscript as
+well! For that, refer to `:h heredocs` for more info on the topic.
 
 To help you figure your way around while migrating the existing configs, the
 next section will suggest some useful references you could take a look at.
 
 ## Final Words & Things to Look Forward to
 
-The optional Lua runtime within Neovim is a godsend & one such feature which
-makes Neovim particularly stand out apart from Vim. But since the features &
-Neovim itself is comparatively new, resources around these features are hard to
-come by. As such following are some resources you might want to take a look at
-if configuring Neovim with Lua piques your interests.
+The optional Lua runtime within Neovim is a godsend & it's also one such feature
+which makes Neovim particularly stand out apart from Vim. But since the features
+& Neovim itself is comparatively new, resources around these features are hard
+to come by. As such following are some resources you might want to take a look
+at if configuring Neovim with Lua piques your interests.
 
 1. [A Guide to Using Lua in Neovim](https://github.com/nanotee/nvim-lua-guide)
 2. [`h: lua`](https://neovim.io/doc/user/lua.html) for a comprehensive guide on
@@ -253,7 +262,8 @@ if configuring Neovim with Lua piques your interests.
 3. And a bit of a shameless plug, you could use my blog as a source of reference
    as well. I've written one such articles introducing the benefits of using Lua
    for Neovim in
-   [Vim or Neovim? Here's Why You Should Use the Latter](../vim-vs-neovim)
+   [Vim or Neovim? Here's Why You Should Use the Latter](../vim-vs-neovim).
+   There're more such articles to come so keep your eyes peeled.
 
 Did I miss out any other useful resources? Let me know if I did!
 
