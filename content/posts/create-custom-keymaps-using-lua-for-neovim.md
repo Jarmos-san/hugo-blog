@@ -14,8 +14,6 @@ cover:
   alt: "Ditching Vimscript in favour of Lua for easier Neovim configurations"
   caption: "I migrated my Neovim configurations & couldn't be more happier!"
   relative: false
-showtoc: true
-draft: false
 ---
 
 Neovim (or even Vim) is an excellent piece of software for any developers out
