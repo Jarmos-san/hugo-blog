@@ -19,4 +19,5 @@
 [[redirects]]
   from = "https://jarmos.netlify.app"
   to = "https://jarmos.vercel.app"
-  
+  force = true
+  status = 301
