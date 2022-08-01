@@ -17,6 +17,6 @@
   compress = true
 
 [[redirects]]
-  from = "/"
-  to = "jarmos.vercel.app"
+  from = "https://jarmos.netlify.app"
+  to = "https://jarmos.vercel.app"
   
