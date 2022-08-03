@@ -16,8 +16,59 @@
 [build.processing.images]
   compress = true
 
+# Redirect rule for the root domain.
 [[redirects]]
   from = "https://jarmos.netlify.app"
   to = "https://jarmos.vercel.app"
+  force = true
+  status = 301
+
+# Redirect rule for the blog post archive URL
+[[redirects]]
+  from = "https://jarmos.netlify.app/blog/"
+  to = "https://jarmos.vercel.app/blog"
+  force = true
+  status = 301
+
+# Redirect rule for the "about" page
+[[redirects]]
+  from = "https://jarmos.netlify.app/about/"
+  to = "https://jarmos.vercel.app/about"
+  force = true
+  status = 301
+
+# Redirect rule for the projects page
+[[redirects]]
+  from = "https://jarmos.netlify.app/projects/"
+  to = "https://jarmos.vercel.app/project"
+  force = true
+  status = 301
+
+# Redirect rule for the services page
+[[redirects]]
+  from = "https://jarmos.netlify.app/services/"
+  to = "https://jarmos.vercel.app/service"
+  force = true
+  status = 301
+  
+# Redirect rule for the privacy policy page
+[[redirects]]
+  from = "https://jarmos.netlify.app/privacy-policy"
+  to = "https://jarmos.vercel.app/privacy-policy"
+  force = true
+  status = 301
+
+# Redirect rule for the terms & condition page
+[[redirects]]
+  from = "https://jarmos.netlify.app/terms-of-service-agreement"
+  to = "https://jarmos.vercel.app/terms-and-conditions"
+  force = true
+  status = 301
+
+
+# Redirect rule for the individual blog posts
+[[redirects]]
+  from = "https://jarmos.netlify.app/blog/*"
+  to = "https://jarmos.vercel.app/blog/:splat"
   force = true
   status = 301
