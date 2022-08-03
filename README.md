@@ -1,4 +1,4 @@
-# :man_technologist: Somraj Saha's Blog
+# :man_technologist: Somraj Saha's Blog.
 
 [![Website][website]][personal website]
 [![Netlify Deploy][netlify deploy badge]][netlify deploy]
