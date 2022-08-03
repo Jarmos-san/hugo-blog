@@ -7,6 +7,8 @@
 [![Ask Me Anything !][my ama badge]][my ama]
 [![Twitter Follow][my twitter badge]][my twitter]
 
+**DISCLAIMER**: This project is unmaintained & I'll be deprecating it soon. At the moment I'm working on a more powerful & featured [Next.js](https://nextjs.org) based website. And the repository for this project will be archived soon after the brand new project is complete!
+
 This repository hosts the tools, assets & themes for my [personal
 website][personal website]. The site is statically generated with
 [Hugo][hugo landing page] & the [PaperMod][hugo-papermod] theme. Hugo which is a
