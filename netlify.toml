@@ -40,27 +40,27 @@
 # Redirect rule for the projects page
 [[redirects]]
   from = "https://jarmos.netlify.app/projects/"
-  to = "https://jarmos.vercel.app/project"
+  to = "https://jarmos.vercel.app/projects"
   force = true
   status = 301
 
 # Redirect rule for the services page
 [[redirects]]
   from = "https://jarmos.netlify.app/services/"
-  to = "https://jarmos.vercel.app/service"
+  to = "https://jarmos.vercel.app/services"
   force = true
   status = 301
   
 # Redirect rule for the privacy policy page
 [[redirects]]
-  from = "https://jarmos.netlify.app/privacy-policy"
+  from = "https://jarmos.netlify.app/privacy-policy/"
   to = "https://jarmos.vercel.app/privacy-policy"
   force = true
   status = 301
 
 # Redirect rule for the terms & condition page
 [[redirects]]
-  from = "https://jarmos.netlify.app/terms-of-service-agreement"
+  from = "https://jarmos.netlify.app/terms-of-service-agreement/"
   to = "https://jarmos.vercel.app/terms-and-conditions"
   force = true
   status = 301
