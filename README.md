@@ -7,7 +7,11 @@
 [![Ask Me Anything !][my ama badge]][my ama]
 [![Twitter Follow][my twitter badge]][my twitter]
 
-**DISCLAIMER**: **This project is unmaintained & I'll be deprecating it soon. At the moment I'm working on a more powerful & featured [Next.js](https://nextjs.org) based website. And the repository for this project will be archived soon after the brand new project is complete!**
+**DISCLAIMER**: **I'M NO LONGER MAINTAINING THE PROJECT!**
+
+The repository & the project is abandoned! I'm no longer actively maintaining & working on this project since
+I recreated it using Next.js instead. If you're interested in checking it out, please head over to my [personal website's repository](https://github.com/Jarmos-san/personal-website). The project uses the latest features of React.js
+and is faster than a traditional Hugo project. So, feel free to check it out & contribute to it!
 
 This repository hosts the tools, assets & themes for my [personal
 website][personal website]. The site is statically generated with
