@@ -25,7 +25,7 @@
 
 # Redirect rule for the blog post archive URL
 [[redirects]]
-  from = "https://jarmos.netlify.app/post/"
+  from = "https://jarmos.netlify.app/blog/"
   to = "https://jarmos.vercel.app/blog"
   force = true
   status = 301
